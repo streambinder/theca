@@ -1,8 +1,8 @@
 name       : spotitube
-version    : 21
-release    : 21
+version    : 22
+release    : 22
 source     :
-    - https://github.com/streambinder/spotitube/archive/v21.tar.gz : 237690fe6564c5981bb3853bdbe0acf39c41f96ca41416f5dcaa2be9ac9df64f
+    - https://github.com/streambinder/spotitube/archive/v22.tar.gz : 40a2b995fcfa70f68ecd6781ff228cab2a1fa350e0e8d91a74b04bd90dbb362f
 license    : GPLv3
 component  : network.clients
 summary    : Shell go-lang application to incrementally download from Spotify into local folder.
@@ -18,4 +18,4 @@ setup      : |
 build      : |
     %make
 install    : |
-    install -Dm 644 $workdir/out/spotitube $installdir/usr/sbin/spotitube
+    install -Dm 755 $workdir/out/spotitube $installdir/usr/sbin/spotitube
