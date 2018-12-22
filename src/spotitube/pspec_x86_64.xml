@@ -23,9 +23,9 @@
 		</Files>
 	</Package>
 	<History>
-		<Update release="21">
+		<Update release="22">
 			<Date>2018-12-22</Date>
-			<Version>21</Version>
+			<Version>22</Version>
 			<Comment>Packaging update</Comment>
 			<Name>streambinder</Name>
 			<Email>posta@davidepucci.it</Email>
