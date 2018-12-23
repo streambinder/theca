@@ -1,0 +1,27 @@
+name       : melody
+version    : 2.2.0
+release    : 1
+source     :
+    - https://github.com/artemanufrij/playmymusic/archive/2.2.0.tar.gz : 810a038980f579a11314cb88c9c048838b88d9f6fc9132ee146323170027d866
+license    : GPLv2
+component  : multimedia.audio
+summary    : A music player for listening to local music files, online radios, and Audio CDs.
+description: |
+    A music player for listening to local music files, online radios, and Audio CDs.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gstreamer-plugins-base-1.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(sqlite3)
+    - pkgconfig(taglib)
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
