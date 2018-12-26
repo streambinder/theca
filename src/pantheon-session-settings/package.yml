@@ -1,0 +1,16 @@
+name       : pantheon-session-settings
+version    : 5.0.3
+release    : 1
+source     :
+    - https://github.com/elementary/session-settings/archive/master.zip : fbd660ff3df6bd879e6f12ee535a2e48f5e3b0448e785e877271a556d3a84618
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Pantheon login session and some session-specific configuration files and defaults.
+description: |
+    Pantheon login session and some session-specific configuration files and defaults.
+install    : |
+    mkdir -p $installdir/{etc/xdg,usr/share/{gnome-session,pantheon}}
+    cp -dr --no-preserve='ownership' applications $installdir/usr/share/pantheon/
+    cp -dr --no-preserve='ownership' autostart $installdir/etc/xdg/
+    cp -dr --no-preserve='ownership' gnome-session $installdir/usr/share/gnome-session/sessions
+    cp -dr --no-preserve='ownership' xsessions $installdir/usr/share/

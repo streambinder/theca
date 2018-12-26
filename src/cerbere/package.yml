@@ -1,0 +1,27 @@
+name       : cerbere
+version    : 0.2.4
+release    : 1
+source     :
+    - https://github.com/elementary/cerbere/archive/master.zip : 243c09fbc457db433e6abe81ccea97456b5ec3a4fc293fe54753dea4978a52ae
+license    : GPLv3
+component  : desktop.pantheon
+summary    : A simple service to ensure uptime of essential processes.
+description: |
+    A simple service to ensure uptime of essential processes.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gstreamer-plugins-base-1.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(taglib)
+    - meson
+    - vala
+    - glib2-devel
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
