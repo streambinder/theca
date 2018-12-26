@@ -1,0 +1,38 @@
+name       : gala
+version    : 0.3.0
+release    : 1
+source     :
+    - https://github.com/elementary/gala/archive/master.zip : fb7f6500f249346a3e26b3eee5e928f764d665854c30772206a18a39ca75302e
+license    : GPLv3
+component  : desktop.pantheon
+summary    : A window and compositing manager based on libmutter and designed by elementary for use with Pantheon.
+description: |
+    A window and compositing manager based on libmutter and designed by elementary for use with Pantheon.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gstreamer-plugins-base-1.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(sqlite3)
+    - pkgconfig(taglib)
+    - meson
+    - vala
+    - gettext-devel
+    - gnome-settings-daemon-devel
+    - gsettings-desktop-schemas-devel
+    - bamf-devel
+    - libcanberra-devel
+    - clutter-devel
+    - glib2-devel
+    - libgnome-desktop-devel
+    - mutter-devel
+    - plank-devel
+    - libxml2-devel
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
