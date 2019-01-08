@@ -8,7 +8,7 @@ This is a custom `eopkg` (Solus-Project package manager) repository.
 
 ## Uninstall
 
-	eopkg remove-repo streambinder https://solus.davidepucci.it/eopkg-index.xml.xz
+	eopkg remove-repo streambinder
 
 ## Enable / Disable
 
