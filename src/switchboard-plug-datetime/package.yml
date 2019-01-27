@@ -1,0 +1,22 @@
+name       : switchboard-plug-datetime
+version    : 2.1.5
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard-plug-datetime/archive/2.1.5.tar.gz : efe45c63fb488dfb6fb88d327735a8727cf1fa57e38eb0192bdc525c619fef70
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Date & Time Plug.
+description: |
+    Switchboard Date & Time Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

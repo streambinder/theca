@@ -1,0 +1,22 @@
+name       : switchboard-plug-applications
+version    : 2.1.4
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard-plug-applications/archive/2.1.4.tar.gz : 5f5acb3b507c08f73eceb6487e045a813536a98dff9b122e84b7f9b0d5fd103b
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Applications Plug.
+description: |
+    Switchboard Applications Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

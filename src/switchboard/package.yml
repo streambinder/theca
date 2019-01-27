@@ -1,0 +1,23 @@
+name       : switchboard
+version    : 2.3.5
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard/archive/2.3.4.tar.gz : 3c9d415ea751828f0b8ded7714faceb504d09a035d418d92e327f9ec3747e62a
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Extensible System Settings app designed for elementary OS.
+description: |
+    Extensible System Settings app designed for elementary OS.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(clutter-gtk-1.0)
+    - meson
+    - vala
+setup      : |
+    %meson_configure -Dlibunity='false'
+build      : |
+    %meson_build
+install    : |
+    %meson_install

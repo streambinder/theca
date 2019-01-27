@@ -1,0 +1,24 @@
+name       : wingpanel-indicator-keyboard
+version    : 2.1.1
+release    : 1
+source     :
+    - https://github.com/elementary/wingpanel-indicator-keyboard/archive/2.1.1.tar.gz : 7c2a3ba14dca37f27c86814fa40223c5f31bef73376535503ebc91de4cabec74
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Wingpanel Keyboard Indicator.
+description: |
+    Wingpanel Keyboard Indicator.
+builddeps  :
+    - pkgconfig(granite)
+    - glib2-devel
+    - wingpanel-devel
+    - gobject-introspection-devel
+    - libxml2-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

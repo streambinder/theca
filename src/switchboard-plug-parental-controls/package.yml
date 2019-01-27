@@ -1,0 +1,26 @@
+name       : switchboard-plug-parental-controls
+version    : 2.1.5
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard-plug-parental-controls/archive/2.1.5.tar.gz : da772bd0ab590c96d0afd8871edced357a3fe8286d40a71afd0638dbc647efe9
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Parental Controls Plug.
+description: |
+    Switchboard Parental Controls Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - dbus-devel
+    - glib2-devel
+    - polkit-devel
+    - accountsservice-devel
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

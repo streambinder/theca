@@ -1,0 +1,28 @@
+name       : switchboard-plug-locale
+version    : 2.4.1
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard-plug-locale/archive/2.4.1.tar.gz : 3455119cc82f1fb644353766afde3faa41f42beb43f65721dce87614b6482d0b
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Locale Plug.
+description: |
+    Switchboard Locale Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gee-0.8)
+    - glib2-devel
+    - glibc-devel
+    - accountsservice-devel
+    - ibus-devel
+    - libgnome-desktop-devel
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

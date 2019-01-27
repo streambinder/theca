@@ -1,0 +1,26 @@
+name       : gsignond-plugin-lastfm
+version    : 1
+release    : 1
+source     :
+    - https://gitlab.com/accounts-sso/gsignond-plugin-lastfm/-/archive/master/gsignond-plugin-lastfm-master.tar.gz : 92261df6734adf1e8dbb8d6d346abe023b627942251b9e6d6ada1cd4b797c60e
+license    : LGPL2.1
+summary    : LastFM plugin for gSSO.
+description: |
+    LastFM plugin for gSSO.
+builddeps  :
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - glib2-devel
+    - glibc-devel
+    - gsignond-devel
+    - libgnutls-devel
+    - check-devel
+    - gtk-doc-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

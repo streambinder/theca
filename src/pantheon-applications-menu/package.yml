@@ -1,0 +1,35 @@
+name       : pantheon-applications-menu
+version    : 2.4.1
+release    : 1
+source     :
+    - https://github.com/elementary/applications-menu/archive/master.zip : f85c1f0f5fed3f3d7e05ff7c4be6f6e09e959a86602e12f4e4e55a068b35be74
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Lightweight and stylish Pantheon app launcher.
+description: |
+    Lightweight and stylish Pantheon app launcher.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gstreamer-plugins-base-1.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(sqlite3)
+    - pkgconfig(taglib)
+    - pkgconfig(libvala-0.40)
+    - pkgconfig(libmutter-2)
+    - pkgconfig(libgnome-menu-3.0)
+    - pkgconfig(wingpanel-2.0)
+    - pkgconfig(libwnck-3.0)
+    - pkgconfig(zeitgeist-2.0)
+    - pkgconfig(switchboard-2.0)
+    - meson
+    - vala
+    - gala-devel
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

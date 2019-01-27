@@ -1,0 +1,16 @@
+name       : pantheon-default-settings
+version    : 5.0
+release    : 1
+source     :
+    - https://github.com/elementary/default-settings/archive/e9c449aad3913f8dd7dafab1a20c067f2414ed59.zip : d75d240a1e0146824f6aa87923dd466ff1ea1c75a03329ad08b677c2e668d293
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Default settings for Pantheon.
+description: |
+    Default settings for Pantheon.
+install    : |
+    install -Dm 644 overrides/default-settings.gschema.override $installdir/usr/share/glib-2.0/schemas/25_pantheon-default-settings.gschema.override
+    install -Dm 644 settings.ini -t $installdir/etc/gtk-3.0/
+    install -dm 755 $installdir/etc/skel/.config
+    cp -dr --no-preserve='ownership' plank $installdir/etc/skel/.config/
+    cp -dr --no-preserve='ownership' profile.d $installdir/etc/
