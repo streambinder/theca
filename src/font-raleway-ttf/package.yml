@@ -1,0 +1,14 @@
+name       : font-raleway-ttf
+version    : 1
+release    : 1
+source     :
+    - https://github.com/theleagueof/raleway/archive/master.zip : f6ed3c96644d9f01f6dbe10c427b830811c0faf13127a776567ad8f9036c67d0
+license    : GPLv3
+component  : desktop.pantheon
+summary    : An elegant sans-serif, designed in a single thin weight.
+description: |
+    An elegant sans-serif, designed in a single thin weight.
+install    : |
+    mkdir -p $installdir/usr/share/fonts/Raleway
+    install -Dm644 Raleway\ Thin.otf $installdir/usr/share/fonts/Raleway/RalewayThin.otf
+    install -Dm644 Raleway\ Thin.ttf $installdir/usr/share/fonts/Raleway/RalewayThin.ttf

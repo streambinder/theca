@@ -1,0 +1,22 @@
+name       : switchboard-plug-a11y
+version    : 2.1.3
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard-plug-a11y/archive/2.1.3.tar.gz : 772ebff2f9b64c507c60db3268a35d214b00125e5dae57cd5d82f3424e40bae8
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Universal Access Plug.
+description: |
+    Switchboard Universal Access Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

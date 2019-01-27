@@ -1,0 +1,15 @@
+name       : elementary-wallpapers
+version    : 5.3
+release    : 1
+source     :
+    - https://github.com/elementary/wallpapers/archive/5.3.tar.gz : a8383821f2d3877ca172d49d711f90e7ddcf6f254469703cec90cb5bae70c383
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Collection of wallpapers for elementary OS.
+description: |
+    Collection of wallpapers for elementary OS.
+install    : |
+    mkdir -p $installdir/usr/share/backgrounds/elementary
+    install -dm 755 $installdir/usr/share/backgrounds/elementary
+    install -m 644 *.jpg $installdir/usr/share/backgrounds/elementary/
+    install -m 644 elementaryos-default $installdir/usr/share/backgrounds/

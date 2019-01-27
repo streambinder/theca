@@ -1,0 +1,31 @@
+name       : slingshot
+version    : 2.2.0
+release    : 1
+source     :
+    - https://launchpad.net/slingshot/loki/2.0.1/+download/slingshot-launcher-2.0.1.tar.xz : 1a9e6bba791fe0c4795cecfe4404971813ed6f3930af9be532493d3e1a35e435
+license    : GPLv3
+component  : desktop.pantheon
+summary    : The Pantheon Application Launcher.
+description: |
+    The Pantheon Application Launcher.
+builddeps  :
+    - appstream-devel
+    - pkgconfig(gee-0.8)
+    - libgnome-menus-devel
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - plank-devel
+    - pkgconfig(libsoup-2.4)
+    - switchboard-devel
+    - wingpanel-devel
+    - libwnck-devel
+    - zeitgeist-devel
+    - meson
+    - vala
+setup      : |
+    %cmake -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR='/usr/lib' -DGSETTINGS_COMPILE='FALSE' -DUSE_UNITY='OFF'
+build      : |
+    %make
+install    : |
+    %make_install

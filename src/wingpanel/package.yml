@@ -1,0 +1,29 @@
+name       : wingpanel
+version    : 5.0.3
+release    : 1
+source     :
+    - https://github.com/elementary/wingpanel/archive/master.zip : b5b4f316907b6570e264c33a4935606204a3bb8a85ba988288accbcdccc6afb2
+license    : GPLv3
+component  : desktop.pantheon
+summary    : The extensible top panel for Pantheon. Wingpanel is an empty container that accepts indicators as extensions, including the applications menu.
+description: |
+    The extensible top panel for Pantheon. Wingpanel is an empty container that accepts indicators as extensions, including the applications menu.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gstreamer-plugins-base-1.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(sqlite3)
+    - pkgconfig(taglib)
+    - pkgconfig(libvala-0.40)
+    - pkgconfig(libmutter-2)
+    - vala
+    - gala-devel
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

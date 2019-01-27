@@ -1,0 +1,26 @@
+name       : switchboard-plug-keyboard
+version    : 2.3.4
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard-plug-keyboard/archive/2.3.4.tar.gz : 638b4038fe235430c78c0d757b810995cc3d159ab56fbc9feacee0c0ebdb7613
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Keyboard Plug.
+description: |
+    Switchboard Keyboard Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gee-0.8)
+    - glib2-devel
+    - glibc-devel
+    - switchboard-devel
+    - libgnomekbd-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

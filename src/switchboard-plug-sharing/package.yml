@@ -1,0 +1,25 @@
+name       : switchboard-plug-sharing
+version    : 0.1.1
+release    : 1
+source     :
+    - https://launchpad.net/switchboard-plug-sharing/loki/0.1.1/+download/switchboard-plug-sharing-0.1.1.tar.xz : c317f6ff9f674325d561271ccb24a9c6bafc628f4ada8bee3abd49ca29e0e268
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Sharing Plug.
+description: |
+    Switchboard Sharing Plug.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - glib2-devel
+    - glibc-devel
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %cmake -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR='/usr/lib'
+build      : |
+    %make
+install    : |
+    %make_install
