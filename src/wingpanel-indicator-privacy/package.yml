@@ -1,0 +1,24 @@
+name       : wingpanel-indicator-privacy
+version    : 1
+release    : 1
+source     :
+    - https://github.com/elementary/wingpanel-indicator-privacy/archive/master.zip : 4cadd83474006c80dc5796d61bdf78157921d4629da1c2a0bc50cd1e4d882cd4
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Wingpanel Privacy Indicator.
+description: |
+    Wingpanel Privacy Indicator.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gee-0.8)
+    - bamf-devel
+    - libgtop-devel
+    - wingpanel-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

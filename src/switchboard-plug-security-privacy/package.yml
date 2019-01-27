@@ -1,0 +1,29 @@
+name       : switchboard-plug-security-privacy
+version    : 0.1.2
+release    : 1
+source     :
+    - https://launchpad.net/switchboard-plug-security-privacy/loki/0.1.2/+download/switchboard-plug-security-privacy-0.1.2.tar.xz : a81f3a7bf543a84df2943e10fbfe7acc85f5514c37f51bf6d8686d56b64019eb
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Security & Privacy Plug.
+description: |
+    Switchboard Security & Privacy Plug.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - glib2-devel
+    - glibc-devel
+    - polkit-devel
+    - ufw
+    - zeitgeist-devel
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %cmake -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR='/usr/lib'
+build      : |
+    %make
+install    : |
+    %make_install
+    chmod 755 $installdir/usr/lib/switchboard/personal/pantheon-security-privacy/security-privacy-plug-helper

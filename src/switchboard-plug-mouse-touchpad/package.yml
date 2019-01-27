@@ -1,0 +1,25 @@
+name       : switchboard-plug-mouse-touchpad
+version    : 0.1.2
+release    : 1
+source     :
+    - https://launchpad.net/switchboard-plug-mouse-touchpad/loki/0.1.2/+download/switchboard-plug-mouse-touchpad-0.1.2.tar.xz : a9477848a5f18d97bcea9723cb861a88c65d99f5b8154a863efd3c9fa9be2c24
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Mouse & Touchpad Plug.
+description: |
+    Switchboard Mouse & Touchpad Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gee-0.8)
+    - glib2-devel
+    - glibc-devel
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %cmake -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR='/usr/lib'
+build      : |
+    %make
+install    : |
+    %make_install

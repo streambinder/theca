@@ -1,0 +1,21 @@
+name       : stemmer
+version    : 0
+release    : 1
+source     :
+    - https://github.com/snowballstem/snowball/archive/fc2adaa96b0561506e6c1a80d73de7f4e0fa9663.zip : 2baf6fa6764765359d3ce3865105208d3b807ecd0734bbe5caecf931105077c6
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Snowball stemming algorithms, development kit.
+description: |
+    Snowball stemming algorithms, development kit.
+build      : |
+    patch -Np1 --ignore-whitespace -i ../../../../../work/files/dynamiclib.patch
+    %make
+install    : |
+    mkdir -p $installdir/usr/include
+    mkdir -p $installdir/usr/lib/include
+    install -Dm644 {.,$installdir/usr}/include/libstemmer.h
+    install -D {.,$installdir/usr/lib}/libstemmer.so.0.0.0
+    ln -s libstemmer.so.0.0.0 "$installdir/usr/lib/libstemmer.so.0"
+    ln -s libstemmer.so.0 "$installdir/usr/lib/libstemmer.so"
+    install -Dm644 COPYING "$installdir/usr/share/licenses/libstemmer/LICENSE"

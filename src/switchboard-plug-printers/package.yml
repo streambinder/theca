@@ -1,0 +1,23 @@
+name       : switchboard-plug-printers
+version    : 2.1.6
+release    : 1
+source     :
+    - https://github.com/elementary/switchboard-plug-printers/archive/2.1.6.tar.gz : fe2c748e3737c3304ea8613d43d5ba8596f95499a65b8d13f93c4f702901f442
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Switchboard Printers Plug.
+description: |
+    Switchboard Printers Plug.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - cups-devel
+    - switchboard-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

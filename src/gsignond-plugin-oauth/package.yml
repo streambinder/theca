@@ -1,0 +1,25 @@
+name       : gsignond-plugin-oauth
+version    : 1
+release    : 1
+source     :
+    - https://gitlab.com/accounts-sso/gsignond-plugin-oa/-/archive/master/gsignond-plugin-oa-master.tar.gz : ed518967765b5842046b8d47efa7cc48d978f8d74b395fecd91728ba93133bf4
+license    : LGPL2.1
+summary    : OAuth plugin for gSSO.
+description: |
+    OAuth plugin for gSSO.
+builddeps  :
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - glib2-devel
+    - glibc-devel
+    - gsignond-devel
+    - libgnutls-devel
+    - check-devel
+    - gtk-doc-devel
+    - meson
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

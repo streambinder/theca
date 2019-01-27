@@ -1,0 +1,23 @@
+name       : contractor
+version    : 0.3.4
+release    : 1
+source     :
+    - https://github.com/elementary/contractor/archive/0.3.4.tar.gz : a7fb7aa317d1e7f5168ce902a04b8bc2d0eb784edb938c131caf4e81b367d00c
+license    : GPLv3
+component  : desktop.pantheon
+summary    : A desktop-wide extension service used by elementary OS.
+description: |
+    A desktop-wide extension service used by elementary OS.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(clutter-gtk-1.0)
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
