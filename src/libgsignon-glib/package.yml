@@ -2,7 +2,7 @@ name       : libgsignon-glib
 version    : 2.4.1
 release    : 1
 source     :
-    - https://gitlab.com/accounts-sso/libgsignon-glib/-/archive/2.4.1/libgsignon-glib-2.4.1.tar.gz : 2b753d2ddf6d4294872dbc6ef03199c078608c217827e12ba29cb6241227b4d4
+    - git|https://gitlab.com/accounts-sso/libgsignon-glib.git : a10da2694106fe6de4587278e09dc85e72b33ae2
 license    : GPLv3
 summary    : gSSO client library.
 description: |
@@ -19,3 +19,4 @@ build      : |
     %make
 install    : |
     %make_install
+    libtool --finish /usr/lib64

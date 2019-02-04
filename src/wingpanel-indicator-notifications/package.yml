@@ -2,7 +2,7 @@ name       : wingpanel-indicator-notifications
 version    : 2.1.2
 release    : 1
 source     :
-    - https://github.com/elementary/wingpanel-indicator-notifications/archive/2.1.2.tar.gz : 0824c6c75b4faa7ca21dd47c4bf8f4380474734f78b410ef9b9d2ff4de8c7f26
+    - git|https://github.com/elementary/wingpanel-indicator-notifications.git : 2.1.2
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Wingpanel Notifications Indicator.

@@ -2,7 +2,7 @@ name       : switchboard-plug-networking
 version    : 2.1.4
 release    : 1
 source     :
-    - https://github.com/elementary/switchboard-plug-network/archive/2.1.4.tar.gz : 0b039bcb2a33fbdc8364da865c3abebb825e0d36ab89a2bf4589704722f76bba
+    - git|https://github.com/elementary/switchboard-plug-network.git : 2.1.4
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Switchboard Network Plug.

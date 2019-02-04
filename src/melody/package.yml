@@ -2,7 +2,7 @@ name       : melody
 version    : 2.2.0
 release    : 1
 source     :
-    - https://github.com/artemanufrij/playmymusic/archive/2.2.0.tar.gz : 810a038980f579a11314cb88c9c048838b88d9f6fc9132ee146323170027d866
+    - git|https://github.com/artemanufrij/playmymusic.git : 2.2.0
 license    : GPLv2
 component  : multimedia.audio
 summary    : A music player for listening to local music files, online radios, and Audio CDs.

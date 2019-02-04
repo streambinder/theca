@@ -2,7 +2,7 @@ name       : wingpanel-indicator-datetime
 version    : 2.1.3
 release    : 1
 source     :
-    - https://github.com/elementary/wingpanel-indicator-datetime/archive/2.1.3.tar.gz : 319c56d39b0b1b9a1478d01aa7e88778b38c7fd8eb7ef7493c6a395993a66231
+    - git|https://github.com/elementary/wingpanel-indicator-datetime.git : 2.1.3
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Wingpanel Date & Time Indicator.

@@ -2,7 +2,7 @@ name       : switchboard
 version    : 2.3.5
 release    : 1
 source     :
-    - https://github.com/elementary/switchboard/archive/2.3.4.tar.gz : 3c9d415ea751828f0b8ded7714faceb504d09a035d418d92e327f9ec3747e62a
+    - git|https://github.com/elementary/switchboard.git : 2.3.5
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Extensible System Settings app designed for elementary OS.

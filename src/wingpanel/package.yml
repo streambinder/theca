@@ -1,13 +1,13 @@
 name       : wingpanel
-version    : 5.0.3
+version    : 2.2.2
 release    : 1
 source     :
-    - https://github.com/elementary/wingpanel/archive/master.zip : b5b4f316907b6570e264c33a4935606204a3bb8a85ba988288accbcdccc6afb2
+    - git|https://github.com/elementary/wingpanel.git : 2.2.2
 license    : GPLv3
 component  : desktop.pantheon
-summary    : The extensible top panel for Pantheon. Wingpanel is an empty container that accepts indicators as extensions, including the applications menu.
+summary    : Stylish top panel that holds indicators and spawns an application launcher.
 description: |
-    The extensible top panel for Pantheon. Wingpanel is an empty container that accepts indicators as extensions, including the applications menu.
+    Stylish top panel that holds indicators and spawns an application launcher.
 builddeps  :
     - pkgconfig(gee-0.8)
     - pkgconfig(gstreamer-plugins-base-1.0)

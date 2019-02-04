@@ -1,8 +1,8 @@
 name       : appstream
-version    : 0.12.2
+version    : 0.12.5
 release    : 1
 source     :
-    - http://archive.ubuntu.com/ubuntu/pool/main/a/appstream/appstream_0.12.0.orig.tar.xz : 28b5aeb59161db003b4eade23e0f539f0def34e9428f268f154ae6226c924ed7
+    - git|https://git.launchpad.net/ubuntu/+source/appstream : applied/0.12.5-1
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Software component metadata management.
@@ -21,7 +21,7 @@ builddeps  :
     - gtk-doc
     - stemmer-devel
 setup      : |
-    %meson_configure -Ddocs=false
+    %meson_configure -Ddocs=false -Dvapi=true
 build      : |
     %meson_build
 install    : |

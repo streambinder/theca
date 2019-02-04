@@ -2,7 +2,7 @@ name       : wingpanel-indicator-privacy
 version    : 1
 release    : 1
 source     :
-    - https://github.com/elementary/wingpanel-indicator-privacy/archive/master.zip : 4cadd83474006c80dc5796d61bdf78157921d4629da1c2a0bc50cd1e4d882cd4
+    - git|https://github.com/elementary/wingpanel-indicator-privacy.git : 552a37371d38db1ae9b744a8fe36937c4f3a9afa
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Wingpanel Privacy Indicator.

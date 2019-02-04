@@ -2,7 +2,7 @@ name       : wingpanel-indicator-network
 version    : 2.2.2
 release    : 1
 source     :
-    - https://github.com/elementary/wingpanel-indicator-network/archive/2.2.2.tar.gz : 6df1d8a361fb38e0d4232e9db5e884d04856bd50dd9683e51b0c6a814bcf261f
+    - git|https://github.com/elementary/wingpanel-indicator-network.git : 2.2.2
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Wingpanel Network Indicator.
