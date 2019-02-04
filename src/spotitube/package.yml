@@ -1,8 +1,8 @@
 name       : spotitube
-version    : 23
-release    : 23
+version    : 24
+release    : 1
 source     :
-    - https://github.com/streambinder/spotitube/archive/v23.tar.gz : ca9e2fb54315088a89573a5b3e5ad7b86ef891eae683a5ff79c171349efed713
+    - git|https://github.com/streambinder/spotitube.git : v24
 license    : GPLv3
 component  : network.clients
 summary    : Shell go-lang application to incrementally download from Spotify into local folder.

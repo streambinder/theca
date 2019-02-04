@@ -2,7 +2,7 @@ name       : switchboard-plug-user-accounts
 version    : 2.2.0
 release    : 1
 source     :
-    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.2.0.tar.gz : e23dd75d64bef7e11c799d12c4ba2b2a2619341a5b661a07a32a464ca4c9aead
+    - git|https://github.com/elementary/switchboard-plug-useraccounts.git : 2.2.0
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Switchboard User Accounts Plug.

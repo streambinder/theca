@@ -2,7 +2,7 @@ name       : switchboard-plug-bluetooth
 version    : 2.2.1
 release    : 1
 source     :
-    - https://github.com/elementary/switchboard-plug-bluetooth/archive/2.2.1.tar.gz : b28b8bea331a3193cc68a3a7f1453f9df881690486f0c88094974749dfcbf38e
+    - git|https://github.com/elementary/switchboard-plug-bluetooth.git : 2.2.1
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Switchboard Bluetooth Plug.

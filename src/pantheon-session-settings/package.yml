@@ -2,7 +2,7 @@ name       : pantheon-session-settings
 version    : 5.0.3
 release    : 1
 source     :
-    - https://github.com/elementary/session-settings/archive/master.zip : fbd660ff3df6bd879e6f12ee535a2e48f5e3b0448e785e877271a556d3a84618
+    - git|https://github.com/elementary/session-settings.git : 5.0.3
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Pantheon login session and some session-specific configuration files and defaults.

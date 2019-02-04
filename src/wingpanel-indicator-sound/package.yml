@@ -2,7 +2,7 @@ name       : wingpanel-indicator-sound
 version    : 2.1.2
 release    : 1
 source     :
-    - https://github.com/elementary/wingpanel-indicator-sound/archive/2.1.2.tar.gz : ad0208f5386386b113ae663a3eb0402a68f922add121823da82605929943eee0
+    - git|https://github.com/elementary/wingpanel-indicator-sound.git : 2.1.2
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Wingpanel Sound Indicator.

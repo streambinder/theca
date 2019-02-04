@@ -2,7 +2,7 @@ name       : gsignond-plugin-oauth
 version    : 1
 release    : 1
 source     :
-    - https://gitlab.com/accounts-sso/gsignond-plugin-oa/-/archive/master/gsignond-plugin-oa-master.tar.gz : ed518967765b5842046b8d47efa7cc48d978f8d74b395fecd91728ba93133bf4
+    - git|https://gitlab.com/accounts-sso/gsignond-plugin-oa.git : d471cebfd7c50567b1244277a9559f18f8d58691
 license    : LGPL2.1
 summary    : OAuth plugin for gSSO.
 description: |

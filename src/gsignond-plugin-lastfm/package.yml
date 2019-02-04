@@ -1,8 +1,8 @@
 name       : gsignond-plugin-lastfm
-version    : 1
+version    : 0.2.0
 release    : 1
 source     :
-    - https://gitlab.com/accounts-sso/gsignond-plugin-lastfm/-/archive/master/gsignond-plugin-lastfm-master.tar.gz : 92261df6734adf1e8dbb8d6d346abe023b627942251b9e6d6ada1cd4b797c60e
+    - git|https://gitlab.com/accounts-sso/gsignond-plugin-lastfm.git : 0.2.0
 license    : LGPL2.1
 summary    : LastFM plugin for gSSO.
 description: |

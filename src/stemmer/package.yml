@@ -1,8 +1,8 @@
 name       : stemmer
-version    : 0
+version    : 1
 release    : 1
 source     :
-    - https://github.com/snowballstem/snowball/archive/fc2adaa96b0561506e6c1a80d73de7f4e0fa9663.zip : 2baf6fa6764765359d3ce3865105208d3b807ecd0734bbe5caecf931105077c6
+    - git|https://github.com/snowballstem/snowball.git : d29510ae32702a81cdc29177a133e894df854550
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Snowball stemming algorithms, development kit.
