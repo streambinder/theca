@@ -2,7 +2,7 @@ name       : elementary-wallpapers
 version    : 5.3
 release    : 1
 source     :
-    - https://github.com/elementary/wallpapers/archive/5.3.tar.gz : a8383821f2d3877ca172d49d711f90e7ddcf6f254469703cec90cb5bae70c383
+    - git|https://github.com/elementary/wallpapers.git : 5.3
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Collection of wallpapers for elementary OS.

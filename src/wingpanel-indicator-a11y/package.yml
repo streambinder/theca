@@ -2,7 +2,7 @@ name       : wingpanel-indicator-a11y
 version    : 1
 release    : 1
 source     :
-    - https://github.com/elementary/wingpanel-indicator-a11y/archive/master.zip : 3eec6a17f699c92ade95025bfbebb410bbc2edb0e61a7254521ec71acfe766a5
+    - git|https://github.com/elementary/wingpanel-indicator-a11y.git : 6507008552dca302c1cac85dfdeb05ba64361ba6
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Wingpanel Universal Access Indicator.

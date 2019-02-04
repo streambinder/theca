@@ -2,7 +2,7 @@ name       : gsignond-plugin-sasl
 version    : 1
 release    : 1
 source     :
-    - https://gitlab.com/accounts-sso/gsignond-plugin-sasl/-/archive/master/gsignond-plugin-sasl-master.tar.gz : 0e6c0216035118204a6ff2b91f4530382c6fd689235f215fe24026370bcb6802
+    - git|https://gitlab.com/accounts-sso/gsignond-plugin-sasl.git : b304c70b7dad9368b23b1205122d10de684c896a
 license    : GPLv3
 summary    : SASL plugin for gSSO.
 description: |

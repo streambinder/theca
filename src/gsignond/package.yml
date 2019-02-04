@@ -2,7 +2,7 @@ name       : gsignond
 version    : 1.2.0
 release    : 1
 source     :
-    - https://gitlab.com/accounts-sso/gsignond/-/archive/1.2.0/gsignond-1.2.0.tar.gz : 737cef62127b575fa60a5142015a964b99b44b1fd3a99fdd15a03a20d6b98558
+    - git|https://gitlab.com/accounts-sso/gsignond.git : 1.2.0
 license    : GPLv3
 summary    : SignOn Daemon (GLib).
 description: |

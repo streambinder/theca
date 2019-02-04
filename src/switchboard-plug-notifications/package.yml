@@ -1,8 +1,8 @@
 name       : switchboard-plug-notifications
-version    : 0.1.2
+version    : 2.1.5
 release    : 1
 source     :
-    - https://launchpad.net/switchboard-plug-notifications/loki/0.1.2/+download/switchboard-plug-notifications-0.1.2.tar.xz : 1c5b4c8c66335c635fd270b795752cb7c48afa65ab1e8975b4ecc73275ee22aa
+    - https://github.com/elementary/switchboard-plug-notifications/archive/2.1.5.tar.gz : afbce598515dfae4b1f57db75f9fbca2c2b17dc9ba3ba3c2012c521488b0bbc9
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Switchboard Notifications Plug.
@@ -15,8 +15,8 @@ builddeps  :
     - meson
     - vala
 setup      : |
-    %cmake -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR='/usr/lib'
+    %meson_configure
 build      : |
-    %make
+    %meson_build
 install    : |
-    %make_install
+    %meson_install

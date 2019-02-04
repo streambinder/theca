@@ -1,0 +1,11 @@
+--- ./src/meson.build
++++ ./src/meson.build
+@@ -15,7 +15,7 @@
+ #
+ # Define Vala minimal version
+ #
+-vala_version_required = '0.40.10'
++vala_version_required = '0.40.9'
+ vala_compiler = meson.get_compiler('vala')
+ 
+ if not vala_compiler.version().version_compare('>= @0@'.format(vala_version_required))

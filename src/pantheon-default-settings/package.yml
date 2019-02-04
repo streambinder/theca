@@ -2,7 +2,7 @@ name       : pantheon-default-settings
 version    : 5.0
 release    : 1
 source     :
-    - https://github.com/elementary/default-settings/archive/e9c449aad3913f8dd7dafab1a20c067f2414ed59.zip : d75d240a1e0146824f6aa87923dd466ff1ea1c75a03329ad08b677c2e668d293
+    - git|https://github.com/elementary/default-settings.git : 5.0
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Default settings for Pantheon.

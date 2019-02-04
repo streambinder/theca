@@ -1,8 +1,8 @@
 name       : pantheon-applications-menu
-version    : 2.4.1
+version    : 2.4.2
 release    : 1
 source     :
-    - https://github.com/elementary/applications-menu/archive/master.zip : f85c1f0f5fed3f3d7e05ff7c4be6f6e09e959a86602e12f4e4e55a068b35be74
+    - git|https://github.com/elementary/applications-menu.git : 2.4.2
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Lightweight and stylish Pantheon app launcher.
@@ -24,12 +24,18 @@ builddeps  :
     - pkgconfig(libwnck-3.0)
     - pkgconfig(zeitgeist-2.0)
     - pkgconfig(switchboard-2.0)
+    - pkgconfig(appstream)
+    - pkgconfig(plank)
+    - plank
     - meson
     - vala
     - gala-devel
 setup      : |
-    %meson_configure
+    patch -Np1 --ignore-whitespace -i ../../../../../work/files/plank.patch
+    %meson_configure -Dwith-unity='false'
 build      : |
     %meson_build
 install    : |
+    mkdir -p $installdir/usr/share/glib-2.0/schemas/
+    install *.gschema.xml $installdir/usr/share/glib-2.0/schemas/
     %meson_install

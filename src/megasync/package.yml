@@ -2,8 +2,8 @@ name       : megasync
 version    : 3.7.1.0
 release    : 9
 source     :
-    - https://github.com/meganz/MEGAsync/archive/v3.7.1.0_Linux.tar.gz : a126abc2e32171a1ca661fc0bdf8dc39bbb07334c755d0907c0c60c6557ccb86
-    - https://github.com/meganz/sdk/archive/v3.4.4.tar.gz : 41ad3241f04bec8e0bb349a9373fc2777a33d863f656fe07157f7363c3c244de
+    - git|https://github.com/meganz/MEGAsync.git : v3.7.1.0_Linux
+    - git|https://github.com/meganz/sdk/archive.git : v3.4.5
 license    : Mega Limited Code Review License
 component  : network.clients
 summary    : Sync your files to your Mega account.

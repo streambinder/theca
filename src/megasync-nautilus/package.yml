@@ -2,7 +2,7 @@ name       : megasync-nautilus
 version    : 3.7.1.0
 release    : 1
 source     :
-    - https://github.com/meganz/MEGAsync/archive/v3.7.1.0_Linux.tar.gz : a126abc2e32171a1ca661fc0bdf8dc39bbb07334c755d0907c0c60c6557ccb86
+    - git|https://github.com/meganz/MEGAsync.git : v3.7.1.0_Linux
 license    : Mega Limited Code Review License
 component  : desktop.gnome
 summary    : MEGA nautilus extension.
