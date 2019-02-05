@@ -1,0 +1,24 @@
+name       : elementary-capnet-assist
+version    : 1.0.1
+release    : 1
+source     :
+    - git|https://github.com/elementary/capnet-assist.git : 2.2.3
+license    : GPLv3
+component  : desktop.pantheon
+summary    : Captive Portal Assistant.
+description: |
+    Captive Portal Assistant.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - gcr-devel
+    - libwebkit-gtk-devel
+    - glib2-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
