@@ -13,15 +13,15 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libgsignon-glib)
+    - libsignon-glib-devel
     - libwebkit-gtk-devel
     - libaccounts-glib-devel
+    - glib2-devel
     - librest-devel
     - switchboard-devel
-    - gsignond-devel
     - meson
     - vala
 setup      : |
-    patch -Np1 --ignore-whitespace -i ../../../../../work/files/libsignon-glib.patch
     %meson_configure
 build      : |
     %meson_build

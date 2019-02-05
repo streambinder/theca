@@ -1,0 +1,22 @@
+name       : libsignon-glib
+version    : 2.1
+release    : 1
+source     :
+    - git|https://gitlab.com/accounts-sso/libsignon-glib.git : VERSION_2.1
+license    : GPLv3
+summary    : GLib library to interface with the Signon Daemon.
+description: |
+    GLib library to interface with the Signon Daemon.
+builddeps  :
+    - gobject-introspection-devel
+    - glib2-devel
+    - check-devel
+    - gtk-doc-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure -Dpython=false
+build      : |
+    %meson_build
+install    : |
+    %meson_install

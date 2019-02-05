@@ -1,0 +1,23 @@
+name       : elementary-shortcut-overlay
+version    : 1.0.1
+release    : 1
+source     :
+    - git|https://github.com/elementary/shortcut-overlay.git : 1.0.1
+license    : GPLv3
+component  : desktop.pantheon
+summary    : A native, OS-wide shortcut overlay.
+description: |
+    A native, OS-wide shortcut overlay.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - desktop-file-utils
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

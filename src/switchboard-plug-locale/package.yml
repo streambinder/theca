@@ -1,8 +1,8 @@
 name       : switchboard-plug-locale
-version    : 2.4.1
+version    : 2.4.0
 release    : 1
 source     :
-    - git|https://github.com/elementary/switchboard-plug-locale.git : 2.4.1
+    - git|https://github.com/elementary/switchboard-plug-locale.git : 2.4.0
 license    : GPLv3
 component  : desktop.pantheon
 summary    : Switchboard Locale Plug.
@@ -22,7 +22,6 @@ builddeps  :
     - meson
     - vala
 setup      : |
-    patch -Np1 --ignore-whitespace -i ../../../../../work/files/vala-version.patch
     %meson_configure
 build      : |
     %meson_build
