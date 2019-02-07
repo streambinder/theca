@@ -1,6 +1,6 @@
 name       : pantheon-applications-menu
 version    : 2.4.2
-release    : 1
+release    : 2
 source     :
     - git|https://github.com/elementary/applications-menu.git : 2.4.2
 license    : GPLv3
@@ -36,6 +36,8 @@ setup      : |
 build      : |
     %meson_build
 install    : |
-    mkdir -p $installdir/usr/share/glib-2.0/schemas/
-    install *.gschema.xml $installdir/usr/share/glib-2.0/schemas/
     %meson_install
+    mkdir -p $installdir/usr/share/glib-2.0/schemas/
+    mkdir -p $installdir/usr/share/xdg/menus
+    install io.elementary.desktop.wingpanel.applications-menu.gschema.xml $installdir/usr/share/glib-2.0/schemas/
+    install data/pantheon-applications.menu $installdir/usr/share/xdg/menus
