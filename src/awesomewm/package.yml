@@ -1,0 +1,46 @@
+name       : awesomewm
+version    : 4.3
+release    : 1
+source     :
+        - git|https://github.com/awesomeWM/awesome.git : v4.3
+license    : GPL
+summary    : LUA LGI.
+description: |
+    LUA LGI.
+builddeps  :
+    - lua-devel
+    - imagemagick
+    - libxcb-devel
+    - xcb-util-keysyms-devel
+    - xcb-util-renderutil-devel
+    - xcb-util-cursor-devel
+    - xcb-util-xrm-devel
+    - xcb-util-wm-devel
+    - xcb-util-image-devel
+    - xcb-util-devel
+    - libxdg-basedir-devel
+    - gdk-pixbuf-devel
+    - libx11-devel
+    - libcairo-devel
+    - libxkbcommon-devel
+    - libstartup-notification-devel
+    - lua-lgi
+setup      : |
+    if [ -d build ]; then rm -rf build; fi
+    mkdir -p build
+    cd build
+    %cmake \
+        -DCMAKE_BUILD_TYPE:STRING="Release" \
+        -DCMAKE_INSTALL_PREFIX:PATH="/usr" \
+        -DXDG_CONFIG_DIR:PATH="/etc/xdg" \
+        -DAWESOME_DATA_PATH:PATH="/usr/share/awesome" \
+        -DAWESOME_DOC_PATH:PATH="/usr/share/doc/awesome" \
+        -DAWESOME_MAN_PATH:PATH="/usr/share/man" \
+        -DSYSCONFDIR:PATH="/etc" \
+        -DAWESOME_XSESSION_PATH:PATH="/usr/share/xsessions" \
+        -DCMAKE_INSTALL_RPATH:PATH="/usr/lib" \
+        ../
+build      : |
+    %make
+install    : |
+    %make_install
