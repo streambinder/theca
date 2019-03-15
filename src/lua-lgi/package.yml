@@ -1,0 +1,23 @@
+name       : lua-lgi
+version    : 0.9.2
+release    : 1
+source     :
+        - git|https://github.com/pavouk/lgi.git : 0.9.2
+license    : GPL
+summary    : LUA LGI.
+description: |
+    LUA LGI.
+builddeps  :
+    - gobject-introspection-devel
+    - lua-devel
+    - rsync
+build      : |
+    %make
+install    : |
+    %make_install PREFIX=/usr
+    mkdir -p $installdir/usr/share/lua/5.3
+    cd $installdir/usr/share/lua/5.3
+    ln -s ../5.1/lgi* ./
+    mkdir -p $installdir/usr/lib/lua/5.3/lgi
+    cd $installdir/usr/lib/lua/5.3/lgi
+    ln -s ../../5.1/lgi/corelgilua51.so ./
