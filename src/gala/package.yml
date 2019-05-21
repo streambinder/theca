@@ -17,6 +17,7 @@ builddeps  :
     - pkgconfig(libsoup-2.4)
     - pkgconfig(sqlite3)
     - pkgconfig(taglib)
+    - pkgconfig(libmutter-2)
     - meson
     - vala
     - gettext-devel
@@ -27,7 +28,6 @@ builddeps  :
     - clutter-devel
     - glib2-devel
     - libgnome-desktop-devel
-    - mutter-devel
     - plank-devel
     - libxml2-devel
 setup      : |
