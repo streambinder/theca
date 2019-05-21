@@ -1,8 +1,8 @@
 name       : megasync-nautilus
-version    : 3.7.1.0
+version    : 4.0.2.0
 release    : 1
 source     :
-    - git|https://github.com/meganz/MEGAsync.git : v3.7.1.0_Linux
+    - https://github.com/meganz/MEGAsync/archive/v4.0.2.0_Linux.tar.gz : 5153aa382f8fd2a518af90c98c4933e5d5df6810d1b2143a7ff1ae667458ae17
 license    : Mega Limited Code Review License
 component  : desktop.gnome
 summary    : MEGA nautilus extension.
@@ -10,7 +10,7 @@ description: |
     Upload your files to your Mega account from nautilus.
 builddeps  :
     - pkgconfig(Qt5Core)
-    - nautilus-extension-devel
+    - pkgconfig(libnautilus-extension)
 setup      : |
     cd $workdir/src/MEGAShellExtNautilus/
     %qmake MEGAShellExtNautilus.pro
@@ -21,8 +21,7 @@ install    : |
     install -dm 755 $installdir/usr/lib/nautilus/extensions-3.0/
     install -m 755 -p $workdir/src/MEGAShellExtNautilus/libMEGAShellExtNautilus.so.1.0.0 $installdir/usr/lib/nautilus/extensions-3.0/
     cd $workdir/src/MEGAShellExtNautilus/data/emblems
-    for size in 32x32 64x64
-    do
+    for size in 32x32 64x64; do
         install -dm 755 $installdir/usr/share/icons/hicolor/${size}/emblems
         install -m 644 -p ${size}/mega-{pending,synced,syncing,upload}.{icon,png} $installdir/usr/share/icons/hicolor/${size}/emblems/
     done
