@@ -1,0 +1,41 @@
+name       : mutter-2
+version    : 3.28.2
+release    : 41
+source     :
+    - git|https://gitlab.gnome.org/GNOME/mutter.git : 3.28.2
+license    : LGPL-2.0
+component  : desktop.gnome
+summary    : Gnome Shell Window Manager
+description: |
+    Gnome Shell compositing window manager
+ccache     : no
+builddeps  :
+    - pkgconfig(clutter-1.0)
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(gsettings-desktop-schemas)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gudev-1.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(libwacom)
+    - pkgconfig(sm)
+    - pkgconfig(upower-glib)
+    - pkgconfig(wayland-server)
+    - pkgconfig(xcursor)
+    - pkgconfig(xkbfile)
+    - pkgconfig(xkeyboard-config)
+    - pkgconfig(xtst)
+    - zenity
+rundeps    :
+    - zenity
+setup      : |
+    %apply_patches
+    %autogen --disable-static \
+               --enable-introspection \
+               --enable-egl-device \
+               --enable-wayland
+build      : |
+    %make
+install    : |
+    %make_install
