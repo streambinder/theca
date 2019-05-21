@@ -11,7 +11,7 @@ description: |
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(libvala-0.40)
+    - pkgconfig(libvala-0.44)
     - pkgconfig(libmutter-2)
     - pkgconfig(wingpanel-2.0)
     - pkgconfig(clutter-gtk-1.0)
