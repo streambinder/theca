@@ -1,0 +1,22 @@
+name       : pantheon-screenshot
+version    : 1.6.2
+release    : 1
+source     :
+    - https://github.com/elementary/screenshot/archive/1.6.2.tar.gz : c276f2ffff900a6b8f413a136edab81856b0851b0ddddbda043d89a549347d0a
+license    : LGPL-3.0
+component  : desktop.pantheon
+summary    : Pantheon Screenshot Tool
+description: |
+    Screenshot tool designed for elementary OS
+builddeps  :
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(granite)
+    - pkgconfig(libcanberra)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
