@@ -1,9 +1,9 @@
 name       : megasync
-version    : 3.7.1.0
-release    : 9
+version    : 4.0.2.0
+release    : 1
 source     :
-    - git|https://github.com/meganz/MEGAsync.git : v3.7.1.0_Linux
-    - git|https://github.com/meganz/sdk.git : v3.4.5
+    - https://github.com/meganz/MEGAsync/archive/v4.0.2.0_Linux.tar.gz : 5153aa382f8fd2a518af90c98c4933e5d5df6810d1b2143a7ff1ae667458ae17
+    - https://github.com/meganz/sdk/archive/v3.4.7.tar.gz : 4d49b551829a260f9e57c7f68f4474c79f7473bc28d3520650bd786b3679b50f
 license    : Mega Limited Code Review License
 component  : network.clients
 summary    : Sync your files to your Mega account.
@@ -12,24 +12,24 @@ description: |
 builddeps  :
     - pkgconfig(gl)
     - pkgconfig(libcares)
+    - pkgconfig(libcryptopp)
     - pkgconfig(libcurl)
     - pkgconfig(libmediainfo)
+    - pkgconfig(libraw)
     - pkgconfig(libsodium)
     - pkgconfig(libuv)
     - pkgconfig(Qt5Core)
-    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(sqlite3)
     - pkgconfig(zlib)
-    - cryptopp-devel
-    - libraw-devel
     - bzip2-devel
 setup      : |
     cd $workdir/src/MEGASync/mega
-    tar -xf $sources/v3.4.4.tar.gz --strip 1 -C .
+    tar -xf $sources/v3.4.7.tar.gz --strip 1 -C .
     %autogen --without-freeimage  \
-     --without-termcap \
-     --without-ffmpeg
+        --without-termcap \
+        --without-ffmpeg
     cd $workdir/src
     %configure
 build      : |
