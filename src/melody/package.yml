@@ -20,6 +20,7 @@ builddeps  :
     - meson
     - vala
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
