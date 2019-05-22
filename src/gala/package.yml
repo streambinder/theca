@@ -1,6 +1,6 @@
 name       : gala
 version    : 1
-release    : 1
+release    : 2
 source     :
     - git|https://github.com/elementary/gala.git : 6654145bb2d53062e6ade1cb8901ff382bbc0e78
 license    : GPLv3
