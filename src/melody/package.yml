@@ -1,6 +1,6 @@
 name       : melody
 version    : 2.2.0
-release    : 1
+release    : 2
 source     :
     - git|https://github.com/artemanufrij/playmymusic.git : 2.2.0
 license    : GPLv2
