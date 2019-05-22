@@ -1,6 +1,6 @@
 name       : pantheon-greeter
 version    : 3.3.1
-release    : 1
+release    : 2
 source     :
     - git|https://github.com/elementary/greeter.git : 3.3.1
 license    : GPLv3
