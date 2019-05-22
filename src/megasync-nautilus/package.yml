@@ -1,6 +1,6 @@
 name       : megasync-nautilus
 version    : 4.0.2.0
-release    : 1
+release    : 2
 source     :
     - https://github.com/meganz/MEGAsync/archive/v4.0.2.0_Linux.tar.gz : 5153aa382f8fd2a518af90c98c4933e5d5df6810d1b2143a7ff1ae667458ae17
 license    : Mega Limited Code Review License
