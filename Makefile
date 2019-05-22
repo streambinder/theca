@@ -32,5 +32,5 @@ all:
 clean:
 	@ ( \
 		rm -rfv bin && \
-		find src -type f -name \*.eopkg -delete; \
+		find src -type f \( -name \*.eopkg -o -name pspec_\*.xml \) -print -delete; \
 	);
