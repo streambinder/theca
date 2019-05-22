@@ -1,6 +1,6 @@
 name       : pantheon-applications-menu
 version    : 2.4.2
-release    : 2
+release    : 3
 source     :
     - git|https://github.com/elementary/applications-menu.git : 2.4.2
 license    : GPLv3
