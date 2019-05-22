@@ -1,29 +1,29 @@
 name       : awesomewm
 version    : 4.3
-release    : 1
+release    : 2
 source     :
-        - git|https://github.com/awesomeWM/awesome.git : v4.3
-license    : GPL
-summary    : LUA LGI.
+        - https://github.com/awesomeWM/awesome/releases/download/v4.3/awesome-4.3.tar.xz : 78264d6f012350b371e339127aca485260bc0aa935eff578ba75ce1a00e11753
+license    : GPL-2.0
+summary    : Awesome window manager.
 description: |
-    LUA LGI.
+    Awesome window manager.
 builddeps  :
-    - lua-devel
+    - pkgconfig(cairo)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(libxdg-basedir)
+    - pkgconfig(lua)
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-cursor)
+    - pkgconfig(xcb-ewmh)
+    - pkgconfig(xcb-image)
+    - pkgconfig(xcb-keysyms)
+    - pkgconfig(xcb-renderutil)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xcb-xrm)
+    - pkgconfig(xkbcommon)
     - imagemagick
-    - libxcb-devel
-    - xcb-util-keysyms-devel
-    - xcb-util-renderutil-devel
-    - xcb-util-cursor-devel
-    - xcb-util-xrm-devel
-    - xcb-util-wm-devel
-    - xcb-util-image-devel
-    - xcb-util-devel
-    - libxdg-basedir-devel
-    - gdk-pixbuf-devel
-    - libx11-devel
-    - libcairo-devel
-    - libxkbcommon-devel
-    - libstartup-notification-devel
     - lua-lgi
 setup      : |
     if [ -d build ]; then rm -rf build; fi
