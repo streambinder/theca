@@ -1,6 +1,6 @@
 name       : switchboard-plug-parental-controls
 version    : 2.1.5
-release    : 2
+release    : 3
 source     :
     - https://github.com/elementary/switchboard-plug-parental-controls/archive/dddcce2e3bad1c64768d9f4d89621d56496b2f31.tar.gz : ec8a622b2b2309686005c0e21da7bc68f3f58a169ba2c3c723e9c98da4ea5903
 license    : GPLv3
