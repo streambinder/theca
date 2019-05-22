@@ -4,7 +4,7 @@ release    : 41
 source     :
     - git|https://gitlab.gnome.org/GNOME/mutter.git : 3.28.2
 license    : LGPL-2.0
-component  : desktop.gnome
+component  : desktop.pantheon
 summary    : Gnome Shell Window Manager
 description: |
     Gnome Shell compositing window manager
