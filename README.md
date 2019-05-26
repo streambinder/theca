@@ -17,6 +17,18 @@ This is a custom `eopkg` (Solus-Project package manager) repository.
 
 ## FAQs
 
+### How do I build my own
+
+In order to rebuild the whole repository, just enter the folder and run `make`: it'll trigger all the `solbuild` sub-commands in the right order. The whole Solus-recognized repository output will be placed in `bin/` folder.
+As a side-note, keep in mind  that lot of this repository packages need each others as dependency to be built: this means you have to configure `solbuild` to use this (local) repository as source for the build process. To do that, just append these lines at the end of `/usr/share/solbuild/main-x86_64.profile` file, before firing the `make` command:
+
+```
+[repo.local-repository]
+uri = "/path/to/repository/bin"
+local = true
+autoindex = true
+```
+
 ### How do I serve files
 
 I actually configured `solus.davidepucci.it` virtualhost to host two files:
