@@ -1,11 +1,6 @@
+# 1st group: none of these depend on packages from this repository
 cerbere
 contractor
-elementary-capnet-assist
-elementary-dpms-helper
-elementary-shortcut-overlay
-elementary-sound-theme
-elementary-stylesheet
-elementary-wallpapers
 font-raleway-ttf
 gsasl
 gsignond
@@ -17,22 +12,28 @@ megasync-nautilus
 melody
 mutter-2
 pantheon-calendar
+pantheon-capnet-assist
 pantheon-code
 pantheon-default-settings
+pantheon-dpms-helper
 pantheon-screenshot
 pantheon-session-settings
+pantheon-shortcut-overlay
+pantheon-sound-theme
+pantheon-stylesheet
 pantheon-videos
+pantheon-wallpapers
 spotitube
 stemmer
 switchboard
--
+# 2nd group: next ones have build dependencies from 1st group
 appstream
 awesomewm
 gala
 gsignond-plugin-lastfm
 gsignond-plugin-oauth
 gsignond-plugin-sasl
--
+# 3rd group: next ones have build dependencies from 1st/2nd groups
 switchboard-plug-a11y
 switchboard-plug-about
 switchboard-plug-applications
@@ -42,9 +43,9 @@ switchboard-plug-display
 switchboard-plug-keyboard
 switchboard-plug-locale
 switchboard-plug-mouse-touchpad
-switchboard-plug-networking
+switchboard-plug-network
 switchboard-plug-notifications
-switchboard-plug-online-accounts
+switchboard-plug-onlineaccounts
 switchboard-plug-pantheon-shell
 switchboard-plug-parental-controls
 switchboard-plug-power
@@ -52,9 +53,9 @@ switchboard-plug-printers
 switchboard-plug-security-privacy
 switchboard-plug-sharing
 switchboard-plug-sound
-switchboard-plug-user-accounts
+switchboard-plug-useraccounts
 wingpanel
--
+# 4th group: next ones have build dependencies from 1st/.../3rd groups
 pantheon-applications-menu
 pantheon-greeter
 wingpanel-indicator-a11y
