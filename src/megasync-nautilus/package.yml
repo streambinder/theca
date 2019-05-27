@@ -5,9 +5,9 @@ source     :
     - https://github.com/meganz/MEGAsync/archive/v4.0.2.0_Linux.tar.gz : 5153aa382f8fd2a518af90c98c4933e5d5df6810d1b2143a7ff1ae667458ae17
 license    : Mega Limited Code Review License
 component  : desktop.gnome
-summary    : MEGA nautilus extension.
+summary    : Nautilus extension for megasync
 description: |
-    Upload your files to your Mega account from nautilus.
+    Extension for megasync to upload your files to your Mega account from nautilus.
 builddeps  :
     - pkgconfig(Qt5Core)
     - pkgconfig(libnautilus-extension)
