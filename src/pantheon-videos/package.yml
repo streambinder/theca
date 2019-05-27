@@ -1,18 +1,18 @@
 name       : pantheon-videos
 version    : 2.6.3
-release    : 1
+release    : 2
 source     :
     - https://github.com/elementary/videos/archive/2.6.3.tar.gz : 520b791a518c4bae0ddd6a3497d15c845904da2c682505e6e974364c1b3896d8
 license    : GPL-3.0
 component  : multimedia.video
-summary    : Pantheon Video Player
+summary    : Pantheon video player app
 description: |
     Video player and library app designed for elementary OS
 builddeps  :
     - pkgconfig(clutter-gst-3.0)
+    - pkgconfig(clutter-gtk-1.0)
     - pkgconfig(gee-0.8)
     - pkgconfig(granite)
-    - pkgconfig(clutter-gtk-1.0)
     - vala
 setup      : |
     %meson_configure
