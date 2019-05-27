@@ -1,0 +1,29 @@
+name       : switchboard-plug-onlineaccounts
+version    : 2.0.1
+release    : 2
+source     :
+    - https://github.com/elementary/switchboard-plug-onlineaccounts/archive/2.0.1.tar.gz : 975985406a2b70bd80239c3b3c91200fb32db3de4c23059e17bd15063f1289ce
+license    : GPL-2.0
+component  : desktop.pantheon
+summary    : Switchboard online accounts plug
+description: |
+    Online Accounts plug for Switchboard which allows to enable online accounts sync.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libaccounts-glib)
+    - pkgconfig(libgsignon-glib)
+    - pkgconfig(libsignon-glib)
+    - pkgconfig(rest-0.7)
+    - pkgconfig(switchboard-2.0)
+    - pkgconfig(webkit2gtk-4.0)
+    - glib2-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
