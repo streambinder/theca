@@ -1,13 +1,21 @@
 name       : mutter-2
 version    : 3.28.2
-release    : 41
+release    : 42
 source     :
-    - git|https://gitlab.gnome.org/GNOME/mutter.git : 3.28.2
-license    : LGPL-2.0
+    - https://gitlab.gnome.org/GNOME/mutter/-/archive/3.28.2/mutter-3.28.2.tar.gz : 7b9c8fa5748f916015120e2094e43b31e49b3955dc98308103f98962f0bf5eaa
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : Gnome Shell Window Manager
+summary    : X11 window manager and compositing manager
 description: |
-    Gnome Shell compositing window manager
+    Mutter is a Wayland display server and X11 window manager and compositor library.
+    When used as a Wayland display server, it runs on top of KMS and libinput.
+    It implements the compositor side of the Wayland core protocol as well as various protocol extensions.
+    It also has functionality related to running X11 applications using Xwayland.
+    When used on top of Xorg it acts as a X11 window manager and compositing manager.
+    It contains functionality related to, among other things, window management, window compositing, focus tracking, workspace management, keybindings and monitor configuration.
+    Internally it uses a fork of Cogl, a hardware acceleration abstraction library used to simplify usage of OpenGL pipelines, as well as a fork af Clutter, a scene graph and user interface toolkit.
+    Mutter is used by, for example, GNOME Shell, the GNOME core user interface, and by  Gala, elementary OS's window manager.
+    It can also be run standalone, using the  command "mutter", but just running plain mutter is only intended for debugging purposes.
 ccache     : no
 builddeps  :
     - pkgconfig(clutter-1.0)
