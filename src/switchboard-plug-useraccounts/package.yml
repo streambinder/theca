@@ -1,0 +1,26 @@
+name       : switchboard-plug-useraccounts
+version    : 2.2.1
+release    : 2
+source     :
+    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.2.1.tar.gz : eff25f99456561cef7e6dcf69718100a293c7081efe6ac6cefe37e3429913525
+license    : LGPL-3.0
+component  : desktop.pantheon
+summary    : Switchboard user accounts plug
+description: |
+    Switchboard plug for managing local user accounts.
+builddeps  :
+    - pkgconfig(accountsservice)
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(pwquality)
+    - pkgconfig(switchboard-2.0)
+    - meson
+    - polkit-devel
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
