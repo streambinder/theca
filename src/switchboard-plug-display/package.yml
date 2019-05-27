@@ -1,17 +1,17 @@
 name       : switchboard-plug-display
-version    : 2.1.6
-release    : 1
+version    : 2.1.8
+release    : 2
 source     :
-    - git|https://github.com/elementary/switchboard-plug-display.git : 2.1.6
-license    : GPLv3
+    - https://github.com/elementary/switchboard-plug-display/archive/2.1.8.tar.gz : 508c952532dae21e2c8927cb4d84f1e3e6db4e97c796ed3bed5c523258b2fbd2
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : Switchboard Displays Plug.
+summary    : Switchboard display plug
 description: |
-    Switchboard Displays Plug.
+    Switchboard plug for display settings which can be used to change display settings like orientation and resolution.
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - switchboard-devel
+    - pkgconfig(switchboard-2.0)
     - meson
     - vala
 setup      : |
