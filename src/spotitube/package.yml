@@ -1,21 +1,15 @@
 name       : spotitube
 version    : 24
-release    : 1
+release    : 2
 source     :
-    - git|https://github.com/streambinder/spotitube.git : v24
-license    : GPLv3
+    - https://github.com/streambinder/spotitube/releases/download/v24/spotitube-v24.deb : 78f992969ef0f51288b3d9798a398c908ad7b0e929bcc5d90a5c64e0738982ce
+license    : GPL-3.0
 component  : network.clients
-summary    : Shell go-lang application to incrementally download from Spotify into local folder.
+summary    : Shell application to incrementally download from Spotify into local folder
 networking : true
 description: |
     Programmatically authenticate to your Spotify account and synchronize your music, keeping playlists files, metadata informations, album artworks, songs lyrics and maximizing mp3 files quality.
-builddeps  :
-    - golang
-    - git
 setup      : |
-    cd $workdir
-    %make deps
-build      : |
-    %make
+    mkdir -p $installdir
 install    : |
-    install -Dm 755 $workdir/out/spotitube $installdir/usr/sbin/spotitube
+    tar -xf data.tar.xz --strip 1 -C $installdir
