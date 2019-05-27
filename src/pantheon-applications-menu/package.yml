@@ -1,37 +1,37 @@
 name       : pantheon-applications-menu
-version    : 2.4.2
-release    : 3
+version    : 2.4.3
+release    : 4
 source     :
-    - git|https://github.com/elementary/applications-menu.git : 2.4.2
-license    : GPLv3
+    - https://github.com/elementary/applications-menu/archive/2.4.3.tar.gz : f00bb8d4cecba29751ae4cdb5fba203f8a646933358511f00c186ec955bca943
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : Lightweight and stylish Pantheon app launcher.
+summary    : Pantheon applications menu
 description: |
     Lightweight and stylish Pantheon app launcher.
 builddeps  :
+    - pkgconfig(appstream)
     - pkgconfig(gee-0.8)
-    - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(granite)
+    - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
-    - pkgconfig(libsoup-2.4)
-    - pkgconfig(sqlite3)
-    - pkgconfig(taglib)
-    - pkgconfig(libvala-0.44)
-    - pkgconfig(libmutter-2)
     - pkgconfig(libgnome-menu-3.0)
-    - pkgconfig(wingpanel-2.0)
+    - pkgconfig(libmutter-2)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(libvala-0.44)
     - pkgconfig(libwnck-3.0)
-    - pkgconfig(zeitgeist-2.0)
-    - pkgconfig(switchboard-2.0)
-    - pkgconfig(appstream)
     - pkgconfig(plank)
-    - plank
-    - meson
-    - vala
+    - pkgconfig(sqlite3)
+    - pkgconfig(switchboard-2.0)
+    - pkgconfig(taglib)
+    - pkgconfig(wingpanel-2.0)
+    - pkgconfig(zeitgeist-2.0)
     - gala-devel
+    - meson
+    - plank
+    - vala
 setup      : |
-    patch -Np1 --ignore-whitespace -i ../../../../../work/files/plank.patch
+    %apply_patches
     %meson_configure -Dwith-unity='false'
 build      : |
     %meson_build
@@ -39,5 +39,5 @@ install    : |
     %meson_install
     mkdir -p $installdir/usr/share/glib-2.0/schemas/
     mkdir -p $installdir/usr/share/xdg/menus
-    install io.elementary.desktop.wingpanel.applications-menu.gschema.xml $installdir/usr/share/glib-2.0/schemas/
+    install data/io.elementary.desktop.wingpanel.applications-menu.gschema.xml $installdir/usr/share/glib-2.0/schemas/
     install data/pantheon-applications.menu $installdir/usr/share/xdg/menus
