@@ -1,18 +1,18 @@
 name       : switchboard
-version    : 2.3.5
-release    : 1
+version    : 2.3.6
+release    : 2
 source     :
-    - git|https://github.com/elementary/switchboard.git : 2.3.5
-license    : GPLv3
+    - https://github.com/elementary/switchboard/archive/2.3.6.tar.gz : 1624f67ab200d490769fb994a0d3d3cb469e8c63cf0111448b36538f2a137691
+license    : LGPL-2.1
 component  : desktop.pantheon
-summary    : Extensible System Settings app designed for elementary OS.
+summary    : Pantheon extensible System Settings app designed
 description: |
-    Extensible System Settings app designed for elementary OS.
+    Switchboard is just the container application for Switchboard Plugs, which provide the actual settings for various hardware and software.
 builddeps  :
+    - pkgconfig(clutter-gtk-1.0)
     - pkgconfig(gee-0.8)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(clutter-gtk-1.0)
     - meson
     - vala
 setup      : |
