@@ -1,17 +1,17 @@
 name       : switchboard-plug-applications
-version    : 2.1.4
-release    : 1
+version    : 2.1.5
+release    : 2
 source     :
-    - git|https://github.com/elementary/switchboard-plug-applications.git : 2.1.4
-license    : GPLv3
+    - https://github.com/elementary/switchboard-plug-applications/archive/2.1.5.tar.gz : d538b4ac4ded4b65d1c839b7db9769f742784a3f2692162acb94fe86b14e681d
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : Switchboard Applications Plug.
+summary    : Switchboard applications plug
 description: |
-    Switchboard Applications Plug.
+    Default and startup applications plug for Switchboard which manage default and startup apps.
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - switchboard-devel
+    - pkgconfig(switchboard-2.0)
     - meson
     - vala
 setup      : |
