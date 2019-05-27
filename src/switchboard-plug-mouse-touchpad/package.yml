@@ -1,20 +1,20 @@
 name       : switchboard-plug-mouse-touchpad
-version    : 2.1.4
-release    : 1
+version    : 2.2.0
+release    : 2
 source     :
-    - git|https://github.com/elementary/switchboard-plug-mouse-touchpad.git : 2.1.4
-license    : GPLv3
+    - https://github.com/elementary/switchboard-plug-mouse-touchpad/archive/2.2.0.tar.gz : 22052f2289c6c47dacedc5c5bc3bad8f2a559f39a05f65422b25ebac847b24cb
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : Switchboard Mouse & Touchpad Plug.
+summary    : Switchboard mouse and touchpad plug
 description: |
-    Switchboard Mouse & Touchpad Plug.
+    Plug for Switchboard which configures mouse and touchpad.
 builddeps  :
+    - pkgconfig(gee-0.8)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(gee-0.8)
+    - pkgconfig(switchboard-2.0)
     - glib2-devel
     - glibc-devel
-    - switchboard-devel
     - meson
     - vala
 setup      : |
