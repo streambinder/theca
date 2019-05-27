@@ -1,26 +1,26 @@
 name       : wingpanel
-version    : 2.2.2
-release    : 2
+version    : 2.2.4
+release    : 3
 source     :
-    - git|https://github.com/elementary/wingpanel.git : 2.2.2
-license    : GPLv3
+    - https://github.com/elementary/wingpanel/archive/2.2.4.tar.gz : e739f81e8e8aa722f2b762652c0876431d53806ae3b6fbf64dd8d3da1962de25
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : Stylish top panel that holds indicators and spawns an application launcher.
+summary    : Stylish top panel that holds indicators and spawns the application launcher
 description: |
-    Stylish top panel that holds indicators and spawns an application launcher.
+    A super sexy space-saving top panel and replacement for the traditional GNOME Panel, designed to be a lightweight container for system/application indicators and notification icons.
 builddeps  :
     - pkgconfig(gee-0.8)
-    - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(granite)
+    - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
+    - pkgconfig(libmutter-2)
     - pkgconfig(libsoup-2.4)
+    - pkgconfig(libvala-0.44)
     - pkgconfig(sqlite3)
     - pkgconfig(taglib)
-    - pkgconfig(libvala-0.44)
-    - pkgconfig(libmutter-2)
-    - vala
     - gala-devel
+    - vala
 setup      : |
     %meson_configure
 build      : |
