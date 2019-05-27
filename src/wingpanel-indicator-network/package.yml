@@ -1,24 +1,24 @@
 name       : wingpanel-indicator-network
 version    : 2.2.2
-release    : 1
+release    : 2
 source     :
-    - git|https://github.com/elementary/wingpanel-indicator-network.git : 2.2.2
-license    : GPLv3
+    - https://github.com/elementary/wingpanel-indicator-network/archive/2.2.2.tar.gz : 6df1d8a361fb38e0d4232e9db5e884d04856bd50dd9683e51b0c6a814bcf261f
+license    : LGPL-2.1
 component  : desktop.pantheon
-summary    : Wingpanel Network Indicator.
+summary    : Wingpanel network indicator
 description: |
-    Wingpanel Network Indicator.
+    Wingpanel inicator for network settings and informations.
 builddeps  :
+    - glib2-devel
+    - meson
+    - network-manager-applet-devel
+    - network-manager-devel
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gobject-introspection-1.0)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(gee-0.8)
-    - glib2-devel
-    - gobject-introspection-devel
-    - network-manager-devel
-    - network-manager-applet-devel
-    - wingpanel-devel
-    - meson
     - vala
+    - wingpanel-devel
 setup      : |
     %meson_configure
 build      : |
