@@ -1,0 +1,18 @@
+name       : pantheon-stylesheet
+version    : 5.2.3
+release    : 2
+source     :
+    - https://github.com/elementary/stylesheet/archive/5.2.3.tar.gz : ddc4250110b427dc5485ebb316361ef7595b5b78f7b0f9792ab61b33fa3cc3dd
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : The Gtk+ Stylesheet for elementary OS
+description: |
+    An original Gtk.CSS stylesheet designed specifically for elementary OS and its desktop environment.
+builddeps  :
+    - meson
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
