@@ -6,9 +6,9 @@ source     :
     - https://github.com/meganz/sdk/archive/v3.4.7.tar.gz : 4d49b551829a260f9e57c7f68f4474c79f7473bc28d3520650bd786b3679b50f
 license    : Mega Limited Code Review License
 component  : network.clients
-summary    : Sync your files to your Mega account.
+summary    : Mega account files syncer
 description: |
-    Easy automated syncing between your computers and your MEGA Cloud Drive.
+    Easy automated syncing between your computers and your Mega Cloud Drive.
 builddeps  :
     - pkgconfig(gl)
     - pkgconfig(libcares)
