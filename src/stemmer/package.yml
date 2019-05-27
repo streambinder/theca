@@ -1,15 +1,16 @@
 name       : stemmer
 version    : 1
-release    : 1
+release    : 2
 source     :
-    - git|https://github.com/snowballstem/snowball.git : d29510ae32702a81cdc29177a133e894df854550
-license    : GPLv3
-component  : desktop.pantheon
-summary    : Snowball stemming algorithms, development kit.
+    - https://github.com/snowballstem/snowball/archive/d29510ae32702a81cdc29177a133e894df854550.tar.gz : 0ddced2e7dd6367dcda2417460e1a64ac22723300e671ecf465b1da46d4875b7
+license    : BSD-3-Clause
+summary    : Snowball stemming algorithms, development kit
 description: |
-    Snowball stemming algorithms, development kit.
+    Snowball is a small string processing language designed for creating stemming algorithms for use in Information Retrieval.
+    The Snowball compiler translates a Snowball script into another language - currently ISO C, C#, Go, Java, Javascript, Object Pascal, Python and Rust are supported.
+setup      : |
+    %apply_patches
 build      : |
-    patch -Np1 --ignore-whitespace -i ../../../../../work/files/dynamiclib.patch
     %make
 install    : |
     mkdir -p $installdir/usr/include
