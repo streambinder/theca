@@ -1,21 +1,21 @@
 name       : switchboard-plug-power
-version    : 2.3.4
-release    : 1
+version    : 2.3.5
+release    : 2
 source     :
-    - git|https://github.com/elementary/switchboard-plug-power.git : 2.3.4
-license    : GPLv3
+    - https://github.com/elementary/switchboard-plug-power/archive/2.3.5.tar.gz : 56aee47f37d3205d1a6a49347743cab80d0f5a92b43ab592d43f86a971564e53
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : Switchboard Power Plug.
+summary    : Switchboard power plug
 description: |
-    Switchboard Power Plug.
+    Power plug for Switchboard which configures system power consumption.
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - glibc-devel
+    - pkgconfig(switchboard-2.0)
     - glib2-devel
-    - polkit-devel
-    - switchboard-devel
+    - glibc-devel
     - meson
+    - polkit-devel
     - vala
 setup      : |
     %meson_configure
