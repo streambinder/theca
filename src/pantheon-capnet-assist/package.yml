@@ -1,0 +1,25 @@
+name       : pantheon-capnet-assist
+version    : 2.2.3
+release    : 2
+source     :
+    - https://github.com/elementary/capnet-assist/archive/2.2.3.tar.gz : a38e8d651d260e2b85754a2711319ea780113155e2538634315cdebbee0a18c0
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Pantheon Captive Portal Assistant
+description: |
+    Log into captive portals - like Wi-Fi networks at coffee shops, airports, and trains - with ease.
+    Captive Network Assistant automatically opens to help you get connected.
+builddeps  :
+    - pkgconfig(gcr-3)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(webkit2gtk-4.0)
+    - glib2-devel
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
