@@ -1,26 +1,26 @@
 name       : pantheon-greeter
 version    : 3.3.1
-release    : 2
+release    : 3
 source     :
-    - git|https://github.com/elementary/greeter.git : 3.3.1
-license    : GPLv3
+    - https://github.com/elementary/greeter/archive/3.3.1.tar.gz : f7068bf8120bd535aacb56b40c235fad09845347a00fb0e4f07240674a5ff534
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : LightDM Greeter for Pantheon.
+summary    : LightDM Greeter for Pantheon
 description: |
-    LightDM Greeter for Pantheon.
+    Pantheon Greeter is a pantheon-styled Login Screen for LightDM.
+    It is elementary OS default login screen.
 builddeps  :
+    - pkgconfig(clutter-gtk-1.0)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(gnome-settings-daemon)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(libvala-0.44)
+    - pkgconfig(liblightdm-gobject-1)
     - pkgconfig(libmutter-2)
+    - pkgconfig(libvala-0.44)
     - pkgconfig(wingpanel-2.0)
-    - pkgconfig(clutter-gtk-1.0)
-    - pkgconfig(gnome-desktop-3.0)
-    - lightdm-devel
-    - gnome-settings-daemon-devel
-    - lightdm-devel
-    - libx11-devel
-    - gdk-pixbuf-devel
+    - pkgconfig(x11)
     - desktop-file-utils
     - meson
     - vala
