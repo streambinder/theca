@@ -1,13 +1,14 @@
 name       : melody
 version    : 2.2.0
-release    : 2
+release    : 3
 source     :
-    - git|https://github.com/artemanufrij/playmymusic.git : 2.2.0
-license    : GPLv2
+    - https://github.com/artemanufrij/playmymusic/archive/2.2.0.tar.gz : 810a038980f579a11314cb88c9c048838b88d9f6fc9132ee146323170027d866
+license    : GPL-3.0
 component  : multimedia.audio
-summary    : A music player for listening to local music files, online radios, and Audio CDs.
+summary    : A music player for listening to local music files, online radios and audio CDs
 description: |
-    A music player for listening to local music files, online radios, and Audio CDs.
+    A very fast music player designed extra for large local libraries which also supports online radios and downloading album covers.
+    It features showing all albums from your library, grouping tracks by artists, managing your playlists, listening to online radio, managing MTP devices, audio CD and ID3-tag support.
 builddeps  :
     - pkgconfig(gee-0.8)
     - pkgconfig(gstreamer-plugins-base-1.0)
