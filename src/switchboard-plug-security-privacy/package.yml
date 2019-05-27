@@ -1,24 +1,24 @@
 name       : switchboard-plug-security-privacy
-version    : 2.2.0
-release    : 1
+version    : 2.2.1
+release    : 2
 source     :
-    - git|https://github.com/elementary/switchboard-plug-security-privacy.git : 2.2.0
-license    : GPLv3
+    - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.1.tar.gz : b6e8014aca233bda71bf2807cd5f857dd29ec49202da95d3a8bb70b1bb0b07f0
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : Switchboard Security & Privacy Plug.
+summary    : Switchboard security and privacy plug
 description: |
-    Switchboard Security & Privacy Plug.
+    Switchboard plug for managing the security and privacy of your system.
 builddeps  :
     - pkgconfig(gee-0.8)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(switchboard-2.0)
+    - pkgconfig(zeitgeist-2.0)
     - glib2-devel
     - glibc-devel
+    - meson
     - polkit-devel
     - ufw
-    - zeitgeist-devel
-    - switchboard-devel
-    - meson
     - vala
 setup      : |
     %meson_configure
