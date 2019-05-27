@@ -1,21 +1,21 @@
 name       : wingpanel-indicator-session
-version    : 2.2.2
-release    : 1
+version    : 2.2.3
+release    : 2
 source     :
-    - git|https://github.com/elementary/wingpanel-indicator-session.git : 2.2.2
-license    : GPLv3
+    - https://github.com/elementary/wingpanel-indicator-session/archive/2.2.3.tar.gz : 45f7582c9335257808d1b41af928c40692e7b5a448daf59d38049914993ee2c2
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : Wingpanel Session Indicator.
+summary    : Wingpanel session indicator
 description: |
-    Wingpanel Session Indicator.
+    Wingpanel inicator for session settings and informations.
 builddeps  :
-    - pkgconfig(gtk+-3.0)
+    - pkgconfig(accountsservice)
     - pkgconfig(granite)
-    - accountsservice-devel
+    - pkgconfig(gtk+-3.0)
     - glib2-devel
-    - wingpanel-devel
     - meson
     - vala
+    - wingpanel-devel
 setup      : |
     %meson_configure
 build      : |
