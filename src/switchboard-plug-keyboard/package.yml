@@ -1,21 +1,23 @@
 name       : switchboard-plug-keyboard
-version    : 2.3.4
-release    : 1
+version    : 2.3.5
+release    : 2
 source     :
-    - git|https://github.com/elementary/switchboard-plug-keyboard.git : 2.3.4
-license    : GPLv3
+    - https://github.com/elementary/switchboard-plug-keyboard/archive/2.3.5.tar.gz : 76f02f8de6c65a45779c6774c2f82c096e0b44fb6e899edcd0c45b713d76e1fa
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : Switchboard Keyboard Plug.
+summary    : Switchboard keyboard plug
 description: |
-    Switchboard Keyboard Plug.
+    Switchboard plug for keyboard settings which can be used to change several keyboard settings, for example the delay and speed of the key repetition, or the cursor blinking speed.
+    You can change your keyboard layout, and use multiple layouts at the same time.
+    Keyboard shortcuts are also part of this plug.
 builddeps  :
+    - pkgconfig(gee-0.8)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(gee-0.8)
+    - pkgconfig(libgnomekbd)
+    - pkgconfig(switchboard-2.0)
     - glib2-devel
     - glibc-devel
-    - switchboard-devel
-    - libgnomekbd-devel
     - meson
     - vala
 setup      : |
