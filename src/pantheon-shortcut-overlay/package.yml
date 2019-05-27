@@ -1,0 +1,27 @@
+name       : pantheon-shortcut-overlay
+version    : 1.0.1
+release    : 2
+source     :
+    - https://github.com/elementary/shortcut-overlay/archive/1.0.1.tar.gz : d1f649c81ad2233eb9f4fd54869be99cf040fadf727ceb8bed1e3a32ce6847ff
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : A native and OS-wide shortcut overlay
+description: |
+    A native, OS-wide shortcut overlay.
+    This GTK+ applet reads window manager and OS keyboard shortcuts from dconf and exposes them to the user when launched.
+    Inspired by the similar feature of Ubuntu Unity introduced in Ubuntu 12.04.
+    The shortcut window opens centered on the primary display.
+    The gear in the titlebar opens the system keyboard settings.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - desktop-file-utils
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
