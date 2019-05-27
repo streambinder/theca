@@ -1,22 +1,22 @@
 name       : wingpanel-indicator-power
-version    : 2.1.3
-release    : 1
+version    : 2.1.4
+release    : 2
 source     :
-    - git|https://github.com/elementary/wingpanel-indicator-power.git : 2.1.3
-license    : GPLv3
+    - https://github.com/elementary/wingpanel-indicator-power/archive/2.1.4.tar.gz : 7def3849333ecca2ef10550f288730f90eca378ccbbf2b48dc8b807f545185c4
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : Wingpanel Power Indicator.
+summary    : Wingpanel power indicator
 description: |
-    Wingpanel Power Indicator.
+    Wingpanel inicator for power settings and informations.
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - bamf-devel
-    - libgtop-devel
-    - libgudev-devel
-    - wingpanel-devel
+    - pkgconfig(gudev-1.0)
+    - pkgconfig(libbamf3)
+    - pkgconfig(libgtop-2.0)
     - meson
     - vala
+    - wingpanel-devel
 setup      : |
     %meson_configure
 build      : |
