@@ -1,0 +1,19 @@
+name       : pantheon-sound-theme
+version    : 1.0
+release    : 2
+source     :
+    - https://github.com/elementary/sound-theme/archive/1.0.tar.gz : 508987fe8a00629cd6d1f96e5534eb0f06e5a7ded92b446afa19663fdd45bad1
+license    : The Unlicense
+component  : desktop.pantheon
+summary    : A bespoke sound for Pantheon theme
+description: |
+    A set of system sounds for elementary OS.
+    Designed to be light, natural/physical, and pleasant.
+builddeps  :
+    - meson
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
