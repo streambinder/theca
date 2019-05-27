@@ -1,20 +1,20 @@
 name       : wingpanel-indicator-nightlight
-version    : 2.0.1
-release    : 1
+version    : 2.0.2
+release    : 2
 source     :
-    - git|https://github.com/elementary/wingpanel-indicator-nightlight.git : 2.0.1
-license    : GPLv3
+    - https://github.com/elementary/wingpanel-indicator-nightlight/archive/2.0.2.tar.gz : d59f14e048250b0e792b6ce2e2ffc74f982d6d50920dcf7553904cc29dd54150
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : Wingpanel Nightlight Indicator.
+summary    : Wingpanel nightlight indicator
 description: |
-    Wingpanel Nightlight Indicator.
+    Wingpanel inicator for nightlight settings and informations.
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - glib2-devel
-    - wingpanel-devel
     - meson
     - vala
+    - wingpanel-devel
 setup      : |
     %meson_configure
 build      : |
