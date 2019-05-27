@@ -1,0 +1,24 @@
+name       : switchboard-plug-network
+version    : 2.1.4
+release    : 2
+source     :
+    - https://github.com/elementary/switchboard-plug-network/archive/2.1.4.tar.gz : 0b039bcb2a33fbdc8364da865c3abebb825e0d36ab89a2bf4589704722f76bba
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Switchboard network plug
+description: |
+    Switchboard plug for managing network connections.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(switchboard-2.0)
+    - meson
+    - network-manager-applet-devel
+    - network-manager-devel
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
