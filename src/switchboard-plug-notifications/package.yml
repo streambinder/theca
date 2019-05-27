@@ -1,17 +1,17 @@
 name       : switchboard-plug-notifications
 version    : 2.1.5
-release    : 1
+release    : 2
 source     :
     - https://github.com/elementary/switchboard-plug-notifications/archive/2.1.5.tar.gz : afbce598515dfae4b1f57db75f9fbca2c2b17dc9ba3ba3c2012c521488b0bbc9
-license    : GPLv3
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : Switchboard Notifications Plug.
+summary    : Switchboard notifications plug
 description: |
-    Switchboard Notifications Plug.
+    Switchboard plug for controlling Gala's notification settings.
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - switchboard-devel
+    - pkgconfig(switchboard-2.0)
     - meson
     - vala
 setup      : |
