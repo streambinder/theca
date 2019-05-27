@@ -1,35 +1,35 @@
 name       : gala
 version    : 1
-release    : 2
+release    : 3
 source     :
-    - git|https://github.com/elementary/gala.git : 6654145bb2d53062e6ade1cb8901ff382bbc0e78
-license    : GPLv3
+    - https://github.com/elementary/gala/archive/stable/juno.tar.gz : 87995bd889a07b5642de637ea48c364469be62ea5111ed4869f64aeddddabde1
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : A window and compositing manager based on libmutter and designed by elementary for use with Pantheon.
+summary    : Pantheon window and compositing manager
 description: |
     A window and compositing manager based on libmutter and designed by elementary for use with Pantheon.
 builddeps  :
+    - pkgconfig(libcanberra)
+    - pkgconfig(clutter-1.0)
     - pkgconfig(gee-0.8)
-    - pkgconfig(gstreamer-plugins-base-1.0)
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(gnome-settings-daemon)
     - pkgconfig(granite)
+    - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
+    - pkgconfig(libbamf3)
+    - pkgconfig(libmutter-2)
     - pkgconfig(libsoup-2.4)
+    - pkgconfig(libxml-2.0)
+    - pkgconfig(plank)
     - pkgconfig(sqlite3)
     - pkgconfig(taglib)
-    - pkgconfig(libmutter-2)
+    - gettext-devel
+    - glib2-devel
+    - gsettings-desktop-schemas-devel
     - meson
     - vala
-    - gettext-devel
-    - gnome-settings-daemon-devel
-    - gsettings-desktop-schemas-devel
-    - bamf-devel
-    - libcanberra-devel
-    - clutter-devel
-    - glib2-devel
-    - libgnome-desktop-devel
-    - plank-devel
-    - libxml2-devel
 setup      : |
     %meson_configure
 build      : |
