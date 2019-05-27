@@ -1,17 +1,18 @@
 name       : gsignond
 version    : 1.2.0
-release    : 1
+release    : 2
 source     :
-    - git|https://gitlab.com/accounts-sso/gsignond.git : 1.2.0
-license    : GPLv3
-summary    : SignOn Daemon (GLib).
+    - https://gitlab.com/accounts-sso/gsignond/-/archive/1.2.0/gsignond-1.2.0.tar.gz : 737cef62127b575fa60a5142015a964b99b44b1fd3a99fdd15a03a20d6b98558
+license    : LGPL-2.1
+summary    : SignOn Daemon (GLib)
 description: |
-    SignOn Daemon (GLib).
+    The GSignOn daemon is a D-Bus service which performs user authentication on behalf of its clients.
+    There are currently authentication plugins for OAuth 1.0 and 2.0, SASL, Digest-MD5, and plain username/password combination.
 builddeps  :
-    - gobject-introspection-devel
+    - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(sqlite3)
     - glib2-devel
     - glibc-devel
-    - sqlite3-devel
     - meson
     - vala
 setup      : |
