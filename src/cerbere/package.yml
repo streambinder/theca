@@ -1,24 +1,26 @@
 name       : cerbere
 version    : 0.2.4
-release    : 1
+release    : 2
 source     :
-    - git|https://github.com/elementary/cerbere.git : 0.2.4
-license    : GPLv3
+    - https://github.com/elementary/cerbere/archive/0.2.4.tar.gz : 65d7e8f674929cb7b6ca18ce0cf950f4c14c0240c3bbcb09bbbe55d39c29bba1
+license    : GPL-2.0
 component  : desktop.pantheon
-summary    : A simple service to ensure uptime of essential processes.
+summary    : A simple service to ensure uptime of essential processes
 description: |
-    A simple service to ensure uptime of essential processes.
+    Cerbere is a sort of watchdog designed for Pantheon.
+    It monitors a predefined list of processes (configurable through dconf) and relaunches them if they end.
+    This is helpful to keep the panel, dock, and wallpaper running, even if they crash or are killed by another process.
 builddeps  :
     - pkgconfig(gee-0.8)
-    - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(granite)
+    - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(taglib)
+    - glib2-devel
     - meson
     - vala
-    - glib2-devel
 setup      : |
     %meson_configure
 build      : |
