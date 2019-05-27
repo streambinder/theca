@@ -2,3 +2,4 @@
 0003-core-Disable-disastrous-NET_WM_PING-deletion-dialogs.patch
 0001-Eliminate-threaded-swap-wait-functionality.patch
 0004-Align-with-GLIB2-headers.patch
+0005-Rename-mutter-to-mutter-2.patch
