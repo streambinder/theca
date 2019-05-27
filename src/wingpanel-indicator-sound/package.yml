@@ -1,23 +1,23 @@
 name       : wingpanel-indicator-sound
-version    : 2.1.2
-release    : 1
+version    : 2.1.3
+release    : 2
 source     :
-    - git|https://github.com/elementary/wingpanel-indicator-sound.git : 2.1.2
-license    : GPLv3
+    - https://github.com/elementary/wingpanel-indicator-sound/archive/2.1.3.tar.gz : e69cba0553d98665ad9a44576ef5228cdc2f47f6c816071393dd7454b6272278
+license    : GPL-3.0
 component  : desktop.pantheon
-summary    : Wingpanel Sound Indicator.
+summary    : Wingpanel sound indicator
 description: |
-    Wingpanel Sound Indicator.
+    Wingpanel inicator for sound settings and informations.
 builddeps  :
-    - pkgconfig(gtk+-3.0)
     - pkgconfig(granite)
-    - libcanberra-devel
-    - libnotify-devel
-    - pulseaudio-devel
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libnotify)
+    - pkgconfig(libpulse)
     - glib2-devel
-    - wingpanel-devel
     - meson
     - vala
+    - wingpanel-devel
 setup      : |
     %meson_configure
 build      : |
