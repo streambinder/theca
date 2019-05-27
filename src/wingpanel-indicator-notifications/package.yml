@@ -1,22 +1,22 @@
 name       : wingpanel-indicator-notifications
 version    : 2.1.2
-release    : 1
+release    : 2
 source     :
-    - git|https://github.com/elementary/wingpanel-indicator-notifications.git : 2.1.2
-license    : GPLv3
+    - https://github.com/elementary/wingpanel-indicator-notifications/archive/2.1.2.tar.gz : 0824c6c75b4faa7ca21dd47c4bf8f4380474734f78b410ef9b9d2ff4de8c7f26
+license    : LGPL-2.1
 component  : desktop.pantheon
-summary    : Wingpanel Notifications Indicator.
+summary    : Wingpanel notifications indicator
 description: |
-    Wingpanel Notifications Indicator.
+    Wingpanel inicator for notifications settings and informations.
 builddeps  :
+    - pkgconfig(gdk-pixbuf-2.0)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - gdk-pixbuf-devel
-    - libwnck-devel
+    - pkgconfig(libwnck-3.0)
     - glib2-devel
-    - wingpanel-devel
     - meson
     - vala
+    - wingpanel-devel
 setup      : |
     %meson_configure
 build      : |
