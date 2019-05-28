@@ -1,0 +1,8 @@
+<Component>
+	<Name>pantheon</Name>
+	<Group>desktop</Group>
+	<Maintainer>
+		<Name>Solus Team</Name>
+		<Email>root@solus-project.com</Email>
+	</Maintainer>
+</Component>
