@@ -1,4 +1,8 @@
-all:
+.PHONY: all
+all: packages components
+
+.PHONY: packages
+packages:
 	@ ( \
 		mkdir -p bin && \
 		cd bin && \
@@ -22,6 +26,19 @@ all:
 		echo Finished. ; \
 	);
 
+.PHONY: components
+components: packages
+	@ ( \
+		cd bin && \
+		sudo chmod a+w eopkg-index.xml* && \
+		sed -i '$$ d' eopkg-index.xml && \
+		echo -e "$$(cat ../src/components.xml)\n</PISI>" >> eopkg-index.xml && \
+		sha1sum eopkg-index.xml | awk '{print $$1}' > eopkg-index.xml.sha1sum && \
+		tar cJf eopkg-index.xml.xz eopkg-index.xml && \
+		sha1sum eopkg-index.xml.xz | awk '{print $$1}' > eopkg-index.xml.xz.sha1sum; \
+	);
+
+.PHONY: clean
 clean:
 	@ ( \
 		rm -rfv bin && \
