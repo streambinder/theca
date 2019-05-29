@@ -34,7 +34,7 @@ components: packages
 		sed -i '$$ d' eopkg-index.xml && \
 		echo -e "$$(cat ../src/components.xml)\n</PISI>" >> eopkg-index.xml && \
 		sha1sum eopkg-index.xml | awk '{print $$1}' > eopkg-index.xml.sha1sum && \
-		tar cJf eopkg-index.xml.xz eopkg-index.xml && \
+		xz -kf eopkg-index.xml && \
 		sha1sum eopkg-index.xml.xz | awk '{print $$1}' > eopkg-index.xml.xz.sha1sum; \
 	);
 
