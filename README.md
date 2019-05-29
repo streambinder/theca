@@ -38,7 +38,7 @@ I actually configured `solus.davidepucci.it` virtualhost to host two files:
 		<?php
 
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, 'https://github.com/streambinder/eopkg-ashtray/releases/latest');
+		curl_setopt($ch, CURLOPT_URL, 'https://github.com/streambinder/ashtray/releases/latest');
 		curl_setopt($ch, CURLOPT_HEADER, true);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
