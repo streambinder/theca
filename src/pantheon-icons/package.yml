@@ -1,0 +1,18 @@
+name       : pantheon-icons
+version    : 5.0.3
+release    : 1
+source     :
+    - https://github.com/elementary/icons/archive/5.0.3.tar.gz : 51ea67854f70990227576137498f8145468c4cf98c54417d4415bf702517d10a
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Named, vector icons for elementary OS
+description: |
+    An original set of vector icons designed specifically for elementary OS and its desktop environment Pantheon.
+builddeps  :
+    - meson
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
