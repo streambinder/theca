@@ -2,7 +2,7 @@
         <Name>desktop.pantheon</Name>
         <Group>desktop</Group>
         <Maintainer>
-            <Name>Solus Team</Name>
-            <Email>root@solus-project.com</Email>
+            <Name>{NAME}</Name>
+            <Email>{EMAIL}</Email>
         </Maintainer>
     </Component>

@@ -1,3 +1,7 @@
+PKGR_NAME := $(shell awk -F'=' '/^Name/ {print $$2}' $(HOME)/.solus | xargs)
+PKGR_EMAIL := $(shell awk -F'=' '/^Email/ {print $$2}' $(HOME)/.solus | xargs)
+
+
 .PHONY: all
 all: packages components
 
@@ -32,7 +36,7 @@ components: packages
 		cd bin && \
 		sudo chmod a+w eopkg-index.xml* && \
 		sed -i '$$ d' eopkg-index.xml && \
-		echo -e "$$(cat ../src/components.xml)\n</PISI>" >> eopkg-index.xml && \
+		echo -e "$$(sed "s/{NAME}/$(PKGR_NAME)/g; s/{EMAIL}/$(PKGR_EMAIL)/g" ../src/components.xml)\n</PISI>" >> eopkg-index.xml && \
 		sha1sum eopkg-index.xml | awk '{print $$1}' > eopkg-index.xml.sha1sum && \
 		xz -kf eopkg-index.xml && \
 		sha1sum eopkg-index.xml.xz | awk '{print $$1}' > eopkg-index.xml.xz.sha1sum; \
