@@ -1,7 +1,6 @@
 # 1st group: none of these depend on packages from this repository
 cerbere
 contractor
-font-raleway-ttf
 gsasl
 gsignond
 libgsignon-glib
