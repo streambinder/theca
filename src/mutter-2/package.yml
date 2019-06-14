@@ -1,6 +1,6 @@
 name       : mutter-2
 version    : 3.28.2
-release    : 42
+release    : 43
 source     :
     - https://gitlab.gnome.org/GNOME/mutter/-/archive/3.28.2/mutter-3.28.2.tar.gz : 7b9c8fa5748f916015120e2094e43b31e49b3955dc98308103f98962f0bf5eaa
 license    : GPL-2.0
@@ -39,11 +39,19 @@ rundeps    :
     - zenity
 setup      : |
     %apply_patches
-    %autogen --disable-static \
-               --enable-introspection \
-               --enable-egl-device \
-               --enable-wayland
+    %autogen \
+            --prefix=/usr \
+            --includedir=/usr/include/mutter-2 \
+            --disable-gtk-doc \
+            --disable-schemas-compile \
+            --disable-remote-desktop \
+            --disable-static \
+            --enable-compile-warnings=minimum \
+            --enable-egl-device \
+            --enable-introspection \
+            --enable-wayland
 build      : |
     %make
 install    : |
     %make_install
+    rm -rf $installdir/usr/{bin,lib/mutter/plugins/default.so,libexec,share}
