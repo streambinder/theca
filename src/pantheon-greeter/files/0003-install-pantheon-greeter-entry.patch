@@ -1,0 +1,10 @@
+--- a/data/meson.build
++++ b/data/meson.build
+@@ -20,6 +20,7 @@
+ 
+ install_data(
+     meson.project_name() + '.conf',
++    '61-pantheon-greeter.conf',
+     install_dir: join_paths(get_option('datadir'), 'lightdm/lightdm.conf.d')
+ )
+ 

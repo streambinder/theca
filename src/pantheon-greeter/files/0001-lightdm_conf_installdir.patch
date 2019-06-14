@@ -1,0 +1,11 @@
+--- a/data/meson.build
++++ b/data/meson.build
+@@ -20,7 +20,7 @@
+ 
+ install_data(
+     meson.project_name() + '.conf',
+-    install_dir: join_paths(get_option('sysconfdir'), 'lightdm')
++    install_dir: join_paths(get_option('datadir'), 'lightdm/lightdm.conf.d')
+ )
+ 
+ test (
