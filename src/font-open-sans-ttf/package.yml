@@ -1,0 +1,17 @@
+name       : font-open-sans-ttf
+version    : 20190614
+release    : 1
+source     :
+    - https://fonts.google.com/download?family=Open+Sans : 91693be5c509f738700c781c4604536cd4c4bf30cf448e78e7d21f7378ca427b
+license    : Apache-2.0
+summary    : Google's sans-serif family Open Sans font
+networking : true
+description: |
+    Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp.
+    This version contains the complete 897 character set, which includes the standard ISO Latin 1, Latin CE, Greek and Cyrillic character sets.
+    Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance.
+    It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
+install    : |
+    mkdir -p $installdir/usr/share/{fonts,licenses}/OpenSans
+    install -Dm644 *.ttf $installdir/usr/share/fonts/OpenSans/
+    install -Dm644 LICENSE.txt $installdir/usr/share/licenses/OpenSans/
