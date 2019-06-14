@@ -1,6 +1,8 @@
 # 1st group: none of these depend on packages from this repository
 cerbere
 contractor
+font-open-sans-ttf
+font-roboto-mono-ttf
 gsasl
 gsignond
 libgsignon-glib
