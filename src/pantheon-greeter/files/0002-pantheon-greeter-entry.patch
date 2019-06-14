@@ -1,0 +1,5 @@
+--- a/data/61-pantheon-greeter.conf
++++ b/data/61-pantheon-greeter.conf
+@@ -0,0 +1,2 @@
++[Seat:*]
++greeter-session=io.elementary.greeter
