@@ -1,0 +1,25 @@
+name       : fondo
+version    : 1.3.0
+release    : 1
+source     :
+    - https://github.com/calo001/fondo/archive/1.3.0.tar.gz : ac52cd87af167e17b96ea3088bc8de991362f1bba3a0ab98e74135fc2bb6687c
+license    : AGPL-3.0
+summary    : Wallpaper app for Gnome
+description: |
+    Find a variety of the most beautiful wallpapers from Unsplash.com the world’s most generous community of photographers.
+    Fondo allows you to see thousands of beautiful photographs from the most recent to the one you are to looking for.
+    Give a simple click on a picture to set as wallpaper, wait until the download is complete and enjoy!
+    Have a simple and elegant interface, you can change from light mode to dark mode as you prefer.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - meson
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
