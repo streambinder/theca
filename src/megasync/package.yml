@@ -1,9 +1,9 @@
 name       : megasync
-version    : 4.0.2.0
-release    : 10
+version    : 4.1.1.0
+release    : 11
 source     :
-    - https://github.com/meganz/MEGAsync/archive/v4.0.2.0_Linux.tar.gz : 5153aa382f8fd2a518af90c98c4933e5d5df6810d1b2143a7ff1ae667458ae17
-    - https://github.com/meganz/sdk/archive/v3.4.7.tar.gz : 4d49b551829a260f9e57c7f68f4474c79f7473bc28d3520650bd786b3679b50f
+    - https://github.com/meganz/MEGAsync/archive/v4.1.1.0_Linux.tar.gz : 5f43a3f402c10519e2f59c8c2a70c55affd3eb1a323767127929fb5f4baa429c
+    - https://github.com/meganz/sdk/archive/v3.5.3a.tar.gz : 1dff0920aa575a9ecd508f46d3b65c01c2db786aa00c72d4ffcc55cae8a1e8cb
 license    : Mega Limited Code Review License
 component  : network.clients
 summary    : Mega account files syncer
@@ -26,7 +26,7 @@ builddeps  :
     - bzip2-devel
 setup      : |
     cd $workdir/src/MEGASync/mega
-    tar -xf $sources/v3.4.7.tar.gz --strip 1 -C .
+    tar -xf $sources/v3.5.3a.tar.gz --strip 1 -C .
     %autogen --without-freeimage  \
         --without-termcap \
         --without-ffmpeg
