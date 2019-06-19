@@ -1,8 +1,8 @@
 name       : megasync-nautilus
-version    : 4.0.2.0
-release    : 2
+version    : 4.1.1.0
+release    : 3
 source     :
-    - https://github.com/meganz/MEGAsync/archive/v4.0.2.0_Linux.tar.gz : 5153aa382f8fd2a518af90c98c4933e5d5df6810d1b2143a7ff1ae667458ae17
+    - https://github.com/meganz/MEGAsync/archive/v4.1.1.0_Linux.tar.gz : 5f43a3f402c10519e2f59c8c2a70c55affd3eb1a323767127929fb5f4baa429c
 license    : Mega Limited Code Review License
 component  : desktop.gnome
 summary    : Nautilus extension for megasync
