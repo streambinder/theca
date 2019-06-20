@@ -1,6 +1,6 @@
 name       : pantheon-applications-menu
 version    : 2.4.3
-release    : 4
+release    : 5
 source     :
     - https://github.com/elementary/applications-menu/archive/2.4.3.tar.gz : f00bb8d4cecba29751ae4cdb5fba203f8a646933358511f00c186ec955bca943
 license    : GPL-3.0
@@ -31,7 +31,6 @@ builddeps  :
     - plank
     - vala
 setup      : |
-    %apply_patches
     %meson_configure -Dwith-unity='false'
 build      : |
     %meson_build
