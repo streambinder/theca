@@ -1,0 +1,35 @@
+name       : light-locker
+version    : 1.8.0
+release    : 1
+source     :
+    - https://github.com/the-cavalry/light-locker/archive/v1.8.0.tar.gz : 44e8d5742cee828964416333bda5ca746cc253eb34180fe3d33c197560837514
+license    : GPL-2.0
+component  : desktop.lightdm
+summary    : A simple session-locker for LightDM
+description: |
+    light-locker is a simple locker (forked from gnome-screensaver) that aims to have simple, sane, secure defaults and be well integrated with the desktop while not carrying any desktop-specific dependencies.
+    It relies on lightdm for locking and unlocking your session via UPower or logind/systemd.
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(liblightdm-gobject-1)
+    - gnome-common
+setup      : |
+    %autogen
+    %configure \
+        --prefix='/usr' \
+        --localstatedir='/var' \
+        --sysconfdir='/etc' \
+        --with-x \
+        --with-dpms-ext \
+        --with-mit-ext \
+        --with-xf86gamma-ext \
+        --with-systemd \
+        --without-console-kit \
+        --without-upower \
+        --disable-schemas-compile \
+        --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

@@ -7,6 +7,7 @@ gsasl
 gsignond
 libgsignon-glib
 libsignon-glib
+light-locker
 lua-lgi
 megasync
 megasync-nautilus
