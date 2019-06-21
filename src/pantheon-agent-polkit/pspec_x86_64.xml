@@ -1,0 +1,232 @@
+<PISI>
+    <Source>
+        <Name>pantheon-agent-polkit</Name>
+        <Packager>
+            <Name>davide.pucci</Name>
+            <Email>d.pucci@i-node.it</Email>
+        </Packager>
+        <License>LGPL-2.1</License>
+        <PartOf>desktop.pantheon</PartOf>
+        <Summary xml:lang="en">Pantheon Polkit Agent</Summary>
+        <Description xml:lang="en">An agent for Polkit authorization designed for Pantheon.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>pantheon-agent-polkit</Name>
+        <Summary xml:lang="en">Pantheon Polkit Agent</Summary>
+        <Description xml:lang="en">An agent for Polkit authorization designed for Pantheon.
+</Description>
+        <PartOf>desktop.pantheon</PartOf>
+        <Files>
+            <Path fileType="config">/etc/xdg/autostart/io.elementary.pantheon-agent-polkit-daemon.desktop</Path>
+            <Path fileType="library">/usr/lib64/pantheon-agent-polkit/policykit-1-pantheon/io.elementary.pantheon-agent-polkit</Path>
+            <Path fileType="data">/usr/share/applications/io.elementary.pantheon-agent-polkit.desktop</Path>
+            <Path fileType="localedata">/usr/share/locale/aa/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ab/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ae/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/af/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ak/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/am/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/an/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/as/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ast/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/av/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ay/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/az/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ba/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/be/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bg/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bh/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bi/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bm/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/br/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bs/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ca/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ce/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ch/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ckb/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/co/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cs/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cy/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/da/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/de/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/dv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/dz/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ee/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/el/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/en_AU/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/en_CA/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/en_GB/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/eo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/es/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/et/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/eu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fa/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ff/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fi/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fj/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fr_CA/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fy/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ga/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gd/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gl/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ha/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/he/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hi/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ho/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ht/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hy/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hz/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ia/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/id/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ie/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ig/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ii/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ik/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/io/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/is/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/it/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/iu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ja/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/jv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ka/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kg/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ki/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kj/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kk/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kl/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/km/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ko/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ks/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ku/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kw/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ky/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/la/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lb/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lg/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/li/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ln/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lt/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mg/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mh/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mi/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mk/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ml/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ms/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mt/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/my/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/na/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nb/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nd/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ne/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ng/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nl/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/no/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ny/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/oc/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/oj/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/om/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/or/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/os/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pa/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pi/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pl/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ps/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt_BR/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/qu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/rm/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/rn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ro/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ru/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/rue/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/rw/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sa/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sc/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sd/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/se/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sg/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/si/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sk/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sl/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sm/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sma/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/so/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sq/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ss/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/st/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/su/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sv/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sw/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ta/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/te/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tg/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/th/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ti/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tk/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tl/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tn/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/to/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tr/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ts/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tt/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tw/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ty/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ug/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/uk/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ur/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/uz/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ve/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/vi/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/vo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/wa/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/wo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/xh/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/yi/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/yo/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/za/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_CN/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_HK/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zu/LC_MESSAGES/io.elementary.pantheon-agent-polkit.mo</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-06-21</Date>
+            <Version>0.1.6</Version>
+            <Comment>Packaging update</Comment>
+            <Name>davide.pucci</Name>
+            <Email>d.pucci@i-node.it</Email>
+        </Update>
+    </History>
+</PISI>
