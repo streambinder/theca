@@ -1,0 +1,21 @@
+name       : pantheon-agent-geoclue2
+version    : 1.0.1
+release    : 1
+source     :
+    - https://github.com/elementary/pantheon-agent-geoclue2/archive/1.0.1.tar.gz : 9060cc83efe81f3f2efac2204bf5123f6f1171264ab198f00648000ef8f9cfc3
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Pantheon Location Services Agent
+description: |
+    An agent for Location Services designed for Pantheon.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libgeoclue-2.0)
+    - desktop-file-utils
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
