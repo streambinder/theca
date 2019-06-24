@@ -1,0 +1,19 @@
+name       : pantheon-calculator
+version    : 1.5.2
+release    : 1
+source     :
+    - https://github.com/elementary/calculator/archive/1.5.2.tar.gz : 06de57fcdb6662e24796676a7affc6d22d30cd2fc009dc1eb4ec6449c30d4fdb
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Pantheon calculator app
+description: |
+    Desktop calculator app designed for elementary OS.
+builddeps  :
+    - pkgconfig(granite)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
