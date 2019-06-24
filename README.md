@@ -26,7 +26,17 @@ eopkg add-repo streambinder \
 
 ## FAQs
 
-### How do I build my own
+### Trying to lock the screen does nothing
+
+As I have tested, it seems to happen due to another issue, which is explained by this Journal error:
+
+```
+io.elementary.cerbere.desktop[X]: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.ScreenSaver was not provided by any .service files
+```
+
+Apparently, some old dependencies need to be uninstalled, such as `gnome-screensaver`.
+
+### How do I build my own repository
 
 In order to rebuild the whole repository, just enter the folder and run `make`: it'll trigger all the `solbuild` sub-commands in the right order. The whole Solus-recognized repository output will be placed in `bin/` folder.
 As a side-note, keep in mind  that lot of this repository packages need each others as dependency to be built: this means you have to configure `solbuild` to use this (local) repository as source for the build process. To do that, just append these lines at the end of `/usr/share/solbuild/main-x86_64.profile` file, before firing the `make` command:
@@ -38,7 +48,7 @@ local = true
 autoindex = true
 ```
 
-### How do I serve files
+### How do I serve repository files on custom host
 
 I actually configured `solus.davidepucci.it` virtualhost to host two files:
 
