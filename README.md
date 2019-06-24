@@ -4,7 +4,16 @@ This is a custom `eopkg` (Solus-Project package manager) repository.
 
 ## Install
 
-	eopkg add-repo streambinder https://solus.davidepucci.it/eopkg-index.xml.xz
+```bash
+eopkg add-repo streambinder https://solus.davidepucci.it/eopkg-index.xml.xz
+```
+
+If you want to point directly to the (specific) GitHub release:
+
+```bash
+eopkg add-repo streambinder \
+	https://github.com/streambinder/ashtray/releases/download/$TAG/eopkg-index.xml.xz
+```
 
 ## Uninstall
 
@@ -12,8 +21,8 @@ This is a custom `eopkg` (Solus-Project package manager) repository.
 
 ## Enable / Disable
 
-	eopkg enable-repo streambinder https://solus.davidepucci.it/eopkg-index.xml.xz
-	eopkg disable-repo streambinder https://solus.davidepucci.it/eopkg-index.xml.xz
+	eopkg enable-repo streambinder
+	eopkg disable-repo streambinder
 
 ## FAQs
 
