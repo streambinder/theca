@@ -1,0 +1,20 @@
+name       : pantheon-feedback
+version    : 20190624
+release    : 1
+source     :
+    - https://github.com/elementary/feedback/archive/master.tar.gz : 0326631a2fbf18e47f78843503f312902a6086ef3ea9d6e990e4487fb7235a50
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Pantheon feedback app
+description: |
+    Desktop feedback app designed for elementary OS.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
