@@ -1,0 +1,24 @@
+name       : pantheon-notifications
+version    : 20190624
+release    : 1
+source     :
+    - https://github.com/elementary/notifications/archive/master.tar.gz : bf76803aa0c1ab0ea2d33053d8b9818e205cd1a0d98940b87f0f12912cbd9bed
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Pantheon notifications server
+description: |
+    Notifications server designed for elementary OS.
+builddeps  :
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libcanberra-gtk3)
+    - appstream
+    - desktop-file-utils
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
