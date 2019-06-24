@@ -1,0 +1,40 @@
+name       : pantheon-photos
+version    : 2.6.4
+release    : 1
+source     :
+    - https://github.com/elementary/photos/archive/2.6.4.tar.gz : ca7069e7ab815722fae1b750350e82ce0ef16a5fcc595aee4b117eef93115151
+license    : LGPL-2.1
+component  : desktop.pantheon
+summary    : Pantheon photos app
+description: |
+    Desktop photos app designed for elementary OS.
+builddeps  :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(geocode-glib-1.0)
+    - pkgconfig(gexiv2)
+    - pkgconfig(granite)
+    - pkgconfig(gstreamer-plugins-base-1.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gudev-1.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libaccounts-glib)
+    - pkgconfig(libexif)
+    - pkgconfig(libgphoto2)
+    - pkgconfig(libraw)
+    - pkgconfig(libsignon-glib)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(libwebp)
+    - pkgconfig(libxml-2.0)
+    - pkgconfig(rest-0.7)
+    - pkgconfig(sqlite3)
+    - pkgconfig(webkit2gtk-4.0)
+    - desktop-file-utils
+    - glib2-devel
+    - intltool
+    - vala
+setup      : |
+    %meson_configure -Dlibunity='false'
+build      : |
+    %meson_build
+install    : |
+    %meson_install
