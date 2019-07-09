@@ -1,6 +1,6 @@
 name       : switchboard
 version    : 2.3.6
-release    : 2
+release    : 3
 source     :
     - https://github.com/elementary/switchboard/archive/2.3.6.tar.gz : 1624f67ab200d490769fb994a0d3d3cb469e8c63cf0111448b36538f2a137691
 license    : LGPL-2.1
@@ -15,6 +15,8 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - meson
     - vala
+rundeps    :
+    - tumbler
 setup      : |
     %meson_configure -Dlibunity='false'
 build      : |
