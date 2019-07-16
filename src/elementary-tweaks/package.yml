@@ -1,0 +1,21 @@
+name       : elementary-tweaks
+version    : 1
+release    : 1
+source     :
+    - git|https://github.com/elementary-tweaks/elementary-tweaks.git : 47574c8b64e1d362db5055b82334717515977a73
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : elementary Tweaks
+description: |
+    elementary Tweaks
+builddeps  :
+    - pkgconfig(switchboard-2.0)
+    - pkgconfig(gconf-2.0)
+    - pkgconfig(granite)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
