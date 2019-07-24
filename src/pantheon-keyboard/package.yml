@@ -1,8 +1,8 @@
 name       : pantheon-keyboard
-version    : 20190624
-release    : 1
+version    : 20190724
+release    : 2
 source     :
-    - https://github.com/elementary/keyboard/archive/master.tar.gz : 047ab60cf37fff13274579b64a8d097e357540f54fb7302875fe3f995606c060
+    - https://github.com/elementary/keyboard/archive/1c3101d4238a53f281ee21ed6aa28da0ed32cdbb.tar.gz : d153c66e4abd1c9dfcaeeba611e7bc625a56735b06b0df879191840648eb2d54
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon on-screen keyboard app
