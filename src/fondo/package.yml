@@ -1,8 +1,8 @@
 name       : fondo
-version    : 1.3.0
-release    : 1
+version    : 1.3.2
+release    : 2
 source     :
-    - https://github.com/calo001/fondo/archive/1.3.0.tar.gz : ac52cd87af167e17b96ea3088bc8de991362f1bba3a0ab98e74135fc2bb6687c
+    - https://github.com/calo001/fondo/archive/1.3.2.tar.gz : f630e7b348fe11bb05f875cf0c9d38ba01ce954a0999c5d3b6c629faa504719d
 license    : AGPL-3.0
 summary    : Wallpaper app for Gnome
 description: |
