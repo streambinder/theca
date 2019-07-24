@@ -1,9 +1,9 @@
 name       : libsignon-glib
 version    : 2.1
-release    : 2
+release    : 3
 source     :
     - https://gitlab.com/accounts-sso/libsignon-glib/-/archive/VERSION_2.1/libsignon-glib-VERSION_2.1.tar.gz : 574c865b45b422c4a56fbfa13384246d37a7b532f1991b5e851b5dbf3e817587
-    - https://gitlab.com/accounts-sso/signon-dbus-specification/-/archive/master/signon-dbus-specification-master.tar.gz : bf4b76a5e98167359c5505da700020d2c27608307e131e993721cb3c4257ddf8
+    - https://gitlab.com/accounts-sso/signon-dbus-specification/-/archive/67487954653006ebd0743188342df65342dc8f9b/signon-dbus-specification-67487954653006ebd0743188342df65342dc8f9b.tar.gz : 255a979d1464e6e64211bed2c05e29554a010199bbaca7c8eb105cd79182a6c3
 license    : LGPL-2.1
 summary    : GLib library to interface with the Signon Daemon
 description: |
@@ -17,7 +17,7 @@ builddeps  :
     - meson
     - vala
 setup      : |
-    tar -xf $sources/signon-dbus-specification-master.tar.gz --strip 1 -C libsignon-glib/interfaces/
+    tar -xf $sources/signon-dbus-specification-67487954653006ebd0743188342df65342dc8f9b.tar.gz --strip 1 -C libsignon-glib/interfaces/
     %meson_configure -Dpython=false
 build      : |
     %meson_build
