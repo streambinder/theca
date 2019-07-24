@@ -1,8 +1,8 @@
 name       : pantheon-notifications
-version    : 20190624
-release    : 1
+version    : 20190724
+release    : 2
 source     :
-    - https://github.com/elementary/notifications/archive/master.tar.gz : bf76803aa0c1ab0ea2d33053d8b9818e205cd1a0d98940b87f0f12912cbd9bed
+    - https://github.com/elementary/notifications/archive/5dd78a57987b78cf554cf22612215432d2012967.tar.gz : a8f92f855735cf39948a33f7b097b9547cb0c797b9f7d18a9d0deae993ce0e50
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon notifications server
