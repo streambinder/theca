@@ -1,8 +1,8 @@
 name       : pantheon-onboarding
-version    : 20190624
-release    : 1
+version    : 20190724
+release    : 2
 source     :
-    - https://github.com/elementary/onboarding/archive/master.tar.gz : d228763abfdaedf84085c0f865347d29e5d96ee142214eee987facfed8e30880
+    - https://github.com/elementary/onboarding/archive/fa3d323bc61427cec25dda1beea284e60bc82cdd.tar.gz : 903123ec51ee0ed5977d103cdebe11e5c4909887c0013452411ce9f6d3d9333b
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon onboarding app
