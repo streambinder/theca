@@ -1,8 +1,8 @@
 name       : melody
-version    : 2.2.0
-release    : 3
+version    : 2.2.1
+release    : 4
 source     :
-    - https://github.com/artemanufrij/playmymusic/archive/2.2.0.tar.gz : 810a038980f579a11314cb88c9c048838b88d9f6fc9132ee146323170027d866
+    - https://github.com/artemanufrij/playmymusic/archive/2.2.1.tar.gz : a5ea467fc5ed65efe83a5b650019a2562618467c26fda5b0bec49b78b8fdbeb5
 license    : GPL-3.0
 component  : multimedia.audio
 summary    : A music player for listening to local music files, online radios and audio CDs
@@ -21,7 +21,6 @@ builddeps  :
     - meson
     - vala
 setup      : |
-    %apply_patches
     %meson_configure
 build      : |
     %meson_build
