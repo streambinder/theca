@@ -1,8 +1,8 @@
 name       : wingpanel-indicator-session
-version    : 2.2.3
-release    : 2
+version    : 2.2.5
+release    : 3
 source     :
-    - https://github.com/elementary/wingpanel-indicator-session/archive/2.2.3.tar.gz : 45f7582c9335257808d1b41af928c40692e7b5a448daf59d38049914993ee2c2
+    - https://github.com/elementary/wingpanel-indicator-session/archive/2.2.5.tar.gz : 30076c9acf54cef74557015564aaa1fb31553e8f306ee8c29558c2472127f996
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Wingpanel session indicator
