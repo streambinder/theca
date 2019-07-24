@@ -1,0 +1,21 @@
+name       : pantheon-tweaks
+version    : 20190724
+release    : 1
+source     :
+    - https://github.com/elementary-tweaks/elementary-tweaks/archive/47574c8b64e1d362db5055b82334717515977a73.tar.gz : d72fd77dcba1533ba5a3bd9dbc45ab14e25b56b84f8a0a94c41a1b89d7855af1
+license    : GPL-3.0
+component  : desktop.pantheon
+summary    : Pantheon customization tool
+description: |
+    Tweaks is a system settings panel for Pantheon desktop that lets you easily and safely customise your desktop's appearance.
+builddeps  :
+    - pkgconfig(gconf-2.0)
+    - pkgconfig(granite)
+    - pkgconfig(switchboard-2.0)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
