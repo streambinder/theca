@@ -1,8 +1,8 @@
 name       : pantheon-stylesheet
-version    : 5.2.3
-release    : 2
+version    : 5.2.4
+release    : 3
 source     :
-    - https://github.com/elementary/stylesheet/archive/5.2.3.tar.gz : ddc4250110b427dc5485ebb316361ef7595b5b78f7b0f9792ab61b33fa3cc3dd
+    - https://github.com/elementary/stylesheet/archive/5.2.4.tar.gz : 205f5ebb3dfc946eee25ecf6bc48002e562546bac2f0498e3cc9740650a00e6b
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : The Gtk+ Stylesheet for elementary OS
