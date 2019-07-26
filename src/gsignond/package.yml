@@ -10,13 +10,14 @@ description: |
     There are currently authentication plugins for OAuth 1.0 and 2.0, SASL, Digest-MD5, and plain username/password combination.
 builddeps  :
     - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(libsecret-1)
     - pkgconfig(sqlite3)
     - glib2-devel
     - glibc-devel
     - meson
     - vala
 setup      : |
-    %meson_configure -Ddocumentation='false'
+    %meson_configure -Ddocumentation='false' -Dbus_type='session' -Dextension='desktop'
 build      : |
     %meson_build
 install    : |
