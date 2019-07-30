@@ -1,3 +1,3 @@
-# Ashtray <a href="https://doc.davidepucci.it/p/ashtray"><img align="left" width="40" height="40" src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg"></a>
+# Ashtray <a href="https://doc.davidepucci.it/p/ashtray"><img align="left" width="40" height="40" src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Lk98WhDUDZXla_K8Fa1%2F-Ll2CjG5uTsQcPj_YzhL%2F-Ll2D45DEcB5SXxz7XuI%2Fgitbook.svg?alt=media&token=dab99056-8588-4d83-88ec-ca98a8ba2801"></a>
 
 Documentation available at [doc.davidepucci.it/p/ashtray](https://doc.davidepucci.it/p/ashtray).
