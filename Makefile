@@ -52,7 +52,7 @@ check:
 			pkg_version_new="$$(cuppa q "$${pkg_src}" | awk '{print $$1}')"; \
 			[ "$${pkg_version}" != "$${pkg_version_new}" ] && \
 				[ "$${pkg_version_new}" != "🕱" ] && \
-				echo "$${pkg}: $${pkg_version_new}"; \
+				echo "$${pkg}: $${pkg_version_new}" || echo -n; \
 		done; \
 	);
 
