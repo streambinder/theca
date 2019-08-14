@@ -5,10 +5,14 @@ PKGR_EMAIL := $(shell awk -F'=' '/^Email/ {print $$2}' $(HOME)/.solus | xargs)
 .PHONY: all
 all: packages components
 
+.PHONY: prepare
+prepare:
+	@mkdir -p bin
+
+
 .PHONY: packages
-packages:
+packages: prepare
 	@ ( \
-		mkdir -p bin && \
 		cd bin && \
 		echo Updating solbuild packages... && \
 		sudo solbuild update > /dev/null 2>&1 && \
@@ -55,6 +59,23 @@ check:
 				echo "$${pkg}: $${pkg_version_new}" || echo -n; \
 		done; \
 	);
+
+.PHONY: fetch
+fetch: prepare
+	@ ( \
+		cd bin; \
+		curl -s https://api.github.com/repos/streambinder/ashtray/releases \
+			| jq '.[0].assets[] | .browser_download_url' | sed 's/"//g' \
+			| while read -r asset; do \
+				asset_name="$$(awk -F'/' '{print $$NF}' <<< "$${asset}")"; \
+				[ ! -f "$${asset_name}" ] && \
+					echo "Downloading $${asset_name}" && \
+					wget -q "$${asset}" || echo -n; \
+		done; \
+	);
+
+.PHONY: release
+release: fetch packages
 
 .PHONY: clean
 clean:
