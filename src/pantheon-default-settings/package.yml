@@ -1,8 +1,8 @@
 name       : pantheon-default-settings
-version    : 5.1.0
-release    : 8
+version    : 5.1.1
+release    : 9
 source     :
-    - https://github.com/elementary/default-settings/archive/5.1.0.tar.gz : 01f22de085a73eb546eb760d3b3b960da0f1dbe7b78370f1f13d6bcdea707163
+    - https://github.com/elementary/default-settings/archive/5.1.1.tar.gz : 7f17ef8d1dcdaca0017cf8bcf2160543b8b00ad64456e3ff4c826f627b313790
 license    : GPL-1.0
 component  : desktop.pantheon
 summary    : Pantheon default settings
