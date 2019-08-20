@@ -1,8 +1,8 @@
 name       : switchboard-plug-datetime
-version    : 2.1.5
-release    : 2
+version    : 2.1.6
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-datetime/archive/2.1.5.tar.gz : efe45c63fb488dfb6fb88d327735a8727cf1fa57e38eb0192bdc525c619fef70
+    - https://github.com/elementary/switchboard-plug-datetime/archive/2.1.6.tar.gz : 3a7523e4de2180ef0780dd82a72bcdc88f75046bc6b0925979bba5ac923a2df5
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard date and time plug
