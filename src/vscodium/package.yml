@@ -1,6 +1,6 @@
 name       : vscodium
 version    : 1.37.0
-release    : 5
+release    : 6
 source     :
     - https://github.com/VSCodium/vscodium/releases/download/1.37.0/codium_1.37.0-1565550282_amd64.deb : f285ec317db26a09789cfd651f75644bdac209435ca0589c14abbfbb8d2b6f00
 license    : MIT
@@ -19,3 +19,4 @@ setup      : |
 install    : |
     cd $installdir
     tar xvf $workdir/data.tar.*
+    find -type f -name \*.desktop -exec sed -i 's|inode/directory;||g' {} \;
