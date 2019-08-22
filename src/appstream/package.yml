@@ -1,8 +1,8 @@
 name       : appstream
-version    : 0.12.6
-release    : 2
+version    : 0.12.8
+release    : 3
 source     :
-    - https://www.freedesktop.org/software/appstream/releases/AppStream-0.12.6.tar.xz : ab20067036207aa0708608f87d6e2043ec46fad0b55b411eb1f242b8b9ab0d14
+    - https://www.freedesktop.org/software/appstream/releases/AppStream-0.12.8.tar.xz : 6e2518529fdfc554b2d69a489dd3c50d6f660872236daa20003a4258d503ccff
 license    : GPL-2.0
 summary    : Infrastructure for distro-agnostic software-centers and universal software component metadata
 networking : true
@@ -23,6 +23,7 @@ builddeps  :
     - glib2-devel
     - gperf
     - gtk-doc
+    - lmdb-devel
     - meson
     - stemmer-devel
     - vala
