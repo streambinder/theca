@@ -1,0 +1,17 @@
+name       : megasync-nemo
+version    : 4.0.2
+release    : 1
+source     :
+    - https://mega.nz/linux/MEGAsync/Debian_10.0/amd64/nemo-megasync-Debian_10.0_amd64.deb : 4482ce802c47ea449f4c34380a2c5e8188aaee5c915c17ccf404525a5b0e2bc4
+license    : Mega Limited Code Review License
+summary    : Nemo extension for megasync
+description: |
+    Extension for megasync to upload your files to your Mega account from nemo.
+builddeps  :
+    - binutils
+    - tar   
+setup      : |
+    mkdir -p $installdir
+install    : |
+    cd $installdir
+    tar xvf $workdir/data.tar.*
