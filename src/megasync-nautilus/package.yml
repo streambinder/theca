@@ -1,17 +1,31 @@
 name       : megasync-nautilus
-version    : 3.6.6
-release    : 6
+version    : 4.2.3.0
+release    : 5
 source     :
-    - https://mega.nz/linux/MEGAsync/Debian_10.0/amd64/nautilus-megasync-Debian_10.0_amd64.deb : ad425ca18c2da15a42517d26920e775d0843301c1a20c17baa9fac6eee72d214
+    - https://github.com/meganz/MEGAsync/archive/v4.2.3.0_Linux.tar.gz : e73ec640c3feceee5d2f6c959f0f0b7d83009650a17f8c5d4ecac50779b5504e
 license    : Mega Limited Code Review License
+component  : desktop.gnome
 summary    : Nautilus extension for megasync
 description: |
     Extension for megasync to upload your files to your Mega account from nautilus.
 builddeps  :
-    - binutils
-    - tar
+    - pkgconfig(Qt5Core)
+    - pkgconfig(libnautilus-extension)
 setup      : |
-    mkdir -p $installdir
+    cd $workdir/src/MEGAShellExtNautilus/
+    %qmake MEGAShellExtNautilus.pro
+build      : |
+    cd $workdir/src/MEGAShellExtNautilus/
+    %make
 install    : |
-    cd $installdir
-    tar xvf $workdir/data.tar.*
+    install -dm 755 $installdir/usr/lib/nautilus/extensions-3.0/
+    install -m 755 -p $workdir/src/MEGAShellExtNautilus/libMEGAShellExtNautilus.so.1.0.0 $installdir/usr/lib/nautilus/extensions-3.0/
+    cd $workdir/src/MEGAShellExtNautilus/data/emblems
+    for size in 32x32 64x64; do
+        install -dm 755 $installdir/usr/share/icons/hicolor/${size}/emblems
+        install -m 644 -p ${size}/mega-{pending,synced,syncing,upload}.{icon,png} $installdir/usr/share/icons/hicolor/${size}/emblems/
+    done
+    cd $installdir/usr/lib/nautilus/extensions-3.0/
+    ln -f -s libMEGAShellExtNautilus.so.1.0.0 libMEGAShellExtNautilus.so.1.0
+    ln -f -s libMEGAShellExtNautilus.so.1.0.0 libMEGAShellExtNautilus.so.1
+    ln -f -s libMEGAShellExtNautilus.so.1.0.0 libMEGAShellExtNautilus.so
