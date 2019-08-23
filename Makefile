@@ -75,7 +75,7 @@ fetch: prepare
 	);
 
 .PHONY: release
-release: fetch packages
+release: fetch packages components
 
 .PHONY: clean
 clean:
