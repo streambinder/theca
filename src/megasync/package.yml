@@ -1,48 +1,19 @@
 name       : megasync
-version    : 4.2.3.0
-release    : 13
+version    : 4.2.3.1.1
+release    : 14
 source     :
-    - https://github.com/meganz/MEGAsync/archive/v4.2.3.0_Linux.tar.gz : e73ec640c3feceee5d2f6c959f0f0b7d83009650a17f8c5d4ecac50779b5504e
-    - https://github.com/meganz/sdk/archive/v3.6.1a.tar.gz : 6e188ba8ec94fc4496607b0e89551e4604bb156561e2ab13abb865af5e672107
+    - https://mega.nz/linux/MEGAsync/Debian_10.0/amd64/megasync-Debian_10.0_amd64.deb : e7fef09c71eaa99922c35777cc30efe4114d96a292309805f2b4050518eafa08
 license    : Mega Limited Code Review License
 component  : network.clients
 summary    : Mega account files syncer
 description: |
     Easy automated syncing between your computers and your Mega Cloud Drive.
 builddeps  :
-    - pkgconfig(gl)
-    - pkgconfig(libcares)
-    - pkgconfig(libcryptopp)
-    - pkgconfig(libcurl)
-    - pkgconfig(libmediainfo)
-    - pkgconfig(libraw)
-    - pkgconfig(libsodium)
-    - pkgconfig(libuv)
-    - pkgconfig(Qt5Core)
-    - pkgconfig(Qt5Svg)
-    - pkgconfig(Qt5UiTools)
-    - pkgconfig(sqlite3)
-    - pkgconfig(zlib)
-    - bzip2-devel
+    - pkgconfig(libglvnd)
+    - binutils
+    - tar
 setup      : |
-    cd $workdir/src/MEGASync/mega
-    tar -xf $sources/v3.6.1a.tar.gz --strip 1 -C .
-    %autogen --without-freeimage  \
-        --without-termcap \
-        --without-ffmpeg
-    cd $workdir/src
-    %configure
-build      : |
-    cd $workdir/src
-    %qmake MEGA.pro
-    lrelease MEGASync/MEGASync.pro
-    %make
+    mkdir -p $installdir
 install    : |
-    install -Dm 644 $workdir/LICENCE.md $installdir/usr/share/licenses/megasync/LICENCE.md
-    install -Dm 644 $workdir/installer/terms.txt $installdir/usr/share/licenses/megasync/terms.txt
-    install -Dm 755 $workdir/src/MEGASync/megasync $installdir/usr/bin/megasync
-    install -Dm 644 $workdir/src/MEGASync/platform/linux/data/megasync.desktop $installdir/usr/share/applications/megasync.desktop
-    for size in 16x16 32x32 48x48 128x128 256x256
-    do
-    install -Dm 644 $workdir/src/MEGASync/platform/linux/data/icons/hicolor/$size/apps/mega.png $installdir/usr/share/icons/hicolor/$size/apps/mega.png
-    done
+    cd $installdir
+    tar xvf $workdir/data.tar.*
