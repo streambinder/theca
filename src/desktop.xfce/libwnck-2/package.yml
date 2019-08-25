@@ -1,0 +1,25 @@
+name       : libwnck-2
+version    : 2.31.0
+release    : 1
+source     :
+    - http://ftp.acc.umu.se/pub/gnome/sources/libwnck/2.31/libwnck-2.31.0.tar.xz : 83f732d20781fc88b22cdc6aaf2d4f388db6d3d4ff28d1a8fd45be9fb7743a9e
+license    : LGPL-2.0
+component  : desktop.xfce
+summary    : Window Navigator Construction Kit
+description: |
+    libwnck is Window Navigator Construction Kit, i.e. a library to use for writing pagers and taskslists and stuff.  
+    It is not supported in the devel platform, which means OS vendors won't guarantee the API/ABI long-term, but authors of open source apps should feel free to use libwnck as users can always recompile against a new version.
+    The API/ABI has historically changed very little as we are not changing it gratuitously or without soname increments.
+    Documentation for the API is available with gtk-doc.
+    The code implementing the tasklist or pager widgets (tasklist.c and pager.c) can also be used as sample code.
+builddeps  :
+    - pkgconfig(atk)
+    - pkgconfig(cairo)
+    - pkgconfig(gtk+-2.0)
+    - pkgconfig(x11)
+setup      : |
+    %configure --disable-static --program-suffix=-2
+build      : |
+    %make GETTEXT_PACKAGE=libwnck-2
+install    : |
+    %make_install GETTEXT_PACKAGE=libwnck-2
