@@ -1,43 +1,48 @@
 PKGR_NAME := $(shell awk -F'=' '/^Name/ {print $$2}' $(HOME)/.solus | xargs)
 PKGR_EMAIL := $(shell awk -F'=' '/^Email/ {print $$2}' $(HOME)/.solus | xargs)
-
+PKGS_BIN := bin
 
 .PHONY: all
 all: packages components
 
 .PHONY: prepare
 prepare:
-	@mkdir -p bin
-
+	@ ( \
+		mkdir -p $(PKGS_BIN) && \
+		echo Updating solbuild images... && \
+		sudo solbuild update > /dev/null 2>&1; \
+	);
 
 .PHONY: packages
 packages: prepare
 	@ ( \
-		cd bin && \
-		echo Updating solbuild packages... && \
-		sudo solbuild update > /dev/null 2>&1 && \
+		cd $(PKGS_BIN) && \
 		for pkg_name in $$(grep -v ^# ../src/series); do \
-			pkg="../src/$${pkg_name}"; \
+			pkg="$$(find ../src -type d -name $${pkg_name})"; \
+			if [ -z "$${pkg}" ]; then \
+				echo "Package $$(tput bold)$${pkg_name}$$(tput sgr0) sources not found."; \
+				continue; \
+			fi; \
 			pkg_version="$$(awk -F': ' '/^version/ {print $$2}' $${pkg}/package.yml)"; \
 			pkg_release="$$(awk -F': ' '/^release/ {print $$2}' $${pkg}/package.yml)"; \
 			if [ -f "$${pkg_name}-$${pkg_version}-$${pkg_release}-"*".eopkg" ]; then \
 				echo "Package $$(tput bold)$${pkg_name}$$(tput sgr0) already in and updated."; \
 			else \
 				echo "Compiling $$(tput bold)$${pkg_name}$$(tput sgr0)..."; \
-				sudo solbuild build "$${pkg}/package.yml" 2>&1 > /dev/null || \
+				sudo solbuild build "$${pkg}/package.yml" > /dev/null 2>&1 || \
 				echo "$$(tput bold)Unable to build $${pkg_name}!$$(tput sgr0)"; \
 			fi; \
 		done; \
-		rm -f pspec*.xml; \
+		rm -f *.xml; \
 		echo Triggering index...; \
 		sudo solbuild index > /dev/null 2>&1; \
-		echo Finished. ; \
+		echo Finished.; \
 	);
 
 .PHONY: components
 components: packages
 	@ ( \
-		cd bin && \
+		cd $(PKGS_BIN) && \
 		sudo chmod a+w eopkg-index.xml* && \
 		sed -i '$$ d' eopkg-index.xml && \
 		echo -e "$$(sed "s/{NAME}/$(PKGR_NAME)/g; s/{EMAIL}/$(PKGR_EMAIL)/g" ../src/components.xml)\n</PISI>" >> eopkg-index.xml && \
@@ -63,7 +68,7 @@ check:
 .PHONY: fetch
 fetch: prepare
 	@ ( \
-		cd bin; \
+		cd $(PKGS_BIN); \
 		curl -s https://api.github.com/repos/streambinder/ashtray/releases \
 			| jq '.[0].assets[] | .browser_download_url' | sed 's/"//g' \
 			| while read -r asset; do \
@@ -80,6 +85,6 @@ release: fetch packages components
 .PHONY: clean
 clean:
 	@ ( \
-		rm -rfv bin && \
+		rm -rfv $(PKGS_BIN) && \
 		find src -type f \( -name \*.eopkg -o -name pspec_\*.xml \) -print -delete; \
 	);
