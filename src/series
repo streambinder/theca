@@ -77,6 +77,7 @@ switchboard-plug-sound
 switchboard-plug-useraccounts
 wingpanel
 # 4th group: next ones have build dependencies from 1st/.../3rd groups
+garcon
 pantheon-applications-menu
 pantheon-greeter
 wingpanel-indicator-a11y
