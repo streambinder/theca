@@ -52,6 +52,7 @@ gsignond-plugin-lastfm
 gsignond-plugin-oauth
 gsignond-plugin-sasl
 pantheon-tweaks
+xfconf
 # 3rd group: next ones have build dependencies from 1st/2nd groups
 switchboard-plug-a11y
 switchboard-plug-about

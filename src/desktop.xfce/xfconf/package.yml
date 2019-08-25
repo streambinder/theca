@@ -1,0 +1,19 @@
+name       : xfconf
+version    : 4.14.1
+release    : 1
+source     :
+    - http://archive.xfce.org/src/xfce/xfconf/4.14/xfconf-4.14.1.tar.bz2 : b893e0a329aee00902fec2f0509f56916c9dcc7844e1b1f9e3c7399458290d59
+license    : GPL-2.0
+components : desktop.xfce
+summary    : Xfce configuration storage system
+description: |
+    D-Bus-based configuration storage system.
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(libxfce4util-1.0)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
