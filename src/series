@@ -7,6 +7,7 @@ font-open-sans-ttf
 font-roboto-mono-ttf
 gsasl
 gsignond
+iceauth
 libgsignon-glib
 libsignon-glib
 libwnck-2
