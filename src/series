@@ -93,3 +93,5 @@ wingpanel-indicator-power
 wingpanel-indicator-privacy
 wingpanel-indicator-session
 wingpanel-indicator-sound
+# 5th group: next ones have build dependencies from 1st/.../4th groups
+xfce4-panel

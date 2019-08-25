@@ -1,0 +1,22 @@
+name       : xfce4-panel
+version    : 4.14.0
+release    : 1
+source     :
+    - http://archive.xfce.org/src/xfce/xfce4-panel/4.14/xfce4-panel-4.14.0.tar.bz2 : d5f8f3bd7e142139987e5e62cda26135a424baabb5e47aa0c23b4169d0a66ef4
+license    : GPL-2.0
+summary    : Xfce's panel
+description: |
+    Xfce's panel.
+builddeps  :
+    - pkgconfig(exo-2)
+    - pkgconfig(garcon-1)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libwnck-3.0)
+    - pkgconfig(libxfce4util-1.0)
+    - pkgconfig(x11)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
