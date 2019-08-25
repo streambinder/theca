@@ -1,0 +1,25 @@
+name       : xfdesktop
+version    : 4.14.1
+release    : 1
+source     :
+    - http://archive.xfce.org/src/xfce/xfdesktop/4.14/xfdesktop-4.14.1.tar.bz2 : f705a016246ec54ab0c688d1a0577f6c2b45a446690aa8d9e5a7ac23efebf882
+license    : GPL-2.0
+component  : desktop.xfce
+summary    : Xfce's desktop manager
+description: |
+    Xfdesktop is a desktop manager for the Xfce Desktop Environment. Desktop in this respect means the root window (or, rather, a window that sits on top of the root window).
+    The manager handles the background image/color, root menu, window list, minimized app icons, file icons on the desktop (using Thunar libs).
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(exo-2)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libwnck-3.0)
+    - pkgconfig(libxfce4ui-2)
+    - pkgconfig(libxfce4util-1.0)
+    - pkgconfig(x11)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
