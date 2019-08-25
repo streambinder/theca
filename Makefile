@@ -45,7 +45,11 @@ components: packages
 		cd $(PKGS_BIN) && \
 		sudo chmod a+w eopkg-index.xml* && \
 		sed -i '$$ d' eopkg-index.xml && \
-		echo -e "$$(sed "s/{NAME}/$(PKGR_NAME)/g; s/{EMAIL}/$(PKGR_EMAIL)/g" ../src/components.xml)\n</PISI>" >> eopkg-index.xml && \
+		find ../src -maxdepth 1 -type d -name \*.\* -printf "%f\n" | while read comp; do \
+			comp_group="$$(awk -F'.' '{print $$1}' <<< "$${comp}")"; \
+			echo -e "\t<Component>\n\t\t<Name>$${comp}</Name>\n\t\t<Group>$${comp_group}</Group>\n\t\t<Maintainer>\n\t\t\t<Name>$(PKGR_NAME)</Name>\n\t\t\t<Email>$(PKGR_EMAIL)</Email>\n\t\t</Maintainer>\n\t</Component>" >> eopkg-index.xml; \
+		done; \
+		echo "</PISI>" >> eopkg-index.xml; \
 		sha1sum eopkg-index.xml | awk '{print $$1}' > eopkg-index.xml.sha1sum && \
 		xz -kf eopkg-index.xml && \
 		sha1sum eopkg-index.xml.xz | awk '{print $$1}' > eopkg-index.xml.xz.sha1sum; \
