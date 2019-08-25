@@ -1,0 +1,23 @@
+name       : xfce4-power-manager
+version    : 1.6.5
+release    : 1
+source     :
+    - http://archive.xfce.org/src/xfce/xfce4-power-manager/1.6/xfce4-power-manager-1.6.5.tar.bz2 : 10adb67899b181ca5fc577fc9bb7a698fb94e42073585f7e2be642c7db127a74
+license    : GPL-2.0
+component  : desktop.xfce
+summary    : Xfce Power Manager
+description: |
+    This software is a power manager for the Xfce desktop, Xfce power manager manages the power sources on the computer and the devices that can be controlled to reduce their power consumption (such as LCD brightness level, monitor sleep).
+    In addition, xfce4-power-manager provides a set of freedesktop-compliant DBus interfaces to inform other applications about current power level so that they can adjust their power consumption.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libnotify)
+    - pkgconfig(libxfce4ui-2)
+    - pkgconfig(libxfconf-0)
+    - pkgconfig(upower-glib)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
