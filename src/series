@@ -9,6 +9,7 @@ gsasl
 gsignond
 libgsignon-glib
 libsignon-glib
+libxfce4util
 light-locker
 lua-lgi
 megasync

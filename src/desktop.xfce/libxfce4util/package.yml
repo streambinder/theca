@@ -1,0 +1,19 @@
+# this is going to be dropped once, in Solus repository, it gets:
+# - or updated to 4.14.x series
+# - or dropped
+name       : libxfce4util
+version    : 4.14.0
+release    : 1
+source     :
+    - http://archive.xfce.org/src/xfce/libxfce4util/4.14/libxfce4util-4.14.0.tar.bz2 : 32ad79b7992ec3fd863e8ff2f03eebda8740363ef9d7d910a35963ac1c1a6324
+license    : GPL-2.0
+component  : desktop.xfce
+summary    : Xfce4 utility library
+description: |
+    Basic utility library for Xfce4.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
