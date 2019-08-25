@@ -47,6 +47,7 @@ stemmer
 switchboard
 vscodium
 xfce4-dev-tools
+xfce4-icon-theme
 # 2nd group: next ones have build dependencies from 1st group
 appstream
 awesomewm
