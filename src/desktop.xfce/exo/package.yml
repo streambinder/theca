@@ -1,0 +1,22 @@
+name       : exo
+version    : 0.12.8
+release    : 1
+source     :
+    - http://archive.xfce.org/src/xfce/exo/0.12/exo-0.12.8.tar.bz2 : 3400a2e64aa41ede25bedaca4909bde7ea4f8698d9598d1b80f02a40ac89fcde
+license    : GPL-2.0
+component  : desktop.xfce
+summary    : Application library for the Xfce desktop environment
+description: |
+    libexo is an extension library to Xfce, originally developed by os-cillation.
+    While Xfce comes with quite a few libraries that are targeted at desktop development, libexo is targeted at application development.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libxfce4ui-2)
+    - pkgconfig(libxfce4util-1.0)
+    - perl-uri
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

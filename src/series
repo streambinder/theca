@@ -78,6 +78,7 @@ switchboard-plug-sound
 switchboard-plug-useraccounts
 wingpanel
 # 4th group: next ones have build dependencies from 1st/.../3rd groups
+exo
 garcon
 pantheon-applications-menu
 pantheon-greeter
