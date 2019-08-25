@@ -97,6 +97,7 @@ wingpanel-indicator-privacy
 wingpanel-indicator-session
 wingpanel-indicator-sound
 xfce4-power-manager
+xfce4-session
 # 5th group: next ones have build dependencies from 1st/.../4th groups
 xfce4-appfinder
 xfce4-panel
