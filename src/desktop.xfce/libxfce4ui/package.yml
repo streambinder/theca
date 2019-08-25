@@ -1,0 +1,21 @@
+name       : libxfce4ui
+version    : 4.14.1
+release    : 1
+source     :
+    - http://archive.xfce.org/src/xfce/libxfce4ui/4.14/libxfce4ui-4.14.1.tar.bz2 : c449075eaeae4d1138d22eeed3d2ad7032b87fb8878eada9b770325bed87f2da
+license    : LGPL-2.0
+component  : desktop.xfce
+summary    : Widgets library for the Xfce desktop environment
+description: |
+    libxfce4ui is used to share commonly used Xfce widgets among the Xfce applications.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libxfce4util-1.0)
+    - pkgconfig(libxfconf-0)
+    - pkgconfig(x11)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

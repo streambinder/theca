@@ -54,6 +54,7 @@ gsignond-plugin-sasl
 pantheon-tweaks
 xfconf
 # 3rd group: next ones have build dependencies from 1st/2nd groups
+libxfce4ui
 switchboard-plug-a11y
 switchboard-plug-about
 switchboard-plug-applications
