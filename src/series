@@ -53,6 +53,7 @@ xfwm4-themes
 # 2nd group: next ones have build dependencies from 1st group
 appstream
 awesomewm
+cinnamon-settings-daemon
 gala
 gsignond-plugin-lastfm
 gsignond-plugin-oauth
