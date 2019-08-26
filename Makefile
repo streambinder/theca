@@ -63,7 +63,6 @@ check:
 			pkg_version="$$(awk -F': ' '/^version/ {print $$2}' < "$${pkg}")"; \
 			pkg_src="$$(awk '/^\s+/ {print $$2}' < "$${pkg}" | head -1)"; \
 			pkg_version_new="$$(cuppa q "$${pkg_src}" | awk '{print $$1}')"; \
-			echo $$pkg_version $$pkg_version_new $$pkg_name; \
 			[ "$${pkg_version}" != "$${pkg_version_new}" ] && \
 				[ "$${pkg_version_new}" != "🕱" ] && \
 				echo "$${pkg_name}: $${pkg_version_new}" || echo -n; \
