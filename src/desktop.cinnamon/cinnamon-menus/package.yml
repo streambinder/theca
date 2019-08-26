@@ -1,0 +1,20 @@
+name       : cinnamon-menus
+version    : 4.2.0
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-menus/archive/4.2.0.tar.gz : 331bd599d7a863fa92329483637de159c25c57467305691f9768e675cd63f7c2
+license    : GPL-2.0
+component  : desktop.cinnamon
+summary    : The cinnamon-menu library
+description: |
+    cinnamon-menus contains the libcinnamon-menu library, the layout configuration files for the Cinnamon menu, as well as a simple menu editor.
+    The libcinnamon-menu library implements the "Desktop Menu Specification" from freedesktop.org.
+builddeps  :
+    - pkgconfig(gio-unix-2.0)
+    - gnome-common
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
