@@ -1,0 +1,47 @@
+name       : cinnamon-control-center
+version    : 4.2.2
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-control-center/archive/4.2.2.tar.gz : 0cd334e9fc36165664362d2bef7953879ec1f1d1becdbce21ef0557ea34618d7
+license    : GPL-2.0
+component  : desktop.cinnamon
+summary    : A collection of configuration plugins used in cinnamon-settings
+description: |
+    Settings need to be unified and consistent.
+    At the moment configuration is split between an incomplete Cinnamon Settings and a heavily patched Gnome Control Center.
+    One of these two tools need to be removed from the default installation and discontinued in the scope of the Cinnamon project.
+    The other one needs to be able to load all modules, whether they're GNOME modules or Cinnamon settings modules.
+    This git repository attempts to use Gnome Control Center as the start point for a unified control center.
+    Similar efforts might take place with Cinnamon Settings as a starting point.
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(cinnamon-settings-daemon)
+    - pkgconfig(colord)
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(fontconfig)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(goa-backend-1.0)
+    - pkgconfig(iso-codes)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libcinnamon-menu-3.0)
+    - pkgconfig(libgnomekbd)
+    - pkgconfig(libgnomekbdui)
+    - pkgconfig(libnm)
+    - pkgconfig(libnma)
+    - pkgconfig(libnm-util)
+    - pkgconfig(libnotify)
+    - pkgconfig(libpulse)
+    - pkgconfig(libwacom)
+    - pkgconfig(libxklavier)
+    - pkgconfig(libxml-2.0)
+    - pkgconfig(mm-glib)
+    - pkgconfig(x11)
+    - cups-devel
+    - gnome-common
+    - network-manager-applet
+setup      : |
+    %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64
+build      : |
+    %make
+install    : |
+    %make_install
