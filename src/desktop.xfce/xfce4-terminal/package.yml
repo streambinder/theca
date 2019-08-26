@@ -1,0 +1,20 @@
+name       : xfce4-terminal
+version    : 0.8.8
+release    : 1
+source     :
+    - http://archive.xfce.org/src/apps/xfce4-terminal/0.8/xfce4-terminal-0.8.8.tar.bz2 : 8fba6a60d3a0fee07417ad7c36bf78cc45be1b27f0759e125051aa73f08487fd
+license    : GPL-2.0
+component  : desktop.xfce
+summary    : Xfce4 Terminal
+description: |
+    Xfce Terminal is a lightweight and easy to use terminal emulator application with many advanced features including drop down, tabs, unlimited scrolling, full colors, fonts, transparent backgrounds, and more.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libxfce4ui-2)
+    - pkgconfig(vte-2.91)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
