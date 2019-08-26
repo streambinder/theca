@@ -1,0 +1,15 @@
+name       : cinnamon-translations
+version    : 4.2.2
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-translations/archive/4.2.2.tar.gz : 0bfcca02894dcff4644a77560515ea33d4beed1365210cf17ea66b04bf52ee1d
+license    : GPL-2.0
+component  : desktop.cinnamon
+summary    : Cinnamon Translations
+description: |
+    Set of Cinnamon translations
+build      : |
+    %make
+install    : |
+    mkdir -p $installdir/usr/share/locale/
+    cp -Rp usr/share/locale/* $installdir/usr/share/locale/
