@@ -62,6 +62,7 @@ gala
 gsignond-plugin-lastfm
 gsignond-plugin-oauth
 gsignond-plugin-sasl
+muffin
 pantheon-tweaks
 xfconf
 # 3rd group: next ones have build dependencies from 1st/2nd groups
