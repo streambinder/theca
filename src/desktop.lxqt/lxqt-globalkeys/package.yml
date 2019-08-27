@@ -1,0 +1,25 @@
+name       : lxqt-globalkeys
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-globalkeys/archive/0.14.1.tar.gz : b9bb767195b8782706938192eb33d124912abf2efa949f2974e907f1744cc3fc
+license    : GPL-2.1
+component  : desktop.lxqt
+summary    : Daemon used to register global keyboard shortcuts
+description: |
+    This package is providing tools to set global keyboard shortcuts in LXQt sessions, that is shortcuts which apply to the LXQt session as a whole and are not limited to distinct applications.
+    The core components are two binaries lxqt-globalkeysd and lxqt-config-globalkeyshortcuts.
+    lxqt-globalkeysd is running in a daemon-like manner as so-called LXQt Module and doing the actual work.
+    GUI lxqt-config-globalkeyshortcuts is used to customize the shortcut settings.
+builddeps  :
+    - pkgconfig(lxqt)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5UiTools)
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
