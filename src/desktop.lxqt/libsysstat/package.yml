@@ -1,0 +1,22 @@
+name       : libsysstat
+version    : 0.4.2
+release    : 1
+source     :
+    - https://github.com/lxqt/libsysstat/archive/0.4.2.tar.gz : 1d555cc3a566672089778f62610e774b69d2aa34a3948b60aa310144a46b3b2d
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : Library used to query system info and statistics
+description: |
+    libsysstat is a library to query system information like CPU and memory usage or network traffic.
+    Conceptually it's roughly similar to libstatgrab, a third-party library used by LXQt as well.
+    It is maintained by the LXQt project but can be used independently from this desktop environment, too.
+    As for LXQt libsysstat is used by plugin-sysstat of lxqt-panel and hence an optional dependency of the latter.
+builddeps  :
+    - pkgconfig(Qt5Core)
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
