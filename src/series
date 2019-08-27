@@ -13,6 +13,7 @@ gsignond
 iceauth
 libgsignon-glib
 libsignon-glib
+libstatgrab
 libxfce4util
 light-locker
 lua-lgi
