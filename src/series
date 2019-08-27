@@ -64,6 +64,7 @@ gala
 gsignond-plugin-lastfm
 gsignond-plugin-oauth
 gsignond-plugin-sasl
+libqtxdg
 muffin
 nemo
 pantheon-tweaks

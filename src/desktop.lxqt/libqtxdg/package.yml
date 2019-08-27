@@ -1,0 +1,29 @@
+name       : libqtxdg
+version    : 3.3.1
+release    : 1
+source     :
+    - https://github.com/lxqt/libqtxdg/archive/3.3.1.tar.gz : f4d0fb4aa939cd90df237f826cc4c769e5d70cc2ea4a97434c2e29ddfe9808f6
+license    : LGLP-2.1
+component  : desktop.lxqt
+summary    : Qt implementation of freedesktop.org xdg specs
+description: |
+    libqtxdg is a Qt 5 implementation of freedesktop.org XDG specifications.
+    It is maintained by the LXQt project and nearly all LXQt components are depending on it.
+    Yet it can be used independently from this desktop environment, too.
+    The library is able to use GTK+ icon theme caches for faster icon lookup.
+    The cache file can be generated with utility gtk-update-icon-cache on a theme directory. 
+    If the cache is not present, corrupted, or outdated, the normal slow lookup is still run.
+builddeps  :
+    - pkgconfig(gl)
+    - pkgconfig(Qt5Svg)
+    - lxqt-build-tools-devel
+setup      : |
+    mkdir build
+    cd build
+    %cmake ..
+build      : |
+    cd build
+    %make
+install    : |
+    cd build
+    %make_install
