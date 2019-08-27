@@ -70,6 +70,7 @@ lxqt-themes
 muffin
 nemo
 pantheon-tweaks
+qtermwidget
 xfconf
 # 3rd group: next ones have build dependencies from 1st/2nd groups
 cjs

@@ -1,0 +1,26 @@
+name       : qtermwidget
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/qtermwidget/archive/0.14.1.tar.gz : 77ae55c2c4c80bebf6999b5dc8b96cfce1f98a26943635ed6d0be36cf61a6511
+license    : |
+    - BSD-3-Clause
+    - GPL-2.0
+    - LGPL-2.0
+component  : desktop.lxqt
+summary    : The terminal widget for QTerminal
+description: |
+    A terminal emulator widget for Qt 5.
+    QTermWidget is an open-source project originally based on the KDE4 Konsole application, but it took its own direction later on.
+    The main goal of this project is to provide a unicode-enabled, embeddable Qt widget for using as a built-in console (or terminal emulation widget).
+    It is compatible with BSD, Linux and OS X.
+builddeps  :
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5Widgets)
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
