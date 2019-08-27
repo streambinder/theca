@@ -1,0 +1,25 @@
+name       : libfm-qt
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/libfm-qt/archive/0.14.1.tar.gz : a3ad06e8ef658ddce77100fd485e70d85468e971ff3da92af6e4abc8cc4af469
+license    : |
+    - LGPL-2.1
+    - BSD-3-Clause
+component  : desktop.lxqt
+summary    : Core library of PCManFM-Qt (Qt binding for libfm)
+description: |
+    libfm-qt is the Qt port of libfm, a library providing components to build desktop file managers which belongs to LXDE.
+builddeps  :
+    - pkgconfig(Qt5Widgets)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(libmenu-cache)
+    - pkgconfig(libexif)
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

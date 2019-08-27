@@ -77,6 +77,7 @@ xfconf
 # 3rd group: next ones have build dependencies from 1st/2nd groups
 cjs
 cinnamon-control-center
+libfm-qt
 liblxqt
 libxfce4ui
 lxqt-qtplugin
