@@ -106,3 +106,5 @@ xfce4-appfinder
 xfce4-panel
 xfce4-settings
 xfdesktop
+# 6th group: next ones have build dependencies from 1st/.../5th groups
+xfce4-whiskermenu-plugin
