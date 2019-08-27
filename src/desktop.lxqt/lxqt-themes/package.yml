@@ -1,0 +1,21 @@
+name       : lxqt-themes
+version    : 0.14.0
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-themes/archive/0.14.0.tar.gz : b9af48df41ea112d95d93556d325e2aa8a8bb034e1a557c7e1d5645c2b26b3bd
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : Themes, graphics and icons for LXQt
+description: |
+    This package comprises a number of graphic files and themes.
+    The LXQt logo was designed by @Caig and is licensed CC-BY-SA 3.0.
+    LXQt theme "Plasma" is based on Breeze 5.0.0 theme by the KDE Visual Team.
+    The Wallpaper is the contest winning design from Nuno Pinheiro uno@oxygen-icons.org, licensed as LGPLv3.
+builddeps  :
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
