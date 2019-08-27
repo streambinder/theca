@@ -1,0 +1,36 @@
+name       : lxqt-panel
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-panel/archive/0.14.1.tar.gz : acd76ccaf7842ab62ed85525a114971d295f66bf12583ff60c0e206a9bfc5393
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : LXQt Panel
+description: |
+    lxqt-panel represents the taskbar of LXQt.
+builddeps  :
+    - pkgconfig(alsa)
+    - pkgconfig(dbusmenu-qt5)
+    - pkgconfig(gl)
+    - pkgconfig(libpulse)
+    - pkgconfig(libstatgrab)
+    - pkgconfig(lxqt)
+    - pkgconfig(lxqt-globalkeys)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5Widgets)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(sysstat-qt5)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xcomposite)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(xrender)
+    - kwindowsystem-devel
+    - lm_sensors-devel
+    - lxqt-build-tools-devel
+    - solid-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
