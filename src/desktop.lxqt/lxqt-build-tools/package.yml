@@ -14,12 +14,8 @@ description: |
 builddeps  :
     - pkgconfig(Qt5Core)
 setup      : |
-    mkdir build
-    cd build
-    %cmake ..
+    %cmake_ninja
 build      : |
-    cd build
-    %make
+    %ninja_build
 install    : |
-    cd build
-    %make_install
+    %ninja_install
