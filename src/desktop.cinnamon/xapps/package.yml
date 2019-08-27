@@ -1,0 +1,22 @@
+name       : xapps
+version    : 1.4.9
+release    : 2
+source     :
+    - https://github.com/linuxmint/xapps/archive/1.4.9.tar.gz : c2122c8c0616b07aca0654c86810549545363733ad36ec6f27451345083c80ca
+license    : LGPL-3.0
+component  : desktop.cinnamon
+summary    : Cross-desktop libraries and common resources
+description: |
+    This project gathers the components which are common to multiple desktop environments and required to implement cross-DE solutions.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libgnomekbdui)
+    - pkgconfig(pygobject-3.0)
+    - pkgconfig(xkbfile)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

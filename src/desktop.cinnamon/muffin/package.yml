@@ -1,0 +1,32 @@
+name       : muffin
+version    : 4.2.2
+release    : 1
+source     :
+    - https://github.com/linuxmint/muffin/archive/4.2.2.tar.gz : 08c64a7a951fc526d96b4e3b6b53997328904ae2430aad4c2611a4f130a5bd16
+license    : GPL-2.0
+component  : desktop.cinnamon
+summary    : Cinnamon window manager based on Mutter
+description: |
+    The window management library for the Cinnamon desktop (libmuffin) and its sample WM binary (muffin).
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(clutter-1.0)
+    - pkgconfig(cogl-1.0)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(sm)
+    - pkgconfig(xcursor)
+    - pkgconfig(xinerama)
+    - pkgconfig(xkeyboard-config)
+    - gnome-common
+    - gnome-doc-utils
+    - gtk-doc
+    - zenity
+setup      : |
+    %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64 --disable-gtk-doc-html
+build      : |
+    %make
+install    : |
+    %make_install

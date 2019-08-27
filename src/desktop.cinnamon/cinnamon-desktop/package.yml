@@ -1,0 +1,29 @@
+name       : cinnamon-desktop
+version    : 4.2.0
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-desktop/archive/4.2.0.tar.gz : e7e6e9aa6e5c5c04a8320cb97ef545700826d04fc34e0f50d140d2efa41941a1
+license    : GPL-2.0
+component  : desktop.cinnamon
+summary    : The cinnamon-desktop library and common settings schemas for the cinnamon desktop
+description: |
+    cinnamon-desktop contains the libcinnamon-desktop library, the cinnamon-about program as well as some desktop-wide documents.
+    The libcinnamon-desktop library provides API shared by several applications on the desktop, but that cannot live in the platform for various reasons.
+    There is no API or ABI guarantee, although we are doing our best to provide stability.
+    Documentation for the API is available with gtk-doc.
+builddeps  :
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libpulse)
+    - pkgconfig(x11)
+    - pkgconfig(xext)
+    - pkgconfig(xkbfile)
+    - pkgconfig(xkeyboard-config)
+    - pkgconfig(xrandr)
+    - gnome-common
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

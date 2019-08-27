@@ -1,0 +1,40 @@
+name       : cinnamon-settings-daemon
+version    : 4.2.2
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-settings-daemon/archive/4.2.2.tar.gz : d5b1ff8b5777174a45ebf2906eb1690e79a241c1adeb56cd70f9f273674901f9
+license    : GPL-2.0
+component  : desktop.cinnamon
+summary    : The settings daemon for the Cinnamon desktop
+description: |
+    cinnamon-settings-daemon is a collection of plugins.
+    These plugins are started by cinnamon-session when you log in.
+    The plugins run in the background, each with their own process.
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(colord)
+    - pkgconfig(fontconfig)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gudev-1.0)
+    - pkgconfig(kbproto)
+    - pkgconfig(lcms2)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libgnomekbd)
+    - pkgconfig(libgnomekbdui)
+    - pkgconfig(libnotify)
+    - pkgconfig(libsystemd)
+    - pkgconfig(libwacom)
+    - pkgconfig(libxklavier)
+    - pkgconfig(upower-glib)
+    - pkgconfig(x11)
+    - pkgconfig(xfixes)
+    - pkgconfig(xi)
+    - cups-devel
+    - gnome-common
+setup      : |
+    %autogen --prefix=/usr --disable-static --libexecdir=/usr/lib64 --disable-man
+build      : |
+    %make
+install    : |
+    %make_install

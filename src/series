@@ -1,6 +1,9 @@
 # 1st group: none of these depend on packages from this repository
 blackbox
 cerbere
+cinnamon-desktop
+cinnamon-menus
+cinnamon-translations
 contractor
 dwm
 font-open-sans-ttf
@@ -16,6 +19,7 @@ lua-lgi
 megasync
 megasync-nautilus
 melody
+mozjs52
 mutter-2
 pantheon-agent-geoclue2
 pantheon-agent-polkit
@@ -45,19 +49,27 @@ spotitube
 stemmer
 switchboard
 vscodium
+xapps
 xfce4-dev-tools
 xfce4-icon-theme
 xfwm4-themes
 # 2nd group: next ones have build dependencies from 1st group
 appstream
 awesomewm
+cinnamon-screensaver
+cinnamon-session
+cinnamon-settings-daemon
 gala
 gsignond-plugin-lastfm
 gsignond-plugin-oauth
 gsignond-plugin-sasl
+muffin
+nemo
 pantheon-tweaks
 xfconf
 # 3rd group: next ones have build dependencies from 1st/2nd groups
+cjs
+cinnamon-control-center
 libxfce4ui
 switchboard-plug-a11y
 switchboard-plug-about
@@ -81,6 +93,7 @@ switchboard-plug-sound
 switchboard-plug-useraccounts
 wingpanel
 # 4th group: next ones have build dependencies from 1st/.../3rd groups
+cinnamon
 exo
 garcon
 pantheon-applications-menu
