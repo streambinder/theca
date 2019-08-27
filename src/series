@@ -133,6 +133,7 @@ xfce4-terminal
 xfwm4
 # 5th group: next ones have build dependencies from 1st/.../4th groups
 lxqt-panel
+lxqt-runner
 xfce4-appfinder
 xfce4-panel
 xfce4-settings
