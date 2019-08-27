@@ -72,6 +72,7 @@ xfconf
 # 3rd group: next ones have build dependencies from 1st/2nd groups
 cjs
 cinnamon-control-center
+liblxqt
 libxfce4ui
 switchboard-plug-a11y
 switchboard-plug-about
