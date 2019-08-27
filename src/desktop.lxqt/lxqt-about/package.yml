@@ -1,0 +1,21 @@
+name       : lxqt-about
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-about/archive/0.14.1.tar.gz : dd5f1005b2ca85edc76d2f4b5379258e16b8248beed1314639d7fd07decfcda7
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : Dialogue window providing information about LXQt and the system it's running on
+description: |
+    lxqt-about is a dialogue window providing information about LXQt and the system it's running on.
+builddeps  :
+    - pkgconfig(lxqt)
+    - pkgconfig(Qt5UiTools)
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
