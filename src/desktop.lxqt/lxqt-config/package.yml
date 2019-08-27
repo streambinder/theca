@@ -1,0 +1,33 @@
+name       : lxqt-config
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-config/archive/0.14.1.tar.gz : f05887892598cf0d2f83e5895cdb7a4eb0b4d4bc35b8d6851eab1e762c8e13ea
+license    : LGPL-2.1
+networking : yes
+component  : desktop.lxqt
+summary    : Tools to configure LXQt and the underlying operating system
+description: |
+    This package is providing several tools involved in the configuration of both LXQt and the underlying operating system.
+    On the one hand it is featuring several GUI tools to configure topics like general appearance, pointer devices or screen resolutions.
+    On the other hand there's a GUI "Configuration Center" which summarizes all those configuration tools as well as counterparts of other LXQt components or third-party applications.
+builddeps  :
+    - pkgconfig(gl)
+    - pkgconfig(kscreen2)
+    - pkgconfig(libinput)
+    - pkgconfig(lxqt)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5Widgets)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcursor)
+    - pkgconfig(xi)
+    - pkgconfig(xorg-libinput)
+    - git
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
