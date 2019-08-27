@@ -1,6 +1,6 @@
 name       : cinnamon-session
 version    : 4.2.1
-release    : 1
+release    : 2
 source     :
     - https://github.com/linuxmint/cinnamon-session/archive/4.2.1.tar.gz : bff38239942dc990ccb57c35bde43c19ebc8708284410de53c100e12c7005663
 license    : GPL-2.0
@@ -16,7 +16,6 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(ice)
     - pkgconfig(libcanberra)
-    - pkgconfig(libgnomekbdui)
     - pkgconfig(libsystemd)
     - pkgconfig(sm)
     - pkgconfig(upower-glib)
@@ -24,7 +23,6 @@ builddeps  :
     - pkgconfig(xau)
     - pkgconfig(xcomposite)
     - pkgconfig(xext)
-    - pkgconfig(xkbfile)
     - pkgconfig(xrender)
     - pkgconfig(xtst)
     - gnome-common
