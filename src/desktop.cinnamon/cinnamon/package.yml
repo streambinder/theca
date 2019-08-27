@@ -1,0 +1,44 @@
+name       : cinnamon
+version    : 4.2.3
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon/archive/4.2.3.tar.gz : 18b91e625c730d11a86841947ae9727e691a5d865ee863fdea96189f2c7b9007
+license    : GPL-2.0
+component  : desktop.cinnamon
+summary    : A Linux desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features
+description: |
+    Cinnamon is a Linux desktop which provides advanced innovative features and a traditional user experience.
+    The desktop layout is similar to Gnome 2 with underlying technology forked from Gnome Shell.
+    Cinnamon makes users feel at home with an easy to use and comfortable desktop experience.
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(cjs-1.0)
+    - pkgconfig(clutter-1.0)
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(gconf-2.0)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gio-2.0)
+    - pkgconfig(gnome-keyring-1)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcinnamon-menu-3.0)
+    - pkgconfig(libcroco-0.6)
+    - pkgconfig(libmuffin)
+    - pkgconfig(libnm-glib)
+    - pkgconfig(libpulse)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(xfixes)
+    - gtk-doc
+setup      : |
+    %autogen --prefix=/usr \
+        --sysconfdir=/etc \
+        --libexecdir=/usr/lib64/cinnamon \
+        --localstatedir=/var \
+        --disable-static \
+        --enable-compile-warnings=yes \
+        --with-session-tracking=systemd \
+        --disable-gtk-doc
+build      : |
+    %make
+install    : |
+    %make_install
