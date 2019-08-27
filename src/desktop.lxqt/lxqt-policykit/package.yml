@@ -1,0 +1,34 @@
+name       : lxqt-policykit
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-policykit/archive/0.14.1.tar.gz : cfc2db33b52858e29ee95996febb8515d41946b131f882340821f803c89abbf3
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : The LXQt PolicyKit agent
+description: |
+    lxqt-policykit is the polkit authentification agent of LXQt.
+    polkit is a software framework to handle privileges of processes.
+    In LXQt it is e. g. used to extend the privileges of the GUI tools of lxqt-admin.
+    These are launched by a regular user.
+    But in order to apply the settings they deal with root privileges are needed and acquired via polkit.
+    Among the various components of polkit the authentication agent is the one to query the user for credentials by dialogue windows like this one of lxqt-policykit.
+    While there's only a single implementation of all other polkit components various different authentication agents are provided by the various desktop environments.
+    Basically these can be used interchangeably, that is lxqt-policykit can be used in an LXDE session or lxpolkit, the authentication agent of LXDE, can be used in an Xfce session.
+    Most of the time it's better to use the implementation provided by a distinct desktop environment as it integrates better, though.
+    Technically, lxqt-policykit is just a single binary lxqt-policykit-agent which is running as LXQt Module and launching the GUI on demand.
+    Note that the naming lxqt-policykit is strictly speaking an anachronism.
+    It refers to Policykit which was the predecessor of polkit.
+    The name wasn't changed when Policykit was replaced by polkit as both provide roughly the same features albeit they are technically different.
+builddeps  :
+    - pkgconfig(lxqt)
+    - pkgconfig(polkit-qt5-1)
+    - pkgconfig(Qt5UiTools)
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
