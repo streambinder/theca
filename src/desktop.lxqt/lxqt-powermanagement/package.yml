@@ -1,0 +1,29 @@
+name       : lxqt-powermanagement
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-powermanagement/archive/0.14.1.tar.gz : 03b4e461cec747a771775772ae2d7779e86ac465e2424f109f31d1f5706df320
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : Power management module for LXQt
+description: |
+    This package is providing tools to monitor power management events and optionally trigger actions like e. g. shut down a system when laptop batteries are low on power.
+    The core components are two binaries lxqt-powermanagement and lxqt-config-powermanagement.
+    lxqt-powermanagement is running in a daemon-like manner as so-called "LXQt Module" and doing the actual work.
+    GUI "Power Management Settings (binary lxqt-config-powermanagement) is used to customize settings.
+    Warning messages are displayed on the desktop by lxqt-notificationd.
+builddeps  :
+    - pkgconfig(lxqt)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - kidletime-devel
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+    - qt5-svg-devel
+    - solid-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

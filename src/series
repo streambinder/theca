@@ -106,6 +106,7 @@ lxqt-config
 lxqt-globalkeys
 lxqt-notificationd
 lxqt-policykit
+lxqt-powermanagement
 lxqt-session
 pantheon-applications-menu
 pantheon-greeter
