@@ -1,0 +1,31 @@
+name       : lxqt-session
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-session/archive/0.14.1.tar.gz : 4950e48a1cdc6af53fa706e3501226ffb0887af3d79d4c7650ee94a9c581395f
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : The LXQt session manager
+description: |
+    Repository lxqt-session is providing tools to handle LXQt sessions.
+    First of all there's session manager lxqt-session.
+    The binary is launched right at the beginning of LXQt sessions and in turn responsible for launching and monitoring all other components constituting the sessions.
+    GUI "LXQt Session Settings" (binary lxqt-config-session) is used to configure various settings affecting the session, e. g. which window manager to use or which applications to start automatically.
+    Binary lxqt-leave deals with interrupting or terminating sessions.
+    It comes with several options expressing the action they trigger, e. g. --leave, --hibernate, --shutdown or --reboot.
+builddeps  :
+    - pkgconfig(gl)
+    - pkgconfig(lxqt)
+    - pkgconfig(Qt5DBus)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(x11)
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+    - xdg-user-dirs
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
