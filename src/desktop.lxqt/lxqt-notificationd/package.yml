@@ -1,0 +1,28 @@
+name       : lxqt-notificationd
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-notificationd/archive/0.14.1.tar.gz : 4cded2cf5de70e4a588493e218ab9fb7d360e4b1efe2c4e95071c812f9feb208
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : The LXQt notification daemon
+description: |
+    lxqt-notificationd is LXQt's implementation of a daemon according to the Desktop Notifications Specification.
+    This specification defines a way to display notifications in pop-up windows on desktops.
+    Notifications like this are e. g. frequently used by chat or mail clients to inform about incoming messages, by media players to indicate the beginning of another track but also by the desktop environment itself to indicate volume changes or similar.
+    lxqt-notificationd is comprising binaries lxqt-notificationd and lxqt-config-notificationd.
+    lxqt-notificationd is running in a daemon-like manner as so-called LXQt Module and doing the actual work.
+    GUI "Desktop Notifications", binary lxqt-config-notificationd, is used to customize the notifications.
+    lxqt-notificationd is implementing version 1.2 of the said specification.
+builddeps  :
+    - pkgconfig(lxqt)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5UiTools)
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
