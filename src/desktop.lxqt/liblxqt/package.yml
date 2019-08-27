@@ -1,0 +1,31 @@
+name       : liblxqt
+version    : 0.14.1
+release    : 1
+source     :
+    - https://github.com/lxqt/liblxqt/archive/0.14.1.tar.gz : 3804f12df9e912a9190768c53a0d5789fc00c3a3eac32b0e74e0a4921578d377
+license    : LGLP-2.1
+networking : yes
+component  : desktop.lxqt
+summary    : Core utility library for all LXQt components
+description: |
+    liblxqt represents the core library of LXQt providing essential functionality needed by nearly all of its components.
+builddeps  :
+    - pkgconfig(polkit-qt5-1)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(Qt5Xdg)
+    - pkgconfig(xscrnsaver)
+    - git
+    - kwindowsystem-devel
+    - lxqt-build-tools-devel
+setup      : |
+    mkdir build
+    cd build
+    %cmake ..
+build      : |
+    cd build
+    %make
+install    : |
+    cd build
+    %make_install
