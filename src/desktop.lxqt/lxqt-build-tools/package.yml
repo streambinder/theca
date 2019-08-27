@@ -1,0 +1,25 @@
+name       : lxqt-build-tools
+version    : 0.6.0
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-build-tools/archive/0.6.0.tar.gz : b993597738111ce58c161a962dc1c13ce24cdcde21301cfaaff29ba540c27418
+license    : BSD-3-Clause
+component  : desktop.lxqt
+summary    : Various packaging tools and scripts for LXQt applications
+description: |
+    This package is providing several tools needed to build LXQt itself as well as other components maintained by the LXQt project.
+    These tools used to be spread over the repositories of various other components and were summarized to ease dependency management.
+    So far many components, in particular liblxqt, were representing a build dependency without being needed themselves but only because their repository was providing a subset of the tools which are now summarized here.
+    So the use of this repository will reduce superfluous and bloated dependencies.
+builddeps  :
+    - pkgconfig(Qt5Core)
+setup      : |
+    mkdir build
+    cd build
+    %cmake ..
+build      : |
+    cd build
+    %make
+install    : |
+    cd build
+    %make_install
