@@ -11,6 +11,7 @@ font-roboto-mono-ttf
 gsasl
 gsignond
 iceauth
+libfm-extra
 libgsignon-glib
 libsignon-glib
 libstatgrab
