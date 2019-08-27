@@ -1,0 +1,23 @@
+name       : lxqt-qtplugin
+version    : 0.14.0
+release    : 1
+source     :
+    - https://github.com/lxqt/lxqt-qtplugin/archive/0.14.0.tar.gz : 9349db4b2a42d93f9f15f043de98675783b90e4b4d43b4ebdf3a68e281b36b60
+license    : LGPL-2.1
+component  : desktop.lxqt
+summary    : LXQt Qt platform integration plugin
+description: |
+    This repository is providing a library libqtlxqt to integrate Qt with LXQt.
+    With this plugin, all Qt-based programs can adopt settings of LXQt, such as the icon theme.
+builddeps  :
+    - pkgconfig(dbusmenu-qt5)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(Qt5Xdg)
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
