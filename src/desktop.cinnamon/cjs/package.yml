@@ -1,0 +1,39 @@
+name       : cjs
+version    : 4.2.0
+release    : 1
+source     :
+    - https://github.com/linuxmint/cjs/archive/4.2.0.tar.gz : 77d1b9f0290135939ad03b60ac64ac637f05e886ba5b777b97f6742ee75af260
+license    :
+    - MIT
+    - LGPL-2.0
+component  : desktop.cinnamon
+summary    : The Cinnamon Javascript interpreter
+description: |
+    This module contains JavaScript bindings based on gobject-introspection for Cinnamon.
+builddeps  :
+    - pkgconfig(atk-bridge-2.0)
+    - pkgconfig(cairo)
+    - pkgconfig(clutter-x11-1.0)
+    - pkgconfig(gconf-2.0)
+    - pkgconfig(gio-2.0)
+    - pkgconfig(gl)
+    - pkgconfig(gnome-keyring-1)
+    - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(gthread-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcinnamon-menu-3.0)
+    - pkgconfig(libffi)
+    - pkgconfig(libmuffin)
+    - pkgconfig(libnm-glib)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(mozjs-52)
+    - pkgconfig(xfixes)
+    - gnome-common
+    - gtk-doc
+setup      : |
+    %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64
+build      : |
+    %make
+install    : |
+    %make_install
