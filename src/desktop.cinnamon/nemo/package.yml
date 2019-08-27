@@ -1,6 +1,6 @@
 name       : nemo
 version    : 4.2.2
-release    : 1
+release    : 2
 source     :
     - https://github.com/linuxmint/nemo/archive/4.2.2.tar.gz : b9241fc3e4cc5fe094d478c494aaa117f0f2a6e077b576b00f2bea2cb26b24ab
 license    : GPL-2.0
@@ -15,11 +15,9 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(gtk-doc)
     - pkgconfig(libexif)
-    - pkgconfig(libgnomekbdui)
     - pkgconfig(libnotify)
     - pkgconfig(tracker-control-2.0)
     - pkgconfig(xapp)
-    - pkgconfig(xkbfile)
 setup      : |
     %meson_configure
 build      : |
