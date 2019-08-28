@@ -1,6 +1,6 @@
 name       : cinnamon-screensaver
 version    : 4.2.0
-release    : 1
+release    : 2
 source     :
     - https://github.com/linuxmint/cinnamon-screensaver/archive/4.2.0.tar.gz : 8dee253e12cbd2f30f2c5112a8e5fba62b651733cb56aa327ede939506adf6a0
 license    : GPL-2.0
@@ -16,6 +16,10 @@ builddeps  :
     - pkgconfig(webkit2gtk-4.0)
     - pkgconfig(x11)
     - gnome-common
+rundeps    :
+    - python-psutil
+    - python-setproctitle
+    - python-xapp
 setup      : |
     %autogen --prefix=/usr --disable-static --libexecdir=/usr/lib64
 build      : |
