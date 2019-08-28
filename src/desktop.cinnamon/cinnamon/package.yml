@@ -1,6 +1,6 @@
 name       : cinnamon
 version    : 4.2.3
-release    : 2
+release    : 3
 source     :
     - https://github.com/linuxmint/cinnamon/archive/4.2.3.tar.gz : 18b91e625c730d11a86841947ae9727e691a5d865ee863fdea96189f2c7b9007
 license    : GPL-2.0
@@ -32,7 +32,9 @@ builddeps  :
 rundeps    :
     - caribou
     - python-pexpect
+    - python-pam
     - python-pillow
+    - python-tinycss
 setup      : |
     %autogen --prefix=/usr \
         --sysconfdir=/etc \
