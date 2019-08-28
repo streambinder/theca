@@ -1,6 +1,6 @@
 name       : cinnamon
 version    : 4.2.3
-release    : 1
+release    : 2
 source     :
     - https://github.com/linuxmint/cinnamon/archive/4.2.3.tar.gz : 18b91e625c730d11a86841947ae9727e691a5d865ee863fdea96189f2c7b9007
 license    : GPL-2.0
@@ -29,6 +29,8 @@ builddeps  :
     - pkgconfig(libstartup-notification-1.0)
     - pkgconfig(xfixes)
     - gtk-doc
+rundeps    :
+    - caribou
 setup      : |
     %autogen --prefix=/usr \
         --sysconfdir=/etc \
