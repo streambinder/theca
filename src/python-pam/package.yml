@@ -1,0 +1,16 @@
+name       : python-pam
+version    : 1.8.4
+release    : 1
+source     :
+    - https://github.com/FirefighterBlu3/python-pam/archive/v1.8.4.tar.gz : fa048ca74f08de1390b2576754c05327700a7ebc3d05511f0329a04ebe1aeaa3
+license    : MIT
+component  : programming.python
+summary    : Python PAM module
+description: |
+    Python PAM module supporting py3 (and py2).
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
+check      : |
+    %python3_test
