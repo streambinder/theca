@@ -31,6 +31,8 @@ builddeps  :
     - gtk-doc
 rundeps    :
     - caribou
+    - python-pexpect
+    - python-pillow
 setup      : |
     %autogen --prefix=/usr \
         --sysconfdir=/etc \
