@@ -1,0 +1,24 @@
+name       : python-tinycss
+version    : 0.4
+release    : 1
+source     :
+    - https://github.com/Kozea/tinycss/archive/v0.4.tar.gz : 502b481ed76708bf7ea75e3f74d0cd50d6428328f6432a06e4d6e27980bed53b
+license    : 0BSD
+component  : programming.python
+summary    : CSS parser for Python
+description: |
+    tinycss is a complete yet simple CSS parser for Python.
+    It supports the full syntax and error handling for CSS 2.1 as well as some CSS 3 modules, such as CSS Color 3, CSS Fonts 3 and CSS Paged Media 3.
+    It is designed to be easy to extend for new CSS modules and syntax, and integrates well with cssselect for Selectors 3 support.
+builddeps  :
+    - cython
+    - pytest-runner
+    - python-pytest-cov
+    - python-pytest-flake8
+build      : |
+    %apply_patches
+    %python3_setup
+install    : |
+    %python3_install
+check      : |
+    %python3_test

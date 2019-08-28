@@ -1,0 +1,24 @@
+From 6387d8de0abc45d6a42bf60473ff0dc12c250ea1 Mon Sep 17 00:00:00 2001
+From: streambinder <posta@davidepucci.it>
+Date: Wed, 28 Aug 2019 13:07:47 +0200
+Subject: [PATCH] Ignore flake8 errors
+
+---
+ setup.cfg | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/setup.cfg b/setup.cfg
+index 8736e2e..42490c8 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -12,4 +12,6 @@ test = pytest
+ [tool:pytest]
+ addopts = --flake8 --cov --ignore=test/cairosvg_reference
+ norecursedirs = dist .cache .git build *.egg-info .eggs venv cairosvg_reference
+-flake8-ignore = docs/conf.py ALL
++flake8-ignore =
++	*.py ALL
++	docs/conf.py ALL
+-- 
+2.23.0
+
