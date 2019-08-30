@@ -1,6 +1,7 @@
 # 1st group: none of these depend on packages from this repository
 blackbox
 cerbere
+cinnamon-applet-redshift
 cinnamon-desktop
 cinnamon-menus
 cinnamon-translations
@@ -51,7 +52,6 @@ pantheon-videos
 pantheon-wallpapers
 python-pam
 python-tinycss
-qredshift
 spotitube
 stemmer
 switchboard
