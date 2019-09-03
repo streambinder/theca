@@ -1,6 +1,7 @@
 # 1st group: none of these depend on packages from this repository
 blackbox
 cerbere
+cinnamon-applet-qredshift
 cinnamon-applet-redshift
 cinnamon-desktop
 cinnamon-menus
