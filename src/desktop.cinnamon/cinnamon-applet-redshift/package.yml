@@ -1,0 +1,17 @@
+name       : cinnamon-applet-redshift
+version    : 20190830
+release    : 3
+source     :
+    - https://cinnamon-spices.linuxmint.com/files/applets/redshift@marvel4u.zip : a754c99de4217d48dd9633c9457db1d9e1a72565429f584c3346bc3b63360037
+license    : GPL-3.0
+component  : desktop.cinnamon
+summary    : Redshift applet for Linux Cinnamon
+description: |
+    A powerful applet that allows quick activation and configuration of the red filter and brightness provided by redshift.
+    It supports manual change of the temperature and brightness which is not possible in the redshift-gtk and enable/disable transition between day and night.
+rundeps    :
+    - redshift
+setup      : |
+    mkdir -p $installdir/usr/share/cinnamon/applets/redshift@marvel4u
+install    : |
+    cp -Rp * $installdir/usr/share/cinnamon/applets/redshift@marvel4u
