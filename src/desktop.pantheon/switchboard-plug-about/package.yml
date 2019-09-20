@@ -1,8 +1,8 @@
 name       : switchboard-plug-about
-version    : 2.5.2
-release    : 2
+version    : 2.6.0
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-about/archive/2.5.2.tar.gz : 2f5ed765956da00183b6a884fff8013b383602e238eecd2be3253767d01a2bfb
+    - https://github.com/elementary/switchboard-plug-about/archive/2.6.0.tar.gz : e2c7984d48f72e899bbbd90333783ea70036aca2b6e2444b54a4ef96692acb76
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard about plug
