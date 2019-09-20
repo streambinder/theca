@@ -1,8 +1,8 @@
 name       : pantheon-greeter
-version    : 3.3.1
-release    : 4
+version    : 5.0
+release    : 5
 source     :
-    - https://github.com/elementary/greeter/archive/3.3.1.tar.gz : f7068bf8120bd535aacb56b40c235fad09845347a00fb0e4f07240674a5ff534
+    - https://github.com/elementary/greeter/archive/5.0.tar.gz : bd839a7ddef40481d8dee0566af1370ec57a71a7a4b0178e1aa58b979c77dbd0
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : LightDM Greeter for Pantheon
