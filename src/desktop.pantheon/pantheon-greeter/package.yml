@@ -10,6 +10,7 @@ description: |
     Pantheon Greeter is a pantheon-styled Login Screen for LightDM.
     It is elementary OS default login screen.
 builddeps  :
+    - pkgconfig(accountsservice)
     - pkgconfig(clutter-gtk-1.0)
     - pkgconfig(gdk-pixbuf-2.0)
     - pkgconfig(gnome-desktop-3.0)
