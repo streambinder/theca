@@ -1,6 +1,6 @@
 name       : pantheon-greeter
 version    : 5.0
-release    : 5
+release    : 6
 source     :
     - https://github.com/elementary/greeter/archive/5.0.tar.gz : bd839a7ddef40481d8dee0566af1370ec57a71a7a4b0178e1aa58b979c77dbd0
 license    : GPL-3.0
@@ -26,7 +26,8 @@ builddeps  :
     - meson
     - vala
 setup      : |
-    %meson_configure
+    %apply_patches
+    %meson_configure -Dubuntu-patched-gsd=false
 build      : |
     %meson_build
 install    : |
