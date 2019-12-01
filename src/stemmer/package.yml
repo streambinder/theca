@@ -1,8 +1,8 @@
 name       : stemmer
-version    : 1
-release    : 2
+version    : 2.0.0
+release    : 3
 source     :
-    - https://github.com/snowballstem/snowball/archive/d29510ae32702a81cdc29177a133e894df854550.tar.gz : 0ddced2e7dd6367dcda2417460e1a64ac22723300e671ecf465b1da46d4875b7
+    - https://github.com/snowballstem/snowball/archive/v2.0.0.tar.gz : f047a33f3bcaf12f3ab06ce3f1237a911e21a510035dca9016f9140f4041b006
 license    : BSD-3-Clause
 summary    : Snowball stemming algorithms, development kit
 description: |
