@@ -1,8 +1,8 @@
 name       : xapps
-version    : 1.4.9
-release    : 2
+version    : 1.6.10
+release    : 3
 source     :
-    - https://github.com/linuxmint/xapps/archive/1.4.9.tar.gz : c2122c8c0616b07aca0654c86810549545363733ad36ec6f27451345083c80ca
+    - https://github.com/linuxmint/xapps/archive/1.6.10.tar.gz : 4dd228a2165f1077f18d6fb3152bb77d365ffbb8ad883ed4dd9137886dd21377
 license    : LGPL-3.0
 component  : desktop.cinnamon
 summary    : Cross-desktop libraries and common resources
@@ -18,5 +18,5 @@ setup      : |
     %meson_configure
 build      : |
     %meson_build
-install    : |
+install    : |-
     %meson_install

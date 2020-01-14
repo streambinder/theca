@@ -1,0 +1,276 @@
+<PISI>
+    <Source>
+        <Name>cinnamon-control-center</Name>
+        <Packager>
+            <Name>Automated Package Build</Name>
+            <Email>no.email.set.in.config</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>desktop.cinnamon</PartOf>
+        <Summary xml:lang="en">A collection of configuration plugins used in cinnamon-settings</Summary>
+        <Description xml:lang="en">Settings need to be unified and consistent.
+At the moment configuration is split between an incomplete Cinnamon Settings and a heavily patched Gnome Control Center.
+One of these two tools need to be removed from the default installation and discontinued in the scope of the Cinnamon project.
+The other one needs to be able to load all modules, whether they&apos;re GNOME modules or Cinnamon settings modules.
+This git repository attempts to use Gnome Control Center as the start point for a unified control center.
+Similar efforts might take place with Cinnamon Settings as a starting point.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cinnamon-control-center</Name>
+        <Summary xml:lang="en">A collection of configuration plugins used in cinnamon-settings</Summary>
+        <Description xml:lang="en">Settings need to be unified and consistent.
+At the moment configuration is split between an incomplete Cinnamon Settings and a heavily patched Gnome Control Center.
+One of these two tools need to be removed from the default installation and discontinued in the scope of the Cinnamon project.
+The other one needs to be able to load all modules, whether they&apos;re GNOME modules or Cinnamon settings modules.
+This git repository attempts to use Gnome Control Center as the start point for a unified control center.
+Similar efforts might take place with Cinnamon Settings as a starting point.
+</Description>
+        <PartOf>desktop.cinnamon</PartOf>
+        <Files>
+            <Path fileType="config">/etc/xdg/menus/cinnamoncc.menu</Path>
+            <Path fileType="executable">/usr/bin/cinnamon-control-center</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libcolor.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libdate_time.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libdisplay.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libnetwork.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libonline-accounts.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libregion.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libwacom-properties.so</Path>
+            <Path fileType="library">/usr/lib64/libcinnamon-control-center.so.1</Path>
+            <Path fileType="library">/usr/lib64/libcinnamon-control-center.so.1.0.0</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-color-panel.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-control-center.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-display-panel.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-network-panel.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-region-panel.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-wacom-panel.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/datetime/backward</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/cinnamon-region-panel-layout-chooser.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/cinnamon-region-panel-options-dialog.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/cinnamon-region-panel.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/color.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/bg.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/bg_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/cc.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/datetime.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/pin.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-1.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-10.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-10_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-11.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-11_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-1_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-2.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-2_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-3.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-3.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-3.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-3_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-4.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-4.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-4.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-4_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-5.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-5.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-6.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-6_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-7.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-7_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-8.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-8.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-8.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-8_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-9.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-9.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-9.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_-9_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_0.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_0_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_1.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_10.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_10.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_10.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_10_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_11.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_11.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_11.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_11_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_12.75.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_12.75_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_12.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_12_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_13.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_13_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_14.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_14_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_1_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_2.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_2_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_3.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_3.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_3.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_3_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_4.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_4.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_4.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_4_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_5.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_5.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_5.75.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_5.75_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_6.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_6.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_6.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_6_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_7.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_7_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_8.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_8.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_8.75.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_8.75_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_8.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_8_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_9.5.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_9.5_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_9.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/datetime/timezone_9_dim.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/display-capplet.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/language-chooser.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/shell.ui</Path>
+            <Path fileType="data">/usr/share/desktop-directories/cinnamoncc.directory</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/cinnamon-preferences-system-time.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/cs-online-accounts.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/cinnamon-preferences-system-time.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/cs-online-accounts.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/cs-online-accounts.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/256x256/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/256x256/apps/cinnamon-preferences-system-time.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/256x256/apps/cs-online-accounts.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/cinnamon-preferences-system-time.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/cs-online-accounts.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/cinnamon-preferences-system-time.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/cs-online-accounts.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/cinnamon-preferences-color.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/cinnamon-preferences-desktop-display.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/cinnamon-preferences-system-time.svg</Path>
+            <Path fileType="localedata">/usr/share/locale/am/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/as/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ast/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bg/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bn/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bn_IN/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bs/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ca/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cs/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cy/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/da/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/de/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/el/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/en_GB/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/es/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/et/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fa/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fi/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gl/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gu/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/he/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hi/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hr/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hu/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/id/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ilo/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/is/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/it/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ja/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ka/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kn/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ko/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ku/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lo/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lt/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lv/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mai/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mk/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ml/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mr/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ms/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nb/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nds/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nl/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nn/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/or/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pa/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pl/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt_BR/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ro/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ru/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/si/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sk/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sl/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sq/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sr/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sr@latin/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sv/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ta/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/te/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tr/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/uk/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ur/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/vi/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_CN/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/cinnamon-control-center-timezones.mo</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/org.cinnamon.controlcenter.datetime.policy</Path>
+            <Path fileType="data">/usr/share/polkit-1/rules.d/cinnamon-control-center.rules</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>cinnamon-control-center-devel</Name>
+        <Summary xml:lang="en">Development files for cinnamon-control-center</Summary>
+        <Description xml:lang="en">Settings need to be unified and consistent.
+At the moment configuration is split between an incomplete Cinnamon Settings and a heavily patched Gnome Control Center.
+One of these two tools need to be removed from the default installation and discontinued in the scope of the Cinnamon project.
+The other one needs to be able to load all modules, whether they&apos;re GNOME modules or Cinnamon settings modules.
+This git repository attempts to use Gnome Control Center as the start point for a unified control center.
+Similar efforts might take place with Cinnamon Settings as a starting point.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="2">cinnamon-control-center</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-editable-entry.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-panel.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-shell.h</Path>
+            <Path fileType="library">/usr/lib64/libcinnamon-control-center.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/libcinnamon-control-center.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="2">
+            <Date>2020-01-14</Date>
+            <Version>4.4.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Automated Package Build</Name>
+            <Email>no.email.set.in.config</Email>
+        </Update>
+    </History>
+</PISI>

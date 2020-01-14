@@ -1,8 +1,8 @@
 name       : cjs
-version    : 4.2.0
-release    : 1
+version    : 4.4.0
+release    : 2
 source     :
-    - https://github.com/linuxmint/cjs/archive/4.2.0.tar.gz : 77d1b9f0290135939ad03b60ac64ac637f05e886ba5b777b97f6742ee75af260
+    - https://github.com/linuxmint/cjs/archive/4.4.0.tar.gz : 7dab9615c41d9cb3b2409b2aa6cb9813ef5762f8c62526f54b4b3734079961f6
 license    :
     - MIT
     - LGPL-2.0
@@ -24,11 +24,12 @@ builddeps  :
     - pkgconfig(libcinnamon-menu-3.0)
     - pkgconfig(libffi)
     - pkgconfig(libmuffin)
-    - pkgconfig(libnm-glib)
+#    - pkgconfig(libnm-glib)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libstartup-notification-1.0)
     - pkgconfig(mozjs-52)
     - pkgconfig(xfixes)
+    - glib-networking
     - gnome-common
     - gtk-doc
 setup      : |

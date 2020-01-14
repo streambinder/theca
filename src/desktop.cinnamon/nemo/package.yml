@@ -1,8 +1,8 @@
 name       : nemo
-version    : 4.2.2
-release    : 2
+version    : 4.4.2
+release    : 3
 source     :
-    - https://github.com/linuxmint/nemo/archive/4.2.2.tar.gz : b9241fc3e4cc5fe094d478c494aaa117f0f2a6e077b576b00f2bea2cb26b24ab
+    - https://github.com/linuxmint/nemo/archive/4.4.2.tar.gz : cda3b99c8275c57bb285f8718ef3e463349a8eebe97cc126b0daebffeb242c95
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : File browser for Cinnamon
@@ -22,5 +22,5 @@ setup      : |
     %meson_configure
 build      : |
     %meson_build
-install    : |
+install    : |-
     %meson_install

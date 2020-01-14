@@ -1,8 +1,8 @@
 name       : cinnamon-control-center
-version    : 4.2.2
-release    : 1
+version    : 4.4.0
+release    : 2
 source     :
-    - https://github.com/linuxmint/cinnamon-control-center/archive/4.2.2.tar.gz : 0cd334e9fc36165664362d2bef7953879ec1f1d1becdbce21ef0557ea34618d7
+    - https://github.com/linuxmint/cinnamon-control-center/archive/4.4.0.tar.gz : 43d78c704ce37af175733e578c180698bb3141ef67ebf0122f271b0278105c35
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : A collection of configuration plugins used in cinnamon-settings
@@ -28,7 +28,6 @@ builddeps  :
     - pkgconfig(libgnomekbdui)
     - pkgconfig(libnm)
     - pkgconfig(libnma)
-    - pkgconfig(libnm-util)
     - pkgconfig(libnotify)
     - pkgconfig(libpulse)
     - pkgconfig(libwacom)
@@ -43,5 +42,5 @@ setup      : |
     %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64
 build      : |
     %make
-install    : |
+install    : |-
     %make_install

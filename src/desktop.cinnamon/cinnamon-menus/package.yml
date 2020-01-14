@@ -1,8 +1,8 @@
 name       : cinnamon-menus
-version    : 4.2.0
-release    : 1
+version    : 4.4.0
+release    : 2
 source     :
-    - https://github.com/linuxmint/cinnamon-menus/archive/4.2.0.tar.gz : 331bd599d7a863fa92329483637de159c25c57467305691f9768e675cd63f7c2
+    - https://github.com/linuxmint/cinnamon-menus/archive/4.4.0.tar.gz : c5597082394c054a9eff1820064ad5713f492d1780c793850a02a084a03a8379
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : The cinnamon-menu library

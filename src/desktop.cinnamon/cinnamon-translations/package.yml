@@ -1,8 +1,8 @@
 name       : cinnamon-translations
-version    : 4.2.2
-release    : 1
+version    : 4.4.2
+release    : 2
 source     :
-    - https://github.com/linuxmint/cinnamon-translations/archive/4.2.2.tar.gz : 0bfcca02894dcff4644a77560515ea33d4beed1365210cf17ea66b04bf52ee1d
+    - https://github.com/linuxmint/cinnamon-translations/archive/4.4.2.tar.gz : c13cdedf4efd71bf60583765b922e7a12dd6820e30c8207cfd5f8cd47c648037
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon Translations

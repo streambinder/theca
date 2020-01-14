@@ -1,8 +1,8 @@
 name       : cinnamon-desktop
-version    : 4.2.0
-release    : 1
+version    : 4.4.1
+release    : 2
 source     :
-    - https://github.com/linuxmint/cinnamon-desktop/archive/4.2.0.tar.gz : e7e6e9aa6e5c5c04a8320cb97ef545700826d04fc34e0f50d140d2efa41941a1
+    - https://github.com/linuxmint/cinnamon-desktop/archive/4.4.1.tar.gz : b32fb974e49048e091e98a24e740b01e4e6f97a7947b53dd65f4552dd61a34cf
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : The cinnamon-desktop library and common settings schemas for the cinnamon desktop
@@ -25,5 +25,5 @@ setup      : |
     %meson_configure
 build      : |
     %meson_build
-install    : |
+install    : |-
     %meson_install

@@ -1,8 +1,8 @@
 name       : muffin
-version    : 4.2.2
-release    : 1
+version    : 4.4.2
+release    : 2
 source     :
-    - https://github.com/linuxmint/muffin/archive/4.2.2.tar.gz : 08c64a7a951fc526d96b4e3b6b53997328904ae2430aad4c2611a4f130a5bd16
+    - https://github.com/linuxmint/muffin/archive/4.4.2.tar.gz : 1c7a98e1a0fa9356d7c166166830bdb043079cdb7ff8d3dd6dc817e29852a52a
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon window manager based on Mutter
@@ -25,7 +25,8 @@ builddeps  :
     - gtk-doc
     - zenity
 setup      : |
-    %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64 --disable-gtk-doc-html
+    sed -i 's/--warn-error//g' src/Makefile.am
+    %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64 --disable-gtk-doc-html --disable-wayland-egl-server
 build      : |
     %make
 install    : |

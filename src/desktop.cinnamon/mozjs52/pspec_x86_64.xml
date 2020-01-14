@@ -1,0 +1,378 @@
+<PISI>
+    <Source>
+        <Name>mozjs52</Name>
+        <Packager>
+            <Name>Automated Package Build</Name>
+            <Email>no.email.set.in.config</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <License>MPL-1.1</License>
+        <PartOf>desktop.library</PartOf>
+        <Summary xml:lang="en">JS is Mozilla&apos;s JavaScript engine written in C/C++</Summary>
+        <Description xml:lang="en">JS is Mozilla&apos;s JavaScript engine written in C/C++.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>mozjs52</Name>
+        <Summary xml:lang="en">JS is Mozilla&apos;s JavaScript engine written in C/C++</Summary>
+        <Description xml:lang="en">JS is Mozilla&apos;s JavaScript engine written in C/C++.
+</Description>
+        <PartOf>desktop.library</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/js52</Path>
+            <Path fileType="executable">/usr/bin/js52-config</Path>
+            <Path fileType="library">/usr/lib64/libmozjs-52.so.0</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>mozjs52-devel</Name>
+        <Summary xml:lang="en">Development files for mozjs52</Summary>
+        <Description xml:lang="en">JS is Mozilla&apos;s JavaScript engine written in C/C++.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">mozjs52</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/mozjs-52/fdlibm.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jemalloc_types.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js-config.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js.msg</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/CallArgs.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/CallNonGenericMethod.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/CharacterEncoding.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Class.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Conversions.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Date.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Debug.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/GCAPI.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/GCAnnotations.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/GCHashTable.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/GCPolicyAPI.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/GCVariant.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/GCVector.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/HashTable.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/HeapAPI.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Id.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Initialization.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/LegacyIntTypes.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/MemoryMetrics.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Principals.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/ProfilingFrameIterator.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/ProfilingStack.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Proxy.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Realm.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/RequiredDefines.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/RootingAPI.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/SliceBudget.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/StructuredClone.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/SweepingAPI.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/TraceKind.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/TracingAPI.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/TrackedOptimizationInfo.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/TypeDecls.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/UbiNode.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/UbiNodeBreadthFirst.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/UbiNodeCensus.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/UbiNodeDominatorTree.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/UbiNodePostOrder.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/UbiNodeShortestPaths.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/UniquePtr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Utility.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Value.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/Vector.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/js/WeakMapPtr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsalloc.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsapi.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsbytecode.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsclist.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jscpucfg.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsfriendapi.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsperf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsprf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsprototypes.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jspubtd.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jstypes.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jsversion.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/jswrapper.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Alignment.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/AllocPolicy.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/AlreadyAddRefed.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Array.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/ArrayUtils.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Assertions.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Atomics.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Attributes.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/BinarySearch.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/BloomFilter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/BufferList.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Casting.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/ChaosMode.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Char16.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/CheckedInt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Compiler.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Compression.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/DebugOnly.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Decimal.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/EndianUtils.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/EnumSet.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/EnumTypeTraits.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/EnumeratedArray.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/EnumeratedRange.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/FastBernoulliTrial.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/FloatingPoint.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Function.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/GuardObjects.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/HashFunctions.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/IndexSequence.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/IntegerPrintfMacros.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/IntegerRange.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/IntegerTypeTraits.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/JSONWriter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Likely.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/LinkedList.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/LinuxSignal.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/MacroArgs.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/MacroForEach.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/MathAlgorithms.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Maybe.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/MaybeOneOf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/MemoryChecking.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/MemoryReporting.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Move.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/NotNull.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/NullPtr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Opaque.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/OperatorNewExtensions.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Pair.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/PodOperations.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Poison.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Range.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/RangedArray.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/RangedPtr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/ReentrancyGuard.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/RefCountType.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/RefCounted.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/RefPtr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/ReverseIterator.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/RollingMean.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/SHA1.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Saturate.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/ScopeExit.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Scoped.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/SegmentedVector.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/SizePrintfMacros.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/SplayTree.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Sprintf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/StackWalk.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/StaticAnalysisFunctions.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/TaggedAnonymousMemory.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/TemplateLib.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/TextUtils.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/ThreadLocal.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/TimeStamp.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/ToString.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Tuple.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/TypeTraits.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/TypedEnumBits.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Types.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/UniquePtr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/UniquePtrExtensions.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Unused.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Variant.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/Vector.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/WeakPtr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/XorShift128PlusRNG.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/double-conversion.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/fallible.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/mozalloc.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/mozalloc_abort.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/mozalloc_oom.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozilla/utils.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozmemory.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/mozmemory_wrap.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/alphaindex.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/appendable.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/basictz.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/brkiter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/bytestream.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/bytestrie.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/bytestriebuilder.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/calendar.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/caniter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/chariter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/choicfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/coleitr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/coll.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/compactdecimalformat.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/curramt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/currpinf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/currunit.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/datefmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dbbi.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dcfmtsym.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/decimfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/docmain.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dtfmtsym.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dtintrv.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dtitvfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dtitvinf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dtptngen.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/dtrule.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/enumset.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/errorcode.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/fieldpos.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/filteredbrk.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/fmtable.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/format.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/fpositer.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/gender.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/gregocal.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/icudataver.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/icuplug.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/idna.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/listformatter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/localpointer.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/locdspnm.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/locid.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/measfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/measunit.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/measure.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/messagepattern.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/msgfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/normalizer2.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/normlzr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/numfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/numsys.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/parseerr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/parsepos.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/platform.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/plurfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/plurrule.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ptypes.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/putil.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/rbbi.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/rbnf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/rbtz.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/regex.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/region.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/reldatefmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/rep.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/resbund.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/schriter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/scientificnumberformatter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/search.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/selfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/simpleformatter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/simpletz.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/smpdtfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/sortkey.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/std_string.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/strenum.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/stringpiece.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/stringtriebuilder.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/stsearch.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/symtable.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tblcoll.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/timezone.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tmunit.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tmutamt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tmutfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/translit.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tzfmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tznames.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tzrule.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/tztrans.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ubidi.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ubiditransform.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ubrk.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucal.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucasemap.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucat.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uchar.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucharstrie.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucharstriebuilder.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uchriter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uclean.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucnv.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucnv_cb.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucnv_err.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucnvsel.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucol.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucoleitr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uconfig.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucsdet.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ucurr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/udat.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/udata.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/udateintervalformat.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/udatpg.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/udisplaycontext.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uenum.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ufieldpositer.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uformattable.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ugender.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uidna.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uiter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uldnames.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ulistformatter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uloc.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ulocdata.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/umachine.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/umisc.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/umsg.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unifilt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unifunct.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unimatch.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unirepl.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uniset.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unistr.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unorm.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unorm2.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unum.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/unumsys.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uobject.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/upluralrules.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uregex.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uregion.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ureldatefmt.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/urename.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/urep.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ures.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uscript.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/usearch.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uset.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/usetiter.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ushape.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uspoof.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/usprep.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ustring.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/ustringtrie.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utext.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utf.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utf16.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utf32.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utf8.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utf_old.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utmscale.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utrace.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utrans.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/utypes.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uvernum.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/uversion.h</Path>
+            <Path fileType="header">/usr/include/mozjs-52/unicode/vtzone.h</Path>
+            <Path fileType="library">/usr/lib64/libmozjs-52.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/mozjs-52.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2020-01-14</Date>
+            <Version>52.9.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Automated Package Build</Name>
+            <Email>no.email.set.in.config</Email>
+        </Update>
+    </History>
+</PISI>

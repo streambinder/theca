@@ -1,0 +1,227 @@
+<PISI>
+    <Source>
+        <Name>cinnamon-settings-daemon</Name>
+        <Packager>
+            <Name>Automated Package Build</Name>
+            <Email>no.email.set.in.config</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>desktop.cinnamon</PartOf>
+        <Summary xml:lang="en">The settings daemon for the Cinnamon desktop</Summary>
+        <Description xml:lang="en">cinnamon-settings-daemon is a collection of plugins.
+These plugins are started by cinnamon-session when you log in.
+The plugins run in the background, each with their own process.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cinnamon-settings-daemon</Name>
+        <Summary xml:lang="en">The settings daemon for the Cinnamon desktop</Summary>
+        <Description xml:lang="en">cinnamon-settings-daemon is a collection of plugins.
+These plugins are started by cinnamon-session when you log in.
+The plugins run in the background, each with their own process.
+</Description>
+        <PartOf>desktop.cinnamon</PartOf>
+        <Files>
+            <Path fileType="config">/etc/cinnamon-settings-daemon/xrandr</Path>
+            <Path fileType="config">/etc/dbus-1/system.d/org.cinnamon.SettingsDaemon.DateTimeMechanism.conf</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-a11y-keyboard.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-a11y-settings.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-automount.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-background.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-clipboard.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-color.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-cursor.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-housekeeping.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-keyboard.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-media-keys.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-mouse.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-orientation.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-power.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-print-notifications.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-screensaver-proxy.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-smartcard.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-sound.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-xrandr.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/cinnamon-settings-daemon-xsettings.desktop</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-settings-daemon-3.0/libcsd.so</Path>
+            <Path fileType="library">/usr/lib64/csd-a11y-keyboard</Path>
+            <Path fileType="library">/usr/lib64/csd-a11y-settings</Path>
+            <Path fileType="library">/usr/lib64/csd-automount</Path>
+            <Path fileType="library">/usr/lib64/csd-background</Path>
+            <Path fileType="library">/usr/lib64/csd-backlight-helper</Path>
+            <Path fileType="library">/usr/lib64/csd-clipboard</Path>
+            <Path fileType="library">/usr/lib64/csd-color</Path>
+            <Path fileType="library">/usr/lib64/csd-cursor</Path>
+            <Path fileType="library">/usr/lib64/csd-datetime-mechanism</Path>
+            <Path fileType="library">/usr/lib64/csd-dummy</Path>
+            <Path fileType="library">/usr/lib64/csd-housekeeping</Path>
+            <Path fileType="library">/usr/lib64/csd-input-helper</Path>
+            <Path fileType="library">/usr/lib64/csd-keyboard</Path>
+            <Path fileType="library">/usr/lib64/csd-locate-pointer</Path>
+            <Path fileType="library">/usr/lib64/csd-media-keys</Path>
+            <Path fileType="library">/usr/lib64/csd-mouse</Path>
+            <Path fileType="library">/usr/lib64/csd-orientation</Path>
+            <Path fileType="library">/usr/lib64/csd-power</Path>
+            <Path fileType="library">/usr/lib64/csd-print-notifications</Path>
+            <Path fileType="library">/usr/lib64/csd-printer</Path>
+            <Path fileType="library">/usr/lib64/csd-screensaver-proxy</Path>
+            <Path fileType="library">/usr/lib64/csd-smartcard</Path>
+            <Path fileType="library">/usr/lib64/csd-sound</Path>
+            <Path fileType="library">/usr/lib64/csd-xrandr</Path>
+            <Path fileType="library">/usr/lib64/csd-xsettings</Path>
+            <Path fileType="data">/usr/share/applications/csd-automount.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon-3.0/input-device-example.sh</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon/csd-a11y-preferences-dialog.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon/icons/hicolor/64x64/devices/kbd-capslock-off.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon/icons/hicolor/64x64/devices/kbd-capslock-on.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon/icons/hicolor/64x64/devices/kbd-numlock-off.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon/icons/hicolor/64x64/devices/kbd-numlock-on.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon/icons/hicolor/64x64/devices/kbd-scrolllock-off.png</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon/icons/hicolor/64x64/devices/kbd-scrolllock-on.png</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services/org.cinnamon.SettingsDaemon.DateTimeMechanism.service</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.enums.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.peripherals.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.peripherals.wacom.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.plugins.color.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.plugins.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.plugins.housekeeping.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.plugins.media-keys.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.plugins.power.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.plugins.xrandr.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.settings-daemon.plugins.xsettings.gschema.xml</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-a11y-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-a11y-settings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-automount.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-background.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-clipboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-cursor.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-datetime.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-housekeeping.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-media-keys.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-mouse.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-orientation.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-power.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-print-notifications.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-printer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-screensaver-proxy.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-sound.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-wacom.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-xrandr.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/csd-xsettings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-a11y-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-a11y-settings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-automount.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-background.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-clipboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-cursor.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-datetime.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-housekeeping.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-media-keys.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-mouse.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-orientation.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-power.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-print-notifications.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-printer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-screensaver-proxy.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-sound.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-wacom.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-xrandr.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/csd-xsettings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-a11y-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-a11y-settings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-automount.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-background.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-clipboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-cursor.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-datetime.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-housekeeping.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-media-keys.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-mouse.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-orientation.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-power.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-print-notifications.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-printer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-screensaver-proxy.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-sound.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-wacom.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-xrandr.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/csd-xsettings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-a11y-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-a11y-settings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-automount.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-background.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-clipboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-cursor.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-datetime.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-housekeeping.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-keyboard.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-media-keys.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-mouse.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-orientation.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-power.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-print-notifications.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-printer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-screensaver-proxy.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-sound.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-wacom.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-xrandr.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/csd-xsettings.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-a11y-keyboard.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-a11y-settings.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-automount.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-background.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-clipboard.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-color.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-cursor.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-datetime.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-housekeeping.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-keyboard.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-media-keys.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-mouse.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-orientation.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-power.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-print-notifications.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-printer.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-screensaver-proxy.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-sound.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-wacom.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-xrandr.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csd-xsettings.svg</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/org.cinnamon.settings-daemon.plugins.power.policy</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/org.cinnamon.settingsdaemon.datetimemechanism.policy</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>cinnamon-settings-daemon-devel</Name>
+        <Summary xml:lang="en">Development files for cinnamon-settings-daemon</Summary>
+        <Description xml:lang="en">cinnamon-settings-daemon is a collection of plugins.
+These plugins are started by cinnamon-session when you log in.
+The plugins run in the background, each with their own process.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="2">cinnamon-settings-daemon</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/cinnamon-settings-daemon-3.0/cinnamon-settings-daemon/csd-enums.h</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/cinnamon-settings-daemon.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="2">
+            <Date>2020-01-14</Date>
+            <Version>4.4.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Automated Package Build</Name>
+            <Email>no.email.set.in.config</Email>
+        </Update>
+    </History>
+</PISI>

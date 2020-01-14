@@ -1,8 +1,8 @@
 name       : cinnamon
-version    : 4.2.3
-release    : 3
+version    : 4.4.8
+release    : 4
 source     :
-    - https://github.com/linuxmint/cinnamon/archive/4.2.3.tar.gz : 18b91e625c730d11a86841947ae9727e691a5d865ee863fdea96189f2c7b9007
+    - https://github.com/linuxmint/cinnamon/archive/4.4.8.tar.gz : 5bc7db4e519aed8b3b76d6b68abc02be966633005a92579071a77d23d33c8af4
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : A Linux desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features
@@ -23,18 +23,21 @@ builddeps  :
     - pkgconfig(libcinnamon-menu-3.0)
     - pkgconfig(libcroco-0.6)
     - pkgconfig(libmuffin)
-    - pkgconfig(libnm-glib)
+    - pkgconfig(libnm)
     - pkgconfig(libpulse)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libstartup-notification-1.0)
     - pkgconfig(xfixes)
+    - glib-networking
     - gtk-doc
 rundeps    :
     - caribou
+    - libtimezonemap
     - python-pexpect
     - python-pam
     - python-pillow
     - python-tinycss
+    - python-pytz
 setup      : |
     %autogen --prefix=/usr \
         --sysconfdir=/etc \
