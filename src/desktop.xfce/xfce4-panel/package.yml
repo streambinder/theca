@@ -1,8 +1,8 @@
 name       : xfce4-panel
-version    : 4.14.0
-release    : 1
+version    : 4.14.3
+release    : 2
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-panel/4.14/xfce4-panel-4.14.0.tar.bz2 : d5f8f3bd7e142139987e5e62cda26135a424baabb5e47aa0c23b4169d0a66ef4
+    - http://archive.xfce.org/src/xfce/xfce4-panel/4.14/xfce4-panel-4.14.3.tar.bz2 : ef22324d26e5af735134bb10f85b6e16525ac9f48be8d2f6b634142fbfcabbc9
 license    : GPL-2.0
 summary    : Xfce's panel
 description: |
@@ -18,5 +18,5 @@ setup      : |
     %configure
 build      : |
     %make
-install    : |
+install    : |-
     %make_install

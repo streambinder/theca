@@ -1,8 +1,8 @@
 name       : xfdesktop
-version    : 4.14.1
-release    : 2
+version    : 4.14.2
+release    : 3
 source     :
-    - http://archive.xfce.org/src/xfce/xfdesktop/4.14/xfdesktop-4.14.1.tar.bz2 : f705a016246ec54ab0c688d1a0577f6c2b45a446690aa8d9e5a7ac23efebf882
+    - http://archive.xfce.org/src/xfce/xfdesktop/4.14/xfdesktop-4.14.2.tar.bz2 : a30534461fea907f969f608a11c84be0b1aaad687c591c32cd56a9d274ea3e74
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce's desktop manager
@@ -22,5 +22,5 @@ setup      : |
     %configure
 build      : |
     %make
-install    : |
+install    : |-
     %make_install

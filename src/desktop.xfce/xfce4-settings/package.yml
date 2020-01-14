@@ -1,8 +1,8 @@
 name       : xfce4-settings
-version    : 4.14.1
-release    : 1
+version    : 4.14.2
+release    : 2
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-settings/4.14/xfce4-settings-4.14.1.tar.bz2 : e873e9f6b8e801fd9304ee100c4c76ed9987446c38429d02477c086431c0bf7a
+    - http://archive.xfce.org/src/xfce/xfce4-settings/4.14/xfce4-settings-4.14.2.tar.bz2 : ebf70ff83e4fd0cb33fa0c3e871ca4df5127a505b30b83a6f780cf3f181b0af5
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Settings
@@ -15,5 +15,5 @@ setup      : |
     %configure
 build      : |
     %make
-install    : |
+install    : |-
     %make_install
