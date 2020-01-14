@@ -1,5 +1,0 @@
-0001-mozjs52-copy-headers.patch
-0002-mozjs52-disable-mozglue.patch
-0003-mozjs52-fix-soname.patch
-0004-fix-configure-scripts.patch
-0005-warnings-on-format-errors.patch
