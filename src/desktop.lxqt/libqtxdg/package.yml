@@ -1,8 +1,8 @@
 name       : libqtxdg
-version    : 3.3.1
-release    : 1
+version    : 3.4.0
+release    : 2
 source     :
-    - https://github.com/lxqt/libqtxdg/archive/3.3.1.tar.gz : f4d0fb4aa939cd90df237f826cc4c769e5d70cc2ea4a97434c2e29ddfe9808f6
+    - https://github.com/lxqt/libqtxdg/archive/3.4.0.tar.gz : c033348c5d5aab5349da02db9876dd60100aca8025bffea59730f936b7e51aaa
 license    : LGLP-2.1
 component  : desktop.lxqt
 summary    : Qt implementation of freedesktop.org xdg specs
