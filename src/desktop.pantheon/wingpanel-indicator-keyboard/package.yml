@@ -1,8 +1,8 @@
 name       : wingpanel-indicator-keyboard
-version    : 2.1.2
-release    : 2
+version    : 2.2.0
+release    : 3
 source     :
-    - https://github.com/elementary/wingpanel-indicator-keyboard/archive/2.1.2.tar.gz : 25b214825a5402c1918ab39c93d64b2d38379683c7f25fd4d3f22e8930e0bc94
+    - https://github.com/elementary/wingpanel-indicator-keyboard/archive/2.2.0.tar.gz : dbc883d7c7b2cbcb25d1c565696aa0067459363bb6b0aa0ae21b0253f063473f
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Wingpanel keyboard indicator
@@ -13,7 +13,6 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(libxml-2.0)
     - glib2-devel
-    - meson
     - vala
     - wingpanel-devel
 setup      : |
