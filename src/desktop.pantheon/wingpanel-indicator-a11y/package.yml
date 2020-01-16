@@ -10,7 +10,6 @@ description: |
     Wingpanel inicator for universal access settings and informations.
 builddeps  :
     - pkgconfig(granite)
-    - meson
     - vala
     - wingpanel-devel
 setup      : |
