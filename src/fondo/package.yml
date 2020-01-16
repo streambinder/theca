@@ -15,7 +15,6 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libsoup-2.4)
-    - meson
     - vala
 setup      : |
     %meson_configure
