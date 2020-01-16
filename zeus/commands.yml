@@ -1,0 +1,45 @@
+language: bash
+
+globals:
+    build_dir: bin
+
+commands:
+
+    setup:
+        description: Prepare environment
+        exec: mkdir -p ${build_dir}
+
+    update:
+        description: Update solbuild image
+        exec: sudo solbuild update
+
+    packages:
+        description: Build all packages
+        dependencies:
+            - setup
+            - update
+
+    components:
+        description: Build all components
+        dependencies:
+            - setup
+
+    release:
+        description: Perform a full build
+        dependencies:
+            - update
+            - packages
+            - components
+        exec: echo -n
+
+    fetch:
+        description: Grab packages from latest release
+        dependencies:
+            - setup
+
+    check:
+        description: Check packages for updates
+
+    clean:
+        description: Clean up
+        exec: rm -rf ${build_dir}
