@@ -1,8 +1,8 @@
 name       : wingpanel-indicator-datetime
-version    : 2.1.3
-release    : 2
+version    : 2.2.1
+release    : 3
 source     :
-    - https://github.com/elementary/wingpanel-indicator-datetime/archive/2.1.3.tar.gz : 319c56d39b0b1b9a1478d01aa7e88778b38c7fd8eb7ef7493c6a395993a66231
+    - https://github.com/elementary/wingpanel-indicator-datetime/archive/3ccd05d611e6dd5274a03f061ba1b5e13d6fe0cf.tar.gz : cfab95f4b0c2e5e9c4fd8ac1da80c7540005d0fc3b8e343350ac57d372c4dd8f
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Wingpanel date and time indicator
@@ -12,8 +12,8 @@ builddeps  :
     - pkgconfig(evolution-data-server-1.2)
     - pkgconfig(gobject-introspection-1.0)
     - pkgconfig(granite)
+    - pkgconfig(libecal-2.0)
     - pkgconfig(libical)
-    - meson
     - vala
     - wingpanel-devel
 setup      : |
