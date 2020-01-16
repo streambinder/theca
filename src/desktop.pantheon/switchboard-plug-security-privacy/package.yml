@@ -1,8 +1,8 @@
 name       : switchboard-plug-security-privacy
-version    : 2.2.1
-release    : 2
+version    : 2.2.2
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.1.tar.gz : b6e8014aca233bda71bf2807cd5f857dd29ec49202da95d3a8bb70b1bb0b07f0
+    - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.2.tar.gz : 9048a330e149e3f68a83ac04c7a2630ec7cbba60cd673fd109924ebf9386f4e6
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard security and privacy plug
@@ -16,7 +16,6 @@ builddeps  :
     - pkgconfig(zeitgeist-2.0)
     - glib2-devel
     - glibc-devel
-    - meson
     - polkit-devel
     - ufw
     - vala
