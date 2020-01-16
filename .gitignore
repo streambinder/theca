@@ -1,2 +1,5 @@
 bin/
+zeus/data.yml
+zeus/dumps
+zeus/.historys
 *.eopkg
