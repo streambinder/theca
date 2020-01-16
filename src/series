@@ -16,6 +16,7 @@ gsignond
 iceauth
 libfm-extra
 libgsignon-glib
+libhandy
 libsignon-glib
 libstatgrab
 libxfce4util
