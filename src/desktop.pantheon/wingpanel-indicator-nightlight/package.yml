@@ -12,7 +12,6 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - glib2-devel
-    - meson
     - vala
     - wingpanel-devel
 setup      : |
