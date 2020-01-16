@@ -1,8 +1,8 @@
 name       : pantheon-tweaks
-version    : 20190724
-release    : 1
+version    : 20191126
+release    : 2
 source     :
-    - https://github.com/elementary-tweaks/elementary-tweaks/archive/47574c8b64e1d362db5055b82334717515977a73.tar.gz : d72fd77dcba1533ba5a3bd9dbc45ab14e25b56b84f8a0a94c41a1b89d7855af1
+    - https://github.com/elementary-tweaks/elementary-tweaks/archive/9a98a9ffef17ec98befae5122ed8ce3d0d3fa5ea.tar.gz : d55facd8010b289dd13497ed9ff9ffbe1fb4848542bce4f215c110e9d3639e33
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon customization tool
