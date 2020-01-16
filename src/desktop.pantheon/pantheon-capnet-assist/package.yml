@@ -1,8 +1,8 @@
 name       : pantheon-capnet-assist
-version    : 2.2.3
-release    : 2
+version    : 2.2.4
+release    : 3
 source     :
-    - https://github.com/elementary/capnet-assist/archive/2.2.3.tar.gz : a38e8d651d260e2b85754a2711319ea780113155e2538634315cdebbee0a18c0
+    - https://github.com/elementary/capnet-assist/archive/2.2.4.tar.gz : 5dc644eb751362f9ed572f957faea0ac6466ab2beb51518de2d42b001c3a74a0
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon Captive Portal Assistant
@@ -15,7 +15,6 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(webkit2gtk-4.0)
     - glib2-devel
-    - meson
     - vala
 setup      : |
     %meson_configure
