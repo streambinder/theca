@@ -28,7 +28,6 @@ builddeps  :
     - gettext-devel
     - glib2-devel
     - gsettings-desktop-schemas-devel
-    - meson
     - vala
 setup      : |
     %meson_configure
