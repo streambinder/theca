@@ -1,20 +1,20 @@
 name       : pantheon-calendar
-version    : 5.0
-release    : 2
+version    : 5.0.3
+release    : 3
 source     :
-    - https://github.com/elementary/calendar/archive/5.0.tar.gz : f47bae213163ec87c2e4f2c0563a40be8cf080cab70094a6a4f41936803fb3fa
+    - https://github.com/elementary/calendar/archive/5.0.3.tar.gz : c4ed1f815faa15f474d2c79e5ae13b00f9dd49e0d7591f2fb54a01cc72194162
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon calendar app
 description: |
     Desktop calendar app designed for elementary OS.
 builddeps  :
+    - evolution-data-server
     - pkgconfig(champlain-0.12)
     - pkgconfig(folks)
     - pkgconfig(gee-0.8)
     - pkgconfig(geocode-glib-1.0)
     - pkgconfig(granite)
-    - pkgconfig(libecal-1.2)
     - pkgconfig(libgeoclue-2.0)
     - vala
 setup      : |
