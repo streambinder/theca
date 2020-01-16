@@ -19,7 +19,6 @@ builddeps  :
     - pkgconfig(libsoup-2.4)
     - pkgconfig(taglib)
     - glib2-devel
-    - meson
     - vala
 setup      : |
     %meson_configure
