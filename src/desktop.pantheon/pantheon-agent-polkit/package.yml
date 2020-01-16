@@ -1,18 +1,18 @@
 name       : pantheon-agent-polkit
-version    : 0.1.6
-release    : 1
+version    : 1.0.0
+release    : 2
 source     :
-    - https://github.com/elementary/pantheon-agent-polkit/archive/0.1.6.tar.gz : 3a6849230b489da2f0327bce530c545dc4f6686a0a73db5c77202566214c5ec9
+    - https://github.com/elementary/pantheon-agent-polkit/archive/1.0.0.tar.gz : 8e730f335545a4ca2717e1c9ccad61c329c1f19ea51f76ae4783da9e0416d484
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Pantheon Polkit Agent
 description: |
     An agent for Polkit authorization designed for Pantheon.
 builddeps  :
+    - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(polkit-agent-1)
     - pkgconfig(polkit-gobject-1)
-    - meson
     - vala
 setup      : |
     %meson_configure
