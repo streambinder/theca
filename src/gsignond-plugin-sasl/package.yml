@@ -15,7 +15,6 @@ builddeps  :
     - glib2-devel
     - glibc-devel
     - gtk-doc-devel
-    - meson
 setup      : |
     %meson_configure -Ddocumentation='false'
 build      : |
