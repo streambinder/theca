@@ -1,8 +1,8 @@
 name       : wingpanel-indicator-session
-version    : 2.2.5
-release    : 3
+version    : 2.2.6
+release    : 4
 source     :
-    - https://github.com/elementary/wingpanel-indicator-session/archive/2.2.5.tar.gz : 30076c9acf54cef74557015564aaa1fb31553e8f306ee8c29558c2472127f996
+    - https://github.com/elementary/wingpanel-indicator-session/archive/2.2.6.tar.gz : 193b0f6ff22ae3539835713187da28da1a721785f5b9cc4aa9f94e5cac6c1735
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Wingpanel session indicator
@@ -13,7 +13,6 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - glib2-devel
-    - meson
     - vala
     - wingpanel-devel
 setup      : |
