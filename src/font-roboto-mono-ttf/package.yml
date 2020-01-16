@@ -1,8 +1,8 @@
 name       : font-roboto-mono-ttf
-version    : 20190614
-release    : 1
+version    : 20200115
+release    : 2
 source     :
-    - https://fonts.google.com/download?family=Roboto+Mono : 40c56f66f20786289daa05fb46d4896b99756353b2f66d0f7df3afa1ac4876a0
+    - https://fonts.google.com/download?family=Roboto+Mono : 28badb50c44918271301a21c45074b701f0748896b421e93b0b07ed7b634a62a
 license    : Apache-2.0
 summary    : Google's signature family of fonts
 networking : true
