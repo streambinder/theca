@@ -1,8 +1,8 @@
 name       : switchboard-plug-power
-version    : 2.3.5
-release    : 2
+version    : 2.4.0
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-power/archive/2.3.5.tar.gz : 56aee47f37d3205d1a6a49347743cab80d0f5a92b43ab592d43f86a971564e53
+    - https://github.com/elementary/switchboard-plug-power/archive/2.4.0.tar.gz : 6e2150f2a677afc6340401514111722f67612e31afeac2e202e0c096b4dd9468
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Switchboard power plug
@@ -14,7 +14,6 @@ builddeps  :
     - pkgconfig(switchboard-2.0)
     - glib2-devel
     - glibc-devel
-    - meson
     - polkit-devel
     - vala
 setup      : |
