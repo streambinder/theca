@@ -1,8 +1,8 @@
 name       : pantheon-agent-geoclue2
-version    : 1.0.2
-release    : 2
+version    : 1.0.3
+release    : 3
 source     :
-    - https://github.com/elementary/pantheon-agent-geoclue2/archive/1.0.2.tar.gz : d21529c82d1792496c3d4cdd8d06522af926b4ac6b17baddce24b63528e76f86
+    - https://github.com/elementary/pantheon-agent-geoclue2/archive/1.0.3.tar.gz : 5f75c205db68ea533de59433f6877dc64aebb1d7189dbf5734a2cd9398c8c9a9
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon Location Services Agent
