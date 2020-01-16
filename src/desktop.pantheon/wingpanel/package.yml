@@ -1,8 +1,8 @@
 name       : wingpanel
-version    : 2.2.5
-release    : 4
+version    : 2.2.6
+release    : 5
 source     :
-    - https://github.com/elementary/wingpanel/archive/2.2.5.tar.gz : c409c8cc3d935a9c31991eb572d59f9a810ed428aeae2be53491e47e149102c6
+    - https://github.com/elementary/wingpanel/archive/2.2.6.tar.gz : 21de38757794edf72f0ff115d74b9338d83879a380bc46047a1d17f8061be67b
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Stylish top panel that holds indicators and spawns the application launcher
@@ -16,7 +16,7 @@ builddeps  :
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libmutter-2)
     - pkgconfig(libsoup-2.4)
-    - pkgconfig(libvala-0.44)
+    - pkgconfig(libvala-0.46)
     - pkgconfig(sqlite3)
     - pkgconfig(taglib)
     - gala-devel
