@@ -1,8 +1,8 @@
 name       : switchboard-plug-about
-version    : 2.6.0
-release    : 3
+version    : 2.6.1
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-about/archive/2.6.0.tar.gz : e2c7984d48f72e899bbbd90333783ea70036aca2b6e2444b54a4ef96692acb76
+    - https://github.com/elementary/switchboard-plug-about/archive/2.6.1.tar.gz : 6cef45131e5e8a974aee376029668e5a3ddd794cd9753425d769d1ee46235c02
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard about plug
@@ -12,7 +12,6 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(switchboard-2.0)
-    - meson
     - vala
 setup      : |
     %meson_configure
