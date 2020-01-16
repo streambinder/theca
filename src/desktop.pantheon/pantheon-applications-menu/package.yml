@@ -1,8 +1,8 @@
 name       : pantheon-applications-menu
-version    : 2.4.4
-release    : 6
+version    : 2.5.0
+release    : 7
 source     :
-    - https://github.com/elementary/applications-menu/archive/2.4.4.tar.gz : 1e85bbdaf47de4e41b3264a51b144c9e600d16e81ca9f487e2b33c37d3c58f3d
+    - https://github.com/elementary/applications-menu/archive/2.5.0.tar.gz : 209e05f3d149d204eddaa5742bb5b6bf15636929fe69965e7652200e0571f014
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon applications menu
@@ -18,7 +18,7 @@ builddeps  :
     - pkgconfig(libgnome-menu-3.0)
     - pkgconfig(libmutter-2)
     - pkgconfig(libsoup-2.4)
-    - pkgconfig(libvala-0.44)
+    - pkgconfig(libvala-0.46)
     - pkgconfig(libwnck-3.0)
     - pkgconfig(plank)
     - pkgconfig(sqlite3)
@@ -27,7 +27,6 @@ builddeps  :
     - pkgconfig(wingpanel-2.0)
     - pkgconfig(zeitgeist-2.0)
     - gala-devel
-    - meson
     - plank
     - vala
 setup      : |
