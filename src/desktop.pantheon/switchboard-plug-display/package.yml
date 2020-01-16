@@ -1,8 +1,8 @@
 name       : switchboard-plug-display
-version    : 2.1.9
-release    : 3
+version    : 2.2.0
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-display/archive/2.1.9.tar.gz : ebf10ae3da2c0c947eb6718d6d5f6af55d7539511682200032363c57413051fe
+    - https://github.com/elementary/switchboard-plug-display/archive/2.2.0.tar.gz : 383165adea0b34bda4643dcaa4f3bf3b7bacc77e368015ed2acef4617604d9c3
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard display plug
@@ -12,7 +12,6 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(switchboard-2.0)
-    - meson
     - vala
 setup      : |
     %meson_configure
