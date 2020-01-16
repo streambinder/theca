@@ -14,7 +14,6 @@ builddeps  :
     - pkgconfig(gudev-1.0)
     - pkgconfig(libbamf3)
     - pkgconfig(libgtop-2.0)
-    - meson
     - vala
     - wingpanel-devel
 setup      : |
