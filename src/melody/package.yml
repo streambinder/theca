@@ -18,7 +18,6 @@ builddeps  :
     - pkgconfig(libsoup-2.4)
     - pkgconfig(sqlite3)
     - pkgconfig(taglib)
-    - meson
     - vala
 setup      : |
     %meson_configure
