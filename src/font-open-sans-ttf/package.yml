@@ -1,8 +1,8 @@
 name       : font-open-sans-ttf
-version    : 20190614
-release    : 1
+version    : 20200115
+release    : 2
 source     :
-    - https://fonts.google.com/download?family=Open+Sans : 91693be5c509f738700c781c4604536cd4c4bf30cf448e78e7d21f7378ca427b
+    - https://fonts.google.com/download?family=Open+Sans : da00d6f00a99963ca7e1a5869e3bbf530d57ce61f18e033b9f8c49c30b7043f2
 license    : Apache-2.0
 summary    : Google's sans-serif family Open Sans font
 networking : true
