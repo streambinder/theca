@@ -1,8 +1,8 @@
 name       : switchboard-plug-sound
-version    : 2.2.1
-release    : 2
+version    : 2.2.2
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-sound/archive/2.2.1.tar.gz : 7c92c5eae0270832a3a740ab649cead6f80c85c7f123ca3733f84d192fb9537a
+    - https://github.com/elementary/switchboard-plug-sound/archive/2.2.2.tar.gz : 9907b357721e86a36e0e91908d808b2cd7af866f4862a319fd964eb50e92af52
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Switchboard sound plug
@@ -14,7 +14,6 @@ builddeps  :
     - pkgconfig(libcanberra)
     - pkgconfig(libpulse)
     - pkgconfig(switchboard-2.0)
-    - meson
     - vala
 setup      : |
     %meson_configure
