@@ -10,7 +10,6 @@ description: |
     Wingpanel inicator for network settings and informations.
 builddeps  :
     - glib2-devel
-    - meson
     - network-manager-applet-devel
     - network-manager-devel
     - pkgconfig(gee-0.8)
