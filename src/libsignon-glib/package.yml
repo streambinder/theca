@@ -14,7 +14,6 @@ builddeps  :
     - pkgconfig(gobject-introspection-1.0)
     - glib2-devel
     - gtk-doc-devel
-    - meson
     - vala
 setup      : |
     tar -xf $sources/signon-dbus-specification-67487954653006ebd0743188342df65342dc8f9b.tar.gz --strip 1 -C libsignon-glib/interfaces/
