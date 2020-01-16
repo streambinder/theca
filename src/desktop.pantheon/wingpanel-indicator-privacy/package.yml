@@ -9,7 +9,6 @@ summary    : Wingpanel privacy indicator
 description: |
     Wingpanel inicator for privacy settings and informations.
 builddeps  :
-    - meson
     - pkgconfig(gee-0.8)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libbamf3)
