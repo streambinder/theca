@@ -1,8 +1,8 @@
 name       : switchboard-plug-useraccounts
-version    : 2.2.1
-release    : 2
+version    : 2.3.0
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.2.1.tar.gz : eff25f99456561cef7e6dcf69718100a293c7081efe6ac6cefe37e3429913525
+    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.3.0.tar.gz : c22dcdc5a853b25a7d2a78c376c3891b60a9f57d38976ded2ca78520e1202b8f
 license    : LGPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard user accounts plug
@@ -15,7 +15,6 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(pwquality)
     - pkgconfig(switchboard-2.0)
-    - meson
     - polkit-devel
     - vala
 setup      : |
