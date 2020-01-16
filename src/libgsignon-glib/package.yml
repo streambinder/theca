@@ -12,7 +12,6 @@ builddeps  :
     - pkgconfig(gobject-introspection-1.0)
     - glib2-devel
     - gtk-doc-devel
-    - meson
     - vala
 setup      : |
     %autogen --prefix='/usr' --enable-dbus-type='session' --enable-introspection='yes'
