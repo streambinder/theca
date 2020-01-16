@@ -14,7 +14,6 @@ builddeps  :
     - pkgconfig(sqlite3)
     - glib2-devel
     - glibc-devel
-    - meson
     - vala
 setup      : |
     %meson_configure -Ddocumentation='false' -Dbus_type='session' -Dextension='desktop'
