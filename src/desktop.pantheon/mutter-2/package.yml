@@ -1,6 +1,6 @@
 name       : mutter-2
 version    : 3.28.2
-release    : 43
+release    : 44
 source     :
     - https://gitlab.gnome.org/GNOME/mutter/-/archive/3.28.2/mutter-3.28.2.tar.gz : 7b9c8fa5748f916015120e2094e43b31e49b3955dc98308103f98962f0bf5eaa
 license    : GPL-2.0
@@ -39,6 +39,7 @@ rundeps    :
     - zenity
 setup      : |
     %apply_patches
+    sed -i '/^\(rw\|tk\)$/d' po/LINGUAS
     %autogen \
             --prefix=/usr \
             --includedir=/usr/include/mutter-2 \

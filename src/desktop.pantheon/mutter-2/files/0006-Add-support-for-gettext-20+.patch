@@ -1,0 +1,10 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -53,6 +53,7 @@
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[Name of default gettext domain])
+ 
+ AM_GNU_GETTEXT_VERSION([0.19.6])
++AM_GNU_GETTEXT_REQUIRE_VERSION([0.19.6])
+ AM_GNU_GETTEXT([external])
+ 
+ LT_PREREQ([2.2.6])
