@@ -12,7 +12,6 @@ description: |
     It is probably not useful for users.
 builddeps  :
     - desktop-file-utils
-    - meson
 setup      : |
     %meson_configure
 build      : |
