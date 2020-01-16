@@ -24,7 +24,6 @@ builddeps  :
     - gperf
     - gtk-doc
     - lmdb-devel
-    - meson
     - stemmer-devel
     - vala
 setup      : |
