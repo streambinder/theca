@@ -1,8 +1,8 @@
 name       : switchboard-plug-bluetooth
-version    : 2.2.2
-release    : 2
+version    : 2.3.0
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-bluetooth/archive/2.2.2.tar.gz : 6aef5482246a1d413f7152623b8af10139436bbbe9ebee94264d07a18ac11af6
+    - https://github.com/elementary/switchboard-plug-bluetooth/archive/2.3.0.tar.gz : ffeb4cdb53696b241e203f4e0920bb90c05fd77b99a05bd9483cb4c8367f1000
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard bluetooth plug
@@ -15,7 +15,6 @@ builddeps  :
     - pkgconfig(switchboard-2.0)
     - glib2-devel
     - glibc-devel
-    - meson
     - vala
 setup      : |
     %meson_configure
