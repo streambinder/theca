@@ -9,8 +9,6 @@ summary    : A bespoke sound for Pantheon theme
 description: |
     A set of system sounds for elementary OS.
     Designed to be light, natural/physical, and pleasant.
-builddeps  :
-    - meson
 setup      : |
     %meson_configure
 build      : |
