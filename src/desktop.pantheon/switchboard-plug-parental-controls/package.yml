@@ -15,7 +15,6 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(switchboard-2.0)
     - glib2-devel
-    - meson
     - polkit-devel
     - vala
 setup      : |
