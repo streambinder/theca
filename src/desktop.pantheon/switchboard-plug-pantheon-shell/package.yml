@@ -1,8 +1,8 @@
 name       : switchboard-plug-pantheon-shell
-version    : 2.8.1
-release    : 2
+version    : 2.8.2
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-pantheon-shell/archive/2.8.1.tar.gz : 79d9a1ea220e1564c739fc2e07d4481d35f8a46f9c23c505c46b2cd754434ee2
+    - https://github.com/elementary/switchboard-plug-pantheon-shell/archive/2.8.2.tar.gz : ddf1dd7622aeb66202d6d230a2e09a0e097c8625b94e0d8281f0947474935f24
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard desktop plug
@@ -16,7 +16,6 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(plank)
     - pkgconfig(switchboard-2.0)
-    - meson
     - vala
 setup      : |
     %meson_configure -Dlibunity='false'
