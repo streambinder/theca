@@ -39,6 +39,7 @@ commands:
 
     check:
         description: Check packages for updates
+        exec: find src -type f -name 'package.yml' -exec solbump -dry {} \;
 
     clean:
         description: Clean up
