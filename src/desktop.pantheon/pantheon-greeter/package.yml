@@ -1,8 +1,8 @@
 name       : pantheon-greeter
 version    : 5.0.1
-release    : 7
+release    : 8
 source     :
-    - https://github.com/elementary/greeter/archive/5.0.1.tar.gz : 8e3758a1d6ff94f2de30ced6e56de85da2c617cad1301e9cd1233c22abf1fe82
+    - https://github.com/elementary/greeter/archive/f7ef9ec0e48028ddb297fdfad69bfc9011673026.zip : c69fbf2cc8cddad1b2fcceed1ca157affeee3e1f960a11bd64e048805fa5bc88
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : LightDM Greeter for Pantheon
@@ -18,7 +18,7 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(liblightdm-gobject-1)
-    - pkgconfig(libmutter-2)
+    - pkgconfig(libmutter-5)
     - pkgconfig(libvala-0.46)
     - pkgconfig(wingpanel-2.0)
     - pkgconfig(x11)
