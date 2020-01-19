@@ -1,6 +1,6 @@
 name       : pantheon-session-settings
 version    : 5.0.3
-release    : 3
+release    : 4
 source     :
     - https://github.com/elementary/session-settings/archive/5.0.3.tar.gz : 71c1ff1fcd23aa3704bfa7a271783ed510da99616eb8c3c89d99857874cdb5ea
 license    : GPL-1.0
@@ -8,6 +8,8 @@ component  : desktop.pantheon
 summary    : Pantheon session settings
 description: |
     Pantheon login session and some session-specific configuration files and defaults.
+conflicts  :
+    - gnome-screensaver
 install    : |
     mkdir -p $installdir/{etc/xdg,usr/share/{gnome-session,pantheon}}
     cp -dr --no-preserve='ownership' applications $installdir/usr/share/pantheon/
