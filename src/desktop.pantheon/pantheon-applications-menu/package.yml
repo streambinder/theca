@@ -1,6 +1,6 @@
 name       : pantheon-applications-menu
 version    : 2.5.0
-release    : 7
+release    : 8
 source     :
     - https://github.com/elementary/applications-menu/archive/2.5.0.tar.gz : 209e05f3d149d204eddaa5742bb5b6bf15636929fe69965e7652200e0571f014
 license    : GPL-3.0
@@ -16,7 +16,7 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libgnome-menu-3.0)
-    - pkgconfig(libmutter-2)
+    - pkgconfig(libmutter-5)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libvala-0.46)
     - pkgconfig(libwnck-3.0)
