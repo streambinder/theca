@@ -1,6 +1,6 @@
 name       : wingpanel
 version    : 2.2.6
-release    : 5
+release    : 6
 source     :
     - https://github.com/elementary/wingpanel/archive/2.2.6.tar.gz : 21de38757794edf72f0ff115d74b9338d83879a380bc46047a1d17f8061be67b
 license    : GPL-3.0
@@ -14,7 +14,7 @@ builddeps  :
     - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
-    - pkgconfig(libmutter-2)
+    - pkgconfig(libmutter-5)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libvala-0.46)
     - pkgconfig(sqlite3)
