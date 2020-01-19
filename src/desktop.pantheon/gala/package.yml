@@ -1,8 +1,8 @@
 name       : gala
-version    : 1
-release    : 3
+version    : 3.2.0
+release    : 4
 source     :
-    - https://github.com/elementary/gala/archive/stable/juno.tar.gz : 87995bd889a07b5642de637ea48c364469be62ea5111ed4869f64aeddddabde1
+    - https://github.com/elementary/gala/archive/3.2.0.tar.gz : 137ceb10f9649defd30c27606fb63eb82c3622eb8aa45339747c135b03d723a8
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon window and compositing manager
@@ -19,7 +19,7 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libbamf3)
-    - pkgconfig(libmutter-2)
+    - pkgconfig(libmutter-5)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libxml-2.0)
     - pkgconfig(plank)
