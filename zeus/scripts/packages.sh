@@ -10,7 +10,7 @@ grep -v ^\# ../src/series | while read pkg_name; do
     pkg_version="$(awk -F': ' '/^version/ {print $2}' "${pkg}/package.yml")"
     pkg_release="$(awk -F': ' '/^release/ {print $2}' "${pkg}/package.yml")"
     if [ -f "${pkg_name}-${pkg_version}-${pkg_release}-"*".eopkg" ]; then
-        echo "Package ${pkg_name} up-to-date"
+        # echo "Package ${pkg_name} up-to-date"
         continue
     fi
       
