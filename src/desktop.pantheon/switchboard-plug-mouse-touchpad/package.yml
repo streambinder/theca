@@ -1,8 +1,8 @@
 name       : switchboard-plug-mouse-touchpad
-version    : 2.3.1
-release    : 3
+version    : 2.4.0
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-mouse-touchpad/archive/2.3.1.tar.gz : 200500e6934e1dd5838b6e310168c6560836ed7439edc65f047e2a48c32a415b
+    - https://github.com/elementary/switchboard-plug-mouse-touchpad/archive/2.4.0.tar.gz : 00df27e22d62410913be708b625ef3c86a9c212b113de666d017673ee5b3481e
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard mouse and touchpad plug
