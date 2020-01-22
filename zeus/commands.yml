@@ -24,11 +24,20 @@ commands:
         dependencies:
             - setup
 
+    strip:
+        description: Remove all non-up-to-date built packages
+
+    index:
+        description: Generate repository index
+        exec: cd ${build_dir} && sudo solbuild index > /dev/null 2>&1
+
     release:
         description: Perform a full build
         dependencies:
             - update
             - packages
+            - strip
+            - index
             - components
         exec: echo -n
 
