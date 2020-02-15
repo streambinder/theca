@@ -1,8 +1,8 @@
 name       : spotitube
-version    : 26
-release    : 4
+version    : 27
+release    : 5
 source     :
-    - https://github.com/streambinder/spotitube/releases/download/v26/spotitube-v26.deb : bb4319b1d80371d49584feb93ff5dbe16c299d527559a7a3d814c4a9ba2b27ba
+    - https://github.com/streambinder/spotitube/releases/download/v27/spotitube-v27.deb : 2875794c6abaedb07744f76c82f5aacef882f53c96f46cd32eec85bd1529b33c
 license    : GPL-3.0
 component  : network.clients
 summary    : Shell application to incrementally download from Spotify into local folder
