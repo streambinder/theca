@@ -1,8 +1,8 @@
 name       : xfce4-whiskermenu-plugin
-version    : 2.3.4
-release    : 2
+version    : 2.4.2
+release    : 3
 source     :
-    - https://github.com/gottcode/xfce4-whiskermenu-plugin/archive/v2.3.4.tar.gz : 894641707ed1c89cf783150c7715644255ae5d8ddc78d66b778ea9fb8b581814
+    - https://github.com/gottcode/xfce4-whiskermenu-plugin/archive/v2.4.2.tar.gz : 17f0d717f63ac4e603bd87533eef01c0d5280e4335311f8ebb961594c37fe8e9
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Alternate Xfce menu
