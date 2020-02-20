@@ -63,6 +63,7 @@ xfwm4-themes
 # 2nd group: next ones have build dependencies from 1st group
 appstream
 awesomewm
+binwalk
 cinnamon-screensaver
 cinnamon-session
 cinnamon-settings-daemon
