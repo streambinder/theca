@@ -7,7 +7,7 @@ license    : MIT
 summary    : Firmware Analysis Tool
 description: |
     Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
-builddeps  :
-    - python3
+rundeps    :
+    - sleuthkit
 install    : |
     %python_install
