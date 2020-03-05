@@ -1,8 +1,8 @@
 name       : wingpanel-indicator-nightlight
-version    : 2.0.2
-release    : 2
+version    : 2.0.3
+release    : 3
 source     :
-    - https://github.com/elementary/wingpanel-indicator-nightlight/archive/2.0.2.tar.gz : d59f14e048250b0e792b6ce2e2ffc74f982d6d50920dcf7553904cc29dd54150
+    - https://github.com/elementary/wingpanel-indicator-nightlight/archive/2.0.3.tar.gz : 4b1dbccd3dbb224ad20c491a15bf658ba4b063ad2226511c10b8d9d4509f5e70
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Wingpanel nightlight indicator
