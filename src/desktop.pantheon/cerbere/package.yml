@@ -1,8 +1,8 @@
 name       : cerbere
-version    : 2.5.0
-release    : 3
+version    : 2.5.1
+release    : 4
 source     :
-    - https://github.com/elementary/cerbere/archive/2.5.0.tar.gz : a393fb6ca09256ec403e160bde4926a641db451ed47c98c66bdfb74b552b63f0
+    - https://github.com/elementary/cerbere/archive/2.5.1.tar.gz : 1ecc0cb350b2794d64ab21bd492143872140eba1f1964f5dc0fc9e222802b32e
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : A simple service to ensure uptime of essential processes
