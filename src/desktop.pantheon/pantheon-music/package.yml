@@ -1,8 +1,8 @@
 name       : pantheon-music
-version    : 5.0.4
-release    : 1
+version    : 5.0.5
+release    : 2
 source     :
-    - https://github.com/elementary/music/archive/5.0.4.tar.gz : 375b9e4d7c6c842eb0d738e5073cf28198328768df2f3a2fa9895bc194a41d94
+    - https://github.com/elementary/music/archive/5.0.5.tar.gz : ed7cba3b07189273890b321b21cda198f18b102e4466eb7207c0b5f27b31dfc9
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon music app
