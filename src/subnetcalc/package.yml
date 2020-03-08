@@ -1,0 +1,18 @@
+name       : subnetcalc
+version    : 2.4.15
+release    : 1
+source     :
+    - https://github.com/dreibh/subnetcalc/archive/subnetcalc-2.4.15.tar.gz : 9a4fc1847df3d82ef56a3df3b8f8199af1f944e6be292d12b1fe80a741b467f6
+license    : GPL-3.0
+summary    : IP address calculator
+description: |
+    SubNetCalc is an IPv4/IPv6 subnet address calculator.
+    For given IPv4 or IPv6 address and netmask or prefix length, it calculates network address, broadcast address, maximum number of hosts and host address range.
+    Also, it prints the addresses in binary format for better understandability.
+    Furthermore, it prints useful information on specific address types (e.g. type, scope, interface ID, etc.).
+setup      : |
+    ./autogen.sh --use-gcc
+build      : |
+    %make
+install    : |
+    %make_install
