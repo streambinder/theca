@@ -1,0 +1,8 @@
+<Component>
+    <Name>desktop.pantheon</Name>
+    <Group>desktop</Group>
+    <Maintainer>
+        <Name>Davide Pucci</Name>
+        <Email>posta@davidepucci.it</Email>
+    </Maintainer>
+</Component>
