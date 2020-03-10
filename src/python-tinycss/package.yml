@@ -1,6 +1,6 @@
 name       : python-tinycss
 version    : 0.4
-release    : 1
+release    : 2
 source     :
     - https://github.com/Kozea/tinycss/archive/v0.4.tar.gz : 502b481ed76708bf7ea75e3f74d0cd50d6428328f6432a06e4d6e27980bed53b
 license    : 0BSD

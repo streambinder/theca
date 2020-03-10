@@ -1,6 +1,6 @@
 name       : python-pam
 version    : 1.8.4
-release    : 1
+release    : 2
 source     :
     - https://github.com/FirefighterBlu3/python-pam/archive/v1.8.4.tar.gz : fa048ca74f08de1390b2576754c05327700a7ebc3d05511f0329a04ebe1aeaa3
 license    : MIT
