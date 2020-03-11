@@ -1,6 +1,6 @@
 name       : nemo
 version    : 4.4.2
-release    : 3
+release    : 4
 source     :
     - https://github.com/linuxmint/nemo/archive/4.4.2.tar.gz : cda3b99c8275c57bb285f8718ef3e463349a8eebe97cc126b0daebffeb242c95
 license    : GPL-2.0
@@ -18,6 +18,8 @@ builddeps  :
     - pkgconfig(libnotify)
     - pkgconfig(tracker-control-2.0)
     - pkgconfig(xapp)
+rundeps    :
+    - gnome-screensaver # Needed for nemo-desktop
 setup      : |
     %meson_configure
 build      : |
