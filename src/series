@@ -150,3 +150,5 @@ xfce4-settings
 xfdesktop
 # 6th group: next ones have build dependencies from 1st/.../5th groups
 xfce4-whiskermenu-plugin
+xfce-default-settings
+xfce4-notifyd

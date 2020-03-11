@@ -1,0 +1,21 @@
+name       : xfce4-notifyd
+version    : 0.4.4
+release    : 1
+source     :
+    - https://archive.xfce.org/src/apps/xfce4-notifyd/0.4/xfce4-notifyd-0.4.4.tar.bz2 : 090571acf94c423003426cb779fb23e8545c68bab6485563b589c7def8a21b55
+license    : GPL-2.0-or-later
+component  : desktop.xfce
+summary    : XFCE4 Notification Daemon
+description: |
+    XFCE Notification Daemon
+builddeps  :
+    - pkgconfig(libnotify)
+    - pkgconfig(libxfce4panel-2.0)
+    - pkgconfig(libxfce4ui-2)
+    - pkgconfig(libxfce4util-1.0)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
