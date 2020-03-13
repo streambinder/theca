@@ -1,7 +1,7 @@
 cd "${build_dir}"
 
 grep -v ^\# ../src/series | while read pkg_name; do
-    pkg="$(find ../src -type d -name "${pkg_name}")"
+    pkg="$(dirname $(egrep -rl "^name\s+:\s+${pkg_name}$" ../src))"
     if [ -z "${pkg}" ]; then
         echo "Package ${pkg_name} not found"
         continue
