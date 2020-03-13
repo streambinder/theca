@@ -34,7 +34,6 @@ commands:
     release:
         description: Perform a full build
         dependencies:
-            - update
             - packages
             - strip
             - index
