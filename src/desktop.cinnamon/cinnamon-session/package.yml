@@ -1,8 +1,8 @@
 name       : cinnamon-session
-version    : 4.4.0
-release    : 3
+version    : 4.4.1
+release    : 4
 source     :
-    - https://github.com/linuxmint/cinnamon-session/archive/4.4.0.tar.gz : 1b788ec8df1132c7a52fe7c3105a1b05029d863d6b8803d9dd32e7194c407c8b
+    - https://github.com/linuxmint/cinnamon-session/archive/4.4.1.tar.gz : 8c85bdca724e211aaaeb7ccf0af220c77facafd567ea6ad2bc167f597a75cb87
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon session
