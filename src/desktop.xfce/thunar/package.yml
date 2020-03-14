@@ -2,7 +2,7 @@ name       : thunar
 version    : 1.8.12
 release    : 2
 source     :
-    - http://archive.xfce.org/src/xfce/thunar/1.8//thunar-1.8.12.tar.bz2 : 29295bee0b1f5bfd525e37405e5d32b497ae539b15183dd14e6ca49e252225f8
+    - http://archive.xfce.org/src/xfce/thunar/1.8/thunar-1.8.12.tar.bz2 : 29295bee0b1f5bfd525e37405e5d32b497ae539b15183dd14e6ca49e252225f8
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Thunar File Manager

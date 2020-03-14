@@ -2,7 +2,7 @@ name       : xfce4-power-manager
 version    : 1.7.0
 release    : 2
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-power-manager/1.7//xfce4-power-manager-1.7.0.tar.bz2 : 45368ccf70f5a87ba9c8b732e2462ecbc0184550e7cc54a58cbeb74086e7124b
+    - http://archive.xfce.org/src/xfce/xfce4-power-manager/1.7/xfce4-power-manager-1.7.0.tar.bz2 : 45368ccf70f5a87ba9c8b732e2462ecbc0184550e7cc54a58cbeb74086e7124b
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Power Manager

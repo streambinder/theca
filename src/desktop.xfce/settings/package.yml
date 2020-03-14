@@ -2,7 +2,7 @@ name       : xfce4-settings
 version    : 4.15.0
 release    : 3
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-settings/4.15//xfce4-settings-4.15.0.tar.bz2 : ff3a97ca85943566d2adb6a132bbac913933419b3e95f4595e81c9381f22e816
+    - http://archive.xfce.org/src/xfce/xfce4-settings/4.15/xfce4-settings-4.15.0.tar.bz2 : ff3a97ca85943566d2adb6a132bbac913933419b3e95f4595e81c9381f22e816
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Settings
