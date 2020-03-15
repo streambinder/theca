@@ -1,8 +1,8 @@
 name       : minify
-version    : 2.7.2
-release    : 4
+version    : 2.7.3
+release    : 5
 source     :
-    - https://github.com/tdewolff/minify/releases/download/v2.7.2/minify_2.7.2_linux_amd64.tar.gz : f61622d246f1f4701defc5714ebbe8ab5d04dd4c2c48c765065e0145b499fa29
+    - https://github.com/tdewolff/minify/releases/download/v2.7.3/minify_2.7.3_linux_amd64.tar.gz : de2d79fbf24f7ee800de0baf44fc7f0d0274e88aa94298232b95a5d6aecf9505
 license    : MIT
 summary    : Go minifiers for web formats
 description: |
