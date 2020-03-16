@@ -1,8 +1,8 @@
 name       : libstatgrab
-version    : 0.91
-release    : 1
+version    : 0.92
+release    : 2
 source     :
-    - https://github.com/libstatgrab/libstatgrab/releases/download/LIBSTATGRAB_0_91/libstatgrab-0.91.tar.gz : 03e9328e4857c2c9dcc1b0347724ae4cd741a72ee11acc991784e8ef45b7f1ab
+    - https://github.com/libstatgrab/libstatgrab/releases/download/LIBSTATGRAB_0_92/libstatgrab-0.92.tar.gz : 5bf1906aff9ffc3eeacf32567270f4d819055d8386d98b9c8c05519012d5a196
 license    : GPL-2.0
 component  : desktop.library
 summary    : A cross platform library for accessing system statistics
