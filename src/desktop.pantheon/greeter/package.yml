@@ -1,6 +1,6 @@
 name       : pantheon-greeter
 version    : 5.0.2
-release    : 9
+release    : 10
 source     :
     - https://github.com/elementary/greeter/archive/5.0.2.tar.gz : c0a1a51042e5f90400baebbc94ec87a801a624a8bd89c824254524eb368600b1
 license    : GPL-3.0
@@ -19,7 +19,7 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(liblightdm-gobject-1)
     - pkgconfig(libmutter-5)
-    - pkgconfig(libvala-0.46)
+    - pkgconfig(libvala-0.48)
     - pkgconfig(wingpanel-2.0)
     - pkgconfig(x11)
     - desktop-file-utils
