@@ -1,0 +1,44 @@
+From 321316becff6377562cc137a10402ee76c43eb03 Mon Sep 17 00:00:00 2001
+From: Joey Riches <josephriches@gmail.com>
+Date: Sat, 23 Jun 2018 12:48:10 +0100
+Subject: [PATCH 1/1] Remove unnecessary tests
+
+* We don't have appstream packaged (as opposed to appstream-glib)
+
+Signed-off-by: Joey Riches <josephriches@gmail.com>
+---
+ data/meson.build | 18 ------------------
+ 1 file changed, 18 deletions(-)
+
+diff --git a/data/meson.build b/data/meson.build
+index c02001b..321d7fb 100644
+--- a/data/meson.build
++++ b/data/meson.build
+@@ -32,24 +32,6 @@ i18n.merge_file (
+     po_dir: join_paths(meson.source_root (), 'po', 'extra')
+ )
+ 
+-test (
+-    'Validate desktop file',
+-    find_program('desktop-file-validate'),
+-    args: join_paths(meson.current_build_dir (), meson.project_name() + '.desktop')
+-)
+-
+-test (
+-    'Validate open here desktop file',
+-    find_program('desktop-file-validate'),
+-    args: join_paths(meson.current_build_dir (), 'open-pantheon-terminal-here.desktop')
+-)
+-
+-test (
+-    'Validate appdata file',
+-    find_program('appstreamcli'),
+-    args: ['validate', join_paths(meson.current_build_dir (), meson.project_name() + '.appdata.xml')]
+-)
+-
+ install_data(
+     'pantheon_terminal_process_completion_notifications.fish',
+     install_dir: join_paths(get_option('datadir'), 'fish', 'vendor_conf.d')
+-- 
+2.18.0
+

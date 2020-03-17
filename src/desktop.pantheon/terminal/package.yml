@@ -1,0 +1,22 @@
+name       : pantheon-terminal
+version    : 5.4.0
+release    : 19
+source     :
+    - https://github.com/elementary/terminal/archive/5.4.0.tar.gz : 3d138a1a698be7a4a6636a00b7f5d6358840f873ef1bf3976afcbcd9767659f4
+license    : GPL-3.0-only
+component  : desktop.pantheon
+summary    : A super lightweight, beautiful, and simple terminal.
+description: |
+    A super lightweight, beautiful, and simple terminal. It's designed to be setup with sane defaults and little to no configuration. It's just a terminal, nothing more, nothing less.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(granite)
+    - pkgconfig(vte-2.91)
+    - vala
+setup      : |
+    %patch -p1 < $pkgfiles/0001-Remove-unnecessary-tests.patch
+    %meson_configure -Dubuntu-bionic-patched-vte=false
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

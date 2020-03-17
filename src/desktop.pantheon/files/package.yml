@@ -1,0 +1,35 @@
+name       : pantheon-files
+version    : 4.3.0
+release    : 12
+source     :
+    - https://github.com/elementary/files/archive/4.3.0.tar.gz : 10bc68242d40d3391e188bddb747705281220b2f03bd6c8afb24a495e19f4460
+license    : GPL-3.0-or-later
+component  : desktop.pantheon
+summary    : The simple, powerful, and sexy file manager from elementary
+description: |
+    The simple, powerful, and sexy file manager from elementary
+builddeps  :
+    - pkgconfig(cloudproviders)
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(gail-3.0)
+    - pkgconfig(granite)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libgit2-glib-1.0)
+    - pkgconfig(libnotify)
+    - pkgconfig(sqlite3)
+    - pkgconfig(zeitgeist-2.0)
+    - vala
+setup      : |
+    %meson_configure -Dwith-unity=false
+build      : |
+    %ninja_build
+install    : |
+    # install select icons missing from most icon packs
+    for i in $pkgfiles/16x16/actions/*; do
+        install -Dm00644 $i $installdir/usr/share/icons/hicolor/16x16/actions/${i##*/}
+    done;
+    for i in $pkgfiles/24x24/actions/*; do
+        install -Dm00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
+    done;
+
+    %ninja_install
