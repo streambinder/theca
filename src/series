@@ -13,6 +13,7 @@ font-open-sans-ttf
 font-roboto-mono-ttf
 gsasl
 gsignond
+hydra
 iceauth
 libfm-extra
 libgsignon-glib

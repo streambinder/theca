@@ -1,0 +1,17 @@
+name       : hydra
+version    : 9.0
+release    : 1
+source     :
+    - https://github.com/vanhauser-thc/thc-hydra/archive/v9.0.tar.gz : 56672e253c128abaa6fb19e77f6f59ba6a93762a9ba435505a009ef6d58e8d0e
+license    : AGPL-3.0
+summary    : A very fast network logon cracker which support many different services
+description: |
+    Hydra  is  a  parallelized  login cracker which supports numerous protocols to attack.
+    New modules are easy to add, beside that, it is flexible and very fast.
+    This tool gives researchers and security consultants the possibility to show how  easy it would be to gain unauthorized access from remote to a system.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
