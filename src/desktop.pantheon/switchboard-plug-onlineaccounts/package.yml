@@ -1,8 +1,8 @@
 name       : switchboard-plug-onlineaccounts
 version    : 2.0.1
-release    : 3
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-onlineaccounts/archive/fe150409db382d9925b69141d39ff023fa3c8937.tar.gz : 75fb172ccb46627ce6d1d2a72b9a9bc8e59a569735a1523c6face631f8b764b8
+    - https://github.com/elementary/switchboard-plug-onlineaccounts/archive/05b41fa33ca2bd09eedb27a9b94c4cf6e9a3e5b6.tar.gz : 45a29c2f582ca14fc79a77c2f2a17486ccc7780722fbd8241d942c44bc2f0e2f
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Switchboard online accounts plug
