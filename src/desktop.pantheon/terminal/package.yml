@@ -1,8 +1,8 @@
 name       : pantheon-terminal
 version    : 5.5.1
-release    : 20
+release    : 21
 source     :
-    - https://github.com/elementary/terminal/archive/5.5.1.tar.gz : b2aeaad20ab0b8ff19f65099cb1a660387fc48b92c0dcfd90942674191dc2629
+    - https://github.com/elementary/terminal/archive/0fdc6e6f52c9d19dbced0203458dac5a4989d2f7.tar.gz : 05f418cc92b02e2fc07b61592f60ed826d4eb4b6cd36aa8ee99175d2a5791c02
 license    : GPL-3.0-only
 component  : desktop.pantheon
 summary    : A super lightweight, beautiful, and simple terminal.
@@ -12,9 +12,9 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(granite)
     - pkgconfig(vte-2.91)
+    - desktop-file-utils
     - vala
 setup      : |
-    %patch -p1 < $pkgfiles/0001-Remove-unnecessary-tests.patch
     %meson_configure -Dubuntu-bionic-patched-vte=false
 build      : |
     %ninja_build
