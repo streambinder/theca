@@ -1,0 +1,24 @@
+name       : notejot
+version    : 1.6.0
+release    : 1
+source     :
+    - https://github.com/lainsce/notejot/archive/1.6.0.tar.gz : 9ecac3cc4489fcded2eb2db1310fc8aa419203b14a9d3a7e34f903ab76f3a7b6
+license    : GPL-3.0-or-later
+homepage   : https://github.com/lainsce/notejot/
+component  : desktop
+summary    : Notesjot Sticky Notes
+description: |
+    Stupidly simple sticky notes applet
+builddeps  :
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gtksourceview-3.0)
+    - pkgconfig(gee-0.8)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
