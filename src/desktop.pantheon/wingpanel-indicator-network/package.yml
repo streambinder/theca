@@ -1,6 +1,6 @@
 name       : wingpanel-indicator-network
 version    : 2.2.2
-release    : 2
+release    : 3
 source     :
     - https://github.com/elementary/wingpanel-indicator-network/archive/2.2.2.tar.gz : 6df1d8a361fb38e0d4232e9db5e884d04856bd50dd9683e51b0c6a814bcf261f
 license    : LGPL-2.1
@@ -9,13 +9,12 @@ summary    : Wingpanel network indicator
 description: |
     Wingpanel inicator for network settings and informations.
 builddeps  :
-    - glib2-devel
-    - network-manager-applet-devel
-    - network-manager-devel
     - pkgconfig(gee-0.8)
     - pkgconfig(gobject-introspection-1.0)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(libnma)
+    - glib2-devel
     - vala
     - wingpanel-devel
 setup      : |
