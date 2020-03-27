@@ -1,6 +1,6 @@
 name       : switchboard-plug-network
 version    : 2.2.0
-release    : 3
+release    : 4
 source     :
     - https://github.com/elementary/switchboard-plug-network/archive/2.2.0.tar.gz : a0e08273dc05b6971c43173b3d428f5054518bf093e4f862428da76bffea1b22
 license    : GPL-3.0
@@ -11,9 +11,8 @@ description: |
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(libnma)
     - pkgconfig(switchboard-2.0)
-    - network-manager-applet-devel
-    - network-manager-devel
     - vala
 setup      : |
     %meson_configure
