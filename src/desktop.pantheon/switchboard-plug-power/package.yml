@@ -1,8 +1,8 @@
 name       : switchboard-plug-power
-version    : 2.4.0
-release    : 3
+version    : 2.4.1
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-power/archive/2.4.0.tar.gz : 6e2150f2a677afc6340401514111722f67612e31afeac2e202e0c096b4dd9468
+    - https://github.com/elementary/switchboard-plug-power/archive/2.4.1.tar.gz : 68d6080b78ae4875d7dadfc9a67f656dc7ffd08b249cc12131c248f7940451b6
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Switchboard power plug
