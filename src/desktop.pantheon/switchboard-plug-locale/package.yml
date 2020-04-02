@@ -1,8 +1,8 @@
 name       : switchboard-plug-locale
-version    : 2.5.0
-release    : 3
+version    : 2.5.1
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-locale/archive/2.5.0.tar.gz : 537eb12ddc13a25fc21c9d560d5d43f5f96fa59b7a97885fc48c80ed54871326
+    - https://github.com/elementary/switchboard-plug-locale/archive/2.5.1.tar.gz : 3ae8504f27d5ce459c21f023d66c119747dedb710ae4108a5c1f488fde52e6aa
 license    : LGPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard locale plug
