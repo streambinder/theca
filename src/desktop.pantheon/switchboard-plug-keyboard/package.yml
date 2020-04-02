@@ -1,8 +1,8 @@
 name       : switchboard-plug-keyboard
-version    : 2.3.5
-release    : 3
+version    : 2.3.6
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-keyboard/archive/36f647c751e190466fb0fe996afed113d1ee74ad.tar.gz : 3d9835f3627e3416091c4a2ba65ebcb93a2675d3ca60b3c7123961ad44a77341
+    - https://github.com/elementary/switchboard-plug-keyboard/archive/2.3.6.tar.gz : a5a2d9107e9a259d5eef878fa07e156e8fbb3bc29ad90fca180b8b9c8d6eef6e
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Switchboard keyboard plug
