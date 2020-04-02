@@ -1,8 +1,8 @@
 name       : pantheon-camera
-version    : 1.0.5
-release    : 2
+version    : 1.0.6
+release    : 3
 source     :
-    - https://github.com/elementary/camera/archive/1.0.5.tar.gz : 45d5dcdde60e80b552c99bc27d75c0859604429fdd48b3fa05d33bb7c587b913
+    - https://github.com/elementary/camera/archive/1.0.6.tar.gz : 9c9c471ac020f2088209455f438f81edfad78556c2ebc309f875d3e55c473fd8
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon camera app
