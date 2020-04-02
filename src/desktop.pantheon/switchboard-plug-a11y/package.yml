@@ -1,8 +1,8 @@
 name       : switchboard-plug-a11y
-version    : 2.1.3
-release    : 2
+version    : 2.2.0
+release    : 3
 source     :
-    - https://github.com/elementary/switchboard-plug-a11y/archive/2.1.3.tar.gz : 772ebff2f9b64c507c60db3268a35d214b00125e5dae57cd5d82f3424e40bae8
+    - https://github.com/elementary/switchboard-plug-a11y/archive/2.2.0.tar.gz : 9c30e3566dd8046c1edae57c5bd79e3b64f435786662c1cf6dc5c6a0188c3db5
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard Universal Access plug
