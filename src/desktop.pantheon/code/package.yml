@@ -1,8 +1,8 @@
 name       : pantheon-code
-version    : 3.3.0
-release    : 3
+version    : 3.4.0
+release    : 4
 source     :
-    - https://github.com/elementary/code/archive/3.3.0.tar.gz : 371bee4c9f81472ae8655abe40f1d557f81cf2d9141024b69487da864595a1ed
+    - https://github.com/elementary/code/archive/3.4.0.tar.gz : e210a533138f5e89e88dacd24240d7208db89889b6489100e9ebde1a914b7d15
 license    : GPL-3.0
 component  : programming.tools
 summary    : Pantheon code editor app 
