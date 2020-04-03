@@ -1,0 +1,18 @@
+name       : lightrss
+version    : 0.4
+release    : 1
+source     :
+    - https://github.com/deussomniat/lightrss/archive/v0.4.tar.gz : c017d9d1c4eb8390112afddc96e636a0e5f177270f6c76e7db93f5c5fde51307
+license    : GPL-3.0-or-later
+component  : network.news
+summary    : A simple qt based rss feed reader.
+description: |
+    A simple qt based rss feed reader.
+builddeps  :
+    - pkgconfig(Qt5Core)
+setup      : |
+    %qmake
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT="$installdir"
