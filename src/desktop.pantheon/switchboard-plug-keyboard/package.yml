@@ -19,6 +19,7 @@ builddeps  :
     - glib2-devel
     - glibc-devel
     - vala
+    - xkeyboard-config-devel
 setup      : |
     %meson_configure
 build      : |
