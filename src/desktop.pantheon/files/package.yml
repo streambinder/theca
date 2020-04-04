@@ -1,8 +1,8 @@
 name       : pantheon-files
-version    : 4.4.1
-release    : 13
+version    : 4.4.2
+release    : 14
 source     :
-    - https://github.com/elementary/files/archive/4.4.1.tar.gz : a321631962f3501ee68745e06265bf6d8952eb8fa6730220183322c8638abca1
+    - https://github.com/elementary/files/archive/4.4.2.tar.gz : 089d2211ef3a9ff2f57b42c3ea830a0839b4f18054a40c2672e7eaffeaa40ae7
 license    : GPL-3.0-or-later
 component  : desktop.pantheon
 summary    : The simple, powerful, and sexy file manager from elementary
