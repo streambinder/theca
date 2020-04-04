@@ -1,165 +1,165 @@
-# 1st group: none of these depend on packages from this repository
-blackbox
-cerbere
-cinnamon-applet-qredshift
-cinnamon-applet-redshift
-cinnamon-desktop
-cinnamon-menus
-cinnamon-translations
-contractor
-dwm
-fondo
-font-open-sans-ttf
-font-roboto-mono-ttf
-gsasl
-gsignond
-hydra
-iceauth
-libfm-extra
-libgsignon-glib
-libhandy
-libsignon-glib
-libstatgrab
-libxfce4util
-light-locker
-lightrss
-lua-lgi
-lxqt-build-tools
-megacmd
-melody
-midori
-minify
-mozjs52
-notejot
-pantheon-agent-geoclue2
-pantheon-agent-polkit
-pantheon-calculator
-pantheon-calendar
-pantheon-camera
-pantheon-capnet-assist
-pantheon-code
-pantheon-default-settings
-pantheon-dpms-helper
-pantheon-files
-pantheon-icons
-pantheon-keyboard
-pantheon-music
-pantheon-notifications
-pantheon-onboarding
-pantheon-photos
-pantheon-print
-pantheon-screenshot
-pantheon-session-settings
-pantheon-shortcut-overlay
-pantheon-sound-theme
-pantheon-stylesheet
-pantheon-terminal
-pantheon-videos
-pantheon-wallpapers
-paperboy
-python-pam
-python-tinycss
-qview
-skippy-xd
-sleuthkit
-solbump
-spotitube
-stemmer
-subnetcalc
-switchboard
-vscodium
-xapps
-xfce4-dev-tools
-xfce4-icon-theme
-xfwm4-themes
-# 2nd group: next ones have build dependencies from 1st group
-appstream
-awesomewm
-binwalk
-cinnamon-screensaver
-cinnamon-session
-cinnamon-settings-daemon
-gala
-gsignond-plugin-lastfm
-gsignond-plugin-oauth
-gsignond-plugin-sasl
-libqtxdg
-lxqt-themes
-menu-cache
-muffin
-nemo
-pantheon-tweaks
-qtermwidget
-xfconf
-# 3rd group: next ones have build dependencies from 1st/2nd groups
-cjs
-cinnamon-control-center
-libfm-qt
-liblxqt
-libxfce4ui
-lxqt-qtplugin
-qterminal
-switchboard-plug-a11y
-switchboard-plug-about
-switchboard-plug-applications
-switchboard-plug-bluetooth
-switchboard-plug-datetime
-switchboard-plug-display
-switchboard-plug-keyboard
-switchboard-plug-locale
-switchboard-plug-mouse-touchpad
-switchboard-plug-network
-switchboard-plug-notifications
-switchboard-plug-onlineaccounts
-switchboard-plug-pantheon-shell
-switchboard-plug-parental-controls
-switchboard-plug-power
-switchboard-plug-printers
-switchboard-plug-security-privacy
-switchboard-plug-sharing
-switchboard-plug-sound
-switchboard-plug-useraccounts
-wingpanel
-# 4th group: next ones have build dependencies from 1st/.../3rd groups
-cinnamon
-exo
-garcon
-libsysstat
-lxqt-about
-lxqt-admin
-lxqt-config
-lxqt-globalkeys
-lxqt-notificationd
-lxqt-policykit
-lxqt-powermanagement
-lxqt-session
-pantheon-applications-menu
-pantheon-greeter
-pcmanfm-qt
-thunar
-wingpanel-indicator-a11y
-wingpanel-indicator-bluetooth
-wingpanel-indicator-datetime
-wingpanel-indicator-keyboard
-wingpanel-indicator-network
-wingpanel-indicator-nightlight
-wingpanel-indicator-notifications
-wingpanel-indicator-power
-wingpanel-indicator-privacy
-wingpanel-indicator-session
-wingpanel-indicator-sound
-xfce4-power-manager
-xfce4-session
-xfce4-terminal
-xfwm4
-# 5th group: next ones have build dependencies from 1st/.../4th groups
-lxqt-panel
-lxqt-runner
-xfce4-appfinder
-xfce4-panel
-xfce4-settings
-xfdesktop
-# 6th group: next ones have build dependencies from 1st/.../5th groups
-xfce4-whiskermenu-plugin
-xfce-default-settings
-xfce4-notifyd
+- group-1:
+  - blackbox
+  - cerbere
+  - cinnamon-applet-qredshift
+  - cinnamon-applet-redshift
+  - cinnamon-desktop
+  - cinnamon-menus
+  - cinnamon-translations
+  - contractor
+  - dwm
+  - fondo
+  - font-open-sans-ttf
+  - font-roboto-mono-ttf
+  - gsasl
+  - gsignond
+  - hydra
+  - iceauth
+  - libfm-extra
+  - libgsignon-glib
+  - libhandy
+  - libsignon-glib
+  - libstatgrab
+  - libxfce4util
+  - light-locker
+  - lightrss
+  - lua-lgi
+  - lxqt-build-tools
+  - megacmd
+  - melody
+  - midori
+  - minify
+  - mozjs52
+  - notejot
+  - pantheon-agent-geoclue2
+  - pantheon-agent-polkit
+  - pantheon-calculator
+  - pantheon-calendar
+  - pantheon-camera
+  - pantheon-capnet-assist
+  - pantheon-code
+  - pantheon-default-settings
+  - pantheon-dpms-helper
+  - pantheon-files
+  - pantheon-icons
+  - pantheon-keyboard
+  - pantheon-music
+  - pantheon-notifications
+  - pantheon-onboarding
+  - pantheon-photos
+  - pantheon-print
+  - pantheon-screenshot
+  - pantheon-session-settings
+  - pantheon-shortcut-overlay
+  - pantheon-sound-theme
+  - pantheon-stylesheet
+  - pantheon-terminal
+  - pantheon-videos
+  - pantheon-wallpapers
+  - paperboy
+  - python-pam
+  - python-tinycss
+  - qview
+  - skippy-xd
+  - sleuthkit
+  - solbump
+  - spotitube
+  - stemmer
+  - subnetcalc
+  - switchboard
+  - vscodium
+  - xapps
+  - xfce4-dev-tools
+  - xfce4-icon-theme
+  - xfwm4-themes
+- group-2:
+  - appstream
+  - awesomewm
+  - binwalk
+  - cinnamon-screensaver
+  - cinnamon-session
+  - cinnamon-settings-daemon
+  - gala
+  - gsignond-plugin-lastfm
+  - gsignond-plugin-oauth
+  - gsignond-plugin-sasl
+  - libqtxdg
+  - lxqt-themes
+  - menu-cache
+  - muffin
+  - nemo
+  - pantheon-tweaks
+  - qtermwidget
+  - xfconf
+- group-3:
+  - cjs
+  - cinnamon-control-center
+  - libfm-qt
+  - liblxqt
+  - libxfce4ui
+  - lxqt-qtplugin
+  - qterminal
+  - switchboard-plug-a11y
+  - switchboard-plug-about
+  - switchboard-plug-applications
+  - switchboard-plug-bluetooth
+  - switchboard-plug-datetime
+  - switchboard-plug-display
+  - switchboard-plug-keyboard
+  - switchboard-plug-locale
+  - switchboard-plug-mouse-touchpad
+  - switchboard-plug-network
+  - switchboard-plug-notifications
+  - switchboard-plug-onlineaccounts
+  - switchboard-plug-pantheon-shell
+  - switchboard-plug-parental-controls
+  - switchboard-plug-power
+  - switchboard-plug-printers
+  - switchboard-plug-security-privacy
+  - switchboard-plug-sharing
+  - switchboard-plug-sound
+  - switchboard-plug-useraccounts
+  - wingpanel
+- group-4:
+  - cinnamon
+  - exo
+  - garcon
+  - libsysstat
+  - lxqt-about
+  - lxqt-admin
+  - lxqt-config
+  - lxqt-globalkeys
+  - lxqt-notificationd
+  - lxqt-policykit
+  - lxqt-powermanagement
+  - lxqt-session
+  - pantheon-applications-menu
+  - pantheon-greeter
+  - pcmanfm-qt
+  - thunar
+  - wingpanel-indicator-a11y
+  - wingpanel-indicator-bluetooth
+  - wingpanel-indicator-datetime
+  - wingpanel-indicator-keyboard
+  - wingpanel-indicator-network
+  - wingpanel-indicator-nightlight
+  - wingpanel-indicator-notifications
+  - wingpanel-indicator-power
+  - wingpanel-indicator-privacy
+  - wingpanel-indicator-session
+  - wingpanel-indicator-sound
+  - xfce4-power-manager
+  - xfce4-session
+  - xfce4-terminal
+  - xfwm4
+- group-5:
+  - lxqt-panel
+  - lxqt-runner
+  - xfce4-appfinder
+  - xfce4-panel
+  - xfce4-settings
+  - xfdesktop
+- group-6:
+  - xfce4-whiskermenu-plugin
+  - xfce-default-settings
+  - xfce4-notifyd
