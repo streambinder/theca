@@ -29,10 +29,19 @@ def solbuild(eopkg):
     finally:
         log.close()
 
-    if len(glob.glob(os.path.join('bin', eopkg.glob()))) == 0:
+    packages = glob.glob(os.path.join(
+        os.path.dirname(eopkg.yml), '*.eopkg'))
+    if len(packages) == 0:
         print('Unable to build {}'.format(eopkg.name))
-    else:
-        print('{} built'.format(eopkg.name))
+        return
+
+    for package in packages:
+        os.rename(package, os.path.join('bin', os.path.basename(package)))
+    for pspec in glob.glob(os.path.join(
+            os.path.dirname(eopkg.yml), '*.xml')):
+        os.remove(pspec)
+
+    print('{} built'.format(eopkg.name))
 
 
 with open('src/series', 'r') as series_fd:
@@ -71,7 +80,7 @@ for group in series:
             eopkg = Eopkg(package, package_version,
                           package_release, package_yml)
             if len(glob.glob(os.path.join('bin', eopkg.glob()))) > 0:
-                print('Package {}-{} up to date'.format(package, package_version))
+                # print('Package {}-{} up to date'.format(package, package_version))
                 continue
 
             worker = threading.Thread(
