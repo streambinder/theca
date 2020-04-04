@@ -41,8 +41,6 @@ def solbuild(eopkg):
             os.path.dirname(eopkg.yml), '*.xml')):
         os.remove(pspec)
 
-    print('{} built'.format(eopkg.name))
-
 
 with open('src/series', 'r') as series_fd:
     try:
