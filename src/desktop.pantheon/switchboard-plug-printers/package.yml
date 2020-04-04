@@ -1,8 +1,8 @@
 name       : switchboard-plug-printers
-version    : 2.1.7
-release    : 3
+version    : 2.1.8
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-printers/archive/2.1.7.tar.gz : e642d767e6bfc874cfef097a3105e7f627cc1d28a73b023ddc70c01797b406da
+    - https://github.com/elementary/switchboard-plug-printers/archive/2.1.8.tar.gz : 84af6c2cd3e9c9b17eff97d76fdda1708b43f0ec2a6b2a09fc3e31a8dea5486a
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard printers plug
