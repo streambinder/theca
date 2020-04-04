@@ -3,3 +3,4 @@ zeus/data.yml
 zeus/dumps
 zeus/.historys
 *.eopkg
+*.log
