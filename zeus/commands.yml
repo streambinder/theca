@@ -15,6 +15,7 @@ commands:
 
     packages:
         description: Build all packages
+        language: python
         dependencies:
             - setup
             - update
