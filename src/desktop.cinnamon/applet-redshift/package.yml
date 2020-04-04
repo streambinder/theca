@@ -1,8 +1,8 @@
 name       : cinnamon-applet-redshift
-version    : 20200115
-release    : 4
+version    : 20200404
+release    : 5
 source     :
-    - https://cinnamon-spices.linuxmint.com/files/applets/redshift@marvel4u.zip : d7d91682a6c9f62f525376bfe6c07969006f59666b6727c296f09d05b307c4bc
+    - https://cinnamon-spices.linuxmint.com/files/applets/redshift@marvel4u.zip : 78e886f43e59e8cb59737be136d2bf267a3c35c010a0ee3cf6c13b9178e97564
 license    : GPL-3.0
 component  : desktop.cinnamon
 summary    : Redshift applet for Linux Cinnamon
