@@ -1,8 +1,8 @@
 name       : switchboard-plug-sound
-version    : 2.2.2
-release    : 3
+version    : 2.2.3
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-sound/archive/2.2.2.tar.gz : 9907b357721e86a36e0e91908d808b2cd7af866f4862a319fd964eb50e92af52
+    - https://github.com/elementary/switchboard-plug-sound/archive/2.2.3.tar.gz : 680c35253e1dd2597c514c75e37fbc329e315af62c56877a5a69035a946a486d
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Switchboard sound plug
