@@ -1,0 +1,20 @@
+name       : solbump
+version    : 1
+release    : 1
+source     :
+    - https://github.com/streambinder/solbump/archive/v1.tar.gz : 07ce1a5bcc62ec4a46aa78ac5fb825a9190e12f973d2b230ae412112141f1da8
+license    : GPL-3.0
+networking : true
+summary    : Automatic eopkg package files updating system
+description: |
+    Solbump is a tool to automatically upgrade eopkg YAML-formatted source files to latest releases.
+    Hence, the naming similarity with solbuild, the tool made from Solus project core team to build eopkg packages.
+    Based on the amount of defined (and pluggable) providers, it tries to recognize the format of the tarballs or archives defined as source files from the YAML file and find a matching provider.
+    Then it's able to query for a more updated release and, if so, it fetches the asset, calculates the hashsum and update the original package.yml coherently.
+builddeps  :
+    - golang
+build      : |
+    go build -v
+install    : |
+    mkdir -p ${installdir}/usr/sbin
+    install -m 755 solbump ${installdir}/usr/sbin 
