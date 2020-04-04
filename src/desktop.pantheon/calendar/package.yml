@@ -1,8 +1,8 @@
 name       : pantheon-calendar
-version    : 5.0.3
-release    : 3
+version    : 5.0.4
+release    : 4
 source     :
-    - https://github.com/elementary/calendar/archive/5.0.3.tar.gz : c4ed1f815faa15f474d2c79e5ae13b00f9dd49e0d7591f2fb54a01cc72194162
+    - https://github.com/elementary/calendar/archive/5.0.4.tar.gz : 88034d3a13776cbee8ba1fdcb18691115b9d339c551bad93336fab9f6f5ec0d2
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon calendar app
