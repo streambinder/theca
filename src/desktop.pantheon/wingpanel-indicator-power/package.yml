@@ -1,8 +1,8 @@
 name       : wingpanel-indicator-power
-version    : 2.1.4
-release    : 2
+version    : 2.1.5
+release    : 3
 source     :
-    - https://github.com/elementary/wingpanel-indicator-power/archive/2.1.4.tar.gz : 7def3849333ecca2ef10550f288730f90eca378ccbbf2b48dc8b807f545185c4
+    - https://github.com/elementary/wingpanel-indicator-power/archive/2.1.5.tar.gz : 8b0f88dd70484d35e77053a16f506b2131681442e29c212469c8888e73616ad4
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Wingpanel power indicator
