@@ -1,8 +1,8 @@
 name       : wingpanel
-version    : 2.3.0
-release    : 9
+version    : 2.3.1
+release    : 10
 source     :
-    - https://github.com/elementary/wingpanel/archive/0d7c5027e9b441ea57287cfdae267b403dc59279.tar.gz : 8b24c89070e1cedfc53062c7073fc890f0589e30e98fe02053428b90dd594dc2
+    - https://github.com/elementary/wingpanel/archive/2.3.1.tar.gz : 9a101a90fef6eb74c9f6de395bd54ed56af29cb02b9ac232f5c0183793cd364a
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Stylish top panel that holds indicators and spawns the application launcher
