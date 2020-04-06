@@ -13,8 +13,5 @@ description: |
     Then it's able to query for a more updated release and, if so, it fetches the asset, calculates the hashsum and update the original package.yml coherently.
 builddeps  :
     - golang
-build      : |
-    go build -v
 install    : |
-    mkdir -p ${installdir}/usr/sbin
-    install -m 755 solbump ${installdir}/usr/sbin 
+    GOBIN=${installdir}/usr/sbin go install
