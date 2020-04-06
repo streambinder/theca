@@ -72,6 +72,7 @@
   - xfce4-dev-tools
   - xfce4-icon-theme
   - xfwm4-themes
+  - zeus
 - group-2:
   - appstream
   - awesomewm
