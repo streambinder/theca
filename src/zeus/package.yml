@@ -22,7 +22,5 @@ description: |
     When starting the interactive shell there is a good chance you will be struck by a lighting and bitten by a cobra, which could lead to enormous super coding powers!
 builddeps  :
     - golang
-# build      : |
-#     go build -v
 install    : |
     GOBIN=${installdir}/usr/sbin go install
