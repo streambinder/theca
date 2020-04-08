@@ -1,0 +1,18 @@
+name        : figlet
+version     : 2.2.5
+release     : 1
+source      :
+    - https://github.com/cmatsuoka/figlet/archive/2.2.5.tar.gz : 4d366c4a618ecdd6fdb81cde90edc54dbff9764efb635b3be47a929473f13930
+homepage    : http://www.figlet.org/
+license     :
+    - BSD-3-Clause
+component   : multimedia.graphics
+summary     : FIGlet - display large characters made up of ordinary screen characters
+description : |
+    FIGlet  prints its input using large characters (called "FIGcharacters") made up of ordinary screen characters (called "sub-characters"). FIGlet output is generally reminiscent of the sort of "signatures" many people like to  put  at the  end  of  e-mail and UseNet messages. It is also reminiscent of the output of some banner programs, although it is oriented normally, not sideways.
+build      : |
+    %make DEFAULTFONTDIR=/usr/share/figlet/fonts all
+install    : |
+    %make_install prefix=/usr \
+        MANDIR=/usr/share/man \
+        DEFAULTFONTDIR=/usr/share/figlet/fonts
