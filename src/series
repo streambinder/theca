@@ -60,6 +60,7 @@
   - python-pam
   - python-tinycss
   - qview
+  - sideload
   - skippy-xd
   - sleuthkit
   - solbump
