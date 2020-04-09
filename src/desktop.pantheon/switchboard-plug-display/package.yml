@@ -1,8 +1,8 @@
 name       : switchboard-plug-display
-version    : 2.2.0
-release    : 4
+version    : 2.2.1
+release    : 5
 source     :
-    - https://github.com/elementary/switchboard-plug-display/archive/2.2.0.tar.gz : 383165adea0b34bda4643dcaa4f3bf3b7bacc77e368015ed2acef4617604d9c3
+    - https://github.com/elementary/switchboard-plug-display/archive/2.2.1.tar.gz : 2071a5633fc2df73480edf39ed410ea8f55b3b0f0531a13554464b9a41e4d93b
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard display plug
