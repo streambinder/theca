@@ -1,8 +1,8 @@
 name       : switchboard-plug-useraccounts
-version    : 2.3.0
-release    : 3
+version    : 2.3.1
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.3.0.tar.gz : c22dcdc5a853b25a7d2a78c376c3891b60a9f57d38976ded2ca78520e1202b8f
+    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.3.1.tar.gz : f039c41193d3472056914faa841e54f5e457745f5e56efe6496bb820eb5ef728
 license    : LGPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard user accounts plug
