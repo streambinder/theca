@@ -1,8 +1,8 @@
 name       : switchboard-plug-pantheon-shell
-version    : 2.8.2
-release    : 3
+version    : 2.8.3
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-pantheon-shell/archive/2.8.2.tar.gz : ddf1dd7622aeb66202d6d230a2e09a0e097c8625b94e0d8281f0947474935f24
+    - https://github.com/elementary/switchboard-plug-pantheon-shell/archive/2.8.3.tar.gz : 993422b5ba112e612a037a05ddb3525bd585dfefd9ee922294a8bfcd965aaf46
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard desktop plug
