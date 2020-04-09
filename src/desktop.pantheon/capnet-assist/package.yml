@@ -1,8 +1,8 @@
 name       : pantheon-capnet-assist
-version    : 2.2.4
-release    : 3
+version    : 2.2.5
+release    : 4
 source     :
-    - https://github.com/elementary/capnet-assist/archive/2.2.4.tar.gz : 5dc644eb751362f9ed572f957faea0ac6466ab2beb51518de2d42b001c3a74a0
+    - https://github.com/elementary/capnet-assist/archive/2.2.5.tar.gz : e5111f490d4456d975b2599a8aa80e75f388bca56dcb65751b838775a325c1d0
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon Captive Portal Assistant
