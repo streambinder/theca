@@ -14,7 +14,6 @@ builddeps  :
     - pkgconfig(libxfce4ui-2)
     - pkgconfig(libxfce4util-1.0)
 setup      : |
-    %apply_patches
     %configure
 build      : |
     %make
