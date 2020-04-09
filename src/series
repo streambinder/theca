@@ -32,6 +32,7 @@
   - minify
   - mozjs52
   - notejot
+  - numlockx
   - pantheon-agent-geoclue2
   - pantheon-agent-polkit
   - pantheon-calculator
