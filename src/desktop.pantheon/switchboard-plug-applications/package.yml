@@ -1,8 +1,8 @@
 name       : switchboard-plug-applications
-version    : 2.1.6
-release    : 3
+version    : 2.1.7
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-applications/archive/2.1.6.tar.gz : 2b57cab0b9804efe6e1ed6d9bbe129d0a98f9eff849e6772fe9b8afb9e448ee7
+    - https://github.com/elementary/switchboard-plug-applications/archive/2.1.7.tar.gz : 2412daa6956a5490ba6818f34b912d27db7f7334cf185e06760b261debf87371
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Switchboard applications plug
