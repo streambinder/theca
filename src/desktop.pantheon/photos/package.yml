@@ -1,8 +1,8 @@
 name       : pantheon-photos
-version    : 2.6.5
-release    : 2
+version    : 2.7.0
+release    : 3
 source     :
-    - https://github.com/elementary/photos/archive/2.6.5.tar.gz : 4756de5d7e7244e4cdb77156f01a5cfd6f87bf2051d4b45f76a4806d3a0d0b6a
+    - https://github.com/elementary/photos/archive/2.7.0.tar.gz : 9f6ad409d053e3239b9ec7fc59429afe9ce89e40878697a73c2c3f215556a074
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Pantheon photos app
