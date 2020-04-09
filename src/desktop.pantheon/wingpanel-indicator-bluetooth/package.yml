@@ -1,8 +1,8 @@
 name       : wingpanel-indicator-bluetooth
-version    : 2.1.4
-release    : 3
+version    : 2.1.5
+release    : 4
 source     :
-    - https://github.com/elementary/wingpanel-indicator-bluetooth/archive/2.1.4.tar.gz : 7f91852aa3d83b31465c9e5a39826fa4d2a65ac69fec55fa78ad1bc02e8c79e3
+    - https://github.com/elementary/wingpanel-indicator-bluetooth/archive/2.1.5.tar.gz : 810c57530081034485b5e17ce89c09fd9ee49eb7ad3c70cdc467dadbd9f50051
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Wingpanel bluetooth indicator
