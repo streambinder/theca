@@ -1,8 +1,8 @@
 name       : switchboard-plug-security-privacy
-version    : 2.2.2
-release    : 3
+version    : 2.2.3
+release    : 4
 source     :
-    - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.2.tar.gz : 9048a330e149e3f68a83ac04c7a2630ec7cbba60cd673fd109924ebf9386f4e6
+    - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.3.tar.gz : 4d339fd096e2e1f8ba801792ab6a6668da93d520a9bd83fbc0d7982a03ff13c0
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard security and privacy plug
