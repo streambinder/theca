@@ -1,8 +1,8 @@
 name       : pantheon-applications-menu
-version    : 2.5.0
-release    : 10
+version    : 2.6.0
+release    : 11
 source     :
-    - https://github.com/elementary/applications-menu/archive/2.5.0.tar.gz : 209e05f3d149d204eddaa5742bb5b6bf15636929fe69965e7652200e0571f014
+    - https://github.com/elementary/applications-menu/archive/2.6.0.tar.gz : 64f2648b1fb591148394a52a60ddc4cc084b2ced51cc02982f16bc841e4a1c8b
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon applications menu
