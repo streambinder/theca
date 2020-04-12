@@ -1,8 +1,8 @@
 name       : notejot
-version    : 1.6.0
-release    : 1
+version    : 1.6.3
+release    : 2
 source     :
-    - https://github.com/lainsce/notejot/archive/1.6.0.tar.gz : 9ecac3cc4489fcded2eb2db1310fc8aa419203b14a9d3a7e34f903ab76f3a7b6
+    - https://github.com/lainsce/notejot/archive/1.6.3.tar.gz : 130814c480aa0cf6c2b91e06f865512ecf4db693cd89763eb7e6bdfbec08951d
 license    : GPL-3.0-or-later
 homepage   : https://github.com/lainsce/notejot/
 component  : desktop
