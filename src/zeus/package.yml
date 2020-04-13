@@ -1,6 +1,6 @@
 name       : zeus
 version    : 0.8.6
-release    : 1
+release    : 2
 source     :
     - https://github.com/dreadl0ck/zeus/archive/v0.8.6.tar.gz : 98f44e8986e1d981a228ee1b0009f75f5eb3d573cdc7e5f5177b26b4a2e313f4
 license    : GPL-3.0
@@ -24,3 +24,4 @@ builddeps  :
     - golang
 install    : |
     GOBIN=${installdir}/usr/sbin go install
+    install -Dm644 files/zeus $installdir/usr/share/bash-completion/completions/zeus
