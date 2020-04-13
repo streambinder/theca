@@ -60,6 +60,7 @@
   - pantheon-wallpapers
   - paperboy
   - python-pam
+  - python-setuptools-scm-git-archive
   - python-tinycss
   - qview
   - sideload
@@ -93,6 +94,7 @@
   - muffin
   - nemo
   - pantheon-tweaks
+  - python-pikepdf
   - qtermwidget
   - xfconf
 - group-3:
@@ -102,6 +104,7 @@
   - liblxqt
   - libxfce4ui
   - lxqt-qtplugin
+  - pdfarranger
   - qterminal
   - switchboard-plug-a11y
   - switchboard-plug-about

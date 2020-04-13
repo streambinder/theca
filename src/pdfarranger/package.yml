@@ -1,0 +1,22 @@
+name       : pdfarranger
+version    : 1.4.2
+release    : 1
+source     :
+    - https://github.com/jeromerobert/pdfarranger/archive/1.4.2.tar.gz : 7fcf7bb3cc4a093a17013bac3c3857e9dcfd46aa3814d17287b58bac9ae90772
+homepage   : https://github.com/jeromerobert/pdfarranger
+license    : GPL-3.0-or-later
+component  : office
+summary    : Small application to merge or split pdf documents and rotate, crop and rearrange their pages using an interactive and intuitive graphical interface
+description: |
+    pdfarranger is a small python-gtk application, which helps the user to merge or split pdf documents and rotate, crop and rearrange their pages using an interactive and intuitive graphical interface. It is a frontend for python-pyPdf
+builddeps  :
+    - python-distutils-extra
+rundeps    :
+    - poppler
+    - python-pikepdf
+    - python3-cairo
+    - python3-gobject
+build      : |
+    %python3_setup
+install    : |
+    %python3_install

@@ -1,0 +1,22 @@
+name       : python-pikepdf
+version    : 1.11.0
+release    : 1
+source     :
+    - https://github.com/pikepdf/pikepdf/archive/v1.11.0.tar.gz : 680bcf19a722039a3931a54b783cb05d2fab84c3e34ad26bdf774fad91cf886a
+homepage   : https://pikepdf.readthedocs.io/
+license    : MPL-2.0
+component  : programming.python
+summary    : A Python library for reading and writing PDF, powered by qpdf
+description: |
+    Pikepdf is a Python library for reading and writing PDF files.
+builddeps  :
+    - pkgconfig(libqpdf)
+    - pkgconfig(python3)
+    - pybind11
+    - python-setuptools-scm-git-archive
+rundeps    :
+    - python-lxml
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
