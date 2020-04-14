@@ -1,8 +1,8 @@
 name       : paperboy
-version    : 1
-release    : 1
+version    : 2
+release    : 2
 source     :
-    - https://github.com/streambinder/paperboy/archive/v1.tar.gz : 508f9cf056001e60adc4014b3202e50caaf3f328e1861d8409f192a5d5934f4f
+    - https://github.com/streambinder/paperboy/archive/v2.tar.gz : dc0f249e8fe9f41d60f7f0149629ed5b325915395f0d1c7be960ef6bdd1e1220
 license    : GPL-3.0
 summary    : IMAP email checker and GTK notifier
 description: |
