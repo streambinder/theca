@@ -1,8 +1,8 @@
 name       : pantheon-videos
-version    : 2.7.0
-release    : 3
+version    : 2.7.1
+release    : 4
 source     :
-    - https://github.com/elementary/videos/archive/2.7.0.tar.gz : 38ee6aeaa1b5011cb6e13494bf55a70ec7c90d6bc94c9de1f1a27d13020520a8
+    - https://github.com/elementary/videos/archive/2.7.1.tar.gz : db34680b4d2c383b8db838e893a39e41c01d84f6450db12b886fa1bdee69c7f5
 license    : GPL-3.0
 component  : multimedia.video
 summary    : Pantheon video player app
