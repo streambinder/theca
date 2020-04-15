@@ -1,8 +1,8 @@
 name       : vscodium
-version    : 1.44.0
-release    : 15
+version    : 1.44.1
+release    : 16
 source     :
-    - https://github.com/VSCodium/vscodium/releases/download/1.44.0/codium_1.44.0-1586429109_amd64.deb : f2b0f02f858c6c3b7f61dad77e631a4212b0261d2366cc0b00338ce1414a56fc
+    - https://github.com/VSCodium/vscodium/releases/download/1.44.1/codium_1.44.1-1586947591_amd64.deb : 09ae5cf4e8a573bf1f926c84818abd8478dc3b8eccadc856738a9fab21b4b71f
 license    : MIT
 component  : programming.ide
 summary    : Visual Studio Code without MS branding, telemetry and licensing
