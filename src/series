@@ -7,6 +7,7 @@
   - cinnamon-menus
   - cinnamon-translations
   - contractor
+  - crond
   - dwm
   - figlet
   - fondo
@@ -71,6 +72,7 @@
   - stemmer
   - subnetcalc
   - switchboard
+  - timeshift
   - vscodium
   - xapps
   - xfce4-dev-tools
