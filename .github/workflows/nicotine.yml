@@ -1,0 +1,76 @@
+name: nicotine
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # dependencies
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Go environment
+        uses: actions/setup-go@v2-beta
+
+      # git setup
+      - name: Setup repository
+        run: |
+          git remote set-url origin https://github-actions:${SMOKER_KEY}@github.com/streambinder/ashtray
+          git config user.email "ashtray@davidepucci.it" 
+          git config user.name "Nicotine"
+        env:
+          SMOKER_KEY: ${{ secrets.SMOKER_KEY }}
+
+      # libgit2 v0.28 setup
+      - name: Download and configure libgit2-28
+        run: |
+          sudo apt install -y libssh2-1-dev libssl-dev zlib1g-dev libncurses5-dev \
+            libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev \
+            libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev libffi-dev \
+            python heimdal-dev libcurl4-openssl-dev cmake
+          wget https://github.com/libgit2/libgit2/releases/download/v0.28.5/libgit2-0.28.5.tar.gz
+          tar xvf libgit2-0.28.5.tar.gz
+          cd libgit2-0.28.5
+          mkdir build && cd build
+          cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+          sudo cmake --build . --target install
+
+      # solbuild setup
+      - name: Download and configure Solbuild
+        run: |
+          git clone https://github.com/getsolus/solbuild.git
+          cd solbuild
+          make ensure_modules
+          make
+          sudo make install
+          sudo solbuild init -u
+          sudo mkdir /etc/solbuild
+          sudo echo 'image = "main-x86_64"
+          remove_repos = ["Solus"]
+          add_repos = ["Local", "Ashtray", "Solus"]
+          [repo.Local]
+          uri = "'$GITHUB_WORKSPACE'"
+          local = true
+          autoindex = true
+
+          [repo.Ashtray]
+          uri = "https://solus.davidepucci.it/eopkg-index.xml.xz"
+          
+          [repo.Solus]
+          uri = "https://mirrors.rit.edu/solus/packages/shannon/eopkg-index.xml.xz"
+          '  | sudo tee -a /etc/solbuild/main-x86-64.profile
+
+      # effective action
+      - name: Run latest packages build
+        run: |
+          git diff-tree --no-commit-id --name-only -r HEAD | grep package.yml | while read pkg; do
+            solbuild build "${pkg}"
+          done
+      
+      # upload artifacts
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: Packages
+          path: ./*.eopkg
