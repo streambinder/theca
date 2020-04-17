@@ -1,4 +1,4 @@
-cd "${build_dir}"
+cd bin
 
 find -name \*\.eopkg | while read pkg; do
     pkg_pts="$(sed 's/\.eopkg//g' <<< "${pkg}")" 

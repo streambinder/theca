@@ -1,6 +1,6 @@
 source "zeus/scripts/common.sh"
 
-cd "${build_dir}"
+cd bin
 
 sudo chmod a+w eopkg-index.xml*
 sed -i '$ d' eopkg-index.xml
