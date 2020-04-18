@@ -2,6 +2,7 @@ bin/
 zeus/data.yml
 zeus/dumps
 zeus/scripts/*.pyc
+zeus/scripts/__pycache__
 zeus/.history
 *.eopkg
 *.log
