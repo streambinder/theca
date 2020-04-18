@@ -5,7 +5,7 @@ source     :
     - http://archive.xfce.org/src/xfce/xfce4-appfinder/4.14/xfce4-appfinder-4.14.0.tar.bz2 : 7ec175d4954fceb2e76cbfbca76ac4a4f53fe799d097a14117e7de68e88a4d98
 license    : GPL-2.0
 component  : desktop.xfce
-summary    : Xfce aplication launcher and finder	
+summary    : Xfce aplication launcher and finder
 description: |
     The Application Finder is a program to find and launch installed applications on your system, and quickly execute commands.
 builddeps  :
