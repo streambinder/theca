@@ -20,6 +20,11 @@ commands:
             - setup
             - update
 
+    packages-last:
+        description: Build packages from last commit
+        dependencies:
+            - setup
+
     components:
         description: Build all components
         dependencies:
