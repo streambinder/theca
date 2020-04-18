@@ -11,7 +11,7 @@ yml_updated, _ = subprocess.Popen(
     stdout=subprocess.PIPE).communicate()
 
 for package_yml in yml_updated.splitlines():
-    eopkg_updated.append(Eopkg(package_yml))
+    eopkg_updated.append(Eopkg(package_yml.split()[-1]))
 
 for group in get_series():
     for group_id in group:
@@ -21,4 +21,5 @@ for group in get_series():
                     eopkg_updated_sort.append(package_updated)
 
 for eopkg in eopkg_updated_sort:
+    print('Building {} ({})'.format(eopkg.name, eopkg.version))
     solbuild(eopkg)

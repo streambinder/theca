@@ -22,6 +22,7 @@ commands:
 
     packages-last:
         description: Build packages from last commit
+        language: python
         dependencies:
             - setup
 
