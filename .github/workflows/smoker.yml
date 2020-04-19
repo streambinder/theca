@@ -10,20 +10,18 @@ jobs:
 
     steps:
       # dependencies
-      - name: Checkout repository
-        uses: actions/checkout@v2
       - name: Setup Go environment
         uses: actions/setup-go@v2-beta
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.SMOKER_KEY }}
 
       # git setup
       - name: Setup repository
         run: |
-          git remote set-url origin https://github-actions:${SMOKER_KEY}@github.com/streambinder/ashtray
           git config user.email "ashtray@davidepucci.it" 
           git config user.name "Smoker"
-          git checkout master
-        env:
-          SMOKER_KEY: ${{ secrets.SMOKER_KEY }}
 
       # solbump setup
       - name: Download and configure Solbump
