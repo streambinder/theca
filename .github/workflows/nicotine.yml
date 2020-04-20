@@ -16,6 +16,8 @@ jobs:
       # dependencies
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_ACTIONS_ASHTRAY }}
       - name: Setup Go environment
         uses: actions/setup-go@v2-beta
       - name: Set Python environment
@@ -27,11 +29,8 @@ jobs:
       # git setup
       - name: Setup repository
         run: |
-          git remote set-url origin https://github-actions:${SMOKER_KEY}@github.com/streambinder/ashtray
           git config user.email "ashtray@davidepucci.it" 
           git config user.name "Nicotine"
-        env:
-          SMOKER_KEY: ${{ secrets.SMOKER_KEY }}
 
       # libgit2 v0.28 setup
       - name: Download and configure libgit2-28
@@ -72,17 +71,18 @@ jobs:
           uri = "https://mirrors.rit.edu/solus/packages/shannon/eopkg-index.xml.xz"
           ' | sudo tee -a /etc/solbuild/main-x86-64.profile
 
-      # zeus setup
-      - name: Download and configure Zeus
+      # go dependencies
+      - name: Install Go dependencies
         run: |
           go get -v github.com/dreadl0ck/zeus@45d665d962
+          echo "::add-path::$(go env GOPATH)/bin"
         env:
           GO111MODULE: on
 
       # effective action
       - name: Run latest packages build
         run: |
-          ${HOME}/go/bin/zeus packages-last
+          zeus packages-last
       
       # upload artifacts
       - name: Upload artifacts

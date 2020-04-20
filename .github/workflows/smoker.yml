@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.SMOKER_KEY }}
+          token: ${{ secrets.GH_ACTIONS_ASHTRAY }}
 
       # git setup
       - name: Setup repository
@@ -23,10 +23,17 @@ jobs:
           git config user.email "ashtray@davidepucci.it" 
           git config user.name "Smoker"
 
-      # solbump setup
-      - name: Download and configure Solbump
+      # go dependencies
+      - name: Install Go dependencies
         run: |
           go get -v github.com/streambinder/solbump
+          echo "::add-path::$(go env GOPATH)/bin"
+        env:
+          GO111MODULE: on
+
+      # solbump configuration
+      - name: Configure Solbump
+        run: |
           echo -e "github:\n    api: ${SOLBUMP_GITHUB_TOKEN}" > ${HOME}/.config/solbump
           echo -e "gitlab:\n    api: ${SOLBUMP_GITLAB_TOKEN}" >> ${HOME}/.config/solbump
         env:
