@@ -1,8 +1,8 @@
 name       : pdfarranger
-version    : 1.5.0
-release    : 2
+version    : 1.5.1
+release    : 3
 source     :
-    - https://github.com/jeromerobert/pdfarranger/archive/1.5.0.tar.gz : b87c3011087a5ac62172445f6d383b88723e67cd30a37a40cadd6c4608630d93
+    - https://github.com/jeromerobert/pdfarranger/archive/1.5.1.tar.gz : b51a58eead93c7b6140e6b6bb238e0ac3127a8dbf940d1f7678fb8efe7be8410
 homepage   : https://github.com/jeromerobert/pdfarranger
 license    : GPL-3.0-or-later
 component  : office
