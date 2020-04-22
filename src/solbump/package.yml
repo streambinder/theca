@@ -1,8 +1,8 @@
 name       : solbump
-version    : 1
-release    : 1
+version    : 2
+release    : 2
 source     :
-    - https://github.com/streambinder/solbump/archive/v1.tar.gz : 07ce1a5bcc62ec4a46aa78ac5fb825a9190e12f973d2b230ae412112141f1da8
+    - https://github.com/streambinder/solbump/archive/v2.tar.gz : 49bf965285332e22484eae5abb72f4ced84615cb4bf1390a423108a1c16b48f3
 license    : GPL-3.0
 networking : true
 summary    : Automatic eopkg package files updating system
