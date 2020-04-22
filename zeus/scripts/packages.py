@@ -8,6 +8,10 @@ import threading
 from common import Eopkg, get_series, solbuild
 
 workers = []
+max_workers = 10
+if 'MAX_WORKERS' in os.environ:
+    max_workers = int(os.environ['MAX_WORKERS'])
+
 for group in get_series():
     for group_id in group:
         print('Building packages from {}...'.format(group_id))
@@ -29,10 +33,10 @@ for group in get_series():
                 target=solbuild, args=(eopkg,))
             print('Building {}'.format(eopkg.name))
             worker.start()
-            if len(workers) > 10:
-                worker.join()
-            else:
+            if len(workers) < max_workers:
                 workers.append(worker)
+            else:
+                worker.join()
 
         while len(workers) > 0:
             print('Group workers left: {}'.format(len(workers)))
