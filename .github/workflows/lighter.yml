@@ -75,6 +75,8 @@ jobs:
       - name: Build repository
         run: |
           zeus release
+        env:
+          MAX_WORKERS: 1
       
       - name: Get release name
         id: release_name
