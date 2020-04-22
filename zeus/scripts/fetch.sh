@@ -1,5 +1,4 @@
-cd "${build_dir}"
-
+cd "bin"
 curl -s https://api.github.com/repos/streambinder/ashtray/releases \
         | jq '.[0].assets[] | .browser_download_url' | sed 's/"//g' \
         | while read -r asset; do
