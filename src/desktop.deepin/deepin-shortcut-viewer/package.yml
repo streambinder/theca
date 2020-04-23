@@ -1,0 +1,20 @@
+name       : deepin-shortcut-viewer
+version    : 5.0.0
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-shortcut-viewer.git : 5.0.0
+license    : GPL-3.0-or-later
+component  : desktop
+summary    : Deepin Shortcut Viewer
+description: |
+    Helps Deepin applications pop up their shortcut information on screen in a unified appearance.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(gl)
+    - qt5-tools-devel
+setup      : |
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

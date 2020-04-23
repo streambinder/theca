@@ -1,0 +1,17 @@
+name       : deepin-desktop-schemas
+version    : 3.13.9
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-desktop-schemas.git : 3.13.9
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : GSettings Deepin desktop-wide schemas
+description: |
+    GSettings Deepin desktop-wide schemas
+setup      : |
+    # fix default background url
+    sed -i "s#^picture-uri.*#picture-uri='file:///usr/share/backgrounds/deepin/desktop.jpg'#" overrides/common/com.deepin.wrap.gnome.desktop.override
+build      : |
+    %make
+install    : |
+    %make_install

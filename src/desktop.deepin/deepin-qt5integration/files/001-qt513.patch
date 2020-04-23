@@ -1,0 +1,23 @@
+From c7d6b40f8911ee3296c5dbd471d830e56b3f9fe9 Mon Sep 17 00:00:00 2001
+From: Justin Zobel <justin@solus-project.com>
+Date: Sun, 26 Jan 2020 23:52:07 +1030
+Subject: [PATCH] Qt 5.13 Fix
+
+---
+ dstyleplugin/style.cpp | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/dstyleplugin/style.cpp b/dstyleplugin/style.cpp
+index 04e03fe..65be15f 100644
+--- a/dstyleplugin/style.cpp
++++ b/dstyleplugin/style.cpp
+@@ -1418,6 +1418,4 @@ void Style::fillBrush(QPainter *p, const QRect &rect, const QBrush &brush, qreal
+     }
+ }
+ 
+-#include "moc_style.cpp"
+-
+ }
+-- 
+2.25.0
+

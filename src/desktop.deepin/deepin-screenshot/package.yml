@@ -1,0 +1,25 @@
+name       : deepin-screenshot
+version    : 5.0.0
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-screenshot.git : 5.0.0
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Advanced tool to make and edit screenshots
+description: |
+    Deepin screenshot is an advanced tool to make screenshots on Linux desktop environment. It has a user-friendly UI which eases cropping and saving of screenshot.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(dtkwm)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(x11)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xcb)
+    - pkgconfig(xext)
+    - pkgconfig(xtst)
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

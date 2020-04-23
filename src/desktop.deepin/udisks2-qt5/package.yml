@@ -1,0 +1,18 @@
+name       : udisks2-qt5
+version    : 5.0.0
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/udisks2-qt5.git : 5.0.0
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : UDisks2 Library with Qt5
+description: |
+    UDisks2 Library with Qt5
+builddeps  :
+    - pkgconfig(Qt5UiTools)
+setup      : |
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

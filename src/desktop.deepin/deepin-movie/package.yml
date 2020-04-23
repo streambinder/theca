@@ -1,0 +1,48 @@
+name       : deepin-movie
+version    : 3.2.24.3
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-movie-reborn.git : 3.2.24.3
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Deepin Movie Player.
+description: |
+    Deepin Movie provides an intuitive easy to use operation interface and rich complete shortcuts. You can complete all play operations by keyboard, which will make you thoroughly get rid of the constraint of mouse click. Video files in various formats can be played through Deepin Movie, and you can use the streaming function to easily enjoy online video resources.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(dvdnav)
+    - pkgconfig(gl)
+    - pkgconfig(libavcodec)
+    - pkgconfig(libavformat)
+    - pkgconfig(libavresample)
+    - pkgconfig(libavutil)
+    - pkgconfig(libffmpegthumbnailer)
+    - pkgconfig(libpulse)
+    - pkgconfig(libpulse-simple)
+    - pkgconfig(mpv)
+    - pkgconfig(Qt5Concurrent)
+    - pkgconfig(Qt5DBus)
+    - pkgconfig(Qt5Network)
+    - pkgconfig(Qt5Sql)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5Widgets)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcb-aux)
+    - pkgconfig(xcb-ewmh)
+    - pkgconfig(xcb-proto)
+    - pkgconfig(xtst)
+rundeps    :
+    - deepin-qt5integration
+setup      : |
+    mkdir build
+    pushd build
+    %cmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install
+    popd

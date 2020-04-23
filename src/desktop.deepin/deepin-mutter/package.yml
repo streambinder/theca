@@ -1,0 +1,50 @@
+name       : deepin-mutter
+version    : 3.20.38
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-mutter.git : 3.20.38
+license    :
+    - GPL-2.0-or-later
+    - GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Base window manager for Deepin, fork of Gnome Mutter
+description: |
+    Base window manager for Deepin, fork of Gnome Mutter
+ccache     : no
+builddeps  :
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(gsettings-desktop-schemas)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gudev-1.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(libwacom)
+    - pkgconfig(sm)
+    - pkgconfig(upower-glib)
+    - pkgconfig(xcursor)
+    - pkgconfig(xkbfile)
+    - pkgconfig(xkeyboard-config)
+    - pkgconfig(xtst)
+    - deepin-clutter-devel
+    - gnome-common
+    - zenity
+rundeps    :
+    - dconf
+    - deepin-desktop-schemas
+    - zenity
+setup      : |
+    sed -i '/SCANNERFLAGS/s/ --warn-error//' src/Makefile.am
+    %autogen --sysconfdir=/etc \
+    --libexecdir=%libdir%/deepin-mutter \
+    --localstatedir=/var \
+    --enable-gtk-doc \
+    --enable-wayland \
+    --enable-native-backend \
+    --disable-static \
+    --disable-schemas-compile \
+    --enable-compile-warnings=minimum
+build      : |
+    %make
+install    : |
+    %make_install

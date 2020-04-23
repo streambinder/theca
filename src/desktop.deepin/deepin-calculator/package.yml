@@ -1,0 +1,22 @@
+name       : deepin-calculator
+version    : 5.0.1
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-calculator.git : 5.0.1
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : An easy to use calculator for ordinary users.
+description: |
+    Deepin calculator is an easy to use calculator for ordinary users.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(Qt5Svg)
+    - qt5-tools-devel
+rundeps    :
+    - deepin-qt5integration
+setup      : |
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

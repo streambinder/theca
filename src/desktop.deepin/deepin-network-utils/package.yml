@@ -1,0 +1,19 @@
+name       : deepin-network-utils
+version    : 5.0.1
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/dde-network-utils.git : 5.0.1
+license    : GPL-3.0-or-later
+component  : desktop.deepin.core
+summary    : Deepin network utilities
+description: |
+    Deepin network utilities
+builddeps  :
+    - pkgconfig(dframeworkdbus)
+    - pkgconfig(Qt5UiTools)
+setup      : |
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

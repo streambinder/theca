@@ -1,0 +1,22 @@
+name       : blur-effect
+version    : 1.1.3
+release    : 1
+source     :
+    - https://github.com/sonald/blur-effect/archive/1.1.3.tar.gz : 80baead168e117cdbd7dd915dac94b8055e63dc05ec5797f3030acfaf19e5654
+license    : GPL-3.0-or-later
+component  : multimedia.graphics
+summary    : Offscreen image blurring tool
+description: |
+    Offscreen image blurring tool
+builddeps  :
+    - pkgconfig(egl)
+    - pkgconfig(gbm)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(glesv2)
+    - pkgconfig(libdrm)
+setup      : |
+    %cmake .
+build      : |
+    %make
+install    : |
+    %make_install

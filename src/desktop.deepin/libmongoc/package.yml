@@ -1,0 +1,27 @@
+name       : libmongoc
+version    : 1.15.2
+release    : 1
+source     :
+    - git|https://github.com/mongodb/mongo-c-driver.git : 1.15.2
+license    :
+    - Apache-2.0
+    - BSD-3-Clause
+    - ISC
+    - MIT
+    - Zlib
+component  : programming.library
+summary    : A high-performance MongoDB driver for C
+description: |
+    mongo-c-driver is a client library written in C for MongoDB.
+builddeps  :
+    - pkgconfig(libsasl2)
+    - snappy-devel
+build      : |
+    mkdir cmake-build
+    pushd cmake-build
+    %cmake -DENABLE_AUTOMATIC_INIT_AND_CLEANUP=OFF ..
+    popd
+install    : |
+    pushd cmake-build
+    %make_install
+    popd

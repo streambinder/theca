@@ -1,0 +1,51 @@
+name       : deepin-api
+version    : 5.0.0
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/dde-api.git : 5.0.0
+extract    : no
+networking : yes
+license    : GPL-3.0-or-later
+component  : desktop.deepin.core
+summary    : Go-lang bindings for deepin-daemon
+description: |
+    Go-lang bindings for deepin-daemon
+rundeps    :
+    - blur-effect
+    - deepin-desktop-base
+    - xcur2png
+builddeps  :
+    - deepin-dbus-factory
+    - deepin-gettext-tools
+    - deepin-gir-generator
+    - deepin-go-dbus-factory
+    - deepin-go-lib
+    - git
+    - golang
+    - pkgconfig(alsa)
+    - pkgconfig(gdk-3.0)
+    - pkgconfig(libpulse-simple)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(poppler-glib)
+setup      : |
+    mkdir {bin,pkg,src}
+    mkdir -p src/pkg.deepin.io/dde
+    cp -r $sources/dde-api.git $workdir/src/pkg.deepin.io/dde/api
+build      : |
+    export GOPATH=$workdir/build:/usr/share/gocode
+    go get gopkg.in/alecthomas/kingpin.v2
+    go get github.com/nfnt/resize
+    go get github.com/cryptix/wav
+    go get golang.org/x/net/context
+    go get github.com/fogleman/gg
+    pushd src/pkg.deepin.io/dde/api
+    make build-dep
+    %make
+    popd
+install    : |
+    export GOPATH=$workdir/:/usr/share/gocode
+    pushd src/pkg.deepin.io/dde/api
+    %make_install libdir=/lib64
+    popd
+    # Dunno what's up here, but I'm needing to fudge this
+    chmod +x $installdir%libdir%/deepin-api/*

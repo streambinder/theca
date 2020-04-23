@@ -1,0 +1,37 @@
+name       : deepin-control-center
+version    : 5.0.0
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dde-control-center/archive/5.0.0.tar.gz : 4b8c4cb191aef890391e001e29606edab54507a2209795d27beb52e21ccddb6c
+license    : GPL-3.0-or-later
+component  : desktop.deepin.core
+summary    : Control panel of the Deepin Desktop Environment.
+description: |
+    Control panel of the Deepin Desktop Environment.
+builddeps  :
+    - networkmanager-qt-devel
+    - pkgconfig(dde-network-utils)
+    - pkgconfig(dtkwidget)
+    - pkgconfig(geoip)
+    - pkgconfig(gsettings-qt)
+    - pkgconfig(libnm)
+    - pkgconfig(Qt5Multimedia)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-ewmh)
+    - pkgconfig(xext)
+    - pkgconfig(dframeworkdbus)
+    - qt5-tools-devel
+rundeps    :
+    - deepin-api
+    - deepin-daemon
+    - pkgconfig(dframeworkdbus)
+    - deepin-qt5integration
+    - proxychains-ng
+setup      : |
+    %cmake -DDISABLE_SYS_UPDATE=YES -DCMAKE_INSTALL_PREFIX=/usr -DDISABLE_OPACITY_ANIMATION=NO -DDISABLE_CLOUD_SYNC=YES
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

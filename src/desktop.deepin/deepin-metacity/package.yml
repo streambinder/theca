@@ -1,0 +1,31 @@
+name       : deepin-metacity
+version    : 3.22.24
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-metacity.git : 3.22.24
+license    : GPL-2.0-or-later
+component  : desktop.deepin.core
+summary    : 2D window manager for Deepin
+description: |
+    2D window manager for Deepin
+builddeps  :
+    - autoconf-archive
+    - intltool
+    - itstool
+    - pkgconfig(dconf)
+    - pkgconfig(gsettings-desktop-schemas)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libbamf3)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libgtop-2.0)
+    - pkgconfig(libstartup-notification-1.0)
+    - yelp-tools
+    - zenity
+setup      : |
+    %patch -p1 < $pkgfiles/creating_themes.patch
+    %autogen --disable-static --disable-schemas-compile
+build      : |
+    %make
+install    : |
+    %make_install

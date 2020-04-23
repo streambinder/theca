@@ -1,0 +1,35 @@
+name       : deepin-qt5dxcb-plugin
+version    : 5.0.1
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/qt5dxcb-plugin.git : 5.0.1
+license    : GPL-3.0-or-later
+component  : desktop.qt
+summary    : Qt platform plugins for DDE
+description: |
+    Qt platform plugins for DDE
+builddeps  :
+    - pkgconfig(cairo)
+    - pkgconfig(egl)
+    - pkgconfig(fontconfig)
+    - pkgconfig(freetype2)
+    - pkgconfig(mtdev)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(sm)
+    - pkgconfig(x11-xcb)
+    - pkgconfig(xcb-icccm)
+    - pkgconfig(xcb-image)
+    - pkgconfig(xcb-keysyms)
+    - pkgconfig(xcb-renderutil)
+    - pkgconfig(xi)
+    - pkgconfig(xkbcommon-x11)
+    - qt5-tools-devel
+    - qt5-xcb-private-headers-devel
+setup      : |
+    rm -r platformplugin/libqt5xcbqpa-dev
+    %patch -p1 < $pkgfiles/qtfix.patch
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

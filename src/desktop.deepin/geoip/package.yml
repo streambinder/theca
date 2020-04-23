@@ -1,0 +1,17 @@
+name       : geoip
+version    : 1.6.12
+release    : 1
+source     :
+    - https://github.com/maxmind/geoip-api-c/archive/v1.6.12.tar.gz : 99b119f8e21e94f1dfd6d49fbeed29a70df1544896e76cd456f25e397b07d476
+license    : LGPL-2.1-or-later
+component  : network.util
+summary    : Enables the user to find geographical and network information of an IP
+    address.
+description: |
+    The GeoIP Legacy C library enables the user to find geographical and network information of an IP address.
+setup      : |
+    %reconfigure
+build      : |
+    %make
+install    : |
+    %make_install

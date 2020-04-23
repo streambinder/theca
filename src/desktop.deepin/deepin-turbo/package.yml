@@ -1,0 +1,20 @@
+name       : deepin-turbo
+version    : 0.0.3
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-turbo/archive/0.0.3.tar.gz : bb2a461e69f1738ec02d10c069772cc03a5a6b3570ca64f7e3ab3c0ade06f620
+license    : LGPL-2.1-or-later
+component  : desktop.deepin
+summary    : deepin-trubo is a deepin project that derives from Applauncherd.
+description: |
+    deepin-trubo is a deepin project that derives from Applauncherd.
+    Applauncherd is a daemon that helps to launch applications faster by preloading dynamically linked libraries and caching stuff. It also saves memory, because all launched applications share certain resources.
+    we built a booster type called dtkwidget-booster in this project to support launching dtk-based Apps faster.
+builddeps  :
+    - pkgconfig(qtermwidget5)
+setup      : |
+    %cmake
+build      : |
+    %make
+install    : |
+    %make_install

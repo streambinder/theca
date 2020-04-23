@@ -1,0 +1,21 @@
+name       : deepin-screensaver
+version    : 0.0.10
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-screensaver/archive/0.0.10.tar.gz : eb0ee36de5caad27955b535838e8e7893a824897c48cc1a07b50ca330f94425e
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Deepin Screensaver
+description: |
+    Deepin Screensaver
+builddeps  :
+    - pkgconfig(Qt5Quick)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xscrnsaver)
+setup      : |
+    %qmake PREFIX=/usr
+build      : |
+    %make
+install    : |
+    make INSTALL_ROOT=%installroot% install

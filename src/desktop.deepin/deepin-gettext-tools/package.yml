@@ -1,0 +1,15 @@
+name       : deepin-gettext-tools
+version    : 1.0.8
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-gettext-tools.git : 1.0.8
+license    : GPL-3.0-or-later
+component  : programming.tools
+summary    : Deepin Gettext Tools
+description: |
+    Deepin Gettext Tools
+rundeps    :
+    - perl-config-tiny
+    - perl-xml-libxml
+install    : |
+    %make_install

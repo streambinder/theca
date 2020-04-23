@@ -1,0 +1,35 @@
+name       : deepin-session-ui
+version    : 5.0.0
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/dde-session-ui.git : 5.0.0
+license    : GPL-3.0-or-later
+component  : desktop.deepin.core
+summary    : Deepin desktop-environment - Session UI module
+description: |
+    Deepin desktop-environment - Session UI module
+builddeps  :
+    - deepin-gettext-tools
+    - pkgconfig(dtkwidget)
+    - pkgconfig(gl)
+    - pkgconfig(gsettings-qt)
+    - pkgconfig(liblightdm-qt5-3)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcb-ewmh)
+    - pkgconfig(xcursor)
+    - pkgconfig(xrandr)
+    - pkgconfig(xtst)
+    - pkgconfig(dframeworkdbus)
+    - qt5-tools-devel
+rundeps    :
+    - deepin-daemon
+setup      : |
+    sed -i 's|/usr/share/backgrounds/default_background.jpg|/usr/share/backgrounds/deepin/desktop.jpg|' widgets/*.cpp
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir
+    rm $installdir/usr/share/dbus-1/services/com.deepin.dde.Notification.service
+    rm $installdir/usr/share/dbus-1/services/com.deepin.dde.freedesktop.Notification.service

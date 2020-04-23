@@ -1,0 +1,35 @@
+name       : deepin-wm
+version    : 1.9.38
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-wm.git : 1.9.38
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Deepin Window Manager
+description: |
+    Default window manager for Deepin, started as a fork of Elementary Gala, based on libmutter. Mostly rewritten to work with Deepin Desktop Environment, such as redesign the UI for window switching, enhance user experience for the workspace preview mode, support multiple backgrounds, and many of other changes.
+builddeps  :
+    - pkgconfig(gdk-x11-3.0)
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libbamf3)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libdeepin-mutter)
+    - pkgconfig(libwnck-3.0)
+    - deepin-clutter-devel
+    - deepin-clutter-gtk-devel
+    - gnome-common
+    - vala
+rundeps    :
+    - deepin-desktop-schemas
+setup      : |
+    %patch -p1 < $pkgfiles/001-vala.patch
+    sed -i 's#/usr/share/backgrounds/default_background.jpg#/usr/share/backgrounds/deepin/desktop.jpg#' src/Background/BackgroundSource.vala
+    %autogen --disable-schemas-compile
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,19 @@
+name       : disomaster
+version    : 5.0.0
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/disomaster/archive/5.0.0.tar.gz : e3f6054fde9a480e8865d7b1f130abb117c32d5486080688c3ad5b774d848318
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Library to manipulate DISC burning.
+description: |
+    A libisoburn wrapper class for Qt.
+builddeps  :
+    - pkgconfig(libisoburn-1)
+    - pkgconfig(Qt5UiTools)
+setup      : |
+    %qmake
+build      : |
+    %make
+install    : |
+    make INSTALL_ROOT=%installroot% install

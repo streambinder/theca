@@ -1,0 +1,12 @@
+name       : deepin-sound-theme
+version    : 15.10.3
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-sound-theme.git : 15.10.3
+license    : GPL-3.0-or-later
+component  : desktop.theme
+summary    : The freedesktop sound theme for Deepin.
+description: |
+    The freedesktop sound theme for Deepin.
+install    : |
+    %make_install

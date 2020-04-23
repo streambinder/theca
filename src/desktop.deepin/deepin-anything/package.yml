@@ -1,0 +1,20 @@
+name       : deepin-anything
+version    : 5.0.1
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-anything.git : 5.0.1
+license    : GPL-2.0-or-later
+component  : desktop.deepin
+summary    : Something like everything, but nothing is really like anything...
+description: |
+    Something like everything, but nothing is really like anything...
+builddeps  :
+    - pkgconfig(dtkcore)
+    - pkgconfig(udisks2-qt5)
+    - qt5-tools-devel
+patterns   :
+    - main : /
+build      : |
+    %make
+install    : |
+    %make_install

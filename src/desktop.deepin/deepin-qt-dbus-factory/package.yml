@@ -1,0 +1,20 @@
+name       : deepin-qt-dbus-factory
+version    : 5.0.1
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/dde-qt-dbus-factory.git : 5.0.1
+license    : GPL-3.0-or-later
+component  : desktop.deepin.core
+summary    : Automatically storing of automatically generated Qt DBus code used by
+    Deepin.
+description: |
+    Automatically storing of automatically generated Qt DBus code used by Deepin.
+builddeps  :
+    - pkgconfig(glu)
+    - pkgconfig(Qt5UiTools)
+setup      : |
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

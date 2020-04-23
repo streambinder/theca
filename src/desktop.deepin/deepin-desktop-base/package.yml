@@ -1,0 +1,20 @@
+name       : deepin-desktop-base
+version    : 2019.06.14
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-desktop-base.git : 2019.06.14
+license    : GPL-3.0-or-later
+component  : desktop.deepin.core
+summary    : Base component for Deepin.
+description: |
+    Base component for Deepin.
+setup      : |
+    %patch -p1 < $pkgfiles/libdir.patch
+build      : |
+    %make
+install    : |
+    %make_install LIBDIR=%libdir%
+    rm "${installdir}/etc/lsb-release"
+    rm -r "${installdir}/etc/systemd"
+    ln -s ..%libdir%/deepin/desktop-version "${installdir}/etc/deepin-version"
+    rm -r "${installdir}/usr/share/python-apt"

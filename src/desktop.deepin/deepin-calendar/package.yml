@@ -1,0 +1,22 @@
+name       : deepin-calendar
+version    : 5.0.1
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/dde-calendar.git : 5.0.1
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Calendar for Deepin Desktop Environment.
+description: |
+    Deepin Calender is an easy calendar tool developed by Deepin Technology, main features current date, solar terms, lunar calendar and world holidays.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - deepin-gettext-tools
+    - qt5-tools-devel
+rundeps    :
+    - deepin-qt5integration
+setup      : |
+    %cmake
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir

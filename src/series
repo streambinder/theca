@@ -99,13 +99,37 @@
   - qtermwidget
   - xfconf
 - group-3:
-  - cjs
+  - avfs
+  - blur-effect
   - cinnamon-control-center
+  - cjs
+  - deepin-cogl
+  - deepin-default-settings
+  - deepin-desktop-base
+  - deepin-desktop-schemas
+  - deepin-gettext-tools
+  - deepin-gir-generator
+  - deepin-go-lib
+  - deepin-gtk-theme
+  - deepin-metacity
+  - deepin-qt-dbus-factory
+  - deepin-screensaver
+  - deepin-sound-theme
+  - deepin-wm-switcher
+  - disomaster
+  - geoip
+  - gsettings-qt
+  - imwheel
   - libfm-qt
+  - liblightdm-qt5
   - liblxqt
+  - libmongoc
   - libxfce4ui
   - lxqt-qtplugin
   - pdfarranger
+  - perl-config-tiny
+  - proxychains-ng
+  - qt5-xcb-private-headers
   - qterminal
   - switchboard-plug-a11y
   - switchboard-plug-about
@@ -127,9 +151,18 @@
   - switchboard-plug-sharing
   - switchboard-plug-sound
   - switchboard-plug-useraccounts
+  - udisks2-qt5
   - wingpanel
+  - xcur2png
 - group-4:
   - cinnamon
+  - deepin-clutter
+  - deepin-dbus-generator
+  - deepin-go-dbus-factory
+  - deepin-network-utils
+  - deepin-qt5dxcb-plugin
+  - deepin-turbo
+  - dtkcore
   - exo
   - garcon
   - libsysstat
@@ -145,6 +178,7 @@
   - pantheon-greeter
   - pcmanfm-qt
   - thunar
+  - treefrog-framework
   - wingpanel-indicator-a11y
   - wingpanel-indicator-bluetooth
   - wingpanel-indicator-datetime
@@ -161,6 +195,9 @@
   - xfce4-terminal
   - xfwm4
 - group-5:
+  - deepin-anything
+  - dtkwidget
+  - dtkwm
   - lxqt-panel
   - lxqt-runner
   - xfce4-appfinder
@@ -168,6 +205,38 @@
   - xfce4-settings
   - xfdesktop
 - group-6:
+  - deepin-calculator
+  - deepin-calendar
+  - deepin-clutter-gtk
+  - deepin-control-center
+  - deepin-dbus-generator
+  - deepin-dock
+  - deepin-editor
+  - deepin-launcher
+  - deepin-menu
+  - deepin-movie
+  - deepin-music
+  - deepin-mutter
+  - deepin-notifications
+  - deepin-picker
+  - deepin-polkit-agent
+  - deepin-qt5integration
+  - deepin-screen-recorder
+  - deepin-session-ui
+  - deepin-shortcut-viewer
+  - deepin-system-monitor
+  - deepin-voice-recorder
   - xfce4-whiskermenu-plugin
   - xfce-default-settings
   - xfce4-notifyd
+- group-7:
+  - deepin-dbus-factory
+  - deepin-file-manager
+  - deepin-screenshot
+  - deepin-wm
+- group-8:
+  - deepin-api
+- group-9:
+  - deepin-daemon
+  - deepin-wallpapers
+  - startdde

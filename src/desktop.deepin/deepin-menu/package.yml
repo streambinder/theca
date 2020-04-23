@@ -1,0 +1,28 @@
+name       : deepin-menu
+version    : 3.4.8
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/deepin-menu.git : 3.4.8
+license    : GPL-3.0-or-later
+component  : desktop.deepin.core
+summary    : Deepin Menu is the unified menu service for Deepin Desktop Environment.
+description: |
+    Deepin Menu is the unified menu service for Deepin Desktop Environment.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(gl)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - pkgconfig(dframeworkdbus)
+    - qt5-tools-devel
+setup      : |
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir
+    install -dm 755 "${installdir}/usr/share/dbus-1/services/"
+    install -dm 755 "${installdir}/etc/xdg/autostart/"
+    install -m 644 data/*.service "${installdir}/usr/share/dbus-1/services/"
+    install -m 644 *.desktop "${installdir}/etc/xdg/autostart/"

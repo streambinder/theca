@@ -1,0 +1,25 @@
+name       : treefrog-framework
+version    : 1.26.0
+release    : 1
+source     :
+    - git|https://github.com/treefrogframework/treefrog-framework.git : v1.26.0
+license    : BSD-3-Clause
+component  : programming.library
+summary    : High-speed C++ MVC Framework for Web Application
+description: |
+    TreeFrog Framework is a high-speed and full-stack web application framework based on C++ and Qt, which supports HTTP and WebSocket protocol. Web applications can run faster than that of lightweight programming language. In application development, it provides an O/R mapping system and template system on an MVC architecture, aims to achieve high productivity through the policy of convention over configuration.
+builddeps  :
+    - pkgconfig(libmongoc-1.0)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5Quick)
+    - pkgconfig(Qt5UiTools)
+setup      : |
+    ./configure --enable-shared-mongoc --prefix=%installroot%/%PREFIX% --libdir=%installroot%/%libdir% --datadir=%installroot%/usr/share
+build      : |
+    pushd src
+    %make
+    popd
+install    : |
+    pushd src
+    %make_install
+    popd
