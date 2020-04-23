@@ -20,8 +20,8 @@ commands:
             - setup
             - update
 
-    packages-last:
-        description: Build packages from last commit
+    packages-staging:
+        description: Build packages in staging
         language: python
         dependencies:
             - setup
