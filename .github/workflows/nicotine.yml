@@ -82,7 +82,7 @@ jobs:
       # effective action
       - name: Run latest packages build
         run: |
-          zeus packages-last
+          zeus packages-staging
       
       # upload artifacts
       - name: Upload artifacts
