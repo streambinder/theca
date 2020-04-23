@@ -82,6 +82,7 @@ jobs:
       # effective action
       - name: Run latest packages build
         run: |
+          git fetch --prune --unshallow --tags
           zeus packages-staging
       
       # upload artifacts
