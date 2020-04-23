@@ -9,6 +9,10 @@ yml_updated = []
 tag = subprocess.Popen(
     ['git', 'describe', '--tags', '--abbrev=0'],
     stdout=subprocess.PIPE).communicate()[0].strip()
+if tag == "":
+    print('Unable to get last tag')
+    sys.exit(1)
+
 yml_from_tag = list(
     map(lambda fname: (Eopkg(fname)),
         filter(lambda fname: (fname.endswith('package.yml')),
