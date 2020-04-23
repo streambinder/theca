@@ -10,8 +10,8 @@ description: |
     Something like everything, but nothing is really like anything...
 builddeps  :
     - pkgconfig(dtkcore)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(udisks2-qt5)
-    - qt5-tools-devel
 patterns   :
     - main : /
 build      : |
