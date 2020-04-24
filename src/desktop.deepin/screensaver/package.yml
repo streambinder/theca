@@ -1,8 +1,8 @@
 name       : deepin-screensaver
-version    : 0.0.10
-release    : 1
+version    : 5.0.0
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/deepin-screensaver/archive/0.0.10.tar.gz : eb0ee36de5caad27955b535838e8e7893a824897c48cc1a07b50ca330f94425e
+    - https://github.com/linuxdeepin/deepin-screensaver/archive/5.0.0.tar.gz : 343cba8b59eb3c9a4ffb452b1f3c9373308b57eb9655e7bbc513ef4654e4d271
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Deepin Screensaver
