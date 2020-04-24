@@ -1,8 +1,8 @@
 name       : deepin-daemon
-version    : 3.23.1
-release    : 1
+version    : 5.0.0
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-daemon.git : 3.23.1
+    - git|https://github.com/linuxdeepin/dde-daemon.git : 5.0.0
 networking : yes
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
