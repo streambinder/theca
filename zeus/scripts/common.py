@@ -27,7 +27,7 @@ class Eopkg(object):
         self.name = ""
         self.version = ""
         self.release = ""
-        self.yml = yml
+        self.yml = yml.decode('utf8')
         self._parse()
 
     def _parse(self):

@@ -16,7 +16,7 @@ if tag == "":
 
 yml_from_tag = list(
     map(lambda fname: (Eopkg(fname)),
-        filter(lambda fname: (fname.endswith('package.yml') and os.path.isfile(fname)),
+        filter(lambda fname: (fname.endswith(b'package.yml') and os.path.isfile(fname)),
                subprocess.Popen(['git', 'diff', '--name-only', 'HEAD', tag],
                                 stdout=subprocess.PIPE).communicate()[0].strip().splitlines())))
 for group in get_series():

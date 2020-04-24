@@ -15,14 +15,14 @@ commands:
 
     packages:
         description: Build all packages
-        language: python
+        language: python3
         dependencies:
             - setup
             - update
 
     packages-staging:
         description: Build packages in staging
-        language: python
+        language: python3
         dependencies:
             - setup
 
