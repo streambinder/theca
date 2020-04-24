@@ -1,8 +1,8 @@
 name       : treefrog-framework
-version    : 1.26.0
-release    : 1
+version    : 1.28.0
+release    : 2
 source     :
-    - git|https://github.com/treefrogframework/treefrog-framework.git : v1.26.0
+    - git|https://github.com/treefrogframework/treefrog-framework.git : v1.28.0
 license    : BSD-3-Clause
 component  : programming.library
 summary    : High-speed C++ MVC Framework for Web Application
