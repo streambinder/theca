@@ -9,6 +9,7 @@ summary    : Cross-desktop libraries and common resources
 description: |
     This project gathers the components which are common to multiple desktop environments and required to implement cross-DE solutions.
 builddeps  :
+    - pkgconfig(dbusmenu-gtk3-0.4)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libgnomekbdui)
     - pkgconfig(pygobject-3.0)
