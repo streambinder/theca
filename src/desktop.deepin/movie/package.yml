@@ -31,9 +31,11 @@ builddeps  :
     - pkgconfig(xcb-ewmh)
     - pkgconfig(xcb-proto)
     - pkgconfig(xtst)
+    - dtkcore
 rundeps    :
     - deepin-qt5integration
 setup      : |
+    %apply_patches
     mkdir build
     pushd build
     %cmake ..
