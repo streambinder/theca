@@ -1,8 +1,8 @@
 name       : xapps
-version    : 1.6.10
-release    : 3
+version    : 1.8.0
+release    : 4
 source     :
-    - https://github.com/linuxmint/xapps/archive/1.6.10.tar.gz : 4dd228a2165f1077f18d6fb3152bb77d365ffbb8ad883ed4dd9137886dd21377
+    - https://github.com/linuxmint/xapps/archive/1.8.0.tar.gz : 71ac9b89885630bc096202c4766493bb246ca1b2f0bd115efa4f0a5041f8f7e1
 license    : LGPL-3.0
 component  : desktop.cinnamon
 summary    : Cross-desktop libraries and common resources
