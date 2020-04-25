@@ -1,8 +1,8 @@
 name       : lxqt-panel
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/lxqt-panel/archive/0.14.1.tar.gz : acd76ccaf7842ab62ed85525a114971d295f66bf12583ff60c0e206a9bfc5393
+    - https://github.com/lxqt/lxqt-panel/archive/0.15.0.tar.gz : c794fdb0130c2bd399fe249b94da05c8b0b7f6bd050a20cdde4ae6994db3c85b
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : LXQt Panel
