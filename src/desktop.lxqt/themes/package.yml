@@ -1,8 +1,8 @@
 name       : lxqt-themes
-version    : 0.14.0
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/lxqt-themes/archive/0.14.0.tar.gz : b9af48df41ea112d95d93556d325e2aa8a8bb034e1a557c7e1d5645c2b26b3bd
+    - https://github.com/lxqt/lxqt-themes/archive/0.15.0.tar.gz : b61dfc4f78fd52755de6edf50abfcf6b2c22d75ee6dcfb58074304b53dd8f7b4
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : Themes, graphics and icons for LXQt
