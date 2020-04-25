@@ -1,8 +1,8 @@
 name       : lxqt-build-tools
-version    : 0.6.0
-release    : 1
+version    : 0.7.0
+release    : 2
 source     :
-    - https://github.com/lxqt/lxqt-build-tools/archive/0.6.0.tar.gz : b993597738111ce58c161a962dc1c13ce24cdcde21301cfaaff29ba540c27418
+    - https://github.com/lxqt/lxqt-build-tools/archive/0.7.0.tar.gz : b306b3b8145feb7ee1297654ac7afd6c62e5c4e33e87d41026a3773e0284f30f
 license    : BSD-3-Clause
 component  : desktop.lxqt
 summary    : Various packaging tools and scripts for LXQt applications
