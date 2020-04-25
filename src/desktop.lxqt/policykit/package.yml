@@ -1,8 +1,8 @@
 name       : lxqt-policykit
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/lxqt-policykit/archive/0.14.1.tar.gz : cfc2db33b52858e29ee95996febb8515d41946b131f882340821f803c89abbf3
+    - https://github.com/lxqt/lxqt-policykit/archive/0.15.0.tar.gz : 41518375a9ccd6525e55425bc1050c1eeb6fd8456e2426c38e20a4226ac72f72
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : The LXQt PolicyKit agent
