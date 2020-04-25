@@ -1,8 +1,8 @@
 name       : lxqt-powermanagement
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/lxqt-powermanagement/archive/0.14.1.tar.gz : 03b4e461cec747a771775772ae2d7779e86ac465e2424f109f31d1f5706df320
+    - https://github.com/lxqt/lxqt-powermanagement/archive/0.15.0.tar.gz : 605e109c70e72e585637583d15007c0c93b5abd2d6f77a2e1b98788023d6f2d6
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : Power management module for LXQt
