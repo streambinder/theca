@@ -1,8 +1,8 @@
 name       : qtermwidget
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/qtermwidget/archive/0.14.1.tar.gz : 77ae55c2c4c80bebf6999b5dc8b96cfce1f98a26943635ed6d0be36cf61a6511
+    - https://github.com/lxqt/qtermwidget/archive/0.15.0.tar.gz : 9ee5742d010e15bb54f1b00fa7632a9d322318da166a62d51a8bd7360457e3c5
 license    : |
     - BSD-3-Clause
     - GPL-2.0
