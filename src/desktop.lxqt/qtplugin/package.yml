@@ -11,6 +11,7 @@ description: |
     With this plugin, all Qt-based programs can adopt settings of LXQt, such as the icon theme.
 builddeps  :
     - pkgconfig(dbusmenu-qt5)
+    - pkgconfig(libfm-qt)
     - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(Qt5Xdg)
