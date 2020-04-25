@@ -1,8 +1,8 @@
 name       : lxqt-about
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/lxqt-about/archive/0.14.1.tar.gz : dd5f1005b2ca85edc76d2f4b5379258e16b8248beed1314639d7fd07decfcda7
+    - https://github.com/lxqt/lxqt-about/archive/0.15.0.tar.gz : ddfec06f0371189d59b056f047e03a3f532dc7d62f04e505cef2c7e04fe3dbea
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : Dialogue window providing information about LXQt and the system it's running on
