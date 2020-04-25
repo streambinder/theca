@@ -1,8 +1,8 @@
 name       : libfm-qt
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/libfm-qt/archive/0.14.1.tar.gz : a3ad06e8ef658ddce77100fd485e70d85468e971ff3da92af6e4abc8cc4af469
+    - https://github.com/lxqt/libfm-qt/archive/0.15.0.tar.gz : 9ccbcca8d60ddddd4efe6c2bf77e2a433b3b97c02ba56c5b4fe56c78e4dd03d3
 license    : |
     - LGPL-2.1
     - BSD-3-Clause
