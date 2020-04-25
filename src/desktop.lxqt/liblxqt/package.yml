@@ -1,8 +1,8 @@
 name       : liblxqt
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/liblxqt/archive/0.14.1.tar.gz : 3804f12df9e912a9190768c53a0d5789fc00c3a3eac32b0e74e0a4921578d377
+    - https://github.com/lxqt/liblxqt/archive/0.15.0.tar.gz : 6f09072d012d40d078510394154ce3f9d21a3acf277b2ed7614f7f552b6a863b
 license    : LGLP-2.1
 networking : yes
 component  : desktop.lxqt
