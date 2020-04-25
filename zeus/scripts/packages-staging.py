@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import glob
 import os
 import subprocess
 import sys
@@ -27,6 +28,8 @@ for group in get_series():
                     yml_updated.append(package_updated)
 
 for eopkg in yml_updated:
+    if len(glob.glob(os.path.join('bin', eopkg.glob()))) > 0:
+        continue
     print('Building {} ({})'.format(eopkg.name, eopkg.version))
     if not solbuild(eopkg):
         print('Build failed')
