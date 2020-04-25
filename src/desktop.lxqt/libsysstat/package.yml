@@ -1,8 +1,8 @@
 name       : libsysstat
-version    : 0.4.2
-release    : 1
+version    : 0.4.3
+release    : 2
 source     :
-    - https://github.com/lxqt/libsysstat/archive/0.4.2.tar.gz : 1d555cc3a566672089778f62610e774b69d2aa34a3948b60aa310144a46b3b2d
+    - https://github.com/lxqt/libsysstat/archive/0.4.3.tar.gz : 6f1dce98f20224e0f1bfde561e3bbb410824940ae1055ec713eec8189fe29ec8
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : Library used to query system info and statistics
