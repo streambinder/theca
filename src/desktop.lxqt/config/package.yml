@@ -1,8 +1,8 @@
 name       : lxqt-config
-version    : 0.14.1
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/lxqt/lxqt-config/archive/0.14.1.tar.gz : f05887892598cf0d2f83e5895cdb7a4eb0b4d4bc35b8d6851eab1e762c8e13ea
+    - https://github.com/lxqt/lxqt-config/archive/0.15.0.tar.gz : a1180209dbbf1a2b3b8578e9f2d8b9a66816bef0517eaa7ff76c6c0e421bb71a
 license    : LGPL-2.1
 networking : yes
 component  : desktop.lxqt
