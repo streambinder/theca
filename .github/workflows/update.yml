@@ -1,4 +1,4 @@
-name: smoker
+name: update
 
 on:
   schedule:
@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # dependencies
       - name: Setup Go environment
         uses: actions/setup-go@v2-beta
       - name: Checkout repository
@@ -17,13 +16,11 @@ jobs:
         with:
           token: ${{ secrets.GH_ACTIONS_ASHTRAY }}
 
-      # git setup
       - name: Setup repository
         run: |
           git config user.email "ashtray@davidepucci.it" 
           git config user.name "Smoker"
 
-      # go dependencies
       - name: Install Go dependencies
         run: |
           go get -v github.com/streambinder/solbump
@@ -31,7 +28,6 @@ jobs:
         env:
           GO111MODULE: on
 
-      # solbump configuration
       - name: Configure Solbump
         run: |
           echo -e "github:\n    api: ${SOLBUMP_GITHUB_TOKEN}" > ${HOME}/.config/solbump
@@ -40,7 +36,6 @@ jobs:
           SOLBUMP_GITHUB_TOKEN: ${{ secrets.SOLBUMP_GITHUB_TOKEN }}
           SOLBUMP_GITLAB_TOKEN: ${{ secrets.SOLBUMP_GITLAB_TOKEN }}
 
-      # effective action
       - name: Run packages update check
         run: |
           find src -name package.yml | while read fname; do

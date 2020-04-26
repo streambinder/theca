@@ -1,38 +1,24 @@
-name: nicotine
+name: release
 
 on:
-  push:
-    branches:
-    - master
-  pull_request:
-    branches:
-    - master
+  schedule:
+    - cron: '0 16 * * 5'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # dependencies
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_ACTIONS_ASHTRAY }}
       - name: Setup Go environment
         uses: actions/setup-go@v2-beta
-      - name: Set Python environment
+      - name: Setup Python environment
         uses: actions/setup-python@v1
         with:
-          python-version: '3.7'
-          architecture: 'x64'
+          python-version: 3.7
+          architecture: x64
 
-      # git setup
-      - name: Setup repository
-        run: |
-          git config user.email "ashtray@davidepucci.it" 
-          git config user.name "Nicotine"
-
-      # libgit2 v0.28 setup
       - name: Download and configure libgit2-28
         run: |
           sudo apt install -y libssh2-1-dev libssl-dev zlib1g-dev libncurses5-dev \
@@ -46,7 +32,6 @@ jobs:
           cmake .. -DCMAKE_INSTALL_PREFIX=/usr
           sudo cmake --build . --target install
 
-      # solbuild setup
       - name: Download and configure Solbuild
         run: |
           git clone https://github.com/getsolus/solbuild.git
@@ -59,6 +44,7 @@ jobs:
           sudo echo 'image = "main-x86_64"
           remove_repos = ["Solus"]
           add_repos = ["Local", "Ashtray", "Solus"]
+
           [repo.Local]
           uri = "'$GITHUB_WORKSPACE'/bin"
           local = true
@@ -70,8 +56,11 @@ jobs:
           [repo.Solus]
           uri = "https://mirrors.rit.edu/solus/packages/shannon/eopkg-index.xml.xz"
           ' | sudo tee -a /etc/solbuild/main-x86-64.profile
+          echo '[Packager]
+          Name=Lighter
+          Email=ashtray@davidepucci.it
+          ' | sudo tee -a ~/.solus
 
-      # go dependencies
       - name: Install Go dependencies
         run: |
           go get -v github.com/dreadl0ck/zeus@45d665d962
@@ -79,15 +68,36 @@ jobs:
         env:
           GO111MODULE: on
 
-      # effective action
-      - name: Run latest packages build
+      - name: Fetch last release packages
         run: |
-          git fetch --prune --unshallow --tags
-          zeus packages-staging
+          zeus fetch
       
-      # upload artifacts
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2-preview
+      - name: Build repository
+        run: |
+          zeus release
+        env:
+          MAX_WORKERS: 1
+      
+      - name: Get release name
+        id: release_name
+        uses: streambinder/nickels/actions/date@master
+
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_ASHTRAY }}
         with:
-          name: Packages
-          path: bin/*.eopkg
+          tag_name: ${{ steps.release_name.outputs.datetime }}
+          release_name: ${{ steps.release_name.outputs.datetime }}
+          draft: false
+          prerelease: false
+
+      - name: Upload packages to release
+        uses: csexton/release-asset-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_ASHTRAY }}
+        with:
+          pattern: bin/*
+          github-token: ${{ secrets.GH_ACTIONS_ASHTRAY }}
+          release-url: ${{ steps.create_release.outputs.upload_url }}
