@@ -6,6 +6,24 @@ import subprocess
 import sys
 import yaml
 
+import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
+
+session = None
+
+
+def get(url):
+    global session
+    if session is None:
+        session = requests.Session()
+        retry = Retry(connect=3, backoff_factor=0.5)
+        adapter = HTTPAdapter(max_retries=retry)
+        session.mount('http://', adapter)
+        session.mount('https://', adapter)
+    return session.get(url)
+
 
 class eopkg(object):
     def __init__(self, yml):
@@ -51,9 +69,7 @@ class eopkg(object):
     def hash(url):
         import hashlib
         hash = hashlib.sha256()
-        import requests
-        payload = requests.get(url)
-        for data in payload.iter_content(8192):
+        for data in get(url).iter_content(8192):
             hash.update(data)
         return hash.hexdigest()
 
