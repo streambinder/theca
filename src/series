@@ -1,242 +1,241 @@
-- group-1:
-  - blackbox
-  - cerbere
-  - cinnamon-applet-qredshift
-  - cinnamon-applet-redshift
-  - cinnamon-desktop
-  - cinnamon-menus
-  - cinnamon-translations
-  - contractor
-  - crond
-  - dwm
-  - figlet
-  - fondo
-  - font-open-sans-ttf
-  - font-roboto-mono-ttf
-  - gsasl
-  - gsignond
-  - hydra
-  - iceauth
-  - libfm-extra
-  - libgsignon-glib
-  - libhandy
-  - libsignon-glib
-  - libstatgrab
-  - libxfce4util
-  - light-locker
-  - lightrss
-  - lua-lgi
-  - lxqt-build-tools
-  - megacmd
-  - melody
-  - midori
-  - minify
-  - mozjs52
-  - notejot
-  - numlockx
-  - pantheon-agent-geoclue2
-  - pantheon-agent-polkit
-  - pantheon-calculator
-  - pantheon-calendar
-  - pantheon-camera
-  - pantheon-capnet-assist
-  - pantheon-code
-  - pantheon-default-settings
-  - pantheon-dpms-helper
-  - pantheon-files
-  - pantheon-icons
-  - pantheon-music
-  - pantheon-onboarding
-  - pantheon-photos
-  - pantheon-print
-  - pantheon-screenshot
-  - pantheon-session-settings
-  - pantheon-shortcut-overlay
-  - pantheon-sound-theme
-  - pantheon-stylesheet
-  - pantheon-terminal
-  - pantheon-videos
-  - pantheon-wallpapers
-  - paperboy
-  - python-pam
-  - python-setuptools-scm-git-archive
-  - python-tinycss
-  - qview
-  - sideload
-  - skippy-xd
-  - sleuthkit
-  - solbump
-  - spotitube
-  - stemmer
-  - subnetcalc
-  - switchboard
-  - timeshift
-  - vscodium
-  - webpin
-  - xapps
-  - xfce4-dev-tools
-  - xfce4-icon-theme
-  - xfwm4-themes
-  - zeus
-- group-2:
-  - appstream
-  - awesomewm
-  - binwalk
-  - cinnamon-screensaver
-  - cinnamon-session
-  - cinnamon-settings-daemon
-  - gala
-  - gsignond-plugin-lastfm
-  - gsignond-plugin-oauth
-  - gsignond-plugin-sasl
-  - libqtxdg
-  - lxqt-themes
-  - menu-cache
-  - muffin
-  - nemo
-  - pantheon-tweaks
-  - python-pikepdf
-  - qtermwidget
-  - xfconf
-- group-3:
-  - avfs
-  - blur-effect
-  - cinnamon-control-center
-  - cjs
-  - deepin-cogl
-  - deepin-default-settings
-  - deepin-desktop-base
-  - deepin-desktop-schemas
-  - deepin-gettext-tools
-  - deepin-gir-generator
-  - deepin-go-lib
-  - deepin-gtk-theme
-  - deepin-metacity
-  - deepin-qt-dbus-factory
-  - deepin-screensaver
-  - deepin-sound-theme
-  - deepin-wm-switcher
-  - disomaster
-  - geoip
-  - gsettings-qt
-  - imwheel
-  - libfm-qt
-  - liblightdm-qt5
-  - liblxqt
-  - libmongoc
-  - libxfce4ui
-  - lxqt-qtplugin
-  - pdfarranger
-  - perl-config-tiny
-  - proxychains-ng
-  - qt5-xcb-private-headers
-  - qterminal
-  - switchboard-plug-a11y
-  - switchboard-plug-about
-  - switchboard-plug-applications
-  - switchboard-plug-bluetooth
-  - switchboard-plug-datetime
-  - switchboard-plug-display
-  - switchboard-plug-keyboard
-  - switchboard-plug-locale
-  - switchboard-plug-mouse-touchpad
-  - switchboard-plug-network
-  - switchboard-plug-notifications
-  - switchboard-plug-onlineaccounts
-  - switchboard-plug-pantheon-shell
-  - switchboard-plug-parental-controls
-  - switchboard-plug-power
-  - switchboard-plug-printers
-  - switchboard-plug-security-privacy
-  - switchboard-plug-sharing
-  - switchboard-plug-sound
-  - switchboard-plug-useraccounts
-  - udisks2-qt5
-  - wingpanel
-  - xcur2png
-- group-4:
-  - cinnamon
-  - deepin-clutter
-  - deepin-dbus-generator
-  - deepin-go-dbus-factory
-  - deepin-network-utils
-  - deepin-qt5dxcb-plugin
-  - deepin-turbo
-  - dtkcore
-  - exo
-  - garcon
-  - libsysstat
-  - lxqt-about
-  - lxqt-admin
-  - lxqt-config
-  - lxqt-globalkeys
-  - lxqt-notificationd
-  - lxqt-policykit
-  - lxqt-powermanagement
-  - lxqt-session
-  - pantheon-applications-menu
-  - pantheon-greeter
-  - pcmanfm-qt
-  - thunar
-  - treefrog-framework
-  - wingpanel-indicator-a11y
-  - wingpanel-indicator-bluetooth
-  - wingpanel-indicator-datetime
-  - wingpanel-indicator-keyboard
-  - wingpanel-indicator-network
-  - wingpanel-indicator-nightlight
-  - wingpanel-indicator-notifications
-  - wingpanel-indicator-power
-  - wingpanel-indicator-privacy
-  - wingpanel-indicator-session
-  - wingpanel-indicator-sound
-  - xfce4-power-manager
-  - xfce4-session
-  - xfce4-terminal
-  - xfwm4
-- group-5:
-  - deepin-anything
-  - dtkwidget
-  - dtkwm
-  - lxqt-panel
-  - lxqt-runner
-  - xfce4-appfinder
-  - xfce4-panel
-  - xfce4-settings
-  - xfdesktop
-- group-6:
-  - deepin-calculator
-  - deepin-calendar
-  - deepin-clutter-gtk
-  - deepin-control-center
-  - deepin-dbus-generator
-  - deepin-dock
-  - deepin-editor
-  - deepin-launcher
-  - deepin-menu
-  - deepin-movie
-  - deepin-music
-  - deepin-mutter
-  - deepin-notifications
-  - deepin-picker
-  - deepin-polkit-agent
-  - deepin-qt5integration
-  - deepin-screen-recorder
-  - deepin-session-ui
-  - deepin-shortcut-viewer
-  - deepin-system-monitor
-  - deepin-voice-recorder
-  - xfce4-whiskermenu-plugin
-  - xfce-default-settings
-  - xfce4-notifyd
-- group-7:
-  - deepin-dbus-factory
-  - deepin-file-manager
-  - deepin-screenshot
-  - deepin-wm
-- group-8:
-  - deepin-api
-- group-9:
-  - deepin-daemon
-  - deepin-wallpapers
-  - startdde
+- blackbox
+- cerbere
+- cinnamon-applet-qredshift
+- cinnamon-applet-redshift
+- cinnamon-desktop
+- cinnamon-menus
+- cinnamon-translations
+- contractor
+- crond
+- dwm
+- figlet
+- fondo
+- font-open-sans-ttf
+- font-roboto-mono-ttf
+- gsasl
+- gsignond
+- hydra
+- iceauth
+- libfm-extra
+- libgsignon-glib
+- libhandy
+- libsignon-glib
+- libstatgrab
+- libxfce4util
+- light-locker
+- lightrss
+- lua-lgi
+- lxqt-build-tools
+- megacmd
+- melody
+- midori
+- minify
+- mozjs52
+- notejot
+- numlockx
+- pantheon-agent-geoclue2
+- pantheon-agent-polkit
+- pantheon-calculator
+- pantheon-calendar
+- pantheon-camera
+- pantheon-capnet-assist
+- pantheon-code
+- pantheon-default-settings
+- pantheon-dpms-helper
+- pantheon-files
+- pantheon-icons
+- pantheon-music
+- pantheon-onboarding
+- pantheon-photos
+- pantheon-print
+- pantheon-screenshot
+- pantheon-session-settings
+- pantheon-shortcut-overlay
+- pantheon-sound-theme
+- pantheon-stylesheet
+- pantheon-terminal
+- pantheon-videos
+- pantheon-wallpapers
+- paperboy
+- python-pam
+- python-setuptools-scm-git-archive
+- python-tinycss
+- qview
+- sideload
+- skippy-xd
+- sleuthkit
+- solbump
+- spotitube
+- stemmer
+- subnetcalc
+- switchboard
+- timeshift
+- vscodium
+- webpin
+- xapps
+- xfce4-dev-tools
+- xfce4-icon-theme
+- xfwm4-themes
+- zeus
+# group separator
+- appstream
+- awesomewm
+- binwalk
+- cinnamon-screensaver
+- cinnamon-session
+- cinnamon-settings-daemon
+- gala
+- gsignond-plugin-lastfm
+- gsignond-plugin-oauth
+- gsignond-plugin-sasl
+- libqtxdg
+- lxqt-themes
+- menu-cache
+- muffin
+- nemo
+- pantheon-tweaks
+- python-pikepdf
+- qtermwidget
+- xfconf
+# group separator
+- avfs
+- blur-effect
+- cinnamon-control-center
+- cjs
+- deepin-cogl
+- deepin-default-settings
+- deepin-desktop-base
+- deepin-desktop-schemas
+- deepin-gettext-tools
+- deepin-gir-generator
+- deepin-go-lib
+- deepin-gtk-theme
+- deepin-metacity
+- deepin-qt-dbus-factory
+- deepin-screensaver
+- deepin-sound-theme
+- deepin-wm-switcher
+- disomaster
+- geoip
+- gsettings-qt
+- imwheel
+- libfm-qt
+- liblightdm-qt5
+- liblxqt
+- libmongoc
+- libxfce4ui
+- lxqt-qtplugin
+- pdfarranger
+- perl-config-tiny
+- proxychains-ng
+- qt5-xcb-private-headers
+- qterminal
+- switchboard-plug-a11y
+- switchboard-plug-about
+- switchboard-plug-applications
+- switchboard-plug-bluetooth
+- switchboard-plug-datetime
+- switchboard-plug-display
+- switchboard-plug-keyboard
+- switchboard-plug-locale
+- switchboard-plug-mouse-touchpad
+- switchboard-plug-network
+- switchboard-plug-notifications
+- switchboard-plug-onlineaccounts
+- switchboard-plug-pantheon-shell
+- switchboard-plug-parental-controls
+- switchboard-plug-power
+- switchboard-plug-printers
+- switchboard-plug-security-privacy
+- switchboard-plug-sharing
+- switchboard-plug-sound
+- switchboard-plug-useraccounts
+- udisks2-qt5
+- wingpanel
+- xcur2png
+# group separator
+- cinnamon
+- deepin-clutter
+- deepin-dbus-generator
+- deepin-go-dbus-factory
+- deepin-network-utils
+- deepin-qt5dxcb-plugin
+- deepin-turbo
+- dtkcore
+- exo
+- garcon
+- libsysstat
+- lxqt-about
+- lxqt-admin
+- lxqt-config
+- lxqt-globalkeys
+- lxqt-notificationd
+- lxqt-policykit
+- lxqt-powermanagement
+- lxqt-session
+- pantheon-applications-menu
+- pantheon-greeter
+- pcmanfm-qt
+- thunar
+- treefrog-framework
+- wingpanel-indicator-a11y
+- wingpanel-indicator-bluetooth
+- wingpanel-indicator-datetime
+- wingpanel-indicator-keyboard
+- wingpanel-indicator-network
+- wingpanel-indicator-nightlight
+- wingpanel-indicator-notifications
+- wingpanel-indicator-power
+- wingpanel-indicator-privacy
+- wingpanel-indicator-session
+- wingpanel-indicator-sound
+- xfce4-power-manager
+- xfce4-session
+- xfce4-terminal
+- xfwm4
+# group separator
+- deepin-anything
+- dtkwidget
+- dtkwm
+- lxqt-panel
+- lxqt-runner
+- xfce4-appfinder
+- xfce4-panel
+- xfce4-settings
+- xfdesktop
+# group separator
+- deepin-calculator
+- deepin-calendar
+- deepin-clutter-gtk
+- deepin-control-center
+- deepin-dbus-generator
+- deepin-dock
+- deepin-editor
+- deepin-launcher
+- deepin-menu
+- deepin-movie
+- deepin-music
+- deepin-mutter
+- deepin-notifications
+- deepin-picker
+- deepin-polkit-agent
+- deepin-qt5integration
+- deepin-screen-recorder
+- deepin-session-ui
+- deepin-shortcut-viewer
+- deepin-system-monitor
+- deepin-voice-recorder
+- xfce4-whiskermenu-plugin
+- xfce-default-settings
+- xfce4-notifyd
+# group separator
+- deepin-dbus-factory
+- deepin-file-manager
+- deepin-screenshot
+- deepin-wm
+# group separator
+- deepin-api
+# group separator
+- deepin-daemon
+- deepin-wallpapers
+- startdde
