@@ -1,8 +1,8 @@
 name       : gala
-version    : 3.3.0
-release    : 6
+version    : 3.3.1
+release    : 7
 source     :
-    - https://github.com/elementary/gala/archive/3.3.0.tar.gz : b4c5ac87b601630d01a13bb6ddc76da90602c8213a4b84c5701d234a20ae5295
+    - https://github.com/elementary/gala/archive/3.3.1.tar.gz : 64b7d7d531b90d01ec8e958565cbf4eaaa69407261e98581f3436566f87486f1
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon window and compositing manager
