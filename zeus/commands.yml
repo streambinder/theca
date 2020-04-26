@@ -20,11 +20,9 @@ commands:
             - setup
             - update
 
-    packages-staging:
-        description: Build packages in staging
+    test:
+        description: Test packages tree
         language: python3
-        dependencies:
-            - setup
 
     components:
         description: Build all components
