@@ -54,7 +54,7 @@ class eopkg(object):
 
     def _check_version(self):
         import re
-        if not re.match('^[0-9\\.]+$', self.version):
+        if not re.match('^[0-9a-zA-Z\\._]+$', self.version):
             raise Exception(
                 'Version {} contains illegal characters'.format(self.version))
 
