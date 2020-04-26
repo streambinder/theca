@@ -37,6 +37,6 @@ jobs:
         env:
           GO111MODULE: on
 
-      - name: Run latest packages build
+      - name: Run test
         run: |
           zeus test
