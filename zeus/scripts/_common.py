@@ -61,7 +61,7 @@ class eopkg(object):
     def _check_sources(self):
         for source in self.sources:
             for source_url in source.keys():
-                if eopkg.hash(source_url) != source[source_url]:
+                if source_url.startswith('http') and eopkg.hash(source_url) != source[source_url]:
                     raise Exception(
                         'Source {} hash mismatches'.format(source_url))
 
