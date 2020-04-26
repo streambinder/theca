@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd bin
 
 find -name \*\.eopkg | while read pkg; do

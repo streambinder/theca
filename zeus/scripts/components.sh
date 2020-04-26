@@ -1,4 +1,7 @@
+#!/bin/bash
+
 cd bin
+
 sudo chmod a+w eopkg-index.xml*
 sed -i '$ d' eopkg-index.xml
 find ../src -type f -name component.xml | while read -r comp; do
