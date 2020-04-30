@@ -1,8 +1,8 @@
 name       : deepin-calendar
-version    : 5.0.1
-release    : 1
+version    : 1.2.11
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-calendar.git : 5.0.1
+    - git|https://github.com/linuxdeepin/dde-calendar.git : 1.2.11
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Calendar for Deepin Desktop Environment.
