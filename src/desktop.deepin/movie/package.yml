@@ -1,8 +1,8 @@
 name       : deepin-movie
-version    : 5.0.0
-release    : 2
+version    : 5.7.5
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/deepin-movie-reborn.git : 5.0.0
+    - git|https://github.com/linuxdeepin/deepin-movie-reborn.git : 5.7.5
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Deepin Movie Player.
