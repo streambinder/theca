@@ -1,8 +1,8 @@
 name       : switchboard
-version    : 2.4.0
-release    : 8
+version    : 2.3.9
+release    : 7
 source     :
-    - https://github.com/elementary/switchboard/archive/2.4.0.tar.gz : f57c0b36f2f4c88ca8a9340839fa7dd937065ec0ff382cb88c1f3bc3e7433fb3
+    - https://github.com/elementary/switchboard/archive/2.3.9.tar.gz : ea6438a8a2f721650e644c87bf0899177fe37d9cae9aa21343d09bcdf2690f99
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Pantheon extensible System Settings app designed
