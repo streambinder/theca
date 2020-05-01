@@ -10,6 +10,8 @@ summary    : GO DBus factory for Deepin
 description: |
     GO DBus factory for Deepin
 builddeps  :
+    - pkgconfig(gdk-3.0)
+    - deepin-go-gir-generator
     - deepin-go-lib
     - golang
 setup      : |
