@@ -38,8 +38,8 @@ jobs:
 
       - name: Run packages update check
         run: |
-          find src -name package.yml | while read fname; do
-            ${HOME}/go/bin/solbump -verbose "${fname}"
+          find src -name package.yml | xargs egrep -L -e '^autoupdate\s+:\s+false$' | while read fname; do
+            solbump -verbose "${fname}"
             if ! git diff-index --quiet HEAD -- "${fname}"; then
               pkg_version="$(awk -F': ' '/^version/ {print $2}' "${fname}")"
               pkg_commit="$(sed 's|src/||g; s|/package.yml$||g; s|/|: |g' <<< "${fname}")"
