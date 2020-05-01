@@ -107,7 +107,7 @@
 - deepin-desktop-base
 - deepin-desktop-schemas
 - deepin-gettext-tools
-- deepin-gir-generator
+- deepin-go-gir-generator
 - deepin-go-lib
 - deepin-gtk-theme
 - deepin-metacity
