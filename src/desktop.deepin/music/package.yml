@@ -22,6 +22,7 @@ builddeps  :
     - pkgconfig(taglib)
     - pkgconfig(x11)
     - pkgconfig(xext)
+    - kcodecs-devel
     - qt5-tools-devel
 rundeps    :
     - deepin-qt5integration
