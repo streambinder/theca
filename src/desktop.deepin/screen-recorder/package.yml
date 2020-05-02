@@ -12,6 +12,7 @@ builddeps  :
     - pkgconfig(dtkwidget)
     - pkgconfig(dtkwm)
     - pkgconfig(libprocps)
+    - pkgconfig(Qt5Multimedia)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
     - pkgconfig(xcb-util)
