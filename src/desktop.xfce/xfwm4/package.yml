@@ -1,8 +1,8 @@
 name       : xfwm4
-version    : 4.14.1
-release    : 2
+version    : 4.14.2
+release    : 3
 source     :
-    - http://archive.xfce.org/src/xfce/xfwm4/4.14/xfwm4-4.14.1.tar.bz2 : 100781a18070762e8f34c1d450e767586576753d567f76a8c32818284f511428
+    - http://archive.xfce.org/src/xfce/xfwm4/4.14/xfwm4-4.14.2.tar.bz2 : b15b40342596a3b6ab5167a58371262adf5484e165cb25a31fef42f0aa8ffd92
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce's window manager
