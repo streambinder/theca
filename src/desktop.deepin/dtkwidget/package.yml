@@ -1,8 +1,8 @@
 name       : dtkwidget
-version    : 2.1.1
-release    : 1
+version    : 5.2.0
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dtkwidget.git : 2.1.1
+    - git|https://github.com/linuxdeepin/dtkwidget.git : 5.2.0
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Base development tool of all C++/Qt Developer work on Deepin.
@@ -11,6 +11,7 @@ description: |
 builddeps  :
     - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkcore)
+    - pkgconfig(dtkgui)
     - pkgconfig(gsettings-qt)
     - pkgconfig(librsvg-2.0)
     - pkgconfig(libstartup-notification-1.0)
