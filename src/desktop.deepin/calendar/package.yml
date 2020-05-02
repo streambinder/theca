@@ -1,11 +1,12 @@
 name       : deepin-calendar
-version    : 1.2.11
-release    : 2
+version    : 5.6.2
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/dde-calendar.git : 1.2.11
+    - git|https://github.com/linuxdeepin/dde-calendar.git : 5.6.2
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Calendar for Deepin Desktop Environment.
+autoupdate : false
 description: |
     Deepin Calender is an easy calendar tool developed by Deepin Technology, main features current date, solar terms, lunar calendar and world holidays.
 builddeps  :
