@@ -11,6 +11,7 @@ description: |
 builddeps  :
     - pkgconfig(dtkwidget)
     - pkgconfig(gl)
+    - pkgconfig(Qt5Multimedia)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
     - pkgconfig(xcb)
