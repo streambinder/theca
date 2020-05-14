@@ -1,6 +1,6 @@
 name       : xfce4-session
 version    : 4.14.2
-release    : 3
+release    : 4
 source     :
     - http://archive.xfce.org/src/xfce/xfce4-session/4.14/xfce4-session-4.14.2.tar.bz2 : fbe3a4a60c91589a2024ce12b2d2667625a8fedcbc90ef031831f56319f597af
 license    : GPL-2.0
@@ -11,9 +11,9 @@ description: |
 builddeps  :
     - pkgconfig(libwnck-3.0)
     - pkgconfig(libxfce4ui-2)
-    - pkgconfig(libxfce4util-1.0)
     - pkgconfig(sm)
     - pkgconfig(x11)
+    - at-libxfce4util-devel
     - iceauth
 setup      : |
     %configure

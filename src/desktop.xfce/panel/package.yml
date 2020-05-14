@@ -1,6 +1,6 @@
 name       : xfce4-panel
 version    : 4.15.2
-release    : 4
+release    : 5
 source     :
     - http://archive.xfce.org/src/xfce/xfce4-panel/4.15/xfce4-panel-4.15.2.tar.bz2 : a668b5315268ba5b14b6574edbe00c522f879dea659b75c7742da7140cc3657f
 license    : GPL-2.0
@@ -12,8 +12,8 @@ builddeps  :
     - pkgconfig(garcon-1)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libwnck-3.0)
-    - pkgconfig(libxfce4util-1.0)
     - pkgconfig(x11)
+    - at-libxfce4util-devel
 setup      : |
     %configure
 build      : |

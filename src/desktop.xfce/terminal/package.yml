@@ -1,6 +1,6 @@
 name       : xfce4-terminal
 version    : 0.8.9
-release    : 2
+release    : 3
 source     :
     - http://archive.xfce.org/src/apps/xfce4-terminal/0.8/xfce4-terminal-0.8.9.tar.bz2 : 247683a51a964cfaa6b1e92030afe9f782efebfcb550a464170b53eb94216795
 license    : GPL-2.0

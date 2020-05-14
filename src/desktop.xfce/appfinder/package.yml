@@ -12,7 +12,7 @@ builddeps  :
     - pkgconfig(garcon-1)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libxfce4ui-2)
-    - pkgconfig(libxfce4util-1.0)
+    - at-libxfce4util-devel
 setup      : |
     %configure
 build      : |
