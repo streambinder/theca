@@ -240,5 +240,6 @@
 - deepin-api
 # group separator
 - deepin-daemon
+- deepin-terminal
 - deepin-wallpapers
 - startdde
