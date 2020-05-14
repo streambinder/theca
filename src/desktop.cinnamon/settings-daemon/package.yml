@@ -1,8 +1,8 @@
 name       : cinnamon-settings-daemon
-version    : 4.4.0
-release    : 2
+version    : 4.6.0
+release    : 3
 source     :
-    - https://github.com/linuxmint/cinnamon-settings-daemon/archive/4.4.0.tar.gz : 6797a0bb73ea2345580a43fe8c75c70f48634b82b0a3518f48cc603f084bf012
+    - https://github.com/linuxmint/cinnamon-settings-daemon/archive/4.6.0.tar.gz : 36eaeb3457d253c97a26fec2e471a7ab99c931e7930b42a38e4d64fb02480230
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : The settings daemon for the Cinnamon desktop
@@ -26,6 +26,7 @@ builddeps  :
     - pkgconfig(libsystemd)
     - pkgconfig(libwacom)
     - pkgconfig(libxklavier)
+    - pkgconfig(nss)
     - pkgconfig(upower-glib)
     - pkgconfig(x11)
     - pkgconfig(xfixes)

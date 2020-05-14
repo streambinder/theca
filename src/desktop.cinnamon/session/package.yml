@@ -1,8 +1,8 @@
 name       : cinnamon-session
-version    : 4.4.1
-release    : 4
+version    : 4.6.0
+release    : 5
 source     :
-    - https://github.com/linuxmint/cinnamon-session/archive/4.4.1.tar.gz : 8c85bdca724e211aaaeb7ccf0af220c77facafd567ea6ad2bc167f597a75cb87
+    - https://github.com/linuxmint/cinnamon-session/archive/4.6.0.tar.gz : abfe4fc2305f10d53349f58c17a2798c6af7b87b0074ce25630a8744bfd09c43
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon session
@@ -29,7 +29,7 @@ builddeps  :
     - xtrans
 networking : yes
 setup      : |
-    %meson_configure -Ddocbook=false 
+    %meson_configure -Ddocbook=false
 build      : |
     %meson_build
 install    : |
