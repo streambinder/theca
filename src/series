@@ -1,3 +1,4 @@
+- at-libxfce4util
 - bcc
 - blackbox
 - cerbere
@@ -22,7 +23,6 @@
 - libhandy
 - libsignon-glib
 - libstatgrab
-- libxfce4util
 - light-locker
 - lightrss
 - lua-lgi
