@@ -54,7 +54,7 @@ class eopkg(object):
     def check(self):
         self._check_version()
         self._check_maintainer()
-        self._check_sources()
+        # self._check_sources()
 
     def _check_maintainer(self):
         if self.mainainter == '':
