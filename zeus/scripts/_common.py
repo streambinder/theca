@@ -30,6 +30,7 @@ class eopkg(object):
         self.name = ''
         self.version = ''
         self.release = ''
+        self.mainainter = ''
         self.sources = []
         self.yml = yml
         self._parse()
@@ -42,6 +43,8 @@ class eopkg(object):
                 self.version = str(pkg_yml['version'])
                 self.release = int(pkg_yml['release'])
                 self.sources = pkg_yml['source']
+                if 'maintainer' in pkg_yml:
+                    self.mainainter = pkg_yml['maintainer']
             except yaml.YAMLError as e:
                 raise e
 
@@ -50,7 +53,13 @@ class eopkg(object):
 
     def check(self):
         self._check_version()
+        self._check_maintainer()
         self._check_sources()
+
+    def _check_maintainer(self):
+        if self.mainainter == '':
+            raise Exception(
+                'Package {} does not have an assigned maintainer'.format(self.name))
 
     def _check_version(self):
         import re
