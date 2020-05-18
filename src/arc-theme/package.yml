@@ -1,0 +1,28 @@
+name       : arc-theme
+version    : 20200513
+release    : 1
+source     :
+    - https://github.com/jnsh/arc-theme/archive/20200513.tar.gz : 58ae2e5aa594538d9fb36d9d136507f7b7ab4b800bfe9d22762a19a4976e187c
+license    : GPL-3.0-or-later
+summary    : Arc GTK Theme
+description: |
+    A flat theme with transparent elements
+component  : desktop.theme
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(gtk+-3.0)
+    - inkscape
+    - optipng
+    - sassc
+rundeps    :
+    - gtk2-engine-murrine
+setup      : |
+    ./autogen.sh --enable-metacity \
+                 --disable-unity \
+                 --enable-xfwm \
+                 --enable-cinnamon \
+                 --with-cinnamon=4.6 \
+                 --with-gnome-shell=3.36 \
+                 %CONFOPTS%
+install    : |
+    %make_install
