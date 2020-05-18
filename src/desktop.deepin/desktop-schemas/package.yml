@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-desktop-schemas
-version    : 3.13.9
-release    : 1
+version    : 5.5.0.0
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/deepin-desktop-schemas.git : 3.13.9
+    - https://github.com/linuxdeepin/deepin-desktop-schemas/archive/5.5.0.0.tar.gz : 80bb39dc42e740fe81cc4537b0371abaaab68aa5ec6b74db1e21ca2a010c037f
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : GSettings Deepin desktop-wide schemas
@@ -12,7 +12,12 @@ description: |
 setup      : |
     # fix default background url
     sed -i "s#^picture-uri.*#picture-uri='file:///usr/share/backgrounds/deepin/desktop.jpg'#" overrides/common/com.deepin.wrap.gnome.desktop.override
+builddeps  :
+    - deepin-go-lib
+    - golang
 build      : |
+    export GOPATH="${workdir}/:/usr/share/gocode"
     %make
 install    : |
+    export GOPATH="${workdir}/:/usr/share/gocode"
     %make_install

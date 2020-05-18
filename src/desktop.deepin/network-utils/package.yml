@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-network-utils
-version    : 5.0.1
-release    : 1
+version    : 5.1.0.0
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-network-utils.git : 5.0.1
+    - https://github.com/linuxdeepin/dde-network-utils/archive/5.1.0.0.tar.gz : ba8828660fc79270cba6e699de3fb0b6cbdaea5dde00e532c2ce75f28b381238
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin network utilities

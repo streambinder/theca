@@ -1,42 +1,44 @@
 maintainer : Justin
 name       : deepin-file-manager
-version    : 5.0.0
-release    : 1
+version    : 5.1.1.25
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-file-manager.git : 5.0.0
+    - https://github.com/linuxdeepin/dde-file-manager/archive/5.1.1.25.tar.gz : 349499da411aa2cf5faa430967a9e36916aae9be69f00ec8f625bedeb2f6f02f
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    :
     - Deepin File Manager is a file management tool developed for Deepin
 description:
-    - Deepin File Manager is a file management tool independently developed by Deepin
-      Technology, featured with searching, copying, trash, compression/decompression,
-      file property and other file management functions.
+    - Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
 builddeps  :
-    - deepin-anything
-    - deepin-dock-devel
-    - deepin-gettext-tools
-    - pkgconfig(dframeworkdbus)
-    - kcodecs-devel
+    - pkgconfig(avfs)
     - pkgconfig(disomaster)
     - pkgconfig(dtkwidget)
+    - pkgconfig(gio-qt)
     - pkgconfig(gsettings-qt)
     - pkgconfig(gtk+-2.0)
     - pkgconfig(jemalloc)
     - pkgconfig(libffmpegthumbnailer)
     - pkgconfig(libdmr)
+    - pkgconfig(libmediainfo)
     - pkgconfig(libsecret-1)
     - pkgconfig(polkit-qt5-1)
     - pkgconfig(poppler-cpp)
     - pkgconfig(Qt5Multimedia)
     - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5Xdg)
     - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(taglib)
     - pkgconfig(uchardet)
     - pkgconfig(udisks2-qt5)
     - pkgconfig(xcb-ewmh)
-    - qt5-tools-devel
+    - deepin-anything
+    - deepin-dock-devel
+    - deepin-gettext-tools
+    - deepin-qt5integration
+    - kcodecs-devel
+    - deepin-qt-dbus-factory-devel
 rundeps    :
     - avfs
     - deepin-qt5integration

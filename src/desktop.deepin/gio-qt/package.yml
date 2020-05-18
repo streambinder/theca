@@ -1,0 +1,19 @@
+name       : gio-qt
+version    : 0.0.9
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/gio-qt/archive/0.0.9.tar.gz : c3b6b8bc46bb6cc6af9d3a4f3bcf41b89c4a6cce10aa007d8baf22027918cefe
+license    : GPL-3.0-or-later
+component  : desktop.library
+summary    : Gio wrapper for Qt applications.
+description: |
+    This is a Qt wrapper library for Gio (or say it's a glib/glibmm wrapper mainly focused on GIO module). This library is designed to be exception-free and avoid Qt application developer do direct access to glib/glibmm (so they can use Gio in a more Qt way).
+builddeps  :
+    - pkgconfig(giomm-2.4)
+    - pkgconfig(Qt5Core)
+setup      : |
+    %cmake_ninja -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_DOCS=OFF
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

@@ -18,7 +18,7 @@ rundeps    :
 builddeps  :
     - deepin-dbus-factory
     - deepin-gettext-tools
-    - deepin-gir-generator
+    - deepin-go-gir-generator
     - deepin-go-dbus-factory
     - deepin-go-lib
     - git

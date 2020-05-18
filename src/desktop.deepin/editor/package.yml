@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-editor
-version    : 5.6.6
-release    : 3
+version    : 5.6.7
+release    : 4
 source     :
-    - git|https://github.com/linuxdeepin/deepin-editor.git : 5.6.6
+    - https://github.com/linuxdeepin/deepin-editor/archive/5.6.7.tar.gz : e7b141904bb048a4d71c78ef2a652b46f161db7234f59301f67ec51a3749ed44
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Deepin Editor.
@@ -12,6 +12,7 @@ description: |
 builddeps  :
     - pkgconfig(dtkwidget)
     - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
     - pkgconfig(xcb)
@@ -19,7 +20,6 @@ builddeps  :
     - pkgconfig(xext)
     - pkgconfig(xtst)
     - kcodecs-devel
-    - qt5-tools-devel
     - syntax-highlighting-devel
 setup      : |
     %cmake_ninja

@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-picker
-version    : 5.0.1
-release    : 1
+version    : 5.0.6
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/deepin-picker.git : 5.0.1
+    - https://github.com/linuxdeepin/deepin-picker/archive/5.0.6.tar.gz : 584dd7056c396407b12d8279f77e8c58080d74a58d3767bae814187d638fb183
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Simplest color picker.

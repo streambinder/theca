@@ -1,28 +1,30 @@
 maintainer : Justin
 name       : deepin-session-ui
-version    : 5.0.0
-release    : 1
+version    : 5.1.0.5
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-session-ui.git : 5.0.0
+    - https://github.com/linuxdeepin/dde-session-ui/archive/5.1.0.5.tar.gz : 596b9cf8c5e0bf4d0b3c407d4754dbceb93425b3b8083cfc6da0238905aa3dde
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin desktop-environment - Session UI module
 description: |
     Deepin desktop-environment - Session UI module
 builddeps  :
-    - deepin-gettext-tools
+    - pkgconfig(dde-dock) 
     - pkgconfig(dtkwidget)
     - pkgconfig(gl)
     - pkgconfig(gsettings-qt)
     - pkgconfig(liblightdm-qt5-3)
     - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5Multimedia)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(xcb-ewmh)
     - pkgconfig(xcursor)
     - pkgconfig(xrandr)
     - pkgconfig(xtst)
-    - pkgconfig(dframeworkdbus)
-    - qt5-tools-devel
+    - deepin-gettext-tools
+    - deepin-qt-dbus-factory-devel
 rundeps    :
     - deepin-daemon
 setup      : |

@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-launcher
-version    : 5.0.0
-release    : 1
+version    : 5.2.0.0
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-launcher.git : 5.0.0
+    - https://github.com/linuxdeepin/dde-launcher/archive/5.2.0.0.tar.gz : b279437ee41b65dc3fc75a64184263551f4dfdc97a3d262d200913395b76e519
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Launcher for the Deepin Desktop Environment.
@@ -17,7 +17,7 @@ builddeps  :
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(xcb-ewmh)
     - pkgconfig(xcb)
-    - pkgconfig(dframeworkdbus)
+    - deepin-qt-dbus-factory-devel
 setup      : |
     sed -i 's|/usr/share/backgrounds/default_background.jpg|/usr/share/backgrounds/deepin/desktop.jpg|' src/boxframe/*.cpp
     %cmake_ninja -DWITHOUT_UNINSTALL_APP=1

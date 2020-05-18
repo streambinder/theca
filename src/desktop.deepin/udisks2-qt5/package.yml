@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : udisks2-qt5
-version    : 5.0.0
-release    : 1
+version    : 5.0.3
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/udisks2-qt5.git : 5.0.0
+    - https://github.com/linuxdeepin/udisks2-qt5/archive/5.0.3.tar.gz : 063e5fe21427ad0cc42aaf83be39135885d6212ac7ce42d0066534f351f9847e
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : UDisks2 Library with Qt5

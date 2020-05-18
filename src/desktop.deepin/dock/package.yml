@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-dock
-version    : 5.0.0
-release    : 1
+version    : 5.1.0.9
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-dock.git : 5.0.0
+    - https://github.com/linuxdeepin/dde-dock/archive/5.1.0.9.tar.gz : be3696f44b3a0714d8f5ab4091280b190d561daf69b1fe0ad365659d0d12450a
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin Dock is the dock of Deepin Desktop Environment.
@@ -21,7 +21,7 @@ builddeps  :
     - pkgconfig(xcb-ewmh)
     - pkgconfig(xcb-image)
     - pkgconfig(xtst)
-    - pkgconfig(dframeworkdbus)
+    - deepin-qt-dbus-factory-devel
 setup      : |
     mkdir build
     pushd build

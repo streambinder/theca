@@ -51,7 +51,7 @@ setup      : |
 build      : |
     export MOC4='moc-qt4'
     export MOC5='moc'
-    %make -j1
+    %make
 install    : |
     export MOC4='moc-qt4'
     export MOC5='moc'

@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-sound-theme
-version    : 15.10.4
-release    : 2
+version    : 15.10.6
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/deepin-sound-theme.git : 15.10.4
+    - https://github.com/linuxdeepin/deepin-sound-theme/archive/15.10.6.tar.gz : 73206d000fe0e33597d33e05572d8e09aae7896d2640d114a0f19f8f1a44582b
 license    : GPL-3.0-or-later
 component  : desktop.theme
 summary    : The freedesktop sound theme for Deepin.

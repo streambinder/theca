@@ -10,7 +10,6 @@ summary    : This is default terminal emulation application for Deepin.
 description: |
     This is default terminal emulation application for Deepin.
 builddeps  :
-    - gperf
     - pkgconfig(gee-0.8)
     - pkgconfig(glib-2.0)
     - pkgconfig(gnutls)
@@ -21,6 +20,7 @@ builddeps  :
     - pkgconfig(libsecret-1)
     - pkgconfig(libwnck-3.0)
     - pkgconfig(vte-2.91)
+    - gperf
     - vala
 rundeps    :
     - deepin-menu

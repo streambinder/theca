@@ -11,14 +11,6 @@ summary    : Daemon handling the DDE session settings
 description: |
     Daemon handling the DDE session settings
 builddeps  :
-    - deepin-api
-    - deepin-dbus-factory
-    - deepin-gettext-tools
-    - deepin-gir-generator
-    - deepin-go-dbus-factory
-    - deepin-go-lib
-    - git
-    - golang
     - pkgconfig(alsa)
     - pkgconfig(gdk-3.0)
     - pkgconfig(gdk-pixbuf-2.0)
@@ -33,6 +25,14 @@ builddeps  :
     - pkgconfig(x11)
     - pkgconfig(xcursor)
     - pkgconfig(xi)
+    - deepin-api
+    - deepin-dbus-factory
+    - deepin-gettext-tools
+    - deepin-go-gir-generator
+    - deepin-go-dbus-factory
+    - deepin-go-lib
+    - git
+    - golang
 rundeps    :
     - deepin-desktop-schemas
     - deepin-notifications

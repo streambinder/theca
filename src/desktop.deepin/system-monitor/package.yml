@@ -1,25 +1,28 @@
 maintainer : Justin
 name       : deepin-system-monitor
-version    : 5.0.0
-release    : 1
+version    : 5.6.2
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/deepin-system-monitor.git : 5.0.0
+    - https://github.com/linuxdeepin/deepin-system-monitor/archive/5.6.2.tar.gz : a024aafc8daa782a36cb99d4b8dc982767f88538e83e0c96f5c7b0c2cc29a796
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : A more user-friendly system monitor.
 description: |
     Deepin system monitor: a more user-friendly system monitor.
 builddeps  :
-    - libpcap-devel
     - pkgconfig(dtkwidget)
     - pkgconfig(dtkwm)
+    - pkgconfig(icu-i18n)
     - pkgconfig(libprocps)
+    - pkgconfig(Qt5Multimedia)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(xcb-util)
     - pkgconfig(xcb)
     - pkgconfig(xext)
     - pkgconfig(xtst)
-    - qt5-tools-devel
+    - deepin-gettext-tools
+    - libpcap-devel
 rundeps    :
     - deepin-qt5integration
 setup      : |

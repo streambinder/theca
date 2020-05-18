@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-music
-version    : 6.0.1
-release    : 2
+version    : 6.0.1.8
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/deepin-music.git : 6.0.1
+    - https://github.com/linuxdeepin/deepin-music/archive/6.0.1.8.tar.gz : 924bcc0e8ef5776275d59476a231b5357908e79749303c3370b77857df778fd8
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Music player for the Deepin DE
@@ -16,6 +16,7 @@ builddeps  :
     - pkgconfig(libavformat)
     - pkgconfig(libavutil)
     - pkgconfig(libcue)
+    - pkgconfig(libvlc)
     - pkgconfig(Qt5Multimedia)
     - pkgconfig(Qt5Svg)
     - pkgconfig(Qt5X11Extras)

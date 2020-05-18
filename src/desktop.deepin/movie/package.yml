@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-movie
-version    : 5.7.5
-release    : 3
+version    : 5.7.6.29
+release    : 4
 source     :
-    - git|https://github.com/linuxdeepin/deepin-movie-reborn.git : 5.7.5
+    - https://github.com/linuxdeepin/deepin-movie-reborn/archive/5.7.6.29.tar.gz : d6ffeb55abb60616fbbdc7457738fad1d000edf1dad7d46c99d84ffa267f1e66
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Deepin Movie Player.

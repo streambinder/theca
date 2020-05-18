@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-qt5integration
-version    : 5.0.0
-release    : 1
+version    : 5.1.0.1
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/qt5integration.git : 5.0.0
+    - https://github.com/linuxdeepin/qt5integration/archive/5.1.0.1.tar.gz : a07156818711bae3fb17da53d0ccab6931a89e029af017c572124c4d9c074312
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Qt platform theme integration plugins for DDE
@@ -13,13 +13,13 @@ builddeps  :
     - pkgconfig(dtkwidget)
     - pkgconfig(gtk+-2.0)
     - pkgconfig(mtdev)
+    - pkgconfig(Qt5Multimedia)
     - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(Qt5Xdg)
 rundeps    :
     - deepin-qt5dxcb-plugin
 setup      : |
-    %patch -p1 < $pkgfiles/001-qt513.patch
     %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
     %make

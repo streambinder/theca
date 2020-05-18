@@ -227,14 +227,12 @@
 - deepin-session-ui
 - deepin-shortcut-viewer
 - deepin-system-monitor
-- deepin-voice-recorder
 - xfce4-whiskermenu-plugin
 - xfce-default-settings
 - xfce4-notifyd
 # group separator
 - deepin-dbus-factory
 - deepin-file-manager
-- deepin-screenshot
 - deepin-wm
 # group separator
 - deepin-api

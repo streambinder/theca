@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : startdde
-version    : 5.0.1
-release    : 1
+version    : 5.3.0.1
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/startdde.git : 5.0.1
+    - https://github.com/linuxdeepin/startdde/archive/5.3.0.1.tar.gz : 6d783cf3918cb041cc46263d8932f63196a87f0dfe606c1d05b91d0a53e0101c
 networking : yes
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
@@ -13,7 +13,7 @@ description: |
 builddeps  :
     - deepin-api
     - deepin-dbus-factory
-    - deepin-gir-generator
+    - deepin-go-gir-generator
     - deepin-go-dbus-factory
     - deepin-go-lib
     - git
@@ -45,7 +45,9 @@ setup      : |
     ln -s "${workdir}/" "${workdir}/src/pkg.deepin.io/dde/startdde"
     go get github.com/cryptix/wav
     go get github.com/BurntSushi/xgb
+    go get github.com/davecgh/go-spew/spew
     go get github.com/BurntSushi/xgbutil
+    go get golang.org/x/xerrors
     go get github.com/linuxdeepin/go-x11-client
     go get golang.org/x/net/context
 build      : |

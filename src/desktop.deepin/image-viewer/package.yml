@@ -1,0 +1,28 @@
+name       : deepin-image-viewer
+version    : 5.6.3.2
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-image-viewer/archive/5.6.3.2.tar.gz : 818debb518055344882d58d82f281c68f8fd2ff5a6d6672a454a9e85b094c800
+license    : GPL-2.0-or-later # CHECK ME
+component  : desktop.deepin
+summary    : Image viewer for Deepin Desktop
+description: |
+    Image viewer for Deepin Desktop Environment.
+builddeps  :
+    - pkgconfig(dtkwidget) 
+    - pkgconfig(gio-qt) 
+    - pkgconfig(libexif) 
+    - pkgconfig(libraw) 
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5Multimedia)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(udisks2-qt5)
+    - freeimage-devel
+setup      : |
+    %qmake
+build      : |
+    %make
+install    : |
+    %make_install
