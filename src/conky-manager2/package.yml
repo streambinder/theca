@@ -1,0 +1,29 @@
+maintainer : algent-al
+name       : conky-manager2
+version    : 2.7
+release    : 1
+source     :
+    - git|https://github.com/zcot/conky-manager2 : d0d6cb279746049df30de3af4d61e571086a885e
+license    : GPL-3.0-or-later
+component  : system.utils
+summary    : Conky Manager 2 - a newer conky config manager
+description: |
+    This is a fork of the old original Conky Manager by teejee2008(Tony George). This is a graphical front-end for managing Conky config files. It provides options to start/stop, browse and edit Conky themes installed on the system. It also provides support for the newer lua-based conky and configuration files(v1.10)
+builddeps  :
+    - pkgconfig(cairo)
+    - pkgconfig(gee-0.8)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(ImageMagick)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - vala
+rundeps    :
+    - conky
+    - imagemagick
+    - p7zip
+    - rsync
+build      : |
+    %patch -Np0 < $pkgfiles/makefile-roundup.patch
+    %make
+install    : |
+    %make_install
