@@ -238,7 +238,7 @@
 - deepin-api
 # group separator
 - deepin-daemon
+- deepin-kwin
 - deepin-terminal
 - deepin-wallpapers
 - startdde
-- deepin-kwin
