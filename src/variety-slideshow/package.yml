@@ -1,0 +1,19 @@
+maintainer : algent-al
+name       : variety-slideshow
+version    : 0.1.1
+release    : 1
+source     :
+    - https://github.com/peterlevi/variety-slideshow/archive/0.1.1.tar.gz : 0ea1870967fd4011dc659e2761584e9ecd2553c3e7e4db88dab24b3ff02fefa6
+homepage   : https://peterlevi.com/variety
+license    : GPL-3.0-or-later
+component  : multimedia.graphics
+summary    : A pan-and-zoom image slideshow in Python, using Clutter
+description: |
+    A pan-and-zoom image slideshow in Python, using Clutter
+builddeps  :
+    - python-distutils-extra
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
+    rm -rf $installdir/usr/share/doc
