@@ -125,4 +125,4 @@ def package_yml(name):
 
 def series():
     with open('src/series', 'r') as series_fd:
-        return list(map(lambda name: eopkg(package_yml(name)), yaml.safe_load(series_fd)))
+        return sorted(list(map(lambda name: eopkg(package_yml(name)), yaml.safe_load(series_fd))), key=lambda eopkg: eopkg.name)
