@@ -28,6 +28,7 @@ def get(url):
 class eopkg(object):
     def __init__(self, yml):
         self.name = ''
+        self.summary = ''
         self.version = ''
         self.release = ''
         self.mainainter = ''
@@ -40,6 +41,7 @@ class eopkg(object):
             try:
                 pkg_yml = yaml.safe_load(yml_fd)
                 self.name = pkg_yml['name']
+                self.summary = pkg_yml['summary']
                 self.version = str(pkg_yml['version'])
                 self.release = int(pkg_yml['release'])
                 self.sources = pkg_yml['source']
