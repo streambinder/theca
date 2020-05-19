@@ -54,6 +54,10 @@ commands:
         description: Check packages for updates
         exec: find src -type f -name 'package.yml' -exec solbump -dry {} \;
 
+    gen-index:
+        description: Generate packages index
+        language: python3
+
     clean:
         description: Clean up
         exec: rm -rf ${build_dir}
