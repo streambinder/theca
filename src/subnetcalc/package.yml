@@ -11,9 +11,14 @@ description: |
     For given IPv4 or IPv6 address and netmask or prefix length, it calculates network address, broadcast address, maximum number of hosts and host address range.
     Also, it prints the addresses in binary format for better understandability.
     Furthermore, it prints useful information on specific address types (e.g. type, scope, interface ID, etc.).
+builddeps  :
+    - valgrind
 setup      : |
     ./autogen.sh --use-gcc
 build      : |
     %make
 install    : |
     %make_install
+check      : |
+    cd $workdir/src
+    ./test1
