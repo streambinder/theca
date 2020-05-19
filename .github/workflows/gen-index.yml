@@ -1,0 +1,52 @@
+name: gen-index
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set Python environment
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+          architecture: x64
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pyyaml requests
+          echo "::set-env name=PYTHONPATH::/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages"
+          sudo ln -sf $(which python) /usr/bin/python3
+
+      - name: Generate index
+        run: |
+          python3 zeus/scripts/gen-index.py > Index.md
+
+      - name: Upload index as artifact
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: index
+          path: Index.md
+
+      - name: Checkout wiki
+        run: |
+          git config --global user.email "automatum@davidepucci.it"
+          git config --global user.name "Automatum"
+          git clone https://github-actions:${TOKEN}@github.com/streambinder/ashtray.wiki.git
+        env:
+          TOKEN: ${{ secrets.GH_ACTIONS_ASHTRAY }}
+
+      - name: Push index
+        run: |
+          cd ashtray.wiki
+          mv ../Index.md .
+          git add Index.md
+          git commit -m "index: flush"
+          git push
