@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-power
-version    : 2.4.1
-release    : 4
+version    : 2.4.2
+release    : 5
 source     :
-    - https://github.com/elementary/switchboard-plug-power/archive/2.4.1.tar.gz : 68d6080b78ae4875d7dadfc9a67f656dc7ffd08b249cc12131c248f7940451b6
+    - https://github.com/elementary/switchboard-plug-power/archive/2.4.2.tar.gz : 0085e568b6bb6c9982b50dcdb23b5c0960a93afefd4728211390c3b02aeee41a
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Switchboard power plug
