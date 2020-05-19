@@ -7,4 +7,5 @@ print(
     '| ---- | ------- | :-----: |'
 )
 for eopkg in series():
-    print('| {} | {} | `{}` |'.format(eopkg.name, eopkg.summary, eopkg.version))
+    print('| `{}` | {} | `{}` |'.format(
+        eopkg.name, eopkg.summary, eopkg.version))
