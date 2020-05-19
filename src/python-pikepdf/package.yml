@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : python-pikepdf
-version    : 1.12.0
-release    : 3
+version    : 1.13.0
+release    : 4
 source     :
-    - https://github.com/pikepdf/pikepdf/archive/v1.12.0.tar.gz : cc974c8a478ee7d6280a79158ee13aa6a9e04fefd4235f888b32bfbed8bfe451
+    - https://github.com/pikepdf/pikepdf/archive/v1.13.0.tar.gz : a1bda1aeb06e2a458b61eb259b9dcb433991922639bdc7e3f36e916e378badf4
 homepage   : https://pikepdf.readthedocs.io/
 license    : MPL-2.0
 component  : programming.python
