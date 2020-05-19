@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : appstream
-version    : 0.12.10
-release    : 4
+version    : 0.12.11
+release    : 5
 source     :
-    - https://www.freedesktop.org/software/appstream/releases/AppStream-0.12.10.tar.xz : 9f0a2c550729e4ccd29844c7a9d021f687fb133ffb37f23f928d50a125d7bd0f
+    - https://www.freedesktop.org/software/appstream/releases/AppStream-0.12.11.tar.xz : 194d871ae057c6bf2b5a95e98d77da2b0107996f593b2ac0b0b88fa8ba452f11
 license    : GPL-2.0
 summary    : Infrastructure for distro-agnostic software-centers and universal software component metadata
 networking : true
