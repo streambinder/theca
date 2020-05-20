@@ -1,11 +1,13 @@
 maintainer : streambinder
 name       : pantheon-greeter
 version    : 5.0.3
-release    : 12
+release    : 13
 source     :
     - https://github.com/elementary/greeter/archive/5.0.3.tar.gz : 6ebc9f81a8653c7cb74bf8af2e3bb6c7b5195d309ed7bdf1345f7edf7f71b849
 license    : GPL-3.0
 component  : desktop.pantheon
+conflicts  :
+    - slick-greeter
 summary    : LightDM Greeter for Pantheon
 description: |
     Pantheon Greeter is a pantheon-styled Login Screen for LightDM.
