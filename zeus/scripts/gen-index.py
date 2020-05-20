@@ -3,6 +3,7 @@
 from _common import series
 
 print(
+    '# Index\n\n',
     '| Name | Summary | Version |\n',
     '| ---- | ------- | :-----: |'
 )
