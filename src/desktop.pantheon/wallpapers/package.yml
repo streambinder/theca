@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : pantheon-wallpapers
 version    : 5.5.0
-release    : 3
+release    : 4
 source     :
     - https://github.com/elementary/wallpapers/archive/5.5.0.tar.gz : 0a05b1bf732c98408f0e6c344ad31993bb861289cf0272d491dd005ae1f09b5e
 license    : GPL-1.0
@@ -15,3 +15,4 @@ build      : |
     %meson_build
 install    : |
     %meson_install
+    mv -v elementaryos-default $installdir/usr/share/backgrounds
