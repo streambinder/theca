@@ -48,5 +48,5 @@ jobs:
           cd ashtray.wiki
           mv ../Index.md .
           git add Index.md
-          git commit -m "index: flush"
+          git commit -m "index: flush" || echo 'Nothing to commit'
           git push
