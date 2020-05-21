@@ -1,13 +1,12 @@
 maintainer : Justin
 name       : deepin-go-lib
-version    : 5.0.0
-release    : 2
+version    : 5.4.5
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/go-lib.git : 5.0.0
+    - https://github.com/linuxdeepin/go-lib/archive/5.4.5.tar.gz : 1c565421b34094a37eef278a1ccd6cbd4bb9a5fdc830282a2998f4e1046d9602
 license    : GPL-3.0-or-later
 component  : programming.library
-summary    : A library containing many useful go routines for things such as glib,
-    gettext, archive, graphic, etc.
+summary    : A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.
 description: |
     A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.
 install    : |
