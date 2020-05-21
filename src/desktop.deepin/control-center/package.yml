@@ -25,11 +25,11 @@ builddeps  :
     - pkgconfig(xext)
     - deepin-qt-dbus-factory-devel
     - networkmanager-qt-devel
-rundeps    :
-    - deepin-api
-    - deepin-daemon
-    - deepin-qt5integration
-    - proxychains-ng
+#rundeps    :
+#    - deepin-api
+#    - deepin-daemon
+#    - deepin-qt5integration
+#    - proxychains-ng
 setup      : |
     %cmake -DDISABLE_SYS_UPDATE=YES -DCMAKE_INSTALL_PREFIX=/usr -DDISABLE_OPACITY_ANIMATION=NO -DDISABLE_CLOUD_SYNC=YES
 build      : |
