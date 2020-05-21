@@ -39,13 +39,13 @@ jobs:
         run: |
           git config --global user.email "automatum@davidepucci.it"
           git config --global user.name "Automatum"
-          git clone https://github-actions:${TOKEN}@github.com/streambinder/ashtray.wiki.git
+          git clone https://github-actions:${TOKEN}@github.com/streambinder/theca.wiki.git
         env:
           TOKEN: ${{ secrets.GH_ACTIONS_ASHTRAY }}
 
       - name: Push index
         run: |
-          cd ashtray.wiki
+          cd theca.wiki
           mv ../Index.md .
           git add Index.md
           git commit -m "index: flush" || echo 'Nothing to commit'
