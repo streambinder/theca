@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : treefrog-framework
-version    : 1.28.0
-release    : 2
+version    : 1.29.0
+release    : 3
 source     :
-    - git|https://github.com/treefrogframework/treefrog-framework.git : v1.28.0
+    - https://github.com/treefrogframework/treefrog-framework/archive/v1.29.0.tar.gz : e5c0dbd6e317d27289bd9f500fae3bd84c74c1e982b914ae193b279c35e1bc0f
 license    : BSD-3-Clause
 component  : programming.library
 summary    : High-speed C++ MVC Framework for Web Application
