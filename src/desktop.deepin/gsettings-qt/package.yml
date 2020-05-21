@@ -10,7 +10,7 @@ summary    : Qml bindings for GSettings.
 description: |
     Qml bindings for GSettings.
 builddeps  :
-    - qt5-base-devel
+    - pkgconfig(Qt5Core)
 setup      : |
     mkdir src/build
     pushd src/build
