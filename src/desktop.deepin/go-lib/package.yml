@@ -12,4 +12,3 @@ description: |
 install    : |
     mkdir -p %installroot%/usr/share/gocode/src/pkg.deepin.io/lib
     cp -a ./ %installroot%/usr/share/gocode/src/pkg.deepin.io/lib
-    rm -r %installroot%/usr/share/gocode/src/pkg.deepin.io/lib/.git
