@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-calculator
-version    : 5.5.9
-release    : 2
+version    : 5.5.10
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-calculator/archive/5.5.9.tar.gz : cb7b9393e0650ea78749475923210125768438e60eb62f509bfd37b9b6a2d1e0
+    - https://github.com/linuxdeepin/deepin-calculator/archive/5.5.10.tar.gz : c9760ad9e49cfe3dd40b5afa8508e4d54438c25a2b3b4a449046a7b5b61b18ad
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : An easy to use calculator for ordinary users.
