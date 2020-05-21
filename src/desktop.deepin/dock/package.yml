@@ -33,7 +33,7 @@ build      : |
     popd
 install    : |
     mkdir -p %installroot%/usr/share/glib-2.0/schemas/
-    cp gschemas/* %installroot%/usr/share/glib-2.0/schemas/
+    cp gschema/* %installroot%/usr/share/glib-2.0/schemas/
     pushd build
     %make_install INSTALL_ROOT=$installdir
     popd
