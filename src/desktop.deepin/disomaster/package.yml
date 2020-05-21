@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : disomaster
-version    : 5.0.0
-release    : 1
+version    : 5.0.1
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/disomaster/archive/5.0.0.tar.gz : e3f6054fde9a480e8865d7b1f130abb117c32d5486080688c3ad5b774d848318
+    - https://github.com/linuxdeepin/disomaster/archive/5.0.1.tar.gz : c3b796d17e60204fc0bdb62b2c5472092636f7250bed51faa3558d5c6f3f114c
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Library to manipulate DISC burning.
