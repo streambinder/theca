@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-desktop-base
-version    : 2019.06.14
-release    : 1
+version    : 2020.04.12.2
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/deepin-desktop-base.git : 2019.06.14
+    - https://github.com/linuxdeepin/deepin-desktop-base/archive/2020.04.12-2.tar.gz : 764c899eab23a0f7ce31a8f48592830c2926e5eadf0fc51baf4f385431d59a5e
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Base component for Deepin.
