@@ -32,9 +32,8 @@ build      : |
     %make
     popd
 install    : |
-    find . -iname "*gschema.xml"
     mkdir -p %installroot%/usr/share/glib-2.0/schemas/
-    cp gschema/com.deepin.dde.dock.module.gschema.xml %installroot%/usr/share/glib-2.0/schemas/
+    cp $pkgfiles/com.deepin.dde.dock.module.gschema.xml %installroot%/usr/share/glib-2.0/schemas/
     pushd build
     %make_install INSTALL_ROOT=$installdir
     popd
