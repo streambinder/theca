@@ -160,7 +160,6 @@
 # group separator
 - cinnamon
 - deepin-clutter
-- deepin-dbus-generator
 - deepin-go-dbus-factory
 - deepin-network-utils
 - deepin-qt5dxcb-plugin
@@ -213,7 +212,6 @@
 #- deepin-calendar
 - deepin-clutter-gtk
 - deepin-control-center
-- deepin-dbus-generator
 - deepin-dock
 - deepin-editor
 - deepin-launcher
