@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-session-ui
-version    : 5.1.0.5
-release    : 3
+version    : 5.1.0.7
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/dde-session-ui/archive/5.1.0.5.tar.gz : a4ea6985db8e7bab642bb186196afdc7a7230ce5313cb7cc3e86fcc6ae94757c
+    - https://github.com/linuxdeepin/dde-session-ui/archive/5.1.0.7.tar.gz : 196337734b42e23d7a634533433d1b53712cf7b4d99209eb0dbcb8b84f19dcbe
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin desktop-environment - Session UI module
