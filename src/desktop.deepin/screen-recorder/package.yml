@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-screen-recorder
-version    : 5.8.0
-release    : 2
+version    : 5.8.0.11
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/deepin-screen-recorder.git : 5.8.0
+    - https://github.com/linuxdeepin/deepin-screen-recorder/archive/5.8.0.11.tar.gz : 576d8c0d78f38b564510fd18172245cefb33917acb78718ae9d619d06c8457c5
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Default screen recorder application for Deepin.
@@ -14,12 +14,13 @@ builddeps  :
     - pkgconfig(dtkwm)
     - pkgconfig(libprocps)
     - pkgconfig(Qt5Multimedia)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
     - pkgconfig(xcb-util)
     - pkgconfig(xcb)
     - pkgconfig(xtst)
-    - qt5-tools-devel
+    - deepin-qt-dbus-factory-devel
 setup      : |
     %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
