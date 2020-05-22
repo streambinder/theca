@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-calendar
-version    : 5.6.2
-release    : 3
+version    : 5.6.3
+release    : 4
 source     :
-    - git|https://github.com/linuxdeepin/dde-calendar.git : 5.6.2
+    - https://github.com/linuxdeepin/dde-calendar/archive/5.6.3.tar.gz : d5a4409c49b6f086ed523a0ca55c4ab1420e745e63b68c00166ab5ee3c32126d
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Calendar for Deepin Desktop Environment.
