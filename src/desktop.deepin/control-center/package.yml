@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-control-center
-version    : 5.1.0.12
-release    : 3
+version    : 5.1.0101.0
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/dde-control-center/archive/5.1.0.12.tar.gz : c52f0bffcf51612414ffdd19dd8861858d5938706289a86ff5e811fd12de02f4
+    - https://github.com/linuxdeepin/dde-control-center/archive/5.1.0101.0.tar.gz : 179fe0ab61d4fb6f31d2cdd664f9a384c0d9f47f94f78d44fc62199bb6f0b652
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Control panel of the Deepin Desktop Environment.
