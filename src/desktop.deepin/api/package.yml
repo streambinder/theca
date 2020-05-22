@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-api
-version    : 5.0.0
-release    : 1
+version    : 5.1.11.1
+release    : 2
 source     :
-    - git|https://github.com/linuxdeepin/dde-api.git : 5.0.0
+    - git|https://github.com/linuxdeepin/dde-api.git : 5.1.11.1
 extract    : no
 networking : yes
 license    : GPL-3.0-or-later
@@ -16,29 +16,31 @@ rundeps    :
     - deepin-desktop-base
     - xcur2png
 builddeps  :
-    - deepin-dbus-factory
-    - deepin-gettext-tools
-    - deepin-go-gir-generator
-    - deepin-go-dbus-factory
-    - deepin-go-lib
-    - git
-    - golang
     - pkgconfig(alsa)
     - pkgconfig(gdk-3.0)
     - pkgconfig(libpulse-simple)
     - pkgconfig(librsvg-2.0)
     - pkgconfig(poppler-glib)
+    - deepin-dbus-factory
+    - deepin-gettext-tools
+    - deepin-go-dbus-factory
+    - deepin-go-gir-generator
+    - deepin-go-lib
+    - git
+    - golang
 setup      : |
     mkdir {bin,pkg,src}
     mkdir -p src/pkg.deepin.io/dde
     cp -r $sources/dde-api.git $workdir/src/pkg.deepin.io/dde/api
 build      : |
     export GOPATH=$workdir/build:/usr/share/gocode
-    go get gopkg.in/alecthomas/kingpin.v2
-    go get github.com/nfnt/resize
     go get github.com/cryptix/wav
-    go get golang.org/x/net/context
     go get github.com/fogleman/gg
+    go get github.com/gosexy/gettext
+    go get github.com/mattn/go-sqlite3
+    go get github.com/nfnt/resize
+    go get golang.org/x/net/context
+    go get gopkg.in/alecthomas/kingpin.v2
     pushd src/pkg.deepin.io/dde/api
     make build-dep
     %make
