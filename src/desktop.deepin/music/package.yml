@@ -19,13 +19,13 @@ builddeps  :
     - pkgconfig(libvlc)
     - pkgconfig(Qt5Multimedia)
     - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(taglib_c)
     - pkgconfig(taglib)
     - pkgconfig(x11)
     - pkgconfig(xext)
     - kcodecs-devel
-    - qt5-tools-devel
 rundeps    :
     - deepin-qt5integration
 setup      : |
