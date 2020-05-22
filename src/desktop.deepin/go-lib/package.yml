@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : deepin-go-lib
 version    : 5.4.5
-release    : 3
+release    : 4
 source     :
     - https://github.com/linuxdeepin/go-lib/archive/5.4.5.tar.gz : 1c565421b34094a37eef278a1ccd6cbd4bb9a5fdc830282a2998f4e1046d9602
 license    : GPL-3.0-or-later
@@ -9,6 +9,15 @@ component  : programming.library
 summary    : A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.
 description: |
     A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.
+networking : yes
+builddeps  :
+    - git
+    - golang
+setup      : |
+    export GOPATH="$workdir:/usr/share/gocode"
+    go get github.com/cryptix/wav
+    go get github.com/smartystreets/goconvey/convey
+    go get github.com/mozillazg/go-pinyin
 install    : |
-    mkdir -p %installroot%/usr/share/gocode/src/pkg.deepin.io/lib
-    cp -a ./ %installroot%/usr/share/gocode/src/pkg.deepin.io/lib
+    mkdir -p %installroot%/usr/share/gocode/src/pkg.deepin.io
+    cp -a ./ %installroot%/usr/share/gocode/src/pkg.deepin.io/
