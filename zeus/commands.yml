@@ -58,6 +58,9 @@ commands:
         description: Generate packages index
         language: python3
 
+    sync:
+        description: Sync repository release
+
     clean:
         description: Clean up
         exec: rm -rf ${build_dir}
