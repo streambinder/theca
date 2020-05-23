@@ -41,7 +41,7 @@ jobs:
           git config --global user.name "Automatum"
           git clone https://github-actions:${TOKEN}@github.com/streambinder/theca.wiki.git
         env:
-          TOKEN: ${{ secrets.GH_ACTIONS_ASHTRAY }}
+          TOKEN: ${{ secrets.GH_ACTIONS_THECA }}
 
       - name: Push index
         run: |
