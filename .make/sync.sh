@@ -53,7 +53,8 @@ fi
 
 # synchronize
 VARIANT_ASSETS="$(jq -r '.assets[] | [ .id, .name, .size|tostring ] | join(":")' <<< "${VARIANT_STRUCT}")"
-VARIANT_DIFF="$(diff <(awk -F':' '{print $2":"$3}' <<< "${VARIANT_ASSETS}") <(du -b * | awk '{print $2":"$1}'))"
+VARIANT_DIFF="$(diff <(awk -F':' '{print $2":"$3}' <<< "${VARIANT_ASSETS}") \
+    <(du -b * | awk '{if (substr($2, 0, 15) == "eopkg-index.xml") { $1 = "0" }; print}' | awk '{print $2":"$1}'))"
 while read -r op; do
     case ${op:0:1} in
         '<')
@@ -65,11 +66,3 @@ while read -r op; do
         *)
     esac
 done <<< "${VARIANT_DIFF}"
-
-# force sync indexes
-VARIANT_STRUCT="$(curl -s -H "${HEADER_TOKEN}" "https://api.github.com/repos/${GITHUB_REPO}/releases/tags/${VARIANT}")"
-VARIANT_ASSETS="$(jq -r '.assets[] | [ .id, .name ] | join(":")' <<< "${VARIANT_STRUCT}" | grep eopkg-index.xml)"
-while read -r index; do
-    delete "$(awk -F':' '{print $2}' <<< ${index})"
-    upload "$(awk -F':' '{print $2}' <<< ${index})"
-done <<< "${VARIANT_ASSETS}"
