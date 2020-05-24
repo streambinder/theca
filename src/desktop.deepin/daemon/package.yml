@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-daemon
-version    : 5.0.0
-release    : 2
+version    : 5.10.0.10
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/dde-daemon.git : 5.0.0
+    - git|https://github.com/linuxdeepin/dde-daemon.git : 5.10.0.10
 networking : yes
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
@@ -35,7 +35,6 @@ builddeps  :
     - golang
 rundeps    :
     - deepin-desktop-schemas
-    - deepin-notifications
     - dnsmasq
     - gnome-keyring
     - network-manager
@@ -48,7 +47,7 @@ environment: |
     export USE_GCCGO=1
     export GOPATH="${workdir}/:/usr/share/gocode"
 setup      : |
-    %apply_patches
+    %patch -p1 <$pkgfiles/0001-5.10.0.10-disable-tap-gesture.patch
     mkdir -p ${workdir}/src/pkg.deepin.io/dde/
     ln -s ${workdir} ${workdir}/src/pkg.deepin.io/dde/daemon
     go get github.com/axgle/mahonia
@@ -57,14 +56,23 @@ setup      : |
     go get github.com/BurntSushi/xgb
     go get github.com/BurntSushi/xgbutil
     go get github.com/cryptix/wav
+    go get github.com/davecgh/go-spew/spew
     go get github.com/gosexy/gettext
+    go get github.com/jinzhu/gorm
+    go get github.com/kelvins/sunrisesunset
+    go get github.com/linuxdeepin/go-dbus-factory/com.deepin.api.lunarcalendar
     go get github.com/linuxdeepin/go-x11-client
+    go get github.com/mattn/go-sqlite3
+    go get github.com/mozillazg/go-pinyin
     go get github.com/msteinert/pam
     go get github.com/nfnt/resize
+    go get github.com/rickb777/date
+    go get github.com/teambition/rrule-go
     go get golang.org/x/image/bmp
     go get golang.org/x/image/tiff
     go get golang.org/x/net/context
     go get golang.org/x/text/encoding/charmap
+    go get golang.org/x/xerrors
     go get gopkg.in/alecthomas/kingpin.v2
 build      : |
     %make
