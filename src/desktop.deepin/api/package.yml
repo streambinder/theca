@@ -33,7 +33,7 @@ setup      : |
     mkdir -p src/pkg.deepin.io/dde
     cp -r $sources/dde-api.git $workdir/src/pkg.deepin.io/dde/api
 build      : |
-    export GOPATH=$workdir/build:/usr/share/gocode
+    export GOPATH=$workdir/build:$workdir/:/usr/share/gocode
     go get github.com/cryptix/wav
     go get github.com/disintegration/imaging
     go get github.com/fogleman/gg
@@ -49,7 +49,7 @@ build      : |
     %make
     popd
 install    : |
-    export GOPATH=$workdir/:/usr/share/gocode
+    export GOPATH=$workdir/:$workdir:/usr/share/gocode
     pushd src/pkg.deepin.io/dde/api
     %make_install libdir=/lib64
     popd
