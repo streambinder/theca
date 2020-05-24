@@ -6,10 +6,10 @@ import subprocess
 import sys
 import threading
 
-from _common import series, sol_build, sol_index
+from common import series, sol_build, sol_index
 
 for eopkg in series():
-    if len(glob.glob(os.path.join('bin', eopkg.glob()))) > 0:
+    if len(glob.glob(os.path.join(os.environ['BUILD_DIR'], eopkg.glob()))) > 0:
         continue
 
     print('Building {}'.format(eopkg.name))
@@ -17,4 +17,4 @@ for eopkg in series():
         print('Unable to build {}'.format(eopkg.name))
         sys.exit(1)
 
-sol_index('bin')
+sol_index(os.environ['BUILD_DIR'])

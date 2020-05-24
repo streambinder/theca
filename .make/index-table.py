@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from _common import series
+from common import series
 
 print(
     '# Index\n\n',

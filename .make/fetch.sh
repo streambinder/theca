@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd bin
+cd "${BUILD_DIR}"
 
 curl -s https://api.github.com/repos/streambinder/theca/releases \
         | jq '.[0].assets[] | .browser_download_url' | sed 's/"//g' \

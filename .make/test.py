@@ -2,7 +2,7 @@
 
 import sys
 
-from _common import series
+from common import series
 
 for eopkg in series():
     print('Package {} parsed ok'.format(eopkg.name))

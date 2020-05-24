@@ -26,8 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install pyyaml requests
           echo "::set-env name=PYTHONPATH::/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages"
-          sudo ln -sf $(which python) /usr/bin/python3
 
       - name: Run test
         run: |
-          python3 zeus/scripts/test.py
+          make test

@@ -104,7 +104,7 @@ def sol_build(eopkg):
         return False
 
     for package in packages:
-        os.rename(package, os.path.join('bin', os.path.basename(package)))
+        os.rename(package, os.path.join(os.environ['BUILD_DIR'], os.path.basename(package)))
     for pspec in glob.glob(os.path.join(
             os.path.dirname(eopkg.yml), '*.xml')):
         os.remove(pspec)

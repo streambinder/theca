@@ -1,4 +1,4 @@
-name: gen-index
+name: generate-index
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate index
         run: |
-          python3 zeus/scripts/gen-index.py > Index.md
+          make index-table > Index.md
 
       - name: Upload index as artifact
         uses: actions/upload-artifact@v2-preview
