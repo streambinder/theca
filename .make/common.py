@@ -100,7 +100,6 @@ def sol_build(eopkg):
     packages = glob.glob(os.path.join(
         os.path.dirname(eopkg.yml), '*.eopkg'))
     if len(packages) == 0:
-        print('Unable to build {}'.format(eopkg.name))
         return False
 
     for package in packages:
