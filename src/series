@@ -239,6 +239,7 @@
 # group separator
 - dde-session-shell
 - deepin-daemon
+- deepin-icon-theme
 - deepin-kwin
 - deepin-terminal
 - deepin-wallpapers

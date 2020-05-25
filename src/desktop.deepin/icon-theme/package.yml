@@ -1,0 +1,21 @@
+name       : deepin-icon-theme
+version    : 2020.05.21
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-icon-theme/archive/2020.05.21.tar.gz : 26070be3b2f576cbcab5992a57a6764fffefb01fac5a4b2722a657c172d82bcd
+license    : GPL-3.0-or-later
+component  : desktop.deepin
+summary    : Deepin Icon Theme
+description: |
+    Deepin Icon Theme
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - xcursorgen
+setup      : |
+    # Fix install part of make
+    # https://github.com/linuxdeepin/deepin-icon-theme/pull/23
+    patch -p1 <$pkgfiles/23.patch
+build      : |
+    %make
+install    : |
+    %make_install
