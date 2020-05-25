@@ -237,6 +237,7 @@
 # group separator
 - deepin-api
 # group separator
+- dde-session-shell
 - deepin-daemon
 - deepin-kwin
 - deepin-terminal
