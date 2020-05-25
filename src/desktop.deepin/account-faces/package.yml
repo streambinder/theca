@@ -1,0 +1,15 @@
+maintainer : Justin
+name       : dde-account-faces
+version    : 1.0.11
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dde-account-faces/archive/1.0.11.tar.gz : cdd9dc6fe95113585ef783ba76dd9fd877c586ac1417d64b405b7294c1fb4c11
+license    :
+    - CC-BY-SA-3.0 # Wallpapers
+    - GPL-3.0-or-later # Code
+component  : desktop.deepin
+summary    : Deepin User Account Icons
+description: |
+    Deepin User Account Icons
+install    : |
+    %make_install

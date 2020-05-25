@@ -237,6 +237,7 @@
 # group separator
 - deepin-api
 # group separator
+- dde-account-faces
 - dde-session-shell
 - deepin-daemon
 - deepin-icon-theme
