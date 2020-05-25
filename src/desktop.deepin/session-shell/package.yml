@@ -1,6 +1,6 @@
 name       : dde-session-shell
 version    : 5.0.0.5
-release    : 1
+release    : 2
 source     :
     - https://github.com/linuxdeepin/dde-session-shell/archive/5.0.0.5.tar.gz : 66434ae16f096638eebc75e76c13fa88b48a94d054f3d36376648e7539101d75
 license    : GPL-3.0-or-later
@@ -30,3 +30,5 @@ build      : |
     %ninja_build
 install    : |
     %ninja_install
+    # Fix greeter not working
+    chmod +x %installroot%/usr/bin/deepin-greeter
