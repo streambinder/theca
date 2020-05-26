@@ -228,6 +228,7 @@
 - xfce4-whiskermenu-plugin
 - xfce-default-settings
 - xfce4-notifyd
+- xfce4-pulseaudio-plugin
 # group separator
 - deepin-dbus-factory
 - deepin-file-manager

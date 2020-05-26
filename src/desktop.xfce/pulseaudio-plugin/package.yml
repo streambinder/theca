@@ -1,0 +1,25 @@
+name       : xfce4-pulseaudio-plugin
+version    : 0.4.3
+release    : 1
+source     :
+    - https://gitlab.xfce.org/panel-plugins/xfce4-pulseaudio-plugin/-/archive/xfce4-pulseaudio-plugin-0.4.3/xfce4-pulseaudio-plugin-xfce4-pulseaudio-plugin-0.4.3.tar.bz2 : eb86256cb4266f46f10f6dab09b829c0a787b57c08a22ee6ac63e05bc2a70af2
+license    : GPL-2.0-or-later
+component  : desktop.xfce
+summary    : XFCE Pulseaudio Plugin
+description: |
+    XFCE Pulseaudio Plugin
+builddeps  :
+    - pkgconfig(exo-2)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libnotify)
+    - pkgconfig(libpulse-mainloop-glib)
+    - pkgconfig(libxfce4panel-2.0)
+    - pkgconfig(libxfce4ui-2)
+    - pkgconfig(x11)
+    - xfce4-dev-tools
+setup      : |
+    %autogen --enable-maintainer-mode
+build      : |
+    %make
+install    : |
+    %make_install
