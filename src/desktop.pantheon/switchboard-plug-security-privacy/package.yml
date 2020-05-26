@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-security-privacy
-version    : 2.2.3
-release    : 4
+version    : 2.2.4
+release    : 5
 source     :
-    - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.3.tar.gz : 4d339fd096e2e1f8ba801792ab6a6668da93d520a9bd83fbc0d7982a03ff13c0
+    - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.4.tar.gz : 617c51416f1662e66d395f27d82a372196d4ccd7402e67ab158ff578ad731b9b
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard security and privacy plug
