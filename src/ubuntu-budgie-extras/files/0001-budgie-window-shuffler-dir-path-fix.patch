@@ -1,0 +1,36 @@
+diff --git a/budgie-window-shuffler/src/jump.vala b/budgie-window-shuffler/src/jump.vala
+index b761c6a..9d4117c 100644
+--- a/budgie-window-shuffler/src/jump.vala
++++ b/budgie-window-shuffler/src/jump.vala
+@@ -47,7 +47,7 @@ namespace JumpActive {
+     }
+ 
+     private bool procruns (string processname) {
+-        string cmd = @"/usr/bin/pgrep -f $processname";
++        string cmd = @"/bin/pgrep -f $processname";
+         string output;
+         try {
+             GLib.Process.spawn_command_line_sync(cmd, out output);
+@@ -233,4 +233,4 @@ namespace JumpActive {
+             stderr.printf ("%s\n", e.message);
+         }
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/budgie-window-shuffler/src/shuffler_control.vala b/budgie-window-shuffler/src/shuffler_control.vala
+index 66dcfc2..9235784 100644
+--- a/budgie-window-shuffler/src/shuffler_control.vala
++++ b/budgie-window-shuffler/src/shuffler_control.vala
+@@ -591,7 +591,7 @@ namespace ShufflerControls {
+         }
+ 
+         private bool procruns (string processname) {
+-            string cmd = @"/usr/bin/pgrep -f $processname";
++            string cmd = @"/bin/pgrep -f $processname";
+             string output;
+             try {
+                 GLib.Process.spawn_command_line_sync(cmd, out output);
+-- 
+2.26.0
+

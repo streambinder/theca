@@ -1,0 +1,43 @@
+diff --git a/budgie-wallstreet/src/wallstreet_control/wallstreet_control.vala b/budgie-wallstreet/src/wallstreet_control/wallstreet_control.vala
+index a1a4a91..ae99398 100644
+--- a/budgie-wallstreet/src/wallstreet_control/wallstreet_control.vala
++++ b/budgie-wallstreet/src/wallstreet_control/wallstreet_control.vala
+@@ -206,7 +206,7 @@ namespace WallStreetControls {
+         }
+ 
+         private bool processruns (string application) {
+-            string cmd = "/usr/bin/pgrep -f " + application;
++            string cmd = "/bin/pgrep -f " + application;
+             string output;
+             try {
+                 GLib.Process.spawn_command_line_sync(cmd, out output);
+@@ -316,4 +316,4 @@ namespace WallStreetControls {
+         Gtk.main();
+         return 0;
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/budgie-wallstreet/schema/org.ubuntubudgie.budgie-wallstreet.gschema.xml b/budgie-wallstreet/schema/org.ubuntubudgie.budgie-wallstreet.gschema.xml
+index ec0617a..7fb941e 100644
+--- a/budgie-wallstreet/schema/org.ubuntubudgie.budgie-wallstreet.gschema.xml
++++ b/budgie-wallstreet/schema/org.ubuntubudgie.budgie-wallstreet.gschema.xml
+@@ -25,13 +25,13 @@
+         <key type="s" name="wallpaperfolder">
+             <summary>Folder with wallpapers</summary>
+             <description>The default folder that WallStreet should use to find the wallpapers</description>
+-            <default>"/usr/share/backgrounds/budgie"</default>
++            <default>"/usr/share/backgrounds/solus"</default>
+         </key>
+ 
+         <key type="s" name="fallbackwallpaper">
+             <summary>The backround to set in case of an errors</summary>
+             <description>In case there are no files in the used folder, a fallback image will be used</description>
+-            <default>"/usr/share/backgrounds/budgie/ubuntu_budgie_wallpaper1.jpg"</default>
++            <default>"/usr/share/backgrounds/solus/Pines.jng"</default>
+         </key>
+ 
+     </schema>
+-- 
+2.26.1
+

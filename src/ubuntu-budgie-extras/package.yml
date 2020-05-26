@@ -1,0 +1,228 @@
+maintainer : algent-al
+name       : ubuntu-budgie-extras
+version    : 1.0.1
+release    : 6
+source     :
+    - https://github.com/UbuntuBudgie/budgie-extras/releases/download/v1.0.1/budgie-extras-1.0.1.tar.xz : 1c9636a0e8d6ab986d4ac219d4be82d6a8ce26e8dd355ad2be409fcf99e88c36
+homepage   : https://github.com/UbuntuBudgie/budgie-extras
+license    : GPL-3.0-or-later
+component  :
+    - ^budgie-app-launcher-applet : desktop.budgie
+    - ^budgie-applications-menu-applet : desktop.budgie
+    - ^budgie-clockworks-applet : desktop.budgie
+    - ^budgie-dropby-applet : desktop.budgie
+    - ^budgie-fuzzyclock-applet : desktop.budgie
+    - ^budgie-hotcorners-applet : desktop.budgie
+    - ^budgie-keyboard-autoswitch-applet : desktop.budgie
+    - ^budgie-previews : desktop.budgie
+    - ^budgie-quickchar : desktop.budgie
+    - ^budgie-recentlyused-applet : desktop.budgie
+    - ^budgie-showtime-applet : desktop.budgie
+    - ^budgie-visualspace-applet : desktop.budgie
+    - ^budgie-wallstreet : desktop.budgie
+    - ^budgie-window-mover-applet : desktop.budgie
+    - ^budgie-workspace-overview-applet : desktop.budgie
+    - ^budgie-workspace-stopwatch-applet : desktop.budgie
+    - ^budgie-workspace-wallpaper-applet : desktop.budgie
+summary    :
+    - Shared component of budgie-extras applets
+    - ^budgie-app-launcher-applet : Applet to provide an alternative means to launch applications
+    - ^budgie-applications-menu-applet : Stylish Applications Menu for Budgie-Desktop
+    - ^budgie-clockworks-applet : Applet to display clock across multiple time zones
+    - ^budgie-dropby-applet : Applet to popup when a USB device is connected
+    - ^budgie-fuzzyclock-applet : Shows the time in a Fuzzy Way
+    - ^budgie-hotcorners-applet : Applet providing hotcorners capabilities for the Budgie Desktop
+    - ^budgie-keyboard-autoswitch-applet : Applet adding the ability to set a different keyboard layout per application
+    - ^budgie-previews : Provides window previews capabilities for the Budgie Desktop
+    - ^budgie-quickchar : GUI to find and choose locale characters
+    - ^budgie-recentlyused-applet : Applet displays files recently accessed for the Budgie Desktop
+    - ^budgie-showtime-applet : Applet displaying date and time on the Budgie Desktop
+    - ^budgie-visualspace-applet : Show and manage windows in workspaces for the Budgie Desktop
+    - ^budgie-wallstreet : Change wallpaper from a folder on a schedule
+    - ^budgie-window-mover-applet : Applet allows moving windows between workspaces for the Budgie Desktop
+    - ^budgie-workspace-overview-applet : Applet providing quick access to workspaces for the Budgie Desktop
+    - ^budgie-workspace-stopwatch-applet : Workspace usage tracker for the budgie desktop
+    - ^budgie-workspace-wallpaper-applet : Applet providing per workspace wallpaper
+description:
+    - Budgie-extras from Ubuntu Budgie. Here are some applets not yet included in official Solus Repository.
+    - ^budgie-app-launcher-applet : The app-launcher applet allows the ability to add favorite apps to the panel as well as finding and launching applications.  The list of applications listed can be easily configured to be visible or hidden.
+    - ^budgie-applications-menu-applet : The application-menu is a stylish panel applet that displays applications in different views - grid and list. Weblinks typed into the search bar can be opened in your default browser. Applications that have additional desktop options show via a right-click menu. Applications with associated actions show those actions are additional searchable entries.
+    - ^budgie-clockworks-applet : A multi clock applet to show the time across multiple timezones. Clocks can be created and deleted in a single click, and easily be (re-) named. Timezones can be looked up from the applet's popup menu.
+    - ^budgie-dropby-applet : The DropBy applet pops up in the panel when connecting a usb device. The applet subsequently offers the option(s) to mount, unmount/eject and in case of a flash drive, to make a local copy of the drive's content. The info shows the free space on the volume.
+    - ^budgie-fuzzyclock-applet : Displays the time in a 'spoken' format such as five past six.
+    - ^budgie-hotcorners-applet : The hotcorners applet allow user defined commands to be executed when the mouse cursor is pushed into a corner of the main desktop.
+    - ^budgie-keyboard-autoswitch-applet : The Keyboard Auto Switcher applet provides the user the ability to set a different keyboard layout per application. Exceptions to the default layout can be set by simply choosing a different layout using the Keyboard Layout applet.
+    - ^budgie-previews : Set previews to show an overview of windows in an expose like way.
+    - ^budgie-quickchar : Quickly find and choose the equivalent locale character for an ascii character.
+    - ^budgie-recentlyused-applet : The recentlyused applet displays the users files that have been opened or created within a configurable period of time.
+    - ^budgie-showtime-applet : Budgie Showtime is a digital desktop clock, showing time, and optionally, date. Text color of both can be set separately from the applet's menu.
+    - ^budgie-visualspace-applet : The visualspace applet shows as a stylish compact workspace on the budgie panel. Choosing windows in the applet popup moves to the workspace where the window is located and gives it focus. The number of Workspace can also be changed though the applet popup.
+    - ^budgie-wallstreet : Wallstreet allows for a directory of pictures to be shown on a schedule.
+    - ^budgie-window-mover-applet : The Window Mover applet allows the user to quickly move windows to any of the other workspaces. Just drag a window to the bottom of the screen and a bar will popup, representing the workspaces. Click on any of the numbers (or press the corresponding number on the keyboard) and the window will move to that workspace.
+    - ^budgie-workspace-overview-applet : The workspace overview applet allows a user to quickly navigate workspaces using the applet's menu. Optionally, navigation to any window in any workspace is possible.
+    - ^budgie-workspace-stopwatch-applet : Workspace Stopwatch Applet keeps track of usage per workspace, i.e. to find out how much minutes/hours were actually spent on a job. Workspaces can be freely named, custom names and all data are remembered.
+    - ^budgie-workspace-wallpaper-applet : The workspace wallpaper applet shows a different wallpaper on each of the workspaces. Usage is simple; add the applet to the panel and set wallpapers on each of the workspaces in the way you are used to. The applet will remember what wallpaper was set on each of the workspaces.
+patterns   :
+    - ^budgie-app-launcher-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-app-launcher
+        - /usr/share/pixmaps/budgie-app-launcher*
+    - ^budgie-applications-menu-applet :
+        - /usr/lib64/budgie-desktop/plugins/applications-menu
+        - /usr/share/glib-2.0/schemas/io.elementary.desktop.wingpanel.applications-menu.gschema.xml
+    - ^budgie-clockworks-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-clockworks
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-clockworks.gschema.xml
+        - /usr/share/pixmaps/budgie-clockworks-symbolic.svg
+    - ^budgie-dropby-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-dropby
+        - /usr/share/pixmaps/budgie-dropby*
+    - ^budgie-fuzzyclock-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-fuzzyclock
+    - ^budgie-hotcorners-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-hotcorners
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-hotcorners.gschema.xml
+        - /usr/share/pixmaps/budgie-hotcorners-symbolic.svg
+    - ^budgie-keyboard-autoswitch-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-keyboard-autoswitch
+        - /usr/share/pixmaps/budgie-keyboard-autoswitch-symbolic.svg
+    - ^budgie-previews :
+        - /usr/lib64/budgie-previews
+        - /usr/share/applications/previewscontrols.desktop 
+        - /usr/share/budgie-extras-daemon/preview*
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.budgie-wpreviews.gschema.xml
+        - /usr/share/pixmaps/budgie_wpreviews*
+        - /usr/share/pixmaps/budgiewprviews.svg
+        - /usr/share/xdg/autostart/previews*
+    - ^budgie-quickchar :
+        - /usr/bin/quickchar
+        - /usr/lib64/quickchar
+        - /usr/share/applications/quickchar.desktop
+        - /usr/share/budgie-extras-daemon/quickchar.bde
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.quickchar.gschema.xml
+        - /usr/share/man/man1/quickchar.1
+        - /usr/share/quickchar/chardata
+        - /usr/share/xdg/autostart/quickchar-autostart.desktop
+    - ^budgie-recentlyused-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-recentlyused
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-recentlyused.gschema.xml
+    - ^budgie-showtime-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-showtime
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-showtime.gschema.xml
+        - /usr/share/pixmaps/showtimenew-symbolic.svg
+    - ^budgie-visualspace-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-visualspace
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-visualspace.gschema.xml
+        - /usr/share/pixmaps/visualspace-symbolic.svg
+        - /usr/share/xdg/autostart/visualspace-autostart.desktop
+    - ^budgie-wallstreet :
+        - /usr/lib64/budgie-wallstreet/wallstreet*
+        - /usr/share/applications/wallstreet-control.desktop
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.budgie-wallstreet.gschema.xml
+        - /usr/share/pixmaps/wallstreet-control.svg
+        - /usr/share/xdg/autostart/wallstreet-autostart.desktop
+    - ^budgie-window-mover-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-wmover
+        - /usr/share/pixmaps/budgie-wmover-symbolic.svg
+    - ^budgie-workspace-overview-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-wsoverview
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-wsoverview.gschema.xml
+        - /usr/share/pixmaps/budgie-wsoverview-symbolic.svg
+        - /usr/share/pixmaps/ws*
+    - ^budgie-workspace-stopwatch-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-workspace-stopwatch
+        - /usr/share/pixmaps/budgie-wstopwatch-symbolic.svg
+    - ^budgie-workspace-wallpaper-applet :
+        - /usr/lib64/budgie-desktop/plugins/budgie-wswitcher
+        - /usr/share/pixmaps/budgie-wsw-symbolic.svg
+builddeps  :
+    - pkgconfig(appstream)
+    - pkgconfig(budgie-1.0)
+    - pkgconfig(gnome-settings-daemon)
+    - pkgconfig(granite)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(keybinder-3.0)
+    - pkgconfig(libgnome-menu-3.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(libwnck-3.0)
+    - pkgconfig(plank)
+    - pkgconfig(zeitgeist-2.0)
+    - vala
+rundeps    :
+    - ^budgie-app-launcher-applet : budgie-extras
+    - ^budgie-applications-menu-applet : budgie-extras
+    - ^budgie-clockworks-applet :
+        - budgie-extras
+        - python-cairosvg
+        - python-pillow
+        - python-svgwrite
+    - ^budgie-dropby-applet :
+        - budgie-extras
+        - python-psutil
+        - python3-pyudev
+        - wmctrl
+    - ^budgie-fuzzyclock-applet : budgie-extras
+    - ^budgie-hotcorners-applet :
+        - budgie-previews
+        - xdotool
+    - ^budgie-keyboard-autoswitch-applet :
+        - budgie-extras
+        - python-psutil
+        - xdotool
+        - xprop
+    - ^budgie-previews :
+        - budgie-extras-daemon
+        - xinput
+        - xprintidle
+    - ^budgie-quickchar :
+        - budgie-extras-daemon
+        - python-pyperclip
+        - python-xlib
+        - wmctrl
+    - ^budgie-recentlyused-applet : budgie-extras
+    - ^budgie-showtime-applet : budgie-extras
+    - ^budgie-visualspace-applet : budgie-extras
+    - ^budgie-wallstreet : budgie-extras-daemon
+    - ^budgie-window-mover-applet :
+        - budgie-extras
+        - python-psutil
+        - xdotool
+        - xprop
+        - wmctrl
+    - ^budgie-workspace-overview-applet :
+        - budgie-extras
+        - python-psutil
+        - xprop
+        - wmctrl
+    - ^budgie-workspace-stopwatch-applet : budgie-extras
+    - ^budgie-workspace-wallpaper-applet :
+        - budgie-extras
+        - python-psutil
+        - wmctrl
+setup      : |
+    %apply_patches
+    %meson_configure --sysconfdir=/usr/share \
+        -Dbuild-all=false \
+        -Dbuild-app-launcher=true \
+        -Dbuild-applications-menu=true \
+        -Dbuild-clockworks=true \
+        -Dbuild-dropby=true \
+        -Dbuild-fuzzyclock=true \
+        -Dbuild-hotcorners=true \
+        -Dbuild-keyboard-autoswitch=true \
+        -Dbuild-quickchar=true \
+        -Dbuild-recentlyused=true \
+        -Dbuild-showtime=true \
+        -Dbuild-visualspace=true \
+        -Dbuild-wallstreet=true \
+        -Dbuild-wmover=true \
+        -Dbuild-workspacestopwatch=true \
+        -Dbuild-wpreviews=true \
+        -Dbuild-wsoverview=true \
+        -Dbuild-wswitcher=true
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
+
+    #These are not needed since they are already in budgie-extras to avoid conflicts.
+    rm -rf $installdir/usr/share/locale

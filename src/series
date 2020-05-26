@@ -60,8 +60,10 @@
 - pantheon-wallpapers
 - paperboy
 - pocillo-gtk-theme
+- pytest-isort
 - python-pam
 - python-setuptools-scm-git-archive
+- python-svgwrite
 - python-tinycss
 - qview
 - sideload
@@ -76,6 +78,7 @@
 - variety-slideshow
 - vscodium
 - webpin
+- wmctrl
 - xapps
 - xfce4-dev-tools
 - youtube-dlg
@@ -97,7 +100,9 @@
 - muffin
 - nemo
 - pantheon-tweaks
+- python-cairocffi
 - python-pikepdf
+- python-tinycss2
 - qtermwidget
 - xfconf
 # group separator
@@ -131,6 +136,7 @@
 - pdfarranger
 - perl-config-tiny
 - proxychains-ng
+- python-cssselect2
 - qt5-xcb-private-headers
 - qterminal
 - switchboard-plug-a11y
@@ -153,6 +159,7 @@
 - switchboard-plug-sharing
 - switchboard-plug-sound
 - switchboard-plug-useraccounts
+- ubuntu-budgie-extras
 - udisks2-qt5
 - wingpanel
 - xcur2png
@@ -178,6 +185,7 @@
 - pantheon-applications-menu
 - pantheon-greeter
 - pcmanfm-qt
+- python-cairosvg
 - thunar
 - treefrog-framework
 - wingpanel-indicator-a11y

@@ -1,0 +1,26 @@
+maintainer : algent-al
+name       : python-cssselect2
+version    : 0.3.0
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/03/37/0e28364d4c2bce998171199ab59650b3174c077ef2c8b6d4ff57aa47676a/cssselect2-0.3.0.tar.gz : 5c2716f06b5de93f701d5755a9666f2ee22cbcd8b4da8adddfc30095ffea3abc
+homepage   : https://pypi.org/project/cssselect2/
+license    : BSD-3-Clause
+component  : programming.python
+summary    : CSS selectors for Python ElementTree
+description: |
+    cssselect2 is a straightforward implementation of CSS3 Selectors for markup documents (HTML, XML, etc.) that can be read by ElementTree-like parsers (including cElementTree, lxml, html5lib, etc.)
+builddeps  :
+    - pytest-isort
+    - pytest-runner
+    - python-pytest-cov
+    - python-pytest-flake8
+    - python-tinycss2
+rundeps    :
+    - python-tinycss2
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
+check      : |
+    %python3_test
