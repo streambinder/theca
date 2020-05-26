@@ -26,7 +26,7 @@ components: init
 
 .PHONY: strip
 strip:
-	@bash $(MAKE_DIR)/strip.sh
+	@python3 $(MAKE_DIR)/strip.py
 
 .PHONY: index
 index:
