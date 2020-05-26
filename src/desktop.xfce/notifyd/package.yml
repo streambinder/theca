@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-notifyd
-version    : 0.6.0
-release    : 4
+version    : 0.6.1
+release    : 5
 source     :
-    - https://archive.xfce.org/src/apps/xfce4-notifyd/0.6/xfce4-notifyd-0.6.0.tar.bz2 : c1d126a81604ff967e4655f06427763bf559c338ba629c95cb9aa7f5d6dc8ba6
+    - https://gitlab.xfce.org/apps/xfce4-notifyd/-/archive/xfce4-notifyd-0.6.1/xfce4-notifyd-xfce4-notifyd-0.6.1.tar.bz2 : b5fcb6c5fd12bb2d457666412b1fa1f54e60209c829abd409e86622981859eba
 license    : GPL-2.0-or-later
 component  : desktop.xfce
 summary    : XFCE4 Notification Daemon
@@ -14,8 +14,9 @@ builddeps  :
     - pkgconfig(libxfce4panel-2.0)
     - pkgconfig(libxfce4ui-2)
     - at-libxfce4util-devel
+    - xfce4-dev-tools
 setup      : |
-    %configure
+    %autogen --enable-maintainer-mode
 build      : |
     %make
 install    : |
