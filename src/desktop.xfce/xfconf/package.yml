@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfconf
-version    : 4.14.1
-release    : 2
+version    : 4.14.3
+release    : 3
 source     :
-    - http://archive.xfce.org/src/xfce/xfconf/4.14/xfconf-4.14.1.tar.bz2 : b893e0a329aee00902fec2f0509f56916c9dcc7844e1b1f9e3c7399458290d59
+    - https://gitlab.xfce.org/xfce/xfconf/-/archive/xfconf-4.14.3/xfconf-xfconf-4.14.3.tar.bz2 : 641211118e346efdda7c745da4cc54b8183e1c91e72c3a186287a63ba7bb78fb
 license    : GPL-2.0
 components : desktop.xfce
 summary    : Xfce configuration storage system
@@ -12,8 +12,10 @@ description: |
 builddeps  :
     - pkgconfig(dbus-glib-1)
     - at-libxfce4util-devel
+    - gtk-doc
+    - xfce4-dev-tools
 setup      : |
-    %configure
+    %autogen
 build      : |
     %make
 install    : |
