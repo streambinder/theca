@@ -1,0 +1,23 @@
+maintainer : Justin
+name       : xfce4-taskmanager
+version    : 1.2.3
+release    : 1
+source     :
+    - https://gitlab.xfce.org/apps/xfce4-taskmanager/-/archive/xfce4-taskmanager-1.2.3/xfce4-taskmanager-xfce4-taskmanager-1.2.3.tar.bz2 : f2da4a3662c4e5057e1bfbd9eacc1862957fcf9a61797f6033e15c250c49e923
+license    : GPL-2.0-or-later
+component  : desktop.xfce
+summary    : XFCE Task Manager
+description: |
+    XFCE Task Manager
+builddeps  :
+    - pkgconfig(exo-2)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(x11)
+    - pkgconfig(xmu)
+    - xfce4-dev-tools
+setup      : |
+    %autogen --enable-maintainer-mode
+build      : |
+    %make
+install    : |
+    %make_install
