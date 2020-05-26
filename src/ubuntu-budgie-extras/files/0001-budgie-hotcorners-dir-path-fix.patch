@@ -1,0 +1,25 @@
+diff --git a/budgie-hotcorners/src/HotCornersApplet.vala b/budgie-hotcorners/src/HotCornersApplet.vala
+index 7d39160..4f07de5 100644
+--- a/budgie-hotcorners/src/HotCornersApplet.vala
++++ b/budgie-hotcorners/src/HotCornersApplet.vala
+@@ -28,7 +28,7 @@ namespace HCSupport {
+ 
+ 
+     private bool locked () {
+-        string cmd = "/usr/bin/pgrep -f gnome-screensaver-dialog";
++        string cmd = "/bin/pgrep -f gnome-screensaver-dialog";
+         string output;
+         try {
+             GLib.Process.spawn_command_line_sync(cmd, out output);
+@@ -351,7 +351,7 @@ namespace HotCornersApplet {
+         }
+ 
+         private bool procruns (string processname) {
+-            string cmd = @"/usr/bin/pgrep -f $processname";
++            string cmd = @"/bin/pgrep -f $processname";
+             string output;
+             try {
+                 GLib.Process.spawn_command_line_sync(cmd, out output);
+-- 
+2.26.0
+

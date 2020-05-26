@@ -1,0 +1,26 @@
+maintainer : algent-al
+name       : python-tinycss2
+version    : 1.0.2
+release    : 1
+source     :
+    - https://github.com/Kozea/tinycss2/archive/v1.0.2.tar.gz : 21b9c016d73168c63e5ce20a9fa8e4695c6989c78e89c368c083967c45995def
+homepage   : https://tinycss2.readthedocs.io/
+license    : BSD-3-Clause
+component  : programming.python
+summary    : Low-level CSS parser for Python
+description: |
+    tinycss2 is a low-level CSS parser and generator: it can parse strings, return Python objects representing tokens and blocks, and generate CSS strings corresponding to these objects.
+builddeps  :
+    - pytest-runner
+    - pytest-isort
+    - python-pytest-cov
+    - python-pytest-flake8
+    - python-webencodings
+rundeps    :
+    - python-webencodings
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
+check      : |
+    %python3_test

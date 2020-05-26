@@ -1,0 +1,38 @@
+diff --git a/budgie-dropby/budgie_dropby.py b/budgie-dropby/budgie_dropby.py
+index d77bb0d..042e389 100644
+--- a/budgie-dropby/budgie_dropby.py
++++ b/budgie-dropby/budgie_dropby.py
+@@ -95,7 +95,7 @@ class BudgieDropByApplet(Budgie.Applet):
+     def start_dropover(self):
+         try:
+             pid = subprocess.check_output(
+-                ["/usr/bin/pgrep", "-f", self.winpath]
++                ["/bin/pgrep", "-f", self.winpath]
+             )
+         except subprocess.CalledProcessError:
+             subprocess.Popen(self.winpath)
+diff --git a/budgie-dropby/dropover b/budgie-dropby/dropover
+index 5fa550c..1685051 100755
+--- a/budgie-dropby/dropover
++++ b/budgie-dropby/dropover
+@@ -58,7 +58,7 @@ class WatchVolumes:
+     def process_check(self, process):
+         try:
+             pid = subprocess.check_output([
+-                "/usr/bin/pgrep", "-f", process
++                "/bin/pgrep", "-f", process
+             ]).decode("utf-8")
+             return True
+         except subprocess.CalledProcessError:
+@@ -66,7 +66,7 @@ class WatchVolumes:
+ 
+     def process_kill(self, procname):
+         try:
+-            subprocess.call(["/usr/bin/pkill", "-f", procname])
++            subprocess.call(["/bin/pkill", "-f", procname])
+         except subprocess.CalledProcessError:
+             pass
+ 
+-- 
+2.26.0
+

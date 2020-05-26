@@ -1,0 +1,30 @@
+maintainer : algent-al
+name       : python-cairocffi
+version    : 1.1.0
+release    : 1
+source     :
+    - https://github.com/Kozea/cairocffi/archive/v1.1.0.tar.gz : 52b6c6d61c14c7cc97cc6309e54f8435fc61dff4c258f89ad08ecb48bce15af7
+homepage   : https://cairocffi.readthedocs.io/en/stable/
+license    : BSD-3-Clause
+component  : programming.python
+summary    : CFFI-based cairo bindings for Python
+description: |
+    cairocffi is a CFFI-based drop-in replacement for Pycairo, a set of Python bindings and object-oriented API for cairo. Cairo is a 2D vector graphics library with support for multiple backends including image buffers, PNG, PostScript, PDF, and SVG file output.
+builddeps  :
+    - gdk-pixbuf
+    - libcairo
+    - pytest-isort
+    - pytest-runner
+    - python-cffi
+    - python-pytest-cov
+    - python-pytest-flake8
+rundeps    :
+    - gdk-pixbuf
+    - libcairo
+    - python-cffi
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
+check      : |
+    %python3_test

@@ -1,0 +1,29 @@
+diff --git a/budgie-wmover/budgie-wmover.py b/budgie-wmover/budgie-wmover.py
+index b994b99..f2e49ac 100644
+--- a/budgie-wmover/budgie-wmover.py
++++ b/budgie-wmover/budgie-wmover.py
+@@ -36,7 +36,7 @@ def check_runs(pname):
+     # get the pid of a proc
+     try:
+         pid = subprocess.check_output([
+-            "/usr/bin/pgrep", "-f", "-u", user, pname,
++            "/bin/pgrep", "-f", "-u", user, pname,
+         ]).decode("utf-8")
+     except subprocess.CalledProcessError:
+         return None
+diff --git a/budgie-wmover/wmover_panelrunner b/budgie-wmover/wmover_panelrunner
+index 7a1a772..a8c2d3b 100755
+--- a/budgie-wmover/wmover_panelrunner
++++ b/budgie-wmover/wmover_panelrunner
+@@ -34,7 +34,7 @@ def get_pid():
+     app = os.path.join(appletpath, "wmover_run")
+     try:
+         return int(subprocess.check_output([
+-            "/usr/bin/pgrep", "-f", "-u", user, app,
++            "/bin/pgrep", "-f", "-u", user, app,
+         ]).decode("utf-8").strip())
+     except subprocess.CalledProcessError:
+         return subprocess.Popen(app).pid
+-- 
+2.26.0
+
