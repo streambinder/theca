@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : exo
 version    : 0.12.11
-release    : 3
+release    : 4
 source     :
-    - http://archive.xfce.org/src/xfce/exo/0.12/exo-0.12.11.tar.bz2 : ec892519c08a67f3e0a1f0f8d43446e26871183e5aa6be7f82e214f388d1e5b6
+    - https://gitlab.xfce.org/xfce/exo/-/archive/exo-0.12.11/exo-exo-0.12.11.tar.bz2 : e7927420bc9832f2846cdbe14adedf96d25b1aae4157b785cfa5f31da7bc7220
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Application library for the Xfce desktop environment
@@ -14,9 +14,11 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libxfce4ui-2)
     - at-libxfce4util-devel
+    - gtk-doc
     - perl-uri
+    - xfce4-dev-tools
 setup      : |
-    %configure
+    %autogen --enable-maintainer-mode
 build      : |
     %make
 install    : |
