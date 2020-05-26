@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-terminal
-version    : 0.8.9
-release    : 3
+version    : 0.8.9.2
+release    : 4
 source     :
-    - http://archive.xfce.org/src/apps/xfce4-terminal/0.8/xfce4-terminal-0.8.9.tar.bz2 : 247683a51a964cfaa6b1e92030afe9f782efebfcb550a464170b53eb94216795
+    - https://gitlab.xfce.org/apps/xfce4-terminal/-/archive/xfce4-terminal-0.8.9.2/xfce4-terminal-xfce4-terminal-0.8.9.2.tar.bz2 : 270f889ee104ced49a94b19f51d9239288b3420b1bc25a12247e4b7fa00e12c1
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce4 Terminal
@@ -13,8 +13,9 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libxfce4ui-2)
     - pkgconfig(vte-2.91)
+    - xfce4-dev-tools
 setup      : |
-    %configure
+    %autogen --enable-maintainer-mode
 build      : |
     %make
 install    : |
