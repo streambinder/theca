@@ -9,8 +9,12 @@ component  : desktop.xfce
 summary    : Xfce4 utility library
 description: |
     Basic utility library for Xfce4.
+builddeps  :
+    - gtk-doc
+    - vala
+    - xfce4-dev-tools
 setup      : |
-    %configure
+    %autogen --enable-maintainer-mode
 build      : |
     %make
 install    : |
