@@ -1,20 +1,34 @@
 maintainer : Justin
 name       : xfce4-settings
-version    : 4.15.0
-release    : 3
+version    : 4.14.3
+release    : 4
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-settings/4.15/xfce4-settings-4.15.0.tar.bz2 : ff3a97ca85943566d2adb6a132bbac913933419b3e95f4595e81c9381f22e816
+    - https://gitlab.xfce.org/xfce/xfce4-settings/-/archive/xfce4-settings-4.14.3/xfce4-settings-xfce4-settings-4.14.3.tar.bz2 : 47e343413e6881f8578bf6680b3599c1839935e390054e579d3c1d27d408af0b
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Settings
 description: |
     Xfce's configuration system.
 builddeps  :
+    - pkgconfig(colord)
     - pkgconfig(exo-2)
     - pkgconfig(garcon-1)
+    - pkgconfig(ice)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libinput)
+    - pkgconfig(libnotify)
+    - pkgconfig(libxklavier)
+    - pkgconfig(upower-glib)
+    - pkgconfig(xorg-libinput)
+    - xfce4-dev-tools
 setup      : |
-    %configure
+    %autogen --enable-sound-settings \
+             --enable-xrandr \
+             --enable-xcursor \
+             --enable-libnotify \
+             --enable-libxklavier \
+             --enable-maintainer-mode
 build      : |
     %make
-install    : |-
+install    : |
     %make_install
