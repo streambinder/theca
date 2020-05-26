@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : thunar
-version    : 1.8.14
-release    : 5
+version    : 1.8.15
+release    : 6
 source     :
-    - http://archive.xfce.org/src/xfce/thunar/1.8/thunar-1.8.14.tar.bz2 : 8ac57b1f5842d5bd348bbb6dac4714f5ad1f22de651d8ec6a7099ceb19fa219f
+    - https://gitlab.xfce.org/xfce/thunar/-/archive/thunar-1.8.15/thunar-thunar-1.8.15.tar.bz2 : 70f0dad16c5b58bab804811e06dfa5a0e19b01d3ab99df1a8a5db38642001111
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Thunar File Manager
@@ -11,10 +11,23 @@ description: |
     Thunar is a modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast.
 builddeps  :
     - pkgconfig(exo-2)
+    - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(libxfce4panel-2.0) 
     - pkgconfig(libxfce4ui-2)
     - pkgconfig(x11)
+    - gtk-doc
+    - xfce4-dev-tools
+rundeps    :
+    - gvfs
+    - tumbler
 setup      : |
-    %configure --disable-static
+    %autogen --disable-static \
+             --enable-maintainer-mode \
+             --enable-gio-unix \
+             --enable-gudev \
+             --enable-notifications \
+             --enable-exif \
+             --enable-pcre
 build      : |
     %make
 install    : |
