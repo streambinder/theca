@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : at-libxfce4util
-version    : 4.15.0
-release    : 3
+version    : 4.14.0
+release    : 4
 source     :
-    - http://archive.xfce.org/src/xfce/libxfce4util/4.15/libxfce4util-4.15.0.tar.bz2 : bba82a497d434f9dd44fe13eea94bd5b960ea2c5ac75d5848b24b226c18809d3
+    - https://gitlab.xfce.org/xfce/libxfce4util/-/archive/xfce-4.14.0/libxfce4util-xfce-4.14.0.tar.bz2 : 1dc83b77b00a75e6adac36cc7ba49f9d934335d02d10389f2c11e1f6215e7318
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce4 utility library
