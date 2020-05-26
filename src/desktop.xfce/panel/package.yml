@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-panel
-version    : 4.15.2
-release    : 5
+version    : 4.14.4
+release    : 6
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-panel/4.15/xfce4-panel-4.15.2.tar.bz2 : a668b5315268ba5b14b6574edbe00c522f879dea659b75c7742da7140cc3657f
+    - https://gitlab.xfce.org/xfce/xfce4-panel/-/archive/xfce4-panel-4.14.4/xfce4-panel-xfce4-panel-4.14.4.tar.bz2 : e7450483da2c71c9d0d4ae9a74b26c4a0006404288e521ce6f9474abc48c7a5e
 license    : GPL-2.0
 summary    : Xfce's panel
 description: |
@@ -15,9 +15,12 @@ builddeps  :
     - pkgconfig(libwnck-3.0)
     - pkgconfig(x11)
     - at-libxfce4util-devel
+    - gtk-doc
+    - vala
+    - xfce4-dev-tools
 setup      : |
-    %configure
+    %autogen --enable-maintainer-mode --enable-gtk-doc
 build      : |
     %make
-install    : |-
+install    : |
     %make_install
