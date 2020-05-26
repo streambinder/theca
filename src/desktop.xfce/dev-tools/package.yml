@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-dev-tools
 version    : 4.14.0
-release    : 1
+release    : 2
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.14/xfce4-dev-tools-4.14.0.tar.bz2 : 2c9eb8e0fe23e47dc31411a93b683fd1b7a49140e9163f0aab9e94a3d8a0b5fd
+    - https://gitlab.xfce.org/xfce/xfce4-dev-tools/-/archive/xfce4-dev-tools-4.14.0/xfce4-dev-tools-xfce4-dev-tools-4.14.0.tar.bz2 : 0b83f86ade64341595d5c560c351339c81a713a67c3e47d8d828b42a0a8d438d
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Developer Tools
@@ -13,8 +13,8 @@ description: |
 builddeps  :
     - pkgconfig(glib-2.0)
 setup      : |
-    %configure
+    %autogen
 build      : |
     %make
-install    : |
+install    : |-
     %make_install
