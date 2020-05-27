@@ -4,7 +4,7 @@ import sys
 
 from common import series
 
-for eopkg in series():
+for eopkg in sorted(series(), key=lambda eopkg: eopkg.name):
     try:
         eopkg.check()
         print('Package {} check ok'.format(eopkg.name))
