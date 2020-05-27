@@ -9,4 +9,7 @@ print(
 )
 for eopkg in series():
     print('| `{}` <br> {} | `{}` |'.format(
-        eopkg.name, eopkg.summary, eopkg.version))
+        eopkg.name,
+        eopkg.summary if type(eopkg.summary) != list else eopkg.summary[0],
+        eopkg.version
+    ))
