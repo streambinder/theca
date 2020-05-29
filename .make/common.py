@@ -33,6 +33,7 @@ class eopkg(object):
         self.release = 0
         self.mainainter = ''
         self.sources = []
+        self.subpackages = []
         self.yml = yml
         self._parse()
 
@@ -45,6 +46,8 @@ class eopkg(object):
                 self.version = str(pkg_yml['version'])
                 self.release = int(pkg_yml['release'])
                 self.sources = pkg_yml['source']
+                if 'patterns' in pkg_yml:
+                    self.subpackages = eopkg.parse_patterns(pkg_yml)
                 if 'maintainer' in pkg_yml:
                     self.mainainter = pkg_yml['maintainer']
             except yaml.YAMLError as e:
@@ -52,6 +55,11 @@ class eopkg(object):
 
     def glob(self):
         return '{}-{}-{}-*.eopkg'.format(self.name, self.version, self.release)
+
+    def subglob(self):
+        if len(self.subpackages) > 0:
+            return '{}-{}-{}-*.eopkg'.format(self.subpackages[0], self.version, self.release)
+        return self.glob()
 
     def check(self):
         self._check_version()
@@ -75,6 +83,17 @@ class eopkg(object):
                 if source_url.startswith('http') and eopkg.hash(source_url) != source[source_url]:
                     raise Exception(
                         'Source {} hash mismatches'.format(source_url))
+
+    @staticmethod
+    def parse_patterns(yml):
+        subpkgs = []
+        for subpkg in yml['patterns']:
+            for subpkg_name in subpkg:
+                if subpkg_name[0] == "^":
+                    subpkgs.append(subpkg_name[1:])
+                else:
+                    subpkgs.append('{}-{}'.format(yml['name'], subpkg_name))
+        return subpkgs
 
     @staticmethod
     def hash(url):
