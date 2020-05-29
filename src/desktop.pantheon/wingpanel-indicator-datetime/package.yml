@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel-indicator-datetime
-version    : 2.2.3
-release    : 5
+version    : 2.2.4
+release    : 6
 source     :
-    - https://github.com/elementary/wingpanel-indicator-datetime/archive/2.2.3.tar.gz : 945b68da26ff7d3cbf395ccaf6ed0a8572e8a7fe622ac5ef6fb22c0787eaf11e
+    - https://github.com/elementary/wingpanel-indicator-datetime/archive/2.2.4.tar.gz : 7ab5281dbf5174251a974d6189b572714252cb6ad40c2989285fe8f587d552e0
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Wingpanel date and time indicator
