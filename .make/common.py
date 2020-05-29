@@ -46,8 +46,7 @@ class eopkg(object):
                 self.version = str(pkg_yml['version'])
                 self.release = int(pkg_yml['release'])
                 self.sources = pkg_yml['source']
-                if 'patterns' in pkg_yml:
-                    self.subpackages = eopkg.parse_patterns(pkg_yml)
+                self.subpackages = eopkg.parse_patterns(pkg_yml)
                 if 'maintainer' in pkg_yml:
                     self.mainainter = pkg_yml['maintainer']
             except yaml.YAMLError as e:
@@ -87,12 +86,19 @@ class eopkg(object):
     @staticmethod
     def parse_patterns(yml):
         subpkgs = []
-        for subpkg in yml['patterns']:
-            for subpkg_name in subpkg:
-                if subpkg_name[0] == "^":
-                    subpkgs.append(subpkg_name[1:])
-                else:
-                    subpkgs.append('{}-{}'.format(yml['name'], subpkg_name))
+
+        if 'patterns' in yml:
+            for subpkg in yml['patterns']:
+                for subpkg_name in subpkg:
+                    if subpkg_name[0] == "^":
+                        subpkgs.append(subpkg_name[1:])
+                    else:
+                        subpkgs.append(
+                            '{}-{}'.format(yml['name'], subpkg_name))
+
+        for subpkg in ['devel', 'docs', 'dbginfo']:
+            subpkgs.append('{}-{}'.format(yml['name'], subpkg))
+
         return subpkgs
 
     @staticmethod
