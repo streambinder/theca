@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-parental-controls
-version    : 3.0.0
-release    : 5
+version    : 3.0.1
+release    : 6
 source     :
-    - https://github.com/elementary/switchboard-plug-parental-controls/archive/3.0.0.tar.gz : ca266154d3d2eede2f65f1ee75b9c6677e7b6bab1a17c5240d48cfaaca270f12
+    - https://github.com/elementary/switchboard-plug-parental-controls/archive/3.0.1.tar.gz : 3c069acad24eb793ee4cd7b5de92117efd4686a69d1154249a530db3652a2670
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard parental controls plug
