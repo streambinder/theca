@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-applications-menu
-version    : 2.7.0
-release    : 12
+version    : 2.7.1
+release    : 13
 source     :
-    - https://github.com/elementary/applications-menu/archive/2.7.0.tar.gz : fc87d6bbb3b4b7f973049cca57bd8ef0ff3b0b0786d8355b2591a1780bf113f3
+    - https://github.com/elementary/applications-menu/archive/2.7.1.tar.gz : 6f62d2474776415517017c3b7f297634c1ca5a5e8ed6c002a639c88f317a00bf
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon applications menu
