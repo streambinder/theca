@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel-indicator-network
-version    : 2.2.3
-release    : 4
+version    : 2.2.4
+release    : 5
 source     :
-    - https://github.com/elementary/wingpanel-indicator-network/archive/2.2.3.tar.gz : c15a775b85b33cf6465381da5913b3adba892f2dcc1a01aebf43f7b30357da7b
+    - https://github.com/elementary/wingpanel-indicator-network/archive/2.2.4.tar.gz : 3068101063fff99a58eefe33afe3e3abf8e330c102c981213a4478068843850b
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Wingpanel network indicator
