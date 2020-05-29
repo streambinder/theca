@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : sideload
-version    : 1.1.0
-release    : 1
+version    : 1.1.1
+release    : 2
 source     :
-    - https://github.com/elementary/sideload/archive/1.1.0.tar.gz : e50f0408fe58b6f0811aba44550e7e41b42467eb9f75072e2497ba3832344344
+    - https://github.com/elementary/sideload/archive/1.1.1.tar.gz : 9f0ec22f1ad34939a33ab2d3250ea3a27d386e1802d854e797a8e8dd4dd4087c
 license    : GPL-3.0-or-later
 component  : desktop
 summary    : Sideload - Flatpak Installer
