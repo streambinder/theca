@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-bluetooth
-version    : 2.3.1
-release    : 4
+version    : 2.3.2
+release    : 5
 source     :
-    - https://github.com/elementary/switchboard-plug-bluetooth/archive/2.3.1.tar.gz : 7aaf0422c101009dc33e245769a6c885ab81a808e7c6aaabc2f0e68b18f8ba12
+    - https://github.com/elementary/switchboard-plug-bluetooth/archive/2.3.2.tar.gz : 38dc78d9a6a16d2396f58b58c2f28970f0484a1fded19089b9149acd23001fd9
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard bluetooth plug
