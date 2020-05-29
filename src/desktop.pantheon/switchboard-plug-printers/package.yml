@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-printers
-version    : 2.1.8
-release    : 4
+version    : 2.1.9
+release    : 5
 source     :
-    - https://github.com/elementary/switchboard-plug-printers/archive/2.1.8.tar.gz : 84af6c2cd3e9c9b17eff97d76fdda1708b43f0ec2a6b2a09fc3e31a8dea5486a
+    - https://github.com/elementary/switchboard-plug-printers/archive/2.1.9.tar.gz : 9ef80bd8c3f304da44127c855849ecb58f0ebf5cc74855604be5e616b8ec2fc1
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard printers plug
