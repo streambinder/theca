@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-onboarding
-version    : 1.2.0
-release    : 4
+version    : 1.2.1
+release    : 5
 source     :
-    - https://github.com/elementary/onboarding/archive/1.2.0.tar.gz : b294802fa35efd968e347ca1acff3b6bf79d668d7be5cf1a93462c9335ebae52
+    - https://github.com/elementary/onboarding/archive/1.2.1.tar.gz : 37edf0d48004b9e061e7998c899f44f3df4dc0848b9c362b368c73c84177d988
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon onboarding app
