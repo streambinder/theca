@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-display
-version    : 2.2.1
-release    : 5
+version    : 2.2.2
+release    : 6
 source     :
-    - https://github.com/elementary/switchboard-plug-display/archive/2.2.1.tar.gz : 2071a5633fc2df73480edf39ed410ea8f55b3b0f0531a13554464b9a41e4d93b
+    - https://github.com/elementary/switchboard-plug-display/archive/2.2.2.tar.gz : e97ad9a144c8af4681a9512260f0de2008967b6287d7e46df0fe166c4d7314fd
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard display plug
