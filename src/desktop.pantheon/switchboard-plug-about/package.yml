@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-about
-version    : 2.6.2
-release    : 5
+version    : 2.6.3
+release    : 6
 source     :
-    - https://github.com/elementary/switchboard-plug-about/archive/2.6.2.tar.gz : 24b988cbb46439f6eadb1ff2693eb02638f3adef59b454639c649e49e88d8b57
+    - https://github.com/elementary/switchboard-plug-about/archive/2.6.3.tar.gz : 7361b6718c4ee69fd5a4e1959a128a0fae5c29cca0f1f251f5b872819b1b2106
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard about plug
