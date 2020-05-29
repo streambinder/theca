@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-datetime
-version    : 2.1.8
-release    : 5
+version    : 2.1.9
+release    : 6
 source     :
-    - https://github.com/elementary/switchboard-plug-datetime/archive/2.1.8.tar.gz : 1b79e9e2d0ae04b9117ff906cddbfee08006e47c0fc938f9ff79de91ffb540fa
+    - https://github.com/elementary/switchboard-plug-datetime/archive/2.1.9.tar.gz : 26213d9d90ce74c107360dbee333773cbe9d1d4ad70f6215eddffbcc4589b0d9
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard date and time plug
