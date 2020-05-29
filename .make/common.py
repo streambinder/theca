@@ -113,7 +113,7 @@ class eopkg(object):
 def sol_build(eopkg):
     log = open(eopkg.yml.replace('yml', 'log'), 'w')
     try:
-        subprocess.Popen(['sudo', 'solbuild', 'build', 'package.yml'], cwd=os.path.dirname(
+        subprocess.Popen(['sudo', 'solbuild', 'build', 'package.yml', '-p', 'theca-x86_64'], cwd=os.path.dirname(
             eopkg.yml), stdout=log, stderr=subprocess.STDOUT).communicate()
     except subprocess.CalledProcessError as e:
         print('Unable to build {}: [{}] {}'.format(
