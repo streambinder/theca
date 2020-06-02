@@ -7,7 +7,6 @@ source     :
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Calendar for Deepin Desktop Environment.
-autoupdate : false
 description: |
     Deepin Calender is an easy calendar tool developed by Deepin Technology, main features current date, solar terms, lunar calendar and world holidays.
 builddeps  :
