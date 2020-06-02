@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-files
-version    : 4.4.2
-release    : 14
+version    : 4.4.3
+release    : 15
 source     :
-    - https://github.com/elementary/files/archive/4.4.2.tar.gz : 089d2211ef3a9ff2f57b42c3ea830a0839b4f18054a40c2672e7eaffeaa40ae7
+    - https://github.com/elementary/files/archive/4.4.3.tar.gz : 3fa4a2a303c1f0f5f6043a2ae0dca3e101c4aafff96639736cc689390682de3c
 license    : GPL-3.0-or-later
 component  : desktop.pantheon
 summary    : The simple, powerful, and sexy file manager from elementary
@@ -21,7 +21,7 @@ builddeps  :
     - pkgconfig(zeitgeist-2.0)
     - vala
 setup      : |
-    %meson_configure -Dwith-unity=false
+    %meson_configure
 build      : |
     %ninja_build
 install    : |
@@ -32,5 +32,6 @@ install    : |
     for i in $pkgfiles/24x24/actions/*; do
         install -Dm00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
     done;
-
     %ninja_install
+#install    : |
+#    %ninja_check
