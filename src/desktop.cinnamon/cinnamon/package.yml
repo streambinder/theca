@@ -41,6 +41,7 @@ rundeps    :
     - python-pillow
     - python-pytz
     - python-tinycss
+    - python3-cairo
 setup      : |
     # Patch from https://github.com/linuxmint/cinnamon/pull/9306
     %patch -p1 <$pkgfiles/Readd-import.patch
