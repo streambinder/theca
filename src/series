@@ -233,6 +233,7 @@
 - deepin-session-ui
 - deepin-shortcut-viewer
 - deepin-system-monitor
+- gio-qt
 - xfce4-whiskermenu-plugin
 - xfce-default-settings
 - xfce4-notifyd
