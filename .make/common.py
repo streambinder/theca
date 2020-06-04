@@ -111,7 +111,7 @@ class eopkg(object):
 
 
 def sol_build(eopkg):
-    log = open(eopkg.yml.replace('yml', 'log'), 'w')
+    log = open(eopkg.yml.replace('package.yml', 'build.log'), 'w')
     try:
         subprocess.Popen(['sudo', 'solbuild', 'build', 'package.yml', '-p', 'theca-x86_64'], cwd=os.path.dirname(
             eopkg.yml), stdout=log, stderr=subprocess.STDOUT).communicate()
