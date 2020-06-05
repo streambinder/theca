@@ -39,6 +39,11 @@ if [ -z "${VARIANT}" ]; then
     VARIANT=unstable
 fi
 
+# check sync type
+if [ -z "${HARD}" ] || [ "${HARD}" != "1" ]; then
+    HARD=0
+fi
+
 # params
 GITHUB_REPO="streambinder/theca"
 HEADER_TOKEN="Authorization: token ${GITHUB_TOKEN}"
@@ -54,7 +59,7 @@ fi
 # synchronize
 VARIANT_ASSETS="$(jq -r '.assets[] | [ .id, .name, .size|tostring ] | join(":")' <<< "${VARIANT_STRUCT}")"
 VARIANT_DIFF="$(diff <(awk -F':' '{print $2":"$3}' <<< "${VARIANT_ASSETS}") \
-    <(du -b * | awk '{if (substr($2, 0, 15) == "eopkg-index.xml") { $1 = "0" }; print}' | awk '{print $2":"$1}'))"
+    <(du -b * | awk -v hard="${HARD}" '{if (hard || substr($2, 0, 15) == "eopkg-index.xml") { $1 = "0" }; print}' | awk '{print $2":"$1}'))"
 while read -r op; do
     case ${op:0:1} in
         '<')
