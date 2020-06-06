@@ -10,7 +10,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
-
+series_eopkgs = None
 session = None
 
 
@@ -151,5 +151,9 @@ def package_yml(name):
 
 
 def series():
-    with open('src/series', 'r') as series_fd:
-        return list(map(lambda name: eopkg(package_yml(name)), yaml.safe_load(series_fd)))
+    global series_eopkgs
+    if series_eopkgs is None:
+        with open('src/series', 'r') as series_fd:
+            series_eopkgs = list(map(lambda name: eopkg(
+                package_yml(name)), yaml.safe_load(series_fd)))
+    return series_eopkgs
