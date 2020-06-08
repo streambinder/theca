@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : dtkcore
-version    : 5.2.0
-release    : 2
+version    : 5.2.2
+release    : 3
 source     :
-    - git|https://github.com/linuxdeepin/dtkcore.git : 5.2.0
+    - git|https://github.com/linuxdeepin/dtkcore.git : 5.2.1
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer
@@ -14,7 +14,7 @@ builddeps  :
     - pkgconfig(gsettings-qt)
     - qt5-base-devel
 setup      : |
-    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+    %qmake PREFIX=%PREFIX% DTK_VERSION=${version} LIB_INSTALL_DIR=%libdir%
 build      : |
     %make
 install    : |
