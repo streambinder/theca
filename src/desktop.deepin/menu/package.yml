@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : deepin-menu
 version    : 5.0.1
-release    : 2
+release    : 3
 source     :
     - git|https://github.com/linuxdeepin/deepin-menu.git : 5.0.1
 license    : GPL-3.0-or-later
