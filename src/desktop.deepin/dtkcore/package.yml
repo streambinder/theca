@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : dtkcore
 version    : 5.2.2
-release    : 3
+release    : 4
 source     :
     - git|https://github.com/linuxdeepin/dtkcore.git : 5.2.1
 license    : GPL-3.0-or-later
