@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : dtkgui
 version    : 5.2.0
-release    : 1
+release    : 2
 source     :
     - git|https://github.com/linuxdeepin/dtkgui.git : 5.2.0
 license    : LGPL-3.0
@@ -10,7 +10,6 @@ summary    : Deepin Toolkit, gui module for DDE look and feel
 description: |
     Deepin Toolkit, gui module for DDE look and feel.
 builddeps  :
-    - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkcore)
     - pkgconfig(gsettings-qt)
     - pkgconfig(librsvg-2.0)
@@ -18,12 +17,13 @@ builddeps  :
     - pkgconfig(Qt5Multimedia)
     - pkgconfig(Qt5MultimediaWidgets)
     - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
     - pkgconfig(xcb-util)
     - pkgconfig(xext)
     - pkgconfig(xi)
-    - qt5-tools-devel
+    - deepin-qt-dbus-factory-devel
 setup      : |
     %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
