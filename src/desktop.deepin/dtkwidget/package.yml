@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : dtkwidget
 version    : 5.2.0
-release    : 3
+release    : 4
 source     :
     - git|https://github.com/linuxdeepin/dtkwidget.git : 5.2.0
 license    : GPL-3.0-or-later
