@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-editor
-version    : 5.6.9
-release    : 5
+version    : 5.6.11
+release    : 6
 source     :
-    - https://github.com/linuxdeepin/deepin-editor/archive/5.6.9.tar.gz : 9341205fa2101c7b255f5426fdb2fe519705bd15ed99d359c12385c0c17c57e9
+    - https://github.com/linuxdeepin/deepin-editor/archive/5.6.11.tar.gz : efe4ff93b3df04e1ad46a23015d1eb1397c93715a6372c8b38f68ccc25b66e6e
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Deepin Editor.
