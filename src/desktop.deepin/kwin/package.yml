@@ -1,11 +1,11 @@
 maintainer : Justin
 name       : deepin-kwin
 version    : 5.0.14.1
-release    : 1
+release    : 2
 source     :
     - https://github.com/linuxdeepin/dde-kwin/archive/5.0.14.1.tar.gz : 294971ba85fb1b915727b5233f4e098716e2282ce58529f0d2587cdc579022eb
 license    : GPL-3.0-or-later
-component  : desktop.deepin
+component  : desktop
 summary    : Deepin Kwin
 description: |
     Deepin Kwin
