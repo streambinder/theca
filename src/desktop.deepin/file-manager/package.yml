@@ -1,11 +1,11 @@
 maintainer : Justin
 name       : deepin-file-manager
 version    : 5.1.1.25
-release    : 3
+release    : 4
 source     :
     - https://github.com/linuxdeepin/dde-file-manager/archive/5.1.1.25.tar.gz : 349499da411aa2cf5faa430967a9e36916aae9be69f00ec8f625bedeb2f6f02f
 license    : GPL-3.0-or-later
-component  : desktop.deepin.core
+component  : desktop.deepin
 summary    :
     - Deepin File Manager is a file management tool developed for Deepin
 description:
