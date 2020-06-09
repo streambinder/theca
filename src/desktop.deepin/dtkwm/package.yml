@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : dtkwm
 version    : 2.0.12
-release    : 1
+release    : 2
 source     :
     - git|https://github.com/linuxdeepin/dtkwm.git : 2.0.12
 license    : GPL-3.0-or-later
@@ -11,12 +11,12 @@ description: |
     Deepin Tool Kit Wm.
 builddeps  :
     - pkgconfig(dtkcore)
+    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
     - pkgconfig(xcb-util)
     - pkgconfig(xcb)
     - pkgconfig(xext)
-    - qt5-tools-devel
 setup      : |
     %patch -p1 < $pkgfiles/dtk-module-name.patch
     %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
