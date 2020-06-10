@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : deepin-system-monitor
-version    : 5.6.2
-release    : 2
+version    : 5.6.3.1
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-system-monitor/archive/5.6.2.tar.gz : a024aafc8daa782a36cb99d4b8dc982767f88538e83e0c96f5c7b0c2cc29a796
+    - https://github.com/linuxdeepin/deepin-system-monitor/archive/5.6.3.1.tar.gz : e7917152f951a5f5d5e93c6e8d93113734b185076817dd8b6735767d058621cf
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : A more user-friendly system monitor.

@@ -216,7 +216,7 @@
 - xfdesktop
 # group separator
 - deepin-calculator
-#- deepin-calendar
+- deepin-calendar
 - deepin-clutter-gtk
 - deepin-control-center
 - deepin-dock
