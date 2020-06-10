@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : deepin-music
 version    : 6.0.1.8
-release    : 3
+release    : 4
 source     :
     - https://github.com/linuxdeepin/deepin-music/archive/6.0.1.8.tar.gz : 924bcc0e8ef5776275d59476a231b5357908e79749303c3370b77857df778fd8
 license    : GPL-3.0-or-later
