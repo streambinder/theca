@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-code
-version    : 3.4.0
-release    : 4
+version    : 3.4.1
+release    : 5
 source     :
-    - https://github.com/elementary/code/archive/3.4.0.tar.gz : e210a533138f5e89e88dacd24240d7208db89889b6489100e9ebde1a914b7d15
+    - https://github.com/elementary/code/archive/3.4.1.tar.gz : d84b38193b72cd93995aae604358c83c5b6976d8472ce985027b947cfed990bf
 license    : GPL-3.0
 component  : programming.tools
 summary    : Pantheon code editor app 
