@@ -57,3 +57,5 @@ build      : |
     %make
 install    : |
     %make_install
+    # Needed for Cinnamon Extensions
+    mkdir %installroot%/usr/share/cinnamon/extensions/
