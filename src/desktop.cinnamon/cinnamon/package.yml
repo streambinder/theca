@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : cinnamon
 version    : 4.6.0
-release    : 7
+release    : 8
 source     :
     - https://github.com/linuxmint/cinnamon/archive/4.6.0.tar.gz : f7ee6cc18643ad33ffa52c59c65d4de9d350f79e334d65919d30f5fe8aecf155
 license    : GPL-2.0
