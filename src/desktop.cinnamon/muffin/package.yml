@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : muffin
 version    : 4.6.0
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxmint/muffin/archive/4.6.0.tar.gz : a8f1cb8e495b5fdb146dc4758f83266018d2d8585ce436c6106b3d95d178b262
 license    : GPL-2.0
@@ -26,6 +26,8 @@ builddeps  :
     - gnome-doc-utils
     - gtk-doc
     - zenity
+patterns   :
+    - main : /usr/lib64/libmuffin*.so
 setup      : |
     sed -i 's/--warn-error//g' src/Makefile.am
     %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64 --disable-gtk-doc-html --disable-wayland-egl-server
