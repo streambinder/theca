@@ -17,6 +17,7 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libcanberra)
     - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(libwacom)
     - pkgconfig(sm)
     - pkgconfig(xcursor)
     - pkgconfig(xinerama)
