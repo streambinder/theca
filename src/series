@@ -62,7 +62,6 @@
 - pocillo-gtk-theme
 - pytest-isort
 - python-pam
-- python-setuptools-scm-git-archive
 - python-svgwrite
 - python-tinycss
 - qview
@@ -100,7 +99,6 @@
 - nemo
 - pantheon-tweaks
 - python-cairocffi
-- python-pikepdf
 - python-tinycss2
 - qtermwidget
 - xfconf
@@ -111,7 +109,6 @@
 - liblxqt
 - libxfce4ui
 - lxqt-qtplugin
-- pdfarranger
 - python-cssselect2
 - qterminal
 - switchboard-plug-a11y
