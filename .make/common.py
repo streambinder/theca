@@ -32,9 +32,11 @@ class eopkg(object):
         self.version = ''
         self.release = 0
         self.mainainter = ''
+        self.component = ''
         self.sources = []
         self.subpackages = []
         self.yml = yml
+        self.path = os.path.dirname(yml)
         self._parse()
 
     def _parse(self):
@@ -49,6 +51,8 @@ class eopkg(object):
                 self.subpackages = eopkg.parse_patterns(pkg_yml)
                 if 'maintainer' in pkg_yml:
                     self.mainainter = pkg_yml['maintainer']
+                if 'component' in pkg_yml:
+                    self.component = pkg_yml['component']
             except yaml.YAMLError as e:
                 raise e
 
@@ -63,18 +67,28 @@ class eopkg(object):
     def check(self):
         self._check_version()
         self._check_maintainer()
+        self._check_component()
         # self._check_sources()
-
-    def _check_maintainer(self):
-        if self.mainainter == '':
-            raise Exception(
-                'Package {} does not have an assigned maintainer'.format(self.name))
 
     def _check_version(self):
         import re
         if not re.match('^[0-9a-zA-Z\\._]+$', self.version):
             raise Exception(
                 'Version {} contains illegal characters'.format(self.version))
+
+    def _check_maintainer(self):
+        if self.mainainter == '':
+            raise Exception(
+                'Package {} does not have an assigned maintainer'.format(self.name))
+
+    def _check_component(self):
+        if self.component == '':
+            raise Exception(
+                'Package {} does not have a component'.format(self.name))
+        if type(self.component) is not list and not (self.path.replace(os.sep, '.').endswith(self.component) or
+                                                     os.path.dirname(self.path).replace(os.sep, '.').endswith(self.component)):
+            raise Exception(
+                'Package {} component and path mismatch'.format(self.name))
 
     def _check_sources(self):
         for source in self.sources:
