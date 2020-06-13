@@ -1,0 +1,29 @@
+maintainer : streambinder
+name       : pantheon-code
+version    : 3.4.1
+release    : 6
+source     :
+    - https://github.com/elementary/code/archive/3.4.1.tar.gz : d84b38193b72cd93995aae604358c83c5b6976d8472ce985027b947cfed990bf
+license    : GPL-3.0
+component  : programming.ide
+summary    : Pantheon code editor app 
+description: |
+    Code editor designed for elementary OS.
+builddeps  :
+    - pkgconfig(editorconfig)
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gtksourceview-3.0)
+    - pkgconfig(gtkspell3-3.0)
+    - pkgconfig(libgit2-glib-1.0)
+    - pkgconfig(libpeas-1.0)
+    - pkgconfig(vte-2.91)
+    - pkgconfig(webkit2gtk-4.0)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

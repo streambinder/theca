@@ -1,0 +1,15 @@
+maintainer : streambinder
+name       : spotitube
+version    : 27
+release    : 6
+source     :
+    - https://github.com/streambinder/spotitube/releases/download/v27/spotitube-v27.deb : 2875794c6abaedb07744f76c82f5aacef882f53c96f46cd32eec85bd1529b33c
+license    : GPL-3.0
+component  : network.download
+summary    : Shell application to incrementally download from Spotify into local folder
+description: |
+    Programmatically authenticate to your Spotify account and synchronize your music, keeping playlists files, metadata informations, album artworks, songs lyrics and maximizing mp3 files quality.
+setup      : |
+    mkdir -p $installdir
+install    : |
+    tar -xf data.tar.xz --strip 1 -C $installdir

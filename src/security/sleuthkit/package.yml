@@ -1,0 +1,30 @@
+maintainer : streambinder
+name       : sleuthkit
+version    : 4.9.0
+release    : 3
+source     :
+    - https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.9.0/sleuthkit-4.9.0.tar.gz : 7bc5ee9130b1ed8d645e446e0f63bd34ad018a93c1275688fa38cfda28bde9d0
+license    :
+    - GPL-2.0
+    - IPL-1.0
+    - CPL-1.0
+component  : security
+summary    : The Sleuth Kit (TSK) is a library and collection of command line digital forensics tools that allow you to investigate volume and file system data.
+description: |
+    The Sleuth Kit is an open source forensic toolkit for analyzing Microsoft and UNIX file systems and disks.
+    The Sleuth Kit enables investigators to identify and recover evidence from images acquired during incident response or from live systems.
+    The Sleuth Kit is open source, which allows investigators to verify the actions of the tool or customize it to specific needs.
+    The Sleuth Kit uses code from the file system analysis tools of The Coroner's Toolkit (TCT) by Wietse Venema and Dan Farmer.
+    The TCT code was modified for platform independence.
+    In addition, support was added for the NTFS (see docs/ntfs.README) and FAT (see docs/fat.README) file systems.
+    Previously, The Sleuth Kit was called The @stake Sleuth Kit (TASK).
+    The Sleuth Kit is now independent of any commercial or academic organizations.
+    It is recommended that these command line tools can be used with the Autopsy Forensic Browser.
+    Autopsy, (http://www.sleuthkit.org/autopsy), is a graphical interface to the tools of The Sleuth Kit and automates many of the procedures and provides features such as image searching and MD5 image integrity checks.
+    As with any investigation tool, any results found with The Sleuth Kit should be be recreated with a second tool to verify the data.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

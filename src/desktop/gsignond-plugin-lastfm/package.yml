@@ -1,0 +1,27 @@
+maintainer : streambinder
+name       : gsignond-plugin-lastfm
+version    : 0.2.0
+release    : 3
+source     :
+    - https://gitlab.com/accounts-sso/gsignond-plugin-lastfm/-/archive/0.2.0/gsignond-plugin-lastfm-0.2.0.tar.gz : 1a1e0402ecfed3daabb5a2d7cdea0087fa795d5e48af1a00eca78875887b518e
+license    : LGPL-2.1
+component  : desktop
+summary    : LastFM plugin for gSSO
+description: |
+    LastFM plugin for the Accounts-SSO gSignOn daemon handles the Last.FM credentials.
+builddeps  :
+    - pkgconfig(gnutls)
+    - pkgconfig(check)
+    - pkgconfig(gsignond)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - glib2-devel
+    - glibc-devel
+    - gtk-doc-devel
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install

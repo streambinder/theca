@@ -1,0 +1,25 @@
+maintainer : streambinder
+name       : gsignond-plugin-sasl
+version    : 1
+release    : 3
+source     :
+    - https://gitlab.com/accounts-sso/gsignond-plugin-sasl/-/archive/b304c70b7dad9368b23b1205122d10de684c896a/gsignond-plugin-sasl-b304c70b7dad9368b23b1205122d10de684c896a.tar.gz : d7053657ba537858b0dd3fb5f1d0095fe8c547be6526d126aa5c80a31287c8e1
+license    : LGPL-2.1
+component  : desktop
+summary    : SASL plugin for gSSO
+description: |
+    SASL plugin for the Accounts-SSO gSignOn daemon handles the SASL authentication protocol.
+builddeps  :
+    - pkgconfig(check)
+    - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(gsignond)
+    - pkgconfig(libgsasl)
+    - glib2-devel
+    - glibc-devel
+    - gtk-doc-devel
+setup      : |
+    %meson_configure -Ddocumentation='false'
+build      : |
+    %meson_build
+install    : |
+    %meson_install
