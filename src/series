@@ -180,3 +180,4 @@
 - xfce4-pulseaudio-plugin
 # group separator
 - arc-theme
+- compton-conf

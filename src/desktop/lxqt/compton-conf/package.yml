@@ -1,0 +1,22 @@
+maintainer : Justin
+name       : compton-conf
+version    : 0.15.0
+release    : 1
+source     :
+    - https://github.com/lxqt/compton-conf/archive/0.15.0.tar.gz : 7f73508e7319318e5358458580ff2731b5da07ef4182c7c33bc20eaa83569ca1
+license    : LGPL-2.1-or-later
+component  : desktop.lxqt
+summary    : Compton Configuration GUI
+description: |
+    GUI configuration tool for compton X composite manager.
+builddeps  :
+    - pkgconfig(libconfig)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5Widgets)
+    - lxqt-build-tools-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
