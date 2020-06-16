@@ -1,0 +1,23 @@
+maintainer : Justin
+name       : screengrab
+version    : 2.0.1
+release    : 1
+source     :
+    - https://github.com/lxqt/screengrab/archive/2.0.1.tar.gz : e7ff4ecca3780ffe8d149fc931290a258233229723fb5de689692441af8b3e08
+license    : GPL-2.0-or-later
+component  : desktop.lxqt
+summary    : Crossplatform tool for fast making screenshots.
+description: |
+    A program for fast creating screenshots, and easily publishing them on internet image hosting services. ScreenGrab uses the Qt framework and thus, it is independent from any desktop environment.
+builddeps  :
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(Qt5Xdg)
+    - pkgconfig(x11)
+    - kwindowsystem-devel
+setup      : |
+    %cmake
+build      : |
+    %make
+install    : |
+    %make_install
