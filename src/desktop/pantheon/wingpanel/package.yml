@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel
-version    : 2.3.1
-release    : 10
+version    : 2.3.2
+release    : 11
 source     :
-    - https://github.com/elementary/wingpanel/archive/2.3.1.tar.gz : 9a101a90fef6eb74c9f6de395bd54ed56af29cb02b9ac232f5c0183793cd364a
+    - https://github.com/elementary/wingpanel/archive/2.3.2.tar.gz : 939b586df19eaaeb08941997f2855b8f07841181212df8cca7105a24c06a7ac4
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Stylish top panel that holds indicators and spawns the application launcher
