@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-agent-polkit
-version    : 1.0.1
-release    : 3
+version    : 1.0.3
+release    : 4
 source     :
-    - https://github.com/elementary/pantheon-agent-polkit/archive/1.0.1.tar.gz : 3d6a2ccc1c1626017af91631a691f130260a2d13413fbc55cfd0dfa00a1dd3d1
+    - https://github.com/elementary/pantheon-agent-polkit/archive/1.0.3.tar.gz : b830a58d8bd28d472b7bff5d92b221ab9627e6ffb5a4d911524ecee46dfeb489
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Pantheon Polkit Agent
