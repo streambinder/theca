@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : megacmd
 version    : 1.1.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/meganz/MEGAcmd/archive/1.1.0_Linux.tar.gz : 8064a21b1d1436537ab9ccc98f1f411f9496aace000584bea87d95f8e7b3a550
     - https://github.com/meganz/sdk/archive/v3.4.8.tar.gz : 26f89d7f253e821dd8c46a46a382e3664bc8398b4750c8703be0888c1c3b10a3
