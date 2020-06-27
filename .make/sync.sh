@@ -11,14 +11,14 @@ function upload {
     asset_fname="$(awk -F':' '{print $1}' <<< "$@")"
     echo "Uploading ${asset_fname} to ${VARIANT} upstream..."
     curl_handle "$(curl -s --data-binary @"${asset_fname}" -H "${HEADER_TOKEN}" -H "Content-Type: application/octet-stream" \
-        "https://uploads.github.com/repos/${GITHUB_REPO}/releases/${VARIANT_ID}/assets?name=$(basename ${asset_fname})")"
+        "https://uploads.github.com/repos/${GITHUB_REPO}/releases/${VARIANT_ID}/assets?name=$(basename "${asset_fname}")")"
 }
 
 function delete {
     asset_fname="$(awk -F':' '{print $1}' <<< "$@")"
-    asset_id="$(grep ":$@$" <<< "${VARIANT_ASSETS}" | awk -F':' '{print $1}')"
+    asset_id="$(grep ":$*$" <<< "${VARIANT_ASSETS}" | awk -F':' '{print $1}')"
     if [ -z "${asset_id}" ]; then
-        echo "Unable to get asset id for $@"
+        echo "Unable to get asset id for $*"
         return
     fi
 
@@ -26,7 +26,7 @@ function delete {
     curl_handle "$(curl -X DELETE -s -H "${HEADER_TOKEN}" "https://api.github.com/repos/${GITHUB_REPO}/releases/assets/${asset_id}")"
 }
 
-cd "${BUILD_DIR}"
+cd "${BUILD_DIR}" || exit 1
 
 # check token
 if [ -z "${GITHUB_TOKEN}" ]; then
@@ -59,7 +59,7 @@ fi
 # synchronize
 VARIANT_ASSETS="$(jq -r '.assets[] | [ .id, .name, .size|tostring ] | join(":")' <<< "${VARIANT_STRUCT}")"
 VARIANT_DIFF="$(diff <(awk -F':' '{print $2":"$3}' <<< "${VARIANT_ASSETS}") \
-    <(du -b * | awk -v hard="${HARD}" '{if (hard || substr($2, 0, 15) == "eopkg-index.xml") { $1 = "0" }; print}' | awk '{print $2":"$1}'))"
+    <(du -b ./* | sed 's|./||g' | awk -v hard="${HARD}" '{if (hard || substr($2, 0, 15) == "eopkg-index.xml") { $1 = "0" }; print}' | awk '{print $2":"$1}'))"
 while read -r op; do
     case ${op:0:1} in
         '<')
