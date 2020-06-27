@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "${BUILD_DIR}"
+cd "${BUILD_DIR}" || exit 1
 
 sudo chmod a+w eopkg-index.xml*
 sed -i '$ d' eopkg-index.xml
