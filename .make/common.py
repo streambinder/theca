@@ -6,23 +6,7 @@ import subprocess
 import sys
 import yaml
 
-import requests
-from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
-
 series_eopkgs = None
-session = None
-
-
-def get(url):
-    global session
-    if session is None:
-        session = requests.Session()
-        retry = Retry(connect=5, backoff_factor=0.5)
-        adapter = HTTPAdapter(max_retries=retry)
-        session.mount('http://', adapter)
-        session.mount('https://', adapter)
-    return session.get(url)
 
 
 class eopkg(object):
@@ -90,12 +74,12 @@ class eopkg(object):
             raise Exception(
                 'Package {} component and path mismatch'.format(self.name))
 
-    def _check_sources(self):
-        for source in self.sources:
-            for source_url in source.keys():
-                if source_url.startswith('http') and eopkg.hash(source_url) != source[source_url]:
-                    raise Exception(
-                        'Source {} hash mismatches'.format(source_url))
+    # def _check_sources(self):
+    #     for source in self.sources:
+    #         for source_url in source.keys():
+    #             if source_url.startswith('http') and eopkg.hash(source_url) != source[source_url]:
+    #                 raise Exception(
+    #                     'Source {} hash mismatches'.format(source_url))
 
     @staticmethod
     def parse_patterns(yml):
@@ -115,13 +99,13 @@ class eopkg(object):
 
         return subpkgs
 
-    @staticmethod
-    def hash(url):
-        import hashlib
-        hash = hashlib.sha256()
-        for data in get(url).iter_content(8192):
-            hash.update(data)
-        return hash.hexdigest()
+    # @staticmethod
+    # def hash(url):
+    #     import hashlib
+    #     hash = hashlib.sha256()
+    #     for data in get(url).iter_content(8192):
+    #         hash.update(data)
+    #     return hash.hexdigest()
 
 
 def sol_build(eopkg):
