@@ -15,6 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Lint codebase
+        uses: docker://github/super-linter:v2.2.0
+
       - name: Set Python environment
         uses: actions/setup-python@v1
         with:
