@@ -15,9 +15,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Lint codebase
-        uses: docker://github/super-linter:v2.2.0
-
       - name: Set Python environment
         uses: actions/setup-python@v1
         with:
@@ -29,6 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install pyyaml requests
           echo "::set-env name=PYTHONPATH::/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages"
+
+      - name: Lint codebase
+        uses: docker://github/super-linter:v2.2.0
 
       - name: Run test
         run: |
