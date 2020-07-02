@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-videos
-version    : 2.7.1
-release    : 4
+version    : 2.7.2
+release    : 5
 source     :
-    - https://github.com/elementary/videos/archive/2.7.1.tar.gz : db34680b4d2c383b8db838e893a39e41c01d84f6450db12b886fa1bdee69c7f5
+    - https://github.com/elementary/videos/archive/2.7.2.tar.gz : 47946d6b285e2ff1eb86a654de0a6a268eebcf8dfa6ba733dd025b5d37fdad8a
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon video player app
