@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-files
-version    : 4.4.3
-release    : 15
+version    : 4.4.4
+release    : 16
 source     :
-    - https://github.com/elementary/files/archive/4.4.3.tar.gz : 3fa4a2a303c1f0f5f6043a2ae0dca3e101c4aafff96639736cc689390682de3c
+    - https://github.com/elementary/files/archive/4.4.4.tar.gz : 4f8108b1dc9127ccceab4f6717ec934fea560beaee117a18187f67be6830bae1
 license    : GPL-3.0-or-later
 component  : desktop.pantheon
 summary    : The simple, powerful, and sexy file manager from elementary
