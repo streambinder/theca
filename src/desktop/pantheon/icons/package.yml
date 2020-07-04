@@ -4,18 +4,17 @@ version    : 5.3.1
 release    : 5
 source     :
     - https://github.com/elementary/icons/archive/5.3.1.tar.gz : 67b349453f8990e399521bb8d96f4caf4c23a27cf22cbc18ddacf0e817c59e12
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.pantheon
 summary    : Named, vector icons for elementary OS
 description: |
     An original set of vector icons designed specifically for elementary OS and its desktop environment Pantheon.
 builddeps  :
-    - inkscape
-    - librsvg-devel
+    - pkgconfig(librsvg-2.0)
     - xcursorgen
 setup      : |
     %meson_configure
 build      : |
-    %meson_build
+    %ninja_build
 install    : |
-    %meson_install
+    %ninja_install
