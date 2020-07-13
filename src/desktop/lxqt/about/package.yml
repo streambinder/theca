@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-about
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/lxqt-about/archive/0.15.0.tar.gz : ddfec06f0371189d59b056f047e03a3f532dc7d62f04e505cef2c7e04fe3dbea
 license    : LGPL-2.1
