@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-globalkeys
 version    : 0.15.0
-release    : 3
+release    : 4
 source     :
     - https://github.com/lxqt/lxqt-globalkeys/archive/0.15.0.tar.gz : 6788a2ecda48f5cdf0934d8a8bb5267ff6a203644df17e98068fb28f5c4d83ca
 license    : GPL-2.1
@@ -16,6 +16,7 @@ builddeps  :
     - pkgconfig(lxqt)
     - pkgconfig(Qt5Core)
     - pkgconfig(Qt5UiTools)
+    - pkgconfig(x11)
     - kwindowsystem-devel
     - lxqt-build-tools-devel
 setup      : |
