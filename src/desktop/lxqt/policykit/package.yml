@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-policykit
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/lxqt-policykit/archive/0.15.0.tar.gz : 41518375a9ccd6525e55425bc1050c1eeb6fd8456e2426c38e20a4226ac72f72
 license    : LGPL-2.1
