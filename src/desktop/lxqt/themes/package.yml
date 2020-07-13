@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-themes
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/lxqt-themes/archive/0.15.0.tar.gz : b61dfc4f78fd52755de6edf50abfcf6b2c22d75ee6dcfb58074304b53dd8f7b4
 license    : LGPL-2.1
