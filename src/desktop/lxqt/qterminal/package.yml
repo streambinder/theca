@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : qterminal
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/qterminal/archive/0.15.0.tar.gz : f7197a2aa4ffaa14afa9accbb92f3f2d5150d7c12c28b0555088d364b5956632
 license    : GPL-2.0
@@ -16,6 +16,7 @@ builddeps  :
     - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(qtermwidget5)
+    - pkgconfig(x11)
     - lxqt-build-tools-devel
 setup      : |
     %cmake_ninja
