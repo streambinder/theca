@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : compton-conf
 version    : 0.15.0
-release    : 1
+release    : 2
 source     :
     - https://github.com/lxqt/compton-conf/archive/0.15.0.tar.gz : 7f73508e7319318e5358458580ff2731b5da07ef4182c7c33bc20eaa83569ca1
 license    : LGPL-2.1-or-later
