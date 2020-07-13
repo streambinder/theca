@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-config
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/lxqt-config/archive/0.15.0.tar.gz : a1180209dbbf1a2b3b8578e9f2d8b9a66816bef0517eaa7ff76c6c0e421bb71a
 license    : LGPL-2.1
