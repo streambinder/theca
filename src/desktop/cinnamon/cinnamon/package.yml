@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon
-version    : 4.6.0
-release    : 9
+version    : 4.6.6
+release    : 10
 source     :
-    - https://github.com/linuxmint/cinnamon/archive/4.6.0.tar.gz : f7ee6cc18643ad33ffa52c59c65d4de9d350f79e334d65919d30f5fe8aecf155
+    - https://github.com/linuxmint/cinnamon/archive/4.6.6.tar.gz : 700fb2f7f3d878614805c00cf68f07e19e58e703f4e3f70e1078ef40d41a2c7f
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : A Linux desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features
@@ -43,8 +43,6 @@ rundeps    :
     - python-tinycss
     - python3-cairo
 setup      : |
-    # Patch from https://github.com/linuxmint/cinnamon/pull/9306
-    %patch -p1 <$pkgfiles/Readd-import.patch
     %autogen --prefix=/usr \
         --sysconfdir=/etc \
         --libexecdir=/usr/lib64/cinnamon \
