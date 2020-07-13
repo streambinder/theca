@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : lxqt-panel
-version    : 0.15.0
-release    : 2
+version    : 0.15.1
+release    : 3
 source     :
-    - https://github.com/lxqt/lxqt-panel/archive/0.15.0.tar.gz : c794fdb0130c2bd399fe249b94da05c8b0b7f6bd050a20cdde4ae6994db3c85b
+    - https://github.com/lxqt/lxqt-panel/archive/0.15.1.tar.gz : 6b947424f2f1f4bd5146d357ffc41bf2bad96c2ce5c9e46b47021eb584fbf21b
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : LXQt Panel
@@ -23,6 +23,7 @@ builddeps  :
     - pkgconfig(sysstat-qt5)
     - pkgconfig(xcb-util)
     - pkgconfig(xcomposite)
+    - pkgconfig(xdamage)
     - pkgconfig(xkbcommon)
     - pkgconfig(xrender)
     - kwindowsystem-devel
