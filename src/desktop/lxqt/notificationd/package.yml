@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-notificationd
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/lxqt-notificationd/archive/0.15.0.tar.gz : 3ef9486c75212844954b85b12794448d017ff1c690f4de59bec0660e6dc8e06b
 license    : LGPL-2.1
