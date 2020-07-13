@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : liblxqt
-version    : 0.15.0
-release    : 2
+version    : 0.15.1
+release    : 3
 source     :
-    - https://github.com/lxqt/liblxqt/archive/0.15.0.tar.gz : 6f09072d012d40d078510394154ce3f9d21a3acf277b2ed7614f7f552b6a863b
+    - https://github.com/lxqt/liblxqt/archive/0.15.1.tar.gz : f704bf645dbcfd4c5a5772821dc8e9d63174b4634058494bc7aa549a5f13e9ef
 license    : LGLP-2.1
 networking : yes
 component  : desktop.lxqt
