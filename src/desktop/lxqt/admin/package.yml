@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-admin
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/lxqt-admin/archive/0.15.0.tar.gz : aacc4cfc854742f2500ab3417caaf4c9492011d02261d2645f749184cf923065
 license    : LGPL-2.1
