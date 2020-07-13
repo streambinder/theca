@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : lxqt-qtplugin
-version    : 0.15.0
-release    : 2
+version    : 0.15.1
+release    : 3
 source     :
-    - https://github.com/lxqt/lxqt-qtplugin/archive/0.15.0.tar.gz : 78209efea93447b05b1ad4366aa24203266ebef38060e09663191c5b8f788791
+    - https://github.com/lxqt/lxqt-qtplugin/archive/0.15.1.tar.gz : 77bd835fe8dbe9375d46a20bdabebe16b672f56af89c5cda7038ebf650869ea3
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : LXQt Qt platform integration plugin
