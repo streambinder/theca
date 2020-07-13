@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfdesktop
-version    : 4.14.2
-release    : 4
+version    : 4.15.0
+release    : 5
 source     :
-    - http://archive.xfce.org/src/xfce/xfdesktop/4.14/xfdesktop-4.14.2.tar.bz2 : a30534461fea907f969f608a11c84be0b1aaad687c591c32cd56a9d274ea3e74
+    - http://archive.xfce.org/src/xfce/xfdesktop/4.15/xfdesktop-4.15.0.tar.bz2 : a85d526b1624b17b871e07a6345c6fc14d34e6e3b16b950b4cbe8bd3f17b8f04
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce's desktop manager
