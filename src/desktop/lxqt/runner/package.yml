@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : lxqt-runner
 version    : 0.15.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/lxqt/lxqt-runner/archive/0.15.0.tar.gz : cd8f45377b0e0408b5675e9fbd9a6197ff7164efe9bd6d6c89328adfdda03f17
 license    : LGPL-2.1
