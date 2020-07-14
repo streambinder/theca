@@ -1,8 +1,10 @@
 ROOT_DIR	:= $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 MAKE_DIR	:= $(ROOT_DIR)/.make
 BUILD_DIR	:= $(ROOT_DIR)/build
+BUILD_LOG	:= build.log
 
 export BUILD_DIR
+export BUILD_LOG
 
 .PHONY: packages
 packages: init update
@@ -50,3 +52,4 @@ sync:
 .PHONY: clean
 clean:
 	@rm -rf $(BUILD_DIR)
+	@find src -type f \( -name "$(BUILD_LOG)" -o -name pspec_x86_64.xml \) -delete
