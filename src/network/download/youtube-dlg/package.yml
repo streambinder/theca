@@ -1,7 +1,7 @@
 maintainer : algent-al
 name       : youtube-dlg
 version    : 0.4
-release    : 1
+release    : 2
 source     :
     - https://github.com/MrS0m30n3/youtube-dl-gui/archive/0.4.tar.gz : 70d7729a51a463f8b4d05e765681cff8f7444282ab5f29a4b71cc2f0fba00065
 homepage   : https://mrs0m30n3.github.io/youtube-dl-gui/
@@ -9,14 +9,14 @@ license    : Unlicense
 component  : network.download
 summary    : youtube-dlg (or youtube-dl-gui), is a GUI of the popular youtube-dl.
 description: |
-     youtube-dlg (or youtube-dl-gui) is a cross platform front-end GUI of the popular youtube-dl written in wxPython.
+    youtube-dlg (or youtube-dl-gui) is a cross platform front-end GUI of the popular youtube-dl written in wxPython.
 builddeps  :
     - pkgconfig(libavformat)
-    - python-twodict
+    - python2-twodict
     - wxPython-devel
 rundeps    :
     - wxPython
-    - python-twodict
+    - python2-twodict
 build      : |
     %python_setup
 install    : |
