@@ -1,0 +1,16 @@
+maintainer : algent-al
+name       : python2-twodict
+version    : 1.2
+release    : 1
+source     :
+    - https://github.com/MrS0m30n3/twodict/archive/1.2.tar.gz : 1e9a3333cc5d3f87b0ad21da1ffb071556f0e9206026365a9b47d7d73d90d639
+homepage   : https://github.com/MrS0m30n3/twodict
+license    : Unlicense
+component  : programming.python
+summary    : Simple two way ordered dictionary for Python
+description: |
+    Simple two way ordered dictionary for Python
+build      : |
+    %python_setup
+install    : |
+    %python_install

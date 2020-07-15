@@ -65,6 +65,7 @@
 - python-pam
 - python-svgwrite
 - python-tinycss
+- python2-twodict
 - qview
 - sideload
 - skippy-xd
@@ -81,7 +82,6 @@
 - wmctrl
 - xapps
 - xfce4-dev-tools
-- youtube-dlg
 # group separator
 - appstream
 - awesomewm
@@ -103,6 +103,7 @@
 - python-tinycss2
 - qtermwidget
 - xfconf
+- youtube-dlg
 # group separator
 - cinnamon-control-center
 - cjs
