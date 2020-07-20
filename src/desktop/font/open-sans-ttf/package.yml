@@ -1,13 +1,23 @@
 maintainer : streambinder
 name       : font-open-sans-ttf
-version    : 20200115
-release    : 3
+version    : 20200720
+release    : 4
 source     :
-    - https://fonts.google.com/download?family=Open+Sans : da00d6f00a99963ca7e1a5869e3bbf530d57ce61f18e033b9f8c49c30b7043f2
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/LICENSE.txt : 3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-Bold.ttf : 1b43de2449d39b65ff6f63315d4afda585f72fbbec2e3d9a56f59de6c75149d3
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-BoldItalic.ttf : 3575d2afaaad69970380237a5d6357b6db241f53b77607482eaf9f299b8c07ec
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-ExtraBold.ttf : 395f150240d43dff8baea6586baf5665337de57b8204a501fbd6148b2fe165b7
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-ExtraBoldItalic.ttf : d5de39bcdd010089d9db8dd1aebaefaf9e691bf9a49282ff43e1d1869b417892
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-Italic.ttf : 6cb918a707a06c4f98221d09344af4b98c9cb6184b13309a579caf0418d5eb74
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-Light.ttf : 1c8d3cc6810ecd3623ebff7d2c3db1a44024260c5ae662f8166d69b9425828ed
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-LightItalic.ttf : fda70df85987b394ff384b899703bc0e55ac7bdba94d06f47462e155cf0c0350
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-Regular.ttf : 13c03e22a633919beb2847c58c8285fb8a735ee97097d7c48fd403f8294b05f8
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-SemiBold.ttf : b4c2050b25d3d296d5cf58589ca00816dc72df42262c2f629d5c6a984a161aa4
+    - https://github.com/google/fonts/raw/4df0b673c9b316ad5e8de8fa70b0768ab66c87d6/apache/opensans/OpenSans-SemiBoldItalic.ttf : a8f2af8e79f46686b1cfcfb3a1fd53e94e88308d7c6ee7f85c733f4796fcc3a0
 license    : Apache-2.0
 component  : desktop.font
 summary    : Google's sans-serif family Open Sans font
-networking : true
+extract    : false
 description: |
     Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp.
     This version contains the complete 897 character set, which includes the standard ISO Latin 1, Latin CE, Greek and Cyrillic character sets.
@@ -15,5 +25,5 @@ description: |
     It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
 install    : |
     mkdir -p $installdir/usr/share/{fonts,licenses}/OpenSans
-    install -Dm644 *.ttf $installdir/usr/share/fonts/OpenSans/
-    install -Dm644 LICENSE.txt $installdir/usr/share/licenses/OpenSans/
+    install -Dm644 $sources/*.ttf $installdir/usr/share/fonts/OpenSans/
+    install -Dm644 $sources/LICENSE.txt $installdir/usr/share/licenses/OpenSans/
