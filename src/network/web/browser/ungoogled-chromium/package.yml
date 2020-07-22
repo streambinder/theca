@@ -1,0 +1,64 @@
+maintainer : streambinder
+name       : ungoogled-chromium
+version    : 83.0.4103.97
+release    : 1
+source     :
+    - https://github.com/MikeModder/ungoogled-chromium-binaries/releases/download/83.0.4103.97-1.1/ungoogled-chromium_83.0.4103.97-1.1_linux.tar.xz : 6eb1b50111739713c16ddfd076ef016359b82c7ff0c4fa0e4e0d64aa1d0e0e6b
+license    : BSD
+component  : network.web.browser
+summary    : Google Chromium, sans integration with Google
+description: |
+    A lightweight approach to removing Google web service dependency.
+    In descending order of significance (i.e. most important objective first):
+    1. ungoogled-chromium is Google Chromium, sans dependency on Google web services.
+    2. ungoogled-chromium retains the default Chromium experience as closely as possible.
+       Unlike other Chromium forks that have their own visions of a web browser, ungoogled-chromium is essentially a drop-in replacement for Chromium.
+    3. ungoogled-chromium features tweaks to enhance privacy, control, and transparency.
+       However, almost all of these features must be manually activated or enabled.
+    In scenarios where the objectives conflict, the objective of higher significance should take precedence.
+builddeps  :
+    - pkgconfig(alsa)
+    - pkgconfig(atk)
+    - pkgconfig(cairo)
+    - pkgconfig(flac)
+    - pkgconfig(fontconfig)
+    - pkgconfig(freetype2)
+    - pkgconfig(gbm)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(jsoncpp)
+    - pkgconfig(icu-i18n)
+    - pkgconfig(lcms2)
+    - pkgconfig(libavcodec)
+    - pkgconfig(libavformat)
+    - pkgconfig(libavutil)
+    - pkgconfig(libdrm)
+    - pkgconfig(libevent)
+    - pkgconfig(libopenjp2)
+    - pkgconfig(libpci)
+    - pkgconfig(libpulse)
+    - pkgconfig(libwebp)
+    - pkgconfig(minizip)
+    - pkgconfig(opus)
+    - pkgconfig(pango)
+    - pkgconfig(vpx)
+    - pkgconfig(xdamage)
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - pkgconfig(xcomposite)
+    - pkgconfig(xcursor)
+    - pkgconfig(xext)
+    - pkgconfig(xfixes)
+    - pkgconfig(xrandr)
+    - pkgconfig(xrender)
+    - pkgconfig(xscrnsaver)
+    - cups-devel
+    - jsoncpp-devel
+    - snappy-devel
+setup      : |
+    mkdir -p $installdir/usr/{bin,lib,share/applications}
+install    : |
+    mv $workdir $installdir/usr/lib/ungoogled-chromium
+    install -Dm00644 $pkgfiles/ungoogled-chromium.desktop $installdir/usr/share/applications/ungoogled-chromium.desktop
+    cd $installdir/usr/bin
+    ln -s ../lib/ungoogled-chromium/chrome ungoogled-chromium
