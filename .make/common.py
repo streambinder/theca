@@ -69,8 +69,8 @@ class eopkg(object):
         if self.component == '':
             raise Exception(
                 'Package {} does not have a component'.format(self.name))
-        if type(self.component) is not list and not (self.path.replace(os.sep, '.').endswith(self.component) or
-                                                     os.path.dirname(self.path).replace(os.sep, '.').endswith(self.component)):
+        if type(self.component) is not list and 'desktop' not in self.component and not (self.path.replace(os.sep, '.').endswith(self.component) or
+                                                                                         os.path.dirname(self.path).replace(os.sep, '.').endswith(self.component)):
             raise Exception(
                 'Package {} component and path mismatch'.format(self.name))
 
