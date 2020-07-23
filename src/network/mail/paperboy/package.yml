@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : paperboy
-version    : 5
-release    : 6
+version    : 6
+release    : 7
 source     :
-    - https://github.com/streambinder/paperboy/archive/v5.tar.gz : e94bd2df15d98c5f45a67ac368acce6c3bf27f4a20309af1b258f7b3f36f8dea
+    - https://github.com/streambinder/paperboy/archive/v6.tar.gz : c7441baed6cead5631e0c845bf83e475dc2eb4ff84d6f3ba47c94dc44bc682a8
 license    : GPL-3.0
 component  : network.mail
 summary    : IMAP email checker and GTK notifier
