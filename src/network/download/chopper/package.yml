@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : chopper
-version    : 2
-release    : 2
+version    : 3
+release    : 3
 source     :
-    - git|https://github.com/streambinder/chopper.git : v2
+    - git|https://github.com/streambinder/chopper.git : v3
 license    : GPL-3.0
 component  : network.download
 summary    : Share all-sizes files using reconstructable manifests
