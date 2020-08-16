@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon
-version    : 4.6.6
-release    : 10
+version    : 4.6.7
+release    : 11
 source     :
-    - https://github.com/linuxmint/cinnamon/archive/4.6.6.tar.gz : 700fb2f7f3d878614805c00cf68f07e19e58e703f4e3f70e1078ef40d41a2c7f
+    - https://github.com/linuxmint/cinnamon/archive/4.6.7.tar.gz : fcc6182a074b15d599dd53014086bb77b0bdceb3e667627e9125331f5ad0195e
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : A Linux desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features
