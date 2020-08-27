@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : garcon
-version    : 0.7.0
-release    : 3
+version    : 0.7.1
+release    : 4
 source     :
-    - http://archive.xfce.org/src/xfce/garcon/0.7/garcon-0.7.0.tar.bz2 : 82c3b61b508011642b09e6fb01b1d3f22c4e4de0fc54a9244327d0ddb66b2423
+    - http://archive.xfce.org/src/xfce/garcon/0.7/garcon-0.7.1.tar.bz2 : 5d14553fde44e30dd673d85d9e09a41f264109cb33a9712b76c9c7f9f8e74883
 license    :
     - LGPL-2.0
     - GFDL-1.1
