@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : featherpad
-version    : 0.14.2
-release    : 1
+version    : 0.15.0
+release    : 2
 source     :
-    - https://github.com/tsujan/FeatherPad/archive/V0.14.2.tar.gz : a646a7e84de7515ba26dde828fbdcf5c5a26841559f5d2d8bde330d7a5e182d1
+    - https://github.com/tsujan/FeatherPad/archive/V0.15.0.tar.gz : e9addeeb78930f5654c4e155af8b46efa58dd2daecc02cfc7e0a9835f1bc88ad
 license    : GPL-3.0-or-later
 component  : editor
 summary    : FeatherPad is a lightweight Qt5 plain-text editor.
