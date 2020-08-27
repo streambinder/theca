@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : arc-theme
-version    : 20200513
-release    : 1
+version    : 20200819
+release    : 2
 source     :
-    - https://github.com/jnsh/arc-theme/archive/20200513.tar.gz : 58ae2e5aa594538d9fb36d9d136507f7b7ab4b800bfe9d22762a19a4976e187c
+    - https://github.com/jnsh/arc-theme/archive/20200819.tar.gz : 82df3c9a6e3e8d03d7485f075bb106dae22a43530768f98d0533322e8370b61b
 license    : GPL-3.0-or-later
 summary    : Arc GTK Theme
 description: |
