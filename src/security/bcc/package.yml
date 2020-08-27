@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : bcc
-version    : 0.15.0
-release    : 3
+version    : 0.16.0
+release    : 4
 source     :
-    - https://github.com/iovisor/bcc/releases/download/v0.15.0/bcc-src-with-submodule.tar.gz : 4848fdfbc90071f19be9e15d28e549a55bb81619efddee20b978b7dfe0ea00cc
+    - https://github.com/iovisor/bcc/releases/download/v0.16.0/bcc-src-with-submodule.tar.gz : 7a4551cae82964e5359ebd0df645824a82539ad0f6a86b27fc399680aed767f7
 license    : Apache-2.0
 component  : security
 summary    : Tools for BPF-based Linux IO analysis, networking, monitoring, and more
