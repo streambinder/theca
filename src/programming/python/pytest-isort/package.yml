@@ -1,18 +1,23 @@
 maintainer : algent-al
 name       : pytest-isort
-version    : 1.1.0
-release    : 2
+version    : 1.2.0
+release    : 3
 source     :
-    - https://github.com/moccu/pytest-isort/archive/1.1.0.tar.gz : f49fbb5fbbecf74fb3fc956ecd21a879931a79a40bbba7866cad4d6aff1510d3
+    - https://github.com/moccu/pytest-isort/archive/1.2.0.tar.gz : 09b89985911c25cca28b7f6d807c51170d2b0c03f540f50da9449b27e7866fd9
 homepage   : https://github.com/moccu/pytest-isort
 license    : BSD-3-Clause
 component  : programming.python
 summary    : py.test plugin to check import ordering using isort
 description: |
     py.test plugin to check import ordering using isort
+builddeps  :
+    - python-isort
+    - python-pytest
 rundeps    :
     - python-isort
 build      : |
     %python3_setup
 install    : |
     %python3_install
+check      : |
+    %python3_test pytest3 -v
