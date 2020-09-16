@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-network
-version    : 2.3.1
-release    : 6
+version    : 2.3.2
+release    : 7
 source     :
-    - https://github.com/elementary/switchboard-plug-network/archive/2.3.1.tar.gz : 586c59bd0d37a7ddb0a20db261ab03261b44375834ce887ce5bb63bd736578fe
+    - https://github.com/elementary/switchboard-plug-network/archive/2.3.2.tar.gz : 61c3803dccf68324afe7cb67094fd9dbcb874cae47284b9b131b9bd49971d9b8
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard network plug
