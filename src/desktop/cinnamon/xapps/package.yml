@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xapps
-version    : 1.8.9
-release    : 8
+version    : 1.8.10
+release    : 9
 source     :
-    - https://github.com/linuxmint/xapps/archive/1.8.9.tar.gz : 6200c026589f655d936574ec3dc648936e737234413e9e0ee1e783575e7e1a8f
+    - https://github.com/linuxmint/xapps/archive/1.8.10.tar.gz : a0d542de6dc4d6a318bdf1fad88447db270ab2dd0582f0c6f28008cc77337672
 license    : LGPL-3.0
 component  : desktop.cinnamon
 summary    : Cross-desktop libraries and common resources
