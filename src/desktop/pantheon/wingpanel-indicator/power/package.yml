@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel-indicator-power
-version    : 2.1.5
-release    : 3
+version    : 2.2.0
+release    : 4
 source     :
-    - https://github.com/elementary/wingpanel-indicator-power/archive/2.1.5.tar.gz : 8b0f88dd70484d35e77053a16f506b2131681442e29c212469c8888e73616ad4
+    - https://github.com/elementary/wingpanel-indicator-power/archive/2.2.0.tar.gz : 2db2ae45a35ddf66c204608cfa3f0aa2eb3154816b6f890cc4d73f903e0bd1a5
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Wingpanel power indicator
