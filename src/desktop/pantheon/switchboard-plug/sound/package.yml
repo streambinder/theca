@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-sound
-version    : 2.2.4
-release    : 5
+version    : 2.2.5
+release    : 6
 source     :
-    - https://github.com/elementary/switchboard-plug-sound/archive/2.2.4.tar.gz : 553eda9a0a2ab021d6d2dfef132c9aa0cc432a2a560e6812e3e32bd965ab8502
+    - https://github.com/elementary/switchboard-plug-sound/archive/2.2.5.tar.gz : 6e04021794e7e57599058dc7e0a83228147244643ced80bb3979c569aa8bcbd8
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Switchboard sound plug
