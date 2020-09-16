@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-calendar
-version    : 5.0.6
-release    : 6
+version    : 5.1.0
+release    : 7
 source     :
-    - https://github.com/elementary/calendar/archive/5.0.6.tar.gz : 126dde52fb3c525f22a75d91f8c9fd2a9ea9df9059617ee877058b15660a76eb
+    - https://github.com/elementary/calendar/archive/5.1.0.tar.gz : 5ff39fd32cde6d684ad5c0698dcb2d7c74c68f309db4d83e8c65200520168e0a
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon calendar app
