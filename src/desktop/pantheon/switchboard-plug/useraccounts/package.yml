@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-useraccounts
-version    : 2.3.1
-release    : 4
+version    : 2.3.2
+release    : 5
 source     :
-    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.3.1.tar.gz : f039c41193d3472056914faa841e54f5e457745f5e56efe6496bb820eb5ef728
+    - https://github.com/elementary/switchboard-plug-useraccounts/archive/2.3.2.tar.gz : 33deec1baa39a7f8bd07aeb930e65d0670d8c21651a16f2ce0611b8f3578a8aa
 license    : LGPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard user accounts plug
