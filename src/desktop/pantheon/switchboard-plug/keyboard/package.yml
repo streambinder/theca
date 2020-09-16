@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-keyboard
-version    : 2.4.0
-release    : 5
+version    : 2.4.1
+release    : 6
 source     :
-    - https://github.com/elementary/switchboard-plug-keyboard/archive/2.4.0.tar.gz : 12facdebec69bac0c42cd94a94dd675f41a5f4beac864b9eb0fd1d357e182265
+    - https://github.com/elementary/switchboard-plug-keyboard/archive/2.4.1.tar.gz : ca08d0fa02947baad3f0b599df4c008757cb6c183dbaf3bcc62f2aa68215f707
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Switchboard keyboard plug
