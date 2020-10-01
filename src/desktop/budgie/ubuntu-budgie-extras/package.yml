@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : ubuntu-budgie-extras
-version    : 1.0.2
-release    : 7
+version    : 1.1.0
+release    : 8
 source     :
-    - https://github.com/UbuntuBudgie/budgie-extras/releases/download/v1.0.2/budgie-extras-1.0.2.tar.xz : afcaafcab96932e5d11d544c750fd94af41f293ccb3b01fa118cbb6e7792c558
+    - https://github.com/UbuntuBudgie/budgie-extras/releases/download/v1.1.0/budgie-extras-1.1.0.tar.xz : 674fdb41a65189efeb00ba085213fdde9a2b7f09f5361a263a2bc11d1ced4159
 homepage   : https://github.com/UbuntuBudgie/budgie-extras
 license    : GPL-3.0-or-later
 component  :
@@ -69,12 +69,14 @@ patterns   :
     - ^budgie-applications-menu-applet :
         - /usr/lib64/budgie-desktop/plugins/applications-menu
         - /usr/share/glib-2.0/schemas/io.elementary.desktop.wingpanel.applications-menu.gschema.xml
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-appmenu.gschema.xml
     - ^budgie-clockworks-applet :
         - /usr/lib64/budgie-desktop/plugins/budgie-clockworks
         - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-clockworks.gschema.xml
         - /usr/share/pixmaps/budgie-clockworks-symbolic.svg
     - ^budgie-dropby-applet :
         - /usr/lib64/budgie-desktop/plugins/budgie-dropby
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-dropby.gschema.xml
         - /usr/share/pixmaps/budgie-dropby*
     - ^budgie-fuzzyclock-applet :
         - /usr/lib64/budgie-desktop/plugins/budgie-fuzzyclock
@@ -133,6 +135,7 @@ patterns   :
         - /usr/share/pixmaps/budgie-wstopwatch-symbolic.svg
     - ^budgie-workspace-wallpaper-applet :
         - /usr/lib64/budgie-desktop/plugins/budgie-wswitcher
+        - /usr/share/glib-2.0/schemas/org.ubuntubudgie.plugins.budgie-wswitcher.gschema.xml
         - /usr/share/pixmaps/budgie-wsw-symbolic.svg
 builddeps  :
     - pkgconfig(appstream)
@@ -141,6 +144,7 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(keybinder-3.0)
+    - pkgconfig(libhandy-0.0)
     - pkgconfig(libgnome-menu-3.0)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libwnck-3.0)
