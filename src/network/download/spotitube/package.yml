@@ -6,7 +6,7 @@ source     :
     - https://github.com/streambinder/spotitube/releases/download/v28/spotitube-v28.deb : 1594ceaa7c86e64a1d0163de931f6672ea22d02a7ad68f1220deb16f4c6331cc
 license    : GPL-3.0
 component  : network.download
-summary    : Shell application to incrementally download from Spotify into local folder
+summary    : Synchronize your Spotify collections downloading from external providers 
 description: |
     Programmatically authenticate to your Spotify account and synchronize your music, keeping playlists files, metadata informations, album artworks, songs lyrics and maximizing mp3 files quality.
 setup      : |
