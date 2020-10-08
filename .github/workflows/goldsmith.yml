@@ -25,7 +25,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install pyyaml requests
-          echo "::set-env name=PYTHONPATH::/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages"
+          echo "PYTHONPATH=/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages" >> $GITHUB_ENV
 
       - name: Lint codebase
         uses: docker://github/super-linter:v2.2.0
@@ -51,7 +51,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install pyyaml requests
-          echo "::set-env name=PYTHONPATH::/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages"
+          echo "PYTHONPATH=/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages" >> $GITHUB_ENV
           sudo ln -sf $(which python) /usr/bin/python3
 
       - name: Generate index
