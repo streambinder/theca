@@ -35,7 +35,8 @@ jobs:
           make test
 
   stage:
-    if: github.event_name == 'push'
+    needs: [analyze]
+    if: success() && github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -112,7 +113,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_THECA }}
 
   classify:
-    if: github.event_name == 'push'
+    needs: [analyze]
+    if: success() && github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
