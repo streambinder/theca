@@ -98,7 +98,7 @@ jobs:
 
           [repo.Solus]
           uri = "https://mirrors.rit.edu/solus/packages/shannon/eopkg-index.xml.xz"
-          ' | sudo tee -a /etc/solbuild/main-x86-64.profile
+          ' | sudo tee -a /etc/solbuild/theca-x86_64.profile
           echo '[Packager]
           Name=Goldsmith
           Email=theca@davidepucci.it
