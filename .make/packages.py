@@ -15,6 +15,8 @@ for eopkg in series():
     print('Building {}'.format(eopkg.name))
     if not sol_build(eopkg):
         print('Unable to build {}'.format(eopkg.name))
+        with open(eopkg.yml.replace('package.yml', os.environ['BUILD_LOG']), 'r') as log:
+            print(log.read())
         sys.exit(1)
 
 sol_index(os.environ['BUILD_DIR'])
