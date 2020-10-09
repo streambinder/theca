@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : solbump
-version    : 3
-release    : 4
+version    : 4
+release    : 5
 source     :
-    - https://github.com/streambinder/solbump/archive/v3.tar.gz : 558b24b3f6836a4ea1793a973834590c6bac85d689fa69a79d33e0fc7c16f6e1
+    - https://github.com/streambinder/solbump/archive/v4.tar.gz : c9672d062f1d5376b2ac71c9896c28598f03599bcd27356b3e888f2e220bbf54
 license    : GPL-3.0
 component  : system.utils
 networking : true
