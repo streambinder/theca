@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : vscodium
 version    : 1.50.0
-release    : 31
+release    : 32
 source     :
     - https://github.com/VSCodium/vscodium/releases/download/1.50.0/codium_1.50.0-1602264205_amd64.deb : 14dda3d04691cb64802f2be7e27dded25c0dfa7c888ae067ba88f27f7952d0e0
 license    : MIT
