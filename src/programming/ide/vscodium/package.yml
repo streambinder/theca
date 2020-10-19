@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : vscodium
-version    : 1.50.0
-release    : 32
+version    : 1.50.1
+release    : 33
 source     :
-    - https://github.com/VSCodium/vscodium/releases/download/1.50.0/codium_1.50.0-1602264205_amd64.deb : 14dda3d04691cb64802f2be7e27dded25c0dfa7c888ae067ba88f27f7952d0e0
+    - https://github.com/VSCodium/vscodium/releases/download/1.50.1/codium_1.50.1-1602760402_amd64.deb : 79b0af1776f61de9a75186ac0f650ab86c47fb1e6174994e60a26ade8b124987
 license    : MIT
 component  : programming.ide
 summary    : Visual Studio Code without MS branding, telemetry and licensing
