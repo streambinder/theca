@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-appfinder
-version    : 4.15.1
-release    : 3
+version    : 4.15.2
+release    : 4
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-appfinder/4.15/xfce4-appfinder-4.15.1.tar.bz2 : 41d0517639cd5e3658b4112e0d9935169e6bdd727ea01c840fa7230e23bfe32c
+    - http://archive.xfce.org/src/xfce/xfce4-appfinder/4.15/xfce4-appfinder-4.15.2.tar.bz2 : f49ee591d4dc3edb521fcd4d37aa52f49b2489a6d738639b9e3e25c06eb4265a
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce aplication launcher and finder
