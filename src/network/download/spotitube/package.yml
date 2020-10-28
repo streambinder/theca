@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : spotitube
-version    : 29
-release    : 8
+version    : 30
+release    : 9
 source     :
-    - https://github.com/streambinder/spotitube/releases/download/v29/spotitube-v29.deb : 96537d2aa3fecb0eba3006106b58fa859cf97059be6f6911f69075656334f6ac
+    - https://github.com/streambinder/spotitube/releases/download/v30/spotitube-v30.deb : fa1d6f72c9b1144a239b965498e441d36b2df417a4dcd5b903ab725438a0c54d
 license    : GPL-3.0
 component  : network.download
 summary    : Synchronize your Spotify collections downloading from external providers 
