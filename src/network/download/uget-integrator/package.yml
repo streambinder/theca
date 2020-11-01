@@ -1,0 +1,35 @@
+maintainer : algent-al
+name       : uget-integrator
+version    : 1.0.0
+release    : 1
+source     :
+    - https://github.com/ugetdm/uget-integrator/archive/v1.0.0.tar.gz : bbc85c32d94e2b6a21977c559f6e49cea9613028713df89e91327a23fef19fa9
+homepage   : https://github.com/ugetdm/uget-integrator
+license    : GPL-3.0-or-later
+component  : network.download
+summary    : Integrate uGet Download Manager with web browsers 
+description: |
+    Native messaging host to integrate uGet Download Manager with web browsers Google Chrome, Chromium, Vivaldi, Opera and Firefox.
+rundeps    :
+    - uget
+setup      : |
+    sed -i 's|#!/usr/bin/env python3|#!/usr/bin/python3|g' bin/uget-integrator
+install    : |
+    install -dm00755 $installdir/usr/bin
+    install -Dm00755 bin/uget-integrator $installdir/usr/bin/uget-integrator
+
+    # For Google Chrome
+    install -dm00644 $installdir/etc/opt/chrome/native-messaging-hosts
+    install -Dm00644 conf/com.ugetdm.chrome.json $installdir/etc/opt/chrome/native-messaging-hosts
+
+    # For Chromium and Vivaldi
+    install -dm00644 $installdir/etc/chromium/native-messaging-hosts
+    install -Dm00644 conf/com.ugetdm.chrome.json $installdir/etc/chromium/native-messaging-hosts/com.ugetdm.chrome.json
+
+    # For Opera
+    install -dm00644 $installdir/etc/opera/native-messaging-hosts
+    install -Dm00644 conf/com.ugetdm.chrome.json $installdir/etc/opera/native-messaging-hosts/com.ugetdm.chrome.json
+   
+    # For Firefox
+    install -dm00644 $installdir/usr/lib/mozilla/native-messaging-hosts
+    install -Dm00644 conf/com.ugetdm.firefox.json $installdir/usr/lib/mozilla/native-messaging-hosts/com.ugetdm.firefox.json
