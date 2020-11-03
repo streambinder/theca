@@ -1,0 +1,22 @@
+maintainer : algent-al
+name       : hardinfo
+version    : 0.6
+release    : 1
+source     :
+    - git|https://github.com/lpereira/hardinfo : e4fe32824ffca45c1fb1c408152094a3d4e486ef
+homepage   : https://github.com/lpereira/hardinfo
+license    : GPL-2.0-only
+component  : system.utils
+summary    : System profiler and benchmark tool for Linux systems 
+description: |
+    HardInfo is a system profiler and benchmark for Linux systems. It is able to obtain information from both hardware and basic software, and organize it in a simple to use GUI.
+builddeps  :
+    - pkgconfig(gtk+-2.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+rundeps    :
+    - dmidecode
+build      : |
+    %cmake_ninja
+install    : |
+    %ninja_install
