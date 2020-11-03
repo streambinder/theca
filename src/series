@@ -18,6 +18,7 @@
 - font-roboto-mono-ttf
 - gsasl
 - gsignond
+- hardinfo
 - hydra
 - iceauth
 - libfm-extra
@@ -77,6 +78,7 @@
 - subnetcalc
 - switchboard
 - timeshift
+- uget-integrator
 - ungoogled-chromium
 - variety-slideshow
 - vscodium
