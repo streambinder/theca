@@ -1,16 +1,15 @@
 maintainer : streambinder
-name       : solbump
-version    : 5
-release    : 6
+name       : traho
+version    : 6
+release    : 7
 source     :
-    - https://github.com/streambinder/solbump/archive/v5.tar.gz : 8ed3fdc039cf8549eee74883f549e7c681767d1978cc609751840066263ad867
+    - https://github.com/streambinder/traho/archive/v6.tar.gz : b576873c9e1a6874464b4c04b5139ddbf616d935ecdfd9d10ef3eaa8098d76dd
 license    : GPL-3.0
 component  : system.utils
 networking : true
 summary    : Automatic eopkg package files updating system
 description: |
-    Solbump is a tool to automatically upgrade eopkg YAML-formatted source files to latest releases.
-    Hence, the naming similarity with solbuild, the tool made from Solus project core team to build eopkg packages.
+    Traho is a tool to automatically upgrade eopkg YAML-formatted source files to latest releases.
     Based on the amount of defined (and pluggable) providers, it tries to recognize the format of the tarballs or archives defined as source files from the YAML file and find a matching provider.
     Then it's able to query for a more updated release and, if so, it fetches the asset, calculates the hashsum and update the original package.yml coherently.
 builddeps  :
