@@ -38,6 +38,7 @@
 - nload
 - notejot
 - numlockx
+- nuntius
 - pantheon-agent-geoclue2
 - pantheon-agent-polkit
 - pantheon-calculator
@@ -61,7 +62,6 @@
 - pantheon-terminal
 - pantheon-videos
 - pantheon-wallpapers
-- paperboy
 - pocillo-gtk-theme
 - pytest-isort
 - python-pam

@@ -1,14 +1,14 @@
 maintainer : streambinder
-name       : paperboy
+name       : nuntius
 version    : 6
 release    : 7
 source     :
-    - https://github.com/streambinder/paperboy/archive/v6.tar.gz : c7441baed6cead5631e0c845bf83e475dc2eb4ff84d6f3ba47c94dc44bc682a8
+    - https://github.com/streambinder/nuntius/archive/v6.tar.gz : c7441baed6cead5631e0c845bf83e475dc2eb4ff84d6f3ba47c94dc44bc682a8
 license    : GPL-3.0
 component  : network.mail
 summary    : IMAP email checker and GTK notifier
 description: |
-    Paperboy is a simple CLI application which sends a GTK notification when an email is received, allowing the user to just click on the callback button to open the webmail associated to the account.
+    Nuntius is a simple CLI application which sends a GTK notification when an email is received, allowing the user to just click on the callback button to open the webmail associated to the account.
 builddeps  :
     - pkgconfig(gio-2.0)
     - pkgconfig(libcurl)
