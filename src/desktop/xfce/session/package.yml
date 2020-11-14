@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-session
-version    : 4.15.0
-release    : 6
+version    : 4.15.1
+release    : 7
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-session/4.15/xfce4-session-4.15.0.tar.bz2 : 5977cd3e9b7c8396fb620835c8536ebfea477d1585a0100ec28d7e2fa951310b
+    - http://archive.xfce.org/src/xfce/xfce4-session/4.15/xfce4-session-4.15.1.tar.bz2 : b501fcb21299fcf262399e3772228e85598198f31780a4bc9bb90c6d1ee06771
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Session Manager
