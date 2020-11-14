@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfwm4
-version    : 4.15.1
-release    : 7
+version    : 4.15.3
+release    : 8
 source     :
-    - http://archive.xfce.org/src/xfce/xfwm4/4.15/xfwm4-4.15.1.tar.bz2 : 8494d1c79c8254c2e222cb8247dce928e5bb7254bfd53202f6a437f3fbaecac4
+    - http://archive.xfce.org/src/xfce/xfwm4/4.15/xfwm4-4.15.3.tar.bz2 : 7a0121557812bce60be76af8050ec07e6d1fd06b3b120412bf21a5f3bf80c3a1
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce's window manager
