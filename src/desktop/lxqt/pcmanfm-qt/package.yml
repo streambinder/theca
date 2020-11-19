@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : pcmanfm-qt
-version    : 0.15.1
-release    : 4
+version    : 0.16.0
+release    : 5
 source     :
-    - https://github.com/lxqt/pcmanfm-qt/archive/0.15.1.tar.gz : 076e298bb48133812ac468aa24f2a989eadc6f1d265b89a76459c922378e3970
+    - https://github.com/lxqt/pcmanfm-qt/archive/0.16.0.tar.gz : 7c9430c39b6f2e5ff96dddb448c249de511db0df7b6fc7c68bd8cd29110be09c
 license    : GPL-2.0
 component  : desktop.lxqt
 summary    : File manager and desktop icon manager (Qt port of PCManFM and libfm)
