@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : lxqt-about
-version    : 0.15.0
-release    : 3
+version    : 0.16.0
+release    : 4
 source     :
-    - https://github.com/lxqt/lxqt-about/archive/0.15.0.tar.gz : ddfec06f0371189d59b056f047e03a3f532dc7d62f04e505cef2c7e04fe3dbea
+    - https://github.com/lxqt/lxqt-about/archive/0.16.0.tar.gz : 2d5768d2c6003a0f38cb7dabb40284e2a47a9a59c4b42f44c77dc9e712fc2d21
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : Dialogue window providing information about LXQt and the system it's running on
