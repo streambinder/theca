@@ -150,7 +150,6 @@
 - lxqt-globalkeys
 - lxqt-notificationd
 - lxqt-policykit
-- lxqt-powermanagement
 - lxqt-session
 - pantheon-applications-menu
 - pantheon-greeter
@@ -173,6 +172,7 @@
 - xfwm4
 # group separator
 - lxqt-panel
+- lxqt-powermanagement
 - lxqt-runner
 - xfce4-appfinder
 - xfce4-panel

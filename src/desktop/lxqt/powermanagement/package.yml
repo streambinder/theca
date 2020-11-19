@@ -20,6 +20,7 @@ builddeps  :
     - kidletime-devel
     - kwindowsystem-devel
     - lxqt-build-tools-devel
+    - lxqt-globalkeys-devel
     - qt5-svg-devel
     - solid-devel
 setup      : |
