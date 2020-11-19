@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : subnetcalc
-version    : 2.4.16
-release    : 4
+version    : 2.4.17
+release    : 5
 source     :
-    - https://github.com/dreibh/subnetcalc/archive/subnetcalc-2.4.16.tar.gz : 5c3c66e51ea9a730492535591de35039e014e479a6ec92533e1544f3c4b10b63
+    - https://github.com/dreibh/subnetcalc/archive/subnetcalc-2.4.17.tar.gz : e1d616d0fc6a249327b235c4d3d0df546f4b9683998cc5e24504698446cbf234
 license    : GPL-3.0
 component  : network.util
 summary    : IP address calculator
