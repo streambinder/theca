@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : lxqt-build-tools
-version    : 0.7.0
-release    : 2
+version    : 0.8.0
+release    : 3
 source     :
-    - https://github.com/lxqt/lxqt-build-tools/archive/0.7.0.tar.gz : b306b3b8145feb7ee1297654ac7afd6c62e5c4e33e87d41026a3773e0284f30f
+    - https://github.com/lxqt/lxqt-build-tools/archive/0.8.0.tar.gz : 3ea2469cd0f27693d4f1170dd30ea562d1f5b5f50cb0caed1441b6dab79aa8bd
 license    : BSD-3-Clause
 component  : desktop.lxqt
 summary    : Various packaging tools and scripts for LXQt applications
