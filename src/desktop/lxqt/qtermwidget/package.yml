@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : qtermwidget
-version    : 0.15.0
-release    : 2
+version    : 0.16.1
+release    : 3
 source     :
-    - https://github.com/lxqt/qtermwidget/archive/0.15.0.tar.gz : 9ee5742d010e15bb54f1b00fa7632a9d322318da166a62d51a8bd7360457e3c5
+    - https://github.com/lxqt/qtermwidget/archive/0.16.1.tar.gz : 87247cfc1aa9435c3c5834486f2de2de48e689024321b76b4f8b8f97b14e38f6
 license    : |
     - BSD-3-Clause
     - GPL-2.0
