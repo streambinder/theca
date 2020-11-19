@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : lxqt-session
-version    : 0.15.0
-release    : 4
+version    : 0.16.0
+release    : 5
 source     :
-    - https://github.com/lxqt/lxqt-session/archive/0.15.0.tar.gz : d3a5c346728865c746d6ba2bb821ac3eaca6e2924cf1f872c7c6631b5295108d
+    - https://github.com/lxqt/lxqt-session/archive/0.16.0.tar.gz : ba85ee16cc000322045a9bcbcefc7a787ef61d4ebc65e507dea31b86d2801404
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : The LXQt session manager
