@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : qview
-version    : 3.0
-release    : 2
+version    : 4.0
+release    : 3
 source     :
-    - https://github.com/jurplel/qView/archive/3.0.tar.gz : 0c4814171c787aa361e7c1da81babad86c6aa72a42247eab537b307a7b36a24d
+    - https://github.com/jurplel/qView/archive/4.0.tar.gz : 04f986a03bff1b957ac72f266f58a8a7fd403e4606a5bc00ad4a3130d14f11c3
 license    : GPL-3.0-or-later
 component  : multimedia.graphics
 homepage   : https://interversehq.com/qview/
