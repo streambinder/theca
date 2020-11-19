@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : compton-conf
-version    : 0.15.0
-release    : 2
+version    : 0.16.0
+release    : 3
 source     :
-    - https://github.com/lxqt/compton-conf/archive/0.15.0.tar.gz : 7f73508e7319318e5358458580ff2731b5da07ef4182c7c33bc20eaa83569ca1
+    - https://github.com/lxqt/compton-conf/archive/0.16.0.tar.gz : f09961a07b93ca3c9acfc7e979b2eaabeaa05693ee5b77a30b92300a3631b5ab
 license    : LGPL-2.1-or-later
 component  : desktop.lxqt
 summary    : Compton Configuration GUI
