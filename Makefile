@@ -49,6 +49,10 @@ index-table:
 sync:
 	@bash $(MAKE_DIR)/sync.sh
 
+.PHONY: commit
+commit:
+	@bash $(MAKE_DIR)/commit.sh
+
 .PHONY: clean
 clean:
 	@rm -rf $(BUILD_DIR)
