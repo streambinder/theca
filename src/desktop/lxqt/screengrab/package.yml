@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : screengrab
-version    : 2.0.1
-release    : 1
+version    : 2.1.0
+release    : 2
 source     :
-    - https://github.com/lxqt/screengrab/archive/2.0.1.tar.gz : e7ff4ecca3780ffe8d149fc931290a258233229723fb5de689692441af8b3e08
+    - https://github.com/lxqt/screengrab/archive/2.1.0.tar.gz : adac2a39b86fda5109689f1fadb810ace0207e86a536c27370a8411f8364964b
 license    : GPL-2.0-or-later
 component  : desktop.lxqt
 summary    : Crossplatform tool for fast making screenshots.
