@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : lxqt-admin
-version    : 0.15.0
-release    : 3
+version    : 0.16.0
+release    : 4
 source     :
-    - https://github.com/lxqt/lxqt-admin/archive/0.15.0.tar.gz : aacc4cfc854742f2500ab3417caaf4c9492011d02261d2645f749184cf923065
+    - https://github.com/lxqt/lxqt-admin/archive/0.16.0.tar.gz : ddb1bbab8bd3d41288ba44a7b2b54c389514dc3c352341d24137fdb060b42da2
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : LXQt system administration tool
