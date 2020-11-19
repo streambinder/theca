@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : libfm-qt
-version    : 0.15.1
-release    : 4
+version    : 0.16.0
+release    : 5
 source     :
-    - https://github.com/lxqt/libfm-qt/archive/0.15.1.tar.gz : f2f01e5b07ef70f18a85d3033e55392b012fd2fd3b655c07b3b6f2cd23bfb4bd
+    - https://github.com/lxqt/libfm-qt/archive/0.16.0.tar.gz : 3727111d917ebe38d0070a34e90a4a755f643aa6adb3b9bbc704c94515480caa
 license    : |
     - LGPL-2.1
     - BSD-3-Clause
