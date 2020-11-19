@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : qterminal
-version    : 0.15.0
-release    : 3
+version    : 0.16.1
+release    : 4
 source     :
-    - https://github.com/lxqt/qterminal/archive/0.15.0.tar.gz : f7197a2aa4ffaa14afa9accbb92f3f2d5150d7c12c28b0555088d364b5956632
+    - https://github.com/lxqt/qterminal/archive/0.16.1.tar.gz : d12f033dacb0e4c2095c54a110ffd207bf1bf97cd77906f88fef705fa6d046d4
 license    : GPL-2.0
 component  : desktop.lxqt
 summary    : A lightweight Qt-based terminal emulator
