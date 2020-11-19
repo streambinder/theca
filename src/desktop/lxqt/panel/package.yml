@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : lxqt-panel
-version    : 0.15.1
-release    : 3
+version    : 0.16.1
+release    : 4
 source     :
-    - https://github.com/lxqt/lxqt-panel/archive/0.15.1.tar.gz : 6b947424f2f1f4bd5146d357ffc41bf2bad96c2ce5c9e46b47021eb584fbf21b
+    - https://github.com/lxqt/lxqt-panel/archive/0.16.1.tar.gz : 5a3783189f0e9adaf0eaac34429c4b2accf4f291abce7020377337c15073151b
 license    : LGPL-2.1
 component  : desktop.lxqt
 summary    : LXQt Panel
