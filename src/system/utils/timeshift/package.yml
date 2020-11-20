@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : timeshift
-version    : 20.03
-release    : 2
+version    : 20.11.1
+release    : 3
 source     :
-    - https://github.com/teejee2008/timeshift/archive/v20.03.tar.gz : 6516150481fc3e69c090ff25426e85d99d10035949446368918076b19335b391
+    - https://github.com/teejee2008/timeshift/archive/v20.11.1.tar.gz : c6dcca80b42f80a8c8d9d03e91eb17aa634be2f1031f667bba3f483410297abb
 homepage   : https://github.com/teejee2008/timeshift
 license    : LGPL-3.0-or-later
 component  : system.utils
