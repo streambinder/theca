@@ -1,7 +1,7 @@
 maintainer : algent-al
 name       : ubuntu-budgie-extras
 version    : 1.1.0
-release    : 8
+release    : 9
 source     :
     - https://github.com/UbuntuBudgie/budgie-extras/releases/download/v1.1.0/budgie-extras-1.1.0.tar.xz : 674fdb41a65189efeb00ba085213fdde9a2b7f09f5361a263a2bc11d1ced4159
 homepage   : https://github.com/UbuntuBudgie/budgie-extras
@@ -203,8 +203,17 @@ rundeps    :
         - python-psutil
         - wmctrl
 setup      : |
-    %apply_patches
-    %meson_configure --sysconfdir=/usr/share \
+    sed -i -e "s|/usr/bin/pgrep|/bin/pgrep|g" \
+        budgie-wmover/wmover_panelrunner \
+        budgie-wmover/budgie-wmover.py \
+        budgie-dropby/dropover \
+        budgie-dropby/budgie_dropby.py
+    sed -i "s|/usr/bin/pkill|/bin/pkill|g" budgie-dropby/dropover
+    sed -i -e 's|Config.PACKAGE_BINDIR + "/pgrep|"/bin/pgrep|g' \
+        budgie-wpreviews/src/previews_controls.vala \
+        budgie-wallstreet/src/wallstreet_control/wallstreet_control.vala \
+        budgie-hotcorners/src/HotCornersApplet.vala
+    %meson_configure --sysconfdir=/usr/share --bindir=/usr/bin \
         -Dbuild-all=false \
         -Dbuild-app-launcher=true \
         -Dbuild-applications-menu=true \
