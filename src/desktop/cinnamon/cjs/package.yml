@@ -34,8 +34,8 @@ builddeps  :
     - gnome-common
     - gtk-doc
 setup      : |
-    %autogen --prefix=/usr --disable-static --libdir=/usr/lib64 --libexecdir=/usr/lib64
+    %meson_configure
 build      : |
-    %make
+    %meson_build
 install    : |
-    %make_install
+    %meson_install
