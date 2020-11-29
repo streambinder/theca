@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon-session
-version    : 4.6.2
-release    : 7
+version    : 4.8.0
+release    : 8
 source     :
-    - https://github.com/linuxmint/cinnamon-session/archive/4.6.2.tar.gz : 0d4793d8fb828ce8ec6dbedc67a5d244e56d4182b83030d10029eadc0c6723e6
+    - https://github.com/linuxmint/cinnamon-session/archive/4.8.0.tar.gz : 66301a1eb748f646c419ced76f3388d8d6af0436716c737842cd85f359bd38d4
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon session
