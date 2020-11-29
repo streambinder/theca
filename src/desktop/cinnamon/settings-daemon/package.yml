@@ -35,8 +35,8 @@ builddeps  :
     - cups-devel
     - gnome-common
 setup      : |
-    %autogen --prefix=/usr --disable-static --libexecdir=/usr/lib64 --disable-man
+    %meson_configure
 build      : |
-    %make
-install    : |-
-    %make_install
+    %meson_build
+install    : |
+    %meson_install
