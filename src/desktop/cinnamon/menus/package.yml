@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon-menus
-version    : 4.6.1
-release    : 4
+version    : 4.8.1
+release    : 5
 source     :
-    - https://github.com/linuxmint/cinnamon-menus/archive/4.6.1.tar.gz : 534cf3e15fed812e1affb544811e10823edbc56360b52a80ffbabc006c467dc6
+    - https://github.com/linuxmint/cinnamon-menus/archive/4.8.1.tar.gz : a6070591b1e9eaed8b9a332e7e2ecb9fcd90de5565f7e4dc97cd7aeb89a6cc19
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : The cinnamon-menu library
