@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : muffin
-version    : 4.6.3
-release    : 7
+version    : 4.8.0
+release    : 8
 source     :
-    - https://github.com/linuxmint/muffin/archive/4.6.3.tar.gz : e634209f1a1dfec7efc7c741e65014903ea937926070dba3793cac595df3d5a3
+    - https://github.com/linuxmint/muffin/archive/4.8.0.tar.gz : a4f1cb9ed80b7ea1e51d30b97ea3ae2f196b06fc9fd56c0283e64c9ee1322c18
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon window manager based on Mutter
