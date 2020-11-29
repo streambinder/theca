@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon-control-center
-version    : 4.6.2
-release    : 5
+version    : 4.8.0
+release    : 6
 source     :
-    - https://github.com/linuxmint/cinnamon-control-center/archive/4.6.2.tar.gz : f887d7e185f8ff1ee6f9789219231cba8be820c706b316d35ee5118d2fd898eb
+    - https://github.com/linuxmint/cinnamon-control-center/archive/4.8.0.tar.gz : c419b7ce59c24492543ba95bd7dbb5fcc4b5338d2596b14820d80ec26d98fdd3
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : A collection of configuration plugins used in cinnamon-settings
