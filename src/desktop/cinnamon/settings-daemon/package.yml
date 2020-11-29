@@ -25,6 +25,7 @@ builddeps  :
     - pkgconfig(libgnomekbd)
     - pkgconfig(libgnomekbdui)
     - pkgconfig(libnotify)
+    - pkgconfig(librsvg-2.0)
     - pkgconfig(libsystemd)
     - pkgconfig(libwacom)
     - pkgconfig(libxklavier)
