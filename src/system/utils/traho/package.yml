@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : traho
-version    : 7
-release    : 8
+version    : 8
+release    : 9
 source     :
-    - https://github.com/streambinder/traho/archive/v7.tar.gz : 58a73678c8437a60e5edc4fbdf1d40d15555ec37b927db42ab39de01fd6d958c
+    - https://github.com/streambinder/traho/archive/v8.tar.gz : 3ceab55b145b3982db30a2a3ffd3a0af771723a24be28aa5b38fe7ec956bfadc
 license    : GPL-3.0
 component  : system.utils
 networking : true
