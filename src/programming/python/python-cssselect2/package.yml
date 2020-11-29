@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : python-cssselect2
-version    : 0.3.0
-release    : 1
+version    : 0.4.1
+release    : 2
 source     :
-    - https://files.pythonhosted.org/packages/03/37/0e28364d4c2bce998171199ab59650b3174c077ef2c8b6d4ff57aa47676a/cssselect2-0.3.0.tar.gz : 5c2716f06b5de93f701d5755a9666f2ee22cbcd8b4da8adddfc30095ffea3abc
+    - https://pypi.io/packages/source/c/cssselect2/cssselect2-0.4.1.tar.gz : 93fbb9af860e95dd40bf18c3b2b6ed99189a07c0f29ba76f9c5be71344664ec8
 homepage   : https://pypi.org/project/cssselect2/
 license    : BSD-3-Clause
 component  : programming.python
@@ -23,4 +23,6 @@ build      : |
 install    : |
     %python3_install
 check      : |
-    %python3_test
+    pushd $PKG_BUILD_DIR/py3build/tests
+        PYTHONPATH=$installdir/usr/lib/python%python3_version%/site-packages pytest3
+    popd

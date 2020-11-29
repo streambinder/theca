@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : python-cairocffi
-version    : 1.1.0
-release    : 1
+version    : 1.2.0
+release    : 2
 source     :
-    - https://github.com/Kozea/cairocffi/archive/v1.1.0.tar.gz : 52b6c6d61c14c7cc97cc6309e54f8435fc61dff4c258f89ad08ecb48bce15af7
+    - https://github.com/Kozea/cairocffi/archive/v1.2.0.tar.gz : 5577944680e771022fd0c58fb2bb1e0a308bf1146c518262ae3f20654fddcae2
 homepage   : https://cairocffi.readthedocs.io/en/stable/
 license    : BSD-3-Clause
 component  : programming.python
@@ -13,6 +13,7 @@ description: |
 builddeps  :
     - gdk-pixbuf
     - libcairo
+    - numpy
     - pytest-isort
     - pytest-runner
     - python-cffi
