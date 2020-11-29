@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon-desktop
-version    : 4.6.4
-release    : 5
+version    : 4.8.0
+release    : 6
 source     :
-    - https://github.com/linuxmint/cinnamon-desktop/archive/4.6.4.tar.gz : 8b0f69c4acbeabca723a95ec80905601eec8d563c96ad88a9de3ddac56925ef6
+    - https://github.com/linuxmint/cinnamon-desktop/archive/4.8.0.tar.gz : 99db3b15f3d267f1e88320030020506c34953e2b9d9ec621ed59c0eb12f64d9b
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : The cinnamon-desktop library and common settings schemas for the cinnamon desktop
