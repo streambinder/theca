@@ -14,6 +14,7 @@ description: |
 builddeps  :
     - pkgconfig(cinnamon-desktop)
     - pkgconfig(colord)
+    - pkgconfig(dbus-glib-1)
     - pkgconfig(fontconfig)
     - pkgconfig(gio-unix-2.0)
     - pkgconfig(gtk+-3.0)
