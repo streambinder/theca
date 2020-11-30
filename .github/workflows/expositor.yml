@@ -29,6 +29,9 @@ jobs:
           echo "PYTHONPATH=/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages" >> $GITHUB_ENV
           sudo ln -sf $(which python) /usr/bin/python3
 
+      # TODO: https://github.com/actions/virtual-environments/issues/1816
+      # Install using APT as soon as ubuntu-latest label
+      # starts referring to Ubuntu Focal Fossa
       - name: Download and configure libgit2-28
         run: |
           sudo apt install -y libssh2-1-dev libssl-dev zlib1g-dev libncurses5-dev \
