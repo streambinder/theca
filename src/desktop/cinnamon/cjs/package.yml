@@ -28,7 +28,7 @@ builddeps  :
 #    - pkgconfig(libnm-glib)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libstartup-notification-1.0)
-    - pkgconfig(mozjs-52)
+    - pkgconfig(mozjs-78)
     - pkgconfig(xfixes)
     - glib-networking
     - gnome-common
