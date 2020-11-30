@@ -43,17 +43,8 @@ rundeps    :
     - python-tinycss
     - python3-cairo
 setup      : |
-    %autogen --prefix=/usr \
-        --sysconfdir=/etc \
-        --libexecdir=/usr/lib64/cinnamon \
-        --localstatedir=/var \
-        --disable-static \
-        --enable-compile-warnings=yes \
-        --with-session-tracking=systemd \
-        --disable-gtk-doc
+    %meson_configure
 build      : |
-    %make
+    %meson_build
 install    : |
-    %make_install
-    # Needed for Cinnamon Extensions
-    mkdir %installroot%/usr/share/cinnamon/extensions/
+    %meson_install
