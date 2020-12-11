@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon-translations
-version    : 4.8.0
-release    : 5
+version    : 4.8.1
+release    : 6
 source     :
-    - https://github.com/linuxmint/cinnamon-translations/archive/4.8.0.tar.gz : 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+    - https://github.com/linuxmint/cinnamon-translations/archive/4.8.1.tar.gz : 0b99d40b4350afe841e26eafbe6bd9ecabe3f1795e31209423970c0da19df471
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon Translations
