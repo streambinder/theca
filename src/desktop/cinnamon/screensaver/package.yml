@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon-screensaver
-version    : 4.8.0
-release    : 5
+version    : 4.8.1
+release    : 6
 source     :
-    - https://github.com/linuxmint/cinnamon-screensaver/archive/4.8.0.tar.gz : d8d977e8a013fd5cf4dddb308c5fdffb7e1340e9c1496c6fc012de4ca420f202
+    - https://github.com/linuxmint/cinnamon-screensaver/archive/4.8.1.tar.gz : e06a9f28cba55c38d1464d02917eb374de941fd09007608c239a348e7653b675
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : Cinnamon screensaver
