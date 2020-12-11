@@ -53,6 +53,7 @@ jobs:
 
       - name: Install system dependencies
         run: |
+          sudo apt update
           sudo apt install -y parallel jq
 
       - name: Install Python dependencies
