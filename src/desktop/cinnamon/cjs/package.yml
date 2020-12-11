@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cjs
-version    : 4.8.0
-release    : 4
+version    : 4.8.1
+release    : 5
 source     :
-    - https://github.com/linuxmint/cjs/archive/4.8.0.tar.gz : 6f07defa6b21efcc4332ba46f286ed303a05af8805d47a9ff4bfa40cdf45b40b
+    - https://github.com/linuxmint/cjs/archive/4.8.1.tar.gz : 20a117f77917896088273f3ee670d43bee1c115a351c2f688840494b15a8613d
 license    :
     - MIT
     - LGPL-2.0
