@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : cinnamon
-version    : 4.8.0
-release    : 12
+version    : 4.8.2
+release    : 13
 source     :
-    - https://github.com/linuxmint/cinnamon/archive/4.8.0.tar.gz : 78b3e9716bbe78a85f723b17c15d6e405c8b7b80b06ebae052b03cb66bafdd71
+    - https://github.com/linuxmint/cinnamon/archive/4.8.2.tar.gz : 2891a13446db9992e48e1923bce7c9ed6a1012515a9c02aacc5762c471b465eb
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : A Linux desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features
