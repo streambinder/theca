@@ -1,0 +1,24 @@
+maintainer : algent-al
+name       : komorebi
+version    : 2.2.1
+release    : 1
+source     :
+    - https://github.com/Komorebi-Fork/komorebi/archive/v2.2.1.tar.gz : 4074751825cf031cca63c647372494446dab2492e8311ff439785527b3518c5b
+homepage   : https://github.com/Komorebi-Fork/komorebi
+license    : GPL-3.0-or-later
+component  : multimedia.graphics
+summary    : A beautiful and customizable wallpapers manager for Linux
+description: |
+    Komorebi is an awesome animated wallpapers manager for all Linux platforms. It provides fully customizeable image, video, and web page wallpapers that can be tweaked at any time!
+builddeps  :
+    - pkgconfig(clutter-gst-3.0)
+    - pkgconfig(clutter-gtk-1.0)
+    - pkgconfig(gee-0.8)
+    - pkgconfig(webkit2gtk-4.0)
+    - vala
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
