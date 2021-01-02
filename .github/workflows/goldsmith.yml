@@ -83,8 +83,6 @@ jobs:
         run: |
           git clone https://github.com/getsolus/solbuild.git
           cd solbuild
-          make ensure_modules
-          make
           sudo make install
           sudo solbuild init -u
           sudo mkdir /etc/solbuild
