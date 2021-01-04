@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : nemo
-version    : 4.8.2
-release    : 9
+version    : 4.8.4
+release    : 10
 source     :
-    - https://github.com/linuxmint/nemo/archive/4.8.2.tar.gz : e4225b7c4736abe49e106595c770f2c2ea137b15f0b09c9f9ae05c1556fb42a4
+    - https://github.com/linuxmint/nemo/archive/4.8.4.tar.gz : 089740d1a52a98e8bc0cda9d0512822e0b6b12d2a09c3d857b01a3232156f98a
 license    : GPL-2.0
 component  : desktop.cinnamon
 summary    : File browser for Cinnamon
