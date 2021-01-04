@@ -3,7 +3,7 @@ name       : libxfce4ui
 version    : 4.15.3
 release    : 6
 source     :
-    - https://gitlab.xfce.org/xfce/libxfce4ui/-/archive/libxfce4ui-4.15.3/libxfce4ui-libxfce4ui-4.15.3.tar.bz2 : d90d4834aa04fb447761f1099a64a8b3246cea4132e95baf1c159d6cd6b88186
+    - https://github.com/xfce-mirror/libxfce4ui/archive/libxfce4ui-4.15.3.tar.gz : c7f387dc83d497f46e98911f0c815ebe13720b9b2468f573954157447b14cb12
 license    : LGPL-2.0
 component  : desktop.xfce
 summary    : Widgets library for the Xfce desktop environment

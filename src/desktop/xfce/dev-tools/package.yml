@@ -3,7 +3,7 @@ name       : xfce4-dev-tools
 version    : 4.14.0
 release    : 2
 source     :
-    - https://gitlab.xfce.org/xfce/xfce4-dev-tools/-/archive/xfce4-dev-tools-4.14.0/xfce4-dev-tools-xfce4-dev-tools-4.14.0.tar.bz2 : 0b83f86ade64341595d5c560c351339c81a713a67c3e47d8d828b42a0a8d438d
+    - https://github.com/xfce-mirror/xfce4-dev-tools/archive/xfce4-dev-tools-4.14.0.tar.gz : 4c455cd61ba56825dc78258e52f8a4e9cb5081d238a3547303b19135fe1882a1
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Developer Tools

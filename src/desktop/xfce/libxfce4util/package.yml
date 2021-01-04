@@ -3,7 +3,7 @@ name       : at-libxfce4util
 version    : 4.15.2
 release    : 5
 source     :
-    - https://gitlab.xfce.org/xfce/libxfce4util/-/archive/libxfce4util-4.15.2/libxfce4util-libxfce4util-4.15.2.tar.bz2 : ecad1966500dbef20bc2274169eab50a3fd21ffed3fad3f1ac923e9920797114
+    - https://github.com/xfce-mirror/libxfce4util/archive/libxfce4util-4.15.2.tar.gz : 2e132c645d0035db734670123c53455eea2f3d6ad4e746a43f026d84da35efa8
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce4 utility library

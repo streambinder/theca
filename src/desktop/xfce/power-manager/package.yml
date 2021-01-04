@@ -3,7 +3,7 @@ name       : xfce4-power-manager
 version    : 1.6.6
 release    : 5
 source     :
-    - https://gitlab.xfce.org/xfce/xfce4-power-manager/-/archive/xfce4-power-manager-1.6.6/xfce4-power-manager-xfce4-power-manager-1.6.6.tar.bz2 : 2e79791c1f5d169ba170b043e4fbf60409f41c49fe7838e4e091682bc3922de1
+    - https://github.com/xfce-mirror/xfce4-power-manager/archive/xfce4-power-manager-1.6.6.tar.gz : bcb569ce7cd729fbbde0287dd4a529adeef57787ce2495784302f7542698c464
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Power Manager

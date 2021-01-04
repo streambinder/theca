@@ -3,7 +3,7 @@ name       : thunar
 version    : 1.8.15
 release    : 6
 source     :
-    - https://gitlab.xfce.org/xfce/thunar/-/archive/thunar-1.8.15/thunar-thunar-1.8.15.tar.bz2 : 70f0dad16c5b58bab804811e06dfa5a0e19b01d3ab99df1a8a5db38642001111
+    - https://github.com/xfce-mirror/thunar/archive/thunar-1.8.15.tar.gz : cab7378da8a3673ed20b974fea7aa7244180a529d8efec1f23e6d5b7c619f27b
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Thunar File Manager

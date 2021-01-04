@@ -3,7 +3,7 @@ name       : xfconf
 version    : 4.14.3
 release    : 4
 source     :
-    - https://gitlab.xfce.org/xfce/xfconf/-/archive/xfconf-4.14.3/xfconf-xfconf-4.14.3.tar.bz2 : 641211118e346efdda7c745da4cc54b8183e1c91e72c3a186287a63ba7bb78fb
+    - https://github.com/xfce-mirror/xfconf/archive/xfconf-4.14.3.tar.gz : 9026a529e789fd11989316ac31ef3b7a55a108c013835d04aef3243e7b45135e
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce configuration storage system

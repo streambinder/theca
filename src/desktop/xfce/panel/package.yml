@@ -3,7 +3,7 @@ name       : xfce4-panel
 version    : 4.14.4
 release    : 7
 source     :
-    - https://gitlab.xfce.org/xfce/xfce4-panel/-/archive/xfce4-panel-4.14.4/xfce4-panel-xfce4-panel-4.14.4.tar.bz2 : e7450483da2c71c9d0d4ae9a74b26c4a0006404288e521ce6f9474abc48c7a5e
+    - https://github.com/xfce-mirror/xfce4-panel/archive/xfce4-panel-4.14.4.tar.gz : 93ca4f6333c6b0e080b059e67750a972d5941cf416b22e0c316deb37e083b11e
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce's panel
