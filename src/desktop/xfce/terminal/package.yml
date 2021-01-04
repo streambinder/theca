@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-terminal
-version    : 0.8.9.2
-release    : 4
+version    : 0.8.10
+release    : 5
 source     :
-    - https://github.com/xfce-mirror/xfce4-terminal/archive/xfce4-terminal-0.8.9.2.tar.gz : 0e0f4aafa88be739c87c9f5c09548ede3eecefc3c9fb1239a7dd1ba42b3a969d
+    - https://github.com/xfce-mirror/xfce4-terminal/archive/xfce4-terminal-0.8.10.tar.gz : 9d54797b2771a6b1f0422d6c829feb7f43503e5528a07a39345e8edc025d20a8
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce4 Terminal
