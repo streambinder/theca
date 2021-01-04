@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-calculator
-version    : 1.5.5
-release    : 3
+version    : 1.6.0
+release    : 4
 source     :
-    - https://github.com/elementary/calculator/archive/1.5.5.tar.gz : b8dc3ebdb1d19b86232731efedb58fa08ecebc49a34d5c4a5855823c8e57f1ea
+    - https://github.com/elementary/calculator/archive/1.6.0.tar.gz : c650d5ff7d2df2d122ade0cbd35be50927f22b0d260f28e374b1112114f24540
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon calculator app
