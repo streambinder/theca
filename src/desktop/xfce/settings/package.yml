@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-settings
-version    : 4.14.3
-release    : 4
+version    : 4.16.0
+release    : 5
 source     :
-    - https://github.com/xfce-mirror/xfce4-settings/archive/xfce4-settings-4.14.3.tar.gz : 4841c8a5ba011aef4952cf496a3545b87a1354ce5bab4d7c4d8e04df42941c10
+    - https://github.com/xfce-mirror/xfce4-settings/archive/xfce4-settings-4.16.0.tar.gz : 8e2af5c92ea57efd5871ad03226f7bd03316b13d08e0f197f71435897c8d1f89
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Settings
