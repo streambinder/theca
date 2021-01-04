@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-tweaks
-version    : 0.0.1
-release    : 3
+version    : 2.0.0
+release    : 4
 source     :
-    - https://github.com/elementary-tweaks/elementary-tweaks/archive/9a98a9ffef17ec98befae5122ed8ce3d0d3fa5ea.tar.gz : d55facd8010b289dd13497ed9ff9ffbe1fb4848542bce4f215c110e9d3639e33
+    - https://github.com/elementary-tweaks/elementary-tweaks/archive/2.0.0.tar.gz : b4e93e7c1526e9e5cd69aabfef632448148f58e752b0ae050ee165f891a352fa
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon customization tool
