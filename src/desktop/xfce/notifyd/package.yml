@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-notifyd
-version    : 0.6.1
-release    : 5
+version    : 0.6.2
+release    : 6
 source     :
-    - https://github.com/xfce-mirror/xfce4-notifyd/archive/xfce4-notifyd-0.6.1.tar.gz : 56a9197b4558a56bd8c0340ab6c7302e1dfae808f04b42b393487532e08feae6
+    - https://github.com/xfce-mirror/xfce4-notifyd/archive/xfce4-notifyd-0.6.2.tar.gz : 601fcac14897a94d34d939c6470f845aa75ce2ce45babddf84dca069b940779f
 license    : GPL-2.0-or-later
 component  : desktop.xfce
 summary    : XFCE4 Notification Daemon
