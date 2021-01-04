@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : thunar
-version    : 1.8.15
-release    : 6
+version    : 4.16.1
+release    : 7
 source     :
-    - https://github.com/xfce-mirror/thunar/archive/thunar-1.8.15.tar.gz : cab7378da8a3673ed20b974fea7aa7244180a529d8efec1f23e6d5b7c619f27b
+    - https://github.com/xfce-mirror/thunar/archive/thunar-4.16.1.tar.gz : e87a0801a4439bae68d3c3bb76320500ecc8186de5eda03d557899731800d922
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Thunar File Manager
