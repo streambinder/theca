@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfconf
-version    : 4.14.3
-release    : 4
+version    : 4.16.0
+release    : 5
 source     :
-    - https://github.com/xfce-mirror/xfconf/archive/xfconf-4.14.3.tar.gz : 9026a529e789fd11989316ac31ef3b7a55a108c013835d04aef3243e7b45135e
+    - https://github.com/xfce-mirror/xfconf/archive/xfconf-4.16.0.tar.gz : 948896e3073bbafaf87b2315324a325ca6960549585d238ba62b688495d78805
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce configuration storage system
