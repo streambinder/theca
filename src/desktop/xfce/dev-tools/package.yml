@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-dev-tools
-version    : 4.14.0
-release    : 2
+version    : 4.16.0
+release    : 3
 source     :
-    - https://github.com/xfce-mirror/xfce4-dev-tools/archive/xfce4-dev-tools-4.14.0.tar.gz : 4c455cd61ba56825dc78258e52f8a4e9cb5081d238a3547303b19135fe1882a1
+    - https://github.com/xfce-mirror/xfce4-dev-tools/archive/xfce4-dev-tools-4.16.0.tar.gz : d8b854f1e85a4a561c7ee687edd6a83117fc39fbe68d93333ac3f446005c1f9c
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Developer Tools
