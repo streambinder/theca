@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : exo
-version    : 0.12.11
-release    : 4
+version    : 4.16.0
+release    : 5
 source     :
-    - https://github.com/xfce-mirror/exo/archive/exo-0.12.11.tar.gz : fc6ca75051654b95ea2a3cefa7cde62bead2d8143159ffc3bdd19487dd76def8
+    - https://github.com/xfce-mirror/exo/archive/exo-4.16.0.tar.gz : 8acffaa4ee6eef4fceece1edd9b01216415a0c0ae268a31cfb1a710381d9d941
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Application library for the Xfce desktop environment
