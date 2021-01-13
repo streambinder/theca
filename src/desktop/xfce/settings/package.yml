@@ -3,7 +3,7 @@ name       : xfce4-settings
 version    : 4.16.0
 release    : 5
 source     :
-    - https://github.com/xfce-mirror/xfce4-settings/archive/xfce4-settings-4.16.0.tar.gz : 8e2af5c92ea57efd5871ad03226f7bd03316b13d08e0f197f71435897c8d1f89
+    - https://archive.xfce.org/src/xfce/xfce4-settings/4.16/xfce4-settings-4.16.0.tar.bz2 : 67a1404fc754c675c6431e22a8fe0e5d79644fdfadbfe25a4523d68e1442ddc2
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce Settings
@@ -22,12 +22,7 @@ builddeps  :
     - pkgconfig(xorg-libinput)
     - xfce4-dev-tools
 setup      : |
-    %autogen --enable-sound-settings \
-             --enable-xrandr \
-             --enable-xcursor \
-             --enable-libnotify \
-             --enable-libxklavier \
-             --enable-maintainer-mode
+    %configure
 build      : |
     %make
 install    : |

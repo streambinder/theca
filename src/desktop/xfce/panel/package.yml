@@ -3,7 +3,7 @@ name       : xfce4-panel
 version    : 4.16.0
 release    : 8
 source     :
-    - https://github.com/xfce-mirror/xfce4-panel/archive/xfce4-panel-4.16.0.tar.gz : a91c50a8a78a286e65f3d65678608991e8a8dcadf18c8afbacf21d80af8528e4
+    - https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.0.tar.bz2 : 5e979aeeb37d306d72858b1bc67448222ea7a68de01409055b846cd31f3cc53d
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce's panel
@@ -20,7 +20,7 @@ builddeps  :
     - vala
     - xfce4-dev-tools
 setup      : |
-    %autogen --enable-maintainer-mode --enable-gtk-doc
+    %configure
 build      : |
     %make
 install    : |

@@ -3,7 +3,7 @@ name       : xfce4-terminal
 version    : 0.8.10
 release    : 5
 source     :
-    - https://github.com/xfce-mirror/xfce4-terminal/archive/xfce4-terminal-0.8.10.tar.gz : 9d54797b2771a6b1f0422d6c829feb7f43503e5528a07a39345e8edc025d20a8
+    - https://archive.xfce.org/src/apps/xfce4-terminal/0.8/xfce4-terminal-0.8.10.tar.bz2 : 7a3337c198e01262a0412384823185753ac8a0345be1d6776a7e9bbbcbf33dc7
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce4 Terminal
@@ -13,9 +13,10 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libxfce4ui-2)
     - pkgconfig(vte-2.91)
+    - gtk-doc
     - xfce4-dev-tools
 setup      : |
-    %autogen --enable-maintainer-mode
+    %configure
 build      : |
     %make
 install    : |

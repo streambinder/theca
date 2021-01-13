@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : thunar
-version    : 4.16.1
-release    : 7
+version    : 4.16.2
+release    : 8
 source     :
-    - https://github.com/xfce-mirror/thunar/archive/thunar-4.16.1.tar.gz : e87a0801a4439bae68d3c3bb76320500ecc8186de5eda03d557899731800d922
+    - https://archive.xfce.org/src/xfce/thunar/4.16/thunar-4.16.2.tar.bz2 : 67a90b98c436192f9aa6cd18a22a089e713007864aebfa65f36f121c86ba7add
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Thunar File Manager
@@ -21,13 +21,7 @@ rundeps    :
     - gvfs
     - tumbler
 setup      : |
-    %autogen --disable-static \
-             --enable-maintainer-mode \
-             --enable-gio-unix \
-             --enable-gudev \
-             --enable-notifications \
-             --enable-exif \
-             --enable-pcre
+    %configure
 build      : |
     %make
 install    : |

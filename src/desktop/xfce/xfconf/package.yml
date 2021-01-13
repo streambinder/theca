@@ -3,7 +3,7 @@ name       : xfconf
 version    : 4.16.0
 release    : 5
 source     :
-    - https://github.com/xfce-mirror/xfconf/archive/xfconf-4.16.0.tar.gz : 948896e3073bbafaf87b2315324a325ca6960549585d238ba62b688495d78805
+    - https://archive.xfce.org/src/xfce/xfconf/4.16/xfconf-4.16.0.tar.bz2 : 652a119007c67d9ba6c0bc7a740c923d33f32d03dc76dfc7ba682584e72a5425
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce configuration storage system
@@ -15,7 +15,7 @@ builddeps  :
     - gtk-doc
     - xfce4-dev-tools
 setup      : |
-    %autogen
+    %configure
 build      : |
     %make
 install    : |

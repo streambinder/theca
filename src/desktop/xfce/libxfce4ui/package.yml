@@ -3,7 +3,7 @@ name       : libxfce4ui
 version    : 4.16.0
 release    : 7
 source     :
-    - https://github.com/xfce-mirror/libxfce4ui/archive/libxfce4ui-4.16.0.tar.gz : e7114889ade0fcf083c5b3b6928ff8a1b6a422e9db83b132558ea69ba0c95f22
+    - https://archive.xfce.org/src/xfce/libxfce4ui/4.16/libxfce4ui-4.16.0.tar.bz2 : 8b06c9e94f4be88a9d87c47592411b6cbc32073e7af9cbd64c7b2924ec90ceaa
 license    : LGPL-2.0
 component  : desktop.xfce
 summary    : Widgets library for the Xfce desktop environment
@@ -17,7 +17,7 @@ builddeps  :
     - gtk-doc
     - xfce4-dev-tools
 setup      : |
-    %autogen --enable-maintainer-mode
+    %configure
 build      : |
     %make
 install    : |
