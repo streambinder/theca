@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel-indicator-bluetooth
-version    : 2.1.5
-release    : 4
+version    : 2.1.6
+release    : 5
 source     :
-    - https://github.com/elementary/wingpanel-indicator-bluetooth/archive/2.1.5.tar.gz : 810c57530081034485b5e17ce89c09fd9ee49eb7ad3c70cdc467dadbd9f50051
+    - https://github.com/elementary/wingpanel-indicator-bluetooth/archive/2.1.6.tar.gz : 52b510e04010f735221294f3b5d94372db13b040a7034e2cc3fca7d507352aea
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Wingpanel bluetooth indicator
