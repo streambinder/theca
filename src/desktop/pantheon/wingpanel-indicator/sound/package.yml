@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel-indicator-sound
-version    : 2.1.7
-release    : 6
+version    : 2.1.8
+release    : 7
 source     :
-    - https://github.com/elementary/wingpanel-indicator-sound/archive/2.1.7.tar.gz : 570fdd60b5dfec7f958474fb3a00914d9b5a942d1040c5d4fa9b079476c61812
+    - https://github.com/elementary/wingpanel-indicator-sound/archive/2.1.8.tar.gz : da651df1f47790b77fa3e1aa98911f12ed41041a36f48f6674e2573f602b91b2
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Wingpanel sound indicator
