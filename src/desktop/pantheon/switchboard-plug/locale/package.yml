@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : switchboard-plug-locale
-version    : 2.5.2
-release    : 5
+version    : 2.5.3
+release    : 6
 source     :
-    - https://github.com/elementary/switchboard-plug-locale/archive/2.5.2.tar.gz : 0e38c45d7ebac411e977d9dc103bd91004bfc98f1b6dc303b08e09599e426770
+    - https://github.com/elementary/switchboard-plug-locale/archive/2.5.3.tar.gz : 5bca21de5f8d197ee622247fd3ac900430821c2889d398a4ba95ef1f94b88eac
 license    : LGPL-3.0
 component  : desktop.pantheon
 summary    : Switchboard locale plug
