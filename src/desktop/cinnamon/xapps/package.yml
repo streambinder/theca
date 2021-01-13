@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xapps
-version    : 2.0.5
-release    : 13
+version    : 2.0.6
+release    : 14
 source     :
-    - https://github.com/linuxmint/xapps/archive/2.0.5.tar.gz : 7622e85bc3310f66d04e406eae81ffad5755ed78f3e26c6567d13b16713ceaf6
+    - https://github.com/linuxmint/xapps/archive/2.0.6.tar.gz : 4541a54760715f54fe6ab6174d4e040f5bfa3a0186b63836f2332a3ddfde3cc6
 license    : LGPL-3.0
 component  : desktop.cinnamon
 summary    : Cross-desktop libraries and common resources
