@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel-indicator-keyboard
-version    : 2.2.1
-release    : 4
+version    : 2.3.0
+release    : 5
 source     :
-    - https://github.com/elementary/wingpanel-indicator-keyboard/archive/2.2.1.tar.gz : 7be4eb4814cfb0c28831c932c92b31c86e088de9125707a8ff96e8302946d3a1
+    - https://github.com/elementary/wingpanel-indicator-keyboard/archive/2.3.0.tar.gz : e0ba1b2c74b0aadebd061d2193e8c7256d7a19d0dce14d12b1639895e214df78
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Wingpanel keyboard indicator
