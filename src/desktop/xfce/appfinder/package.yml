@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-appfinder
-version    : 4.16.0
-release    : 5
+version    : 4.16.1
+release    : 6
 source     :
-    - http://archive.xfce.org/src/xfce/xfce4-appfinder/4.16/xfce4-appfinder-4.16.0.tar.bz2 : 37b92aaaeeec8220ed23163cf89321168d3b49e0c48b4c10f12dc4a21fdf0954
+    - http://archive.xfce.org/src/xfce/xfce4-appfinder/4.16/xfce4-appfinder-4.16.1.tar.bz2 : bfe3e9bd92695014ee74a2fbb7f5fd1b4c29cf043c4a11598b8958324c81e7ec
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce aplication launcher and finder
