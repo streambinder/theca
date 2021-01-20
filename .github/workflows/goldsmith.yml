@@ -83,7 +83,7 @@ jobs:
         run: |
           git clone https://github.com/getsolus/solbuild.git
           cd solbuild
-          sudo make install
+          sudo make build install
           sudo solbuild init -u
           sudo mkdir /etc/solbuild
           sudo echo 'image = "main-x86_64"
