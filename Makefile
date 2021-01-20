@@ -32,7 +32,7 @@ strip:
 
 .PHONY: index
 index:
-	@(cd $(BUILD_DIR) && sudo solbuild index > /dev/null 2>&1)
+	@(cd $(BUILD_DIR) && sudo solbuild index $(BUILD_DIR) > /dev/null 2>&1)
 
 .PHONY: release
 release: packages strip index components
