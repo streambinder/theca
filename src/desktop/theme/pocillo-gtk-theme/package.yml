@@ -1,7 +1,7 @@
 maintainer : algent-al
 name       : pocillo-gtk-theme
 version    : 0.6
-release    : 1
+release    : 2
 source     :
     - https://github.com/UbuntuBudgie/pocillo-gtk-theme/archive/v0.6.tar.gz : eb91742cd4240e2e2ba48abfdb8022bc3886c2f72b480a6111487cee771f0da9
 homepage   : https://github.com/UbuntuBudgie/pocillo-gtk-theme
