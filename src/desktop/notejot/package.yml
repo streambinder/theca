@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : notejot
-version    : 2.0.0
-release    : 3
+version    : 1.6.3
+release    : 2
 source     :
-    - https://github.com/lainsce/notejot/archive/2.0.0.tar.gz : f3f5211738413969a7ce863928701e5658df6e419e1ef5dc28b13fc49cbf6b5e
+    - https://github.com/lainsce/notejot/archive/1.6.3.tar.gz : 130814c480aa0cf6c2b91e06f865512ecf4db693cd89763eb7e6bdfbec08951d
 license    : GPL-3.0-or-later
 homepage   : https://github.com/lainsce/notejot/
 component  : desktop
