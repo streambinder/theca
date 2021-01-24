@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : stemmer
-version    : 2.0.0
-release    : 4
+version    : 2.1.0
+release    : 5
 source     :
-    - https://github.com/snowballstem/snowball/archive/v2.0.0.tar.gz : f047a33f3bcaf12f3ab06ce3f1237a911e21a510035dca9016f9140f4041b006
+    - https://github.com/snowballstem/snowball/archive/v2.1.0.tar.gz : 24ae0b28d6531190c2cd960d515ec9374d3a3d9420c4a0accdf89b7f02fc9caa
 license    : BSD-3-Clause
 component  : programming.tools
 summary    : Snowball stemming algorithms, development kit
