@@ -1,4 +1,3 @@
-- at-libxfce4util
 - bcc
 - blackbox
 - cerbere
@@ -106,7 +105,6 @@
 - python-cairocffi
 - python-tinycss2
 - qtermwidget
-- xfconf
 - youtube-dlg
 # group separator
 - cinnamon-control-center

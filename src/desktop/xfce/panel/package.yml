@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : xfce4-panel
 version    : 4.16.0
-release    : 8
+release    : 9
 source     :
     - https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.0.tar.bz2 : 5e979aeeb37d306d72858b1bc67448222ea7a68de01409055b846cd31f3cc53d
 license    : GPL-2.0
@@ -15,7 +15,7 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libwnck-3.0)
     - pkgconfig(x11)
-    - at-libxfce4util-devel
+    - libxfce4util-devel
     - gtk-doc
     - vala
     - xfce4-dev-tools

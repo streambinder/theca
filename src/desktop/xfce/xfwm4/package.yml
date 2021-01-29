@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : xfwm4
 version    : 4.16.1
-release    : 10
+release    : 11
 source     :
     - http://archive.xfce.org/src/xfce/xfwm4/4.16/xfwm4-4.16.1.tar.bz2 : b5b24ca04bd73c642db0a4b4df81d262381d758f01b51108257d48b391b8718c
 license    : GPL-2.0
@@ -15,7 +15,7 @@ builddeps  :
     - pkgconfig(libxfce4ui-2)
     - pkgconfig(xcomposite)
     - pkgconfig(xrender)
-    - at-libxfce4util-devel
+    - libxfce4util-devel
 setup      : |
     %configure
 build      : |

@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : xfce4-notifyd
 version    : 0.6.2
-release    : 6
+release    : 7
 source     :
     - https://archive.xfce.org/src/apps/xfce4-notifyd/0.6/xfce4-notifyd-0.6.2.tar.bz2 : 19ab84c6665c7819998f2269322d53f462c30963ce26042df23ae525e7d16545
 license    : GPL-2.0-or-later
@@ -13,7 +13,7 @@ builddeps  :
     - pkgconfig(libnotify)
     - pkgconfig(libxfce4panel-2.0)
     - pkgconfig(libxfce4ui-2)
-    - at-libxfce4util-devel
+    - libxfce4util-devel
     - xfce4-dev-tools
 setup      : |
     %configure

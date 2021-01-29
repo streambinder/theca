@@ -1,7 +1,7 @@
 maintainer : Justin
 name       : xfdesktop
 version    : 4.16.0
-release    : 7
+release    : 8
 source     :
     - http://archive.xfce.org/src/xfce/xfdesktop/4.16/xfdesktop-4.16.0.tar.bz2 : 934ba5affecff21e62d9fac1dd50c50cd94b3a807fefa5f5bff59f3d6f155bae
 license    : GPL-2.0
@@ -18,7 +18,7 @@ builddeps  :
     - pkgconfig(libxfce4ui-2)
     - pkgconfig(thunarx-3)
     - pkgconfig(x11)
-    - at-libxfce4util-devel
+    - libxfce4util-devel
 setup      : |
     %configure
 build      : |
