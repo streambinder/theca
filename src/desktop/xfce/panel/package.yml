@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : xfce4-panel
-version    : 4.16.0
-release    : 9
+version    : 4.16.1
+release    : 10
 source     :
-    - https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.0.tar.bz2 : 5e979aeeb37d306d72858b1bc67448222ea7a68de01409055b846cd31f3cc53d
+    - https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.1.tar.bz2 : fa099bc6be6592dbb828747a473c2e1b0e7f85afd945a98002b475bb6f975991
 license    : GPL-2.0
 component  : desktop.xfce
 summary    : Xfce's panel
