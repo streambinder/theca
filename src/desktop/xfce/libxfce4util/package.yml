@@ -1,0 +1,29 @@
+maintainer : Justin
+name       : libxfce4util
+version    : 4.16.0
+release    : 7
+source     :
+    - https://archive.xfce.org/src/xfce/libxfce4util/4.16/libxfce4util-4.16.0.tar.bz2 : 60598d745d1fc81ff5ad3cecc3a8d1b85990dd22023e7743f55abd87d8b55b83
+license    : GPL-2.0
+component  : desktop.xfce
+summary    : Xfce4 utility library Vala bindings
+description: |
+    Basic utility library for Xfce4 (Vala bindings only).
+libsplit   : no
+builddeps  :
+    - gtk-doc
+    - vala
+    - xfce4-dev-tools
+rundeps    :
+    - libxfce4util-devel
+    - libxfce4util-vapi
+patterns   :
+    - ^libxfce4util-vapi :
+        - /usr/share/vala
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
+    rm -rfv ${installdir}/usr/{include,sbin,lib64,share/{gir-1.0,gtk-doc,locale}}

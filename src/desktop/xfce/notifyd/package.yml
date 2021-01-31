@@ -14,6 +14,7 @@ builddeps  :
     - pkgconfig(libxfce4panel-2.0)
     - pkgconfig(libxfce4ui-2)
     - libxfce4util-devel
+    - libxfce4util-vapi
     - xfce4-dev-tools
 setup      : |
     %configure

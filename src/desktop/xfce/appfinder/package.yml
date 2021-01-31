@@ -14,6 +14,7 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libxfce4ui-2)
     - libxfce4util-devel
+    - libxfce4util-vapi
 setup      : |
     %configure
 build      : |

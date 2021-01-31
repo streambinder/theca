@@ -26,6 +26,7 @@
 - libhandy
 - libsignon-glib
 - libstatgrab
+- libxfce4util
 - light-locker
 - lightrss
 - lua-lgi

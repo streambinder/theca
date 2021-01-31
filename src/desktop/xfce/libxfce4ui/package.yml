@@ -14,6 +14,7 @@ builddeps  :
     - pkgconfig(libxfconf-0)
     - pkgconfig(x11)
     - libxfce4util-devel
+    - libxfce4util-vapi
     - gtk-doc
     - xfce4-dev-tools
 setup      : |
