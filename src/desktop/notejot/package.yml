@@ -1,9 +1,9 @@
 maintainer : Justin
 name       : notejot
-version    : 1.6.3
-release    : 2
+version    : 2.5.2
+release    : 3
 source     :
-    - https://github.com/lainsce/notejot/archive/1.6.3.tar.gz : 130814c480aa0cf6c2b91e06f865512ecf4db693cd89763eb7e6bdfbec08951d
+    - https://github.com/lainsce/notejot/archive/2.5.2.tar.gz : c5e17248da0780bb93b801e850c511a077b0d18dfafcacc2369532627b5ab85d
 license    : GPL-3.0-or-later
 homepage   : https://github.com/lainsce/notejot/
 component  : desktop
@@ -14,8 +14,10 @@ builddeps  :
     - pkgconfig(json-glib-1.0)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(gtksourceview-3.0)
+    - pkgconfig(gtksourceview-4)
     - pkgconfig(gee-0.8)
+    - pkgconfig(libhandy-1)
+    - pkgconfig(webkit2gtk-4.0)
     - vala
 setup      : |
     %meson_configure
