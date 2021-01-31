@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : libhandy
-version    : 0.80.0
-release    : 3
+version    : 1.0.3
+release    : 4
 source     :
-    - https://source.puri.sm/Librem5/libhandy/-/archive/v0.80.0/libhandy-v0.80.0.tar.gz : 88f7e2a23e492e9a1f9f52564b599db7e090ba0f2116ebe58f67450955428609
+    - https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.0.3/libhandy-1.0.3.tar.gz : 80c7f015b8ed0888f0f6a5cb15015d120cdf0dfcacf9dddb06d4e93bd8ffef1f
 license    : LGPL-2.1
 component  : desktop.library
 summary    : A library full of GTK+ widgets for mobile phones
