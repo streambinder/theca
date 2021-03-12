@@ -1,13 +1,13 @@
 maintainer : algent-al
 name       : procs
-version    : 0.11.3
-release    : 1
+version    : 0.11.4
+release    : 2
 source     :
-    - https://github.com/dalance/procs/archive/v0.11.3.tar.gz : bf56fde52d0f6544a2ca3db6d4552867e5cf9daf1c5a31f8b3ad6e3258986b0f
+    - https://github.com/dalance/procs/archive/v0.11.4.tar.gz : 30a903374eb888b89cd43bbc19365aa24ef01b3588298ab246085dbe42c8e819
 homepage   : https://github.com/dalance/procs
 license    : MIT
 component  : system.utils
-summary    : A modern replacement for ps written in Rust 
+summary    : A modern replacement for ps written in Rust
 description: |
     procs is a modern replacement for ps written in Rust.
 networking : yes
@@ -23,3 +23,5 @@ install    : |
     install -Dm00644 _procs -t $installdir/usr/share/zsh/site-functions
     install -Dm00644 procs.bash $installdir/usr/share/bash-completion/completions/procs
     install -Dm00644 procs.fish -t $installdir/usr/share/fish/vendor_completions.d
+check      : |
+    cargo test
