@@ -1,21 +1,19 @@
 maintainer : algent-al
 name       : cronie
-version    : 1.5.5
-release    : 2
+version    : 1.5.6
+release    : 3
 source     :
-    - https://github.com/cronie-crond/cronie/releases/download/cronie-1.5.5/cronie-1.5.5.tar.gz : be34c79505e5544323281854744b9955ff16b160ee569f9df7c0dddae5720eac
+    - https://github.com/cronie-crond/cronie/releases/download/cronie-1.5.6/cronie-1.5.6.tar.gz : f7ad9da2869c2dc8d9a54addfab969a9753eea8fd65e6d27dd935276eb66829d
 homepage   : https://github.com/cronie-crond/cronie
-license    : 
+license    :
     - BSD-2-Clause
     - BSD-3-Clause
     - GPL-2.0-or-later
     - ISC
 component  : system.utils
-summary    : Cronie cron daemon project 
+summary    : Cronie cron daemon project
 description: |
     Cronie contains the standard UNIX daemon crond that runs specified programs at scheduled times and related tools. The source is based on the original vixie-cron and has security and configuration enhancements like the ability to use pam and SELinux.
-replaces   :
-    - crond
 setup      : |
     %configure \
         --sbindir=/usr/bin \
@@ -26,7 +24,7 @@ build      : |
     %make
 install    : |
     %make_install
-    
+
     chmod u+s $installdir/usr/bin/crontab
     install -d $installdir/var/spool/{ana,}cron
     install -d $installdir/etc/cron.{d,hourly,daily,weekly,monthly}
