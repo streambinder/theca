@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : python-cairosvg
-version    : 2.5.0
-release    : 2
+version    : 2.5.2
+release    : 3
 source     :
-    - https://github.com/Kozea/CairoSVG/archive/2.5.0.tar.gz : 1560c66c119a1f74348293f484be4aef837b9691502c228e5e0f4824a0b6dfa5
+    - https://github.com/Kozea/CairoSVG/archive/2.5.2.tar.gz : 90a8bee8e7984317a21db4e1c6672e1d17266ced060f3bfd88b1dd70b6c422ff
 homepage   : https://cairosvg.org/
 license    : LGPL-3.0-or-later
 component  : programming.python
