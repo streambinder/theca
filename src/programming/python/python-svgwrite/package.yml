@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : python-svgwrite
-version    : 1.4
-release    : 1
+version    : 1.4.1
+release    : 2
 source     :
-    - https://github.com/mozman/svgwrite/archive/v1.4.tar.gz : fd0f9659351ad93b524420bdf0449670b9f4e97c3763bdc98706c77fb654197d
+    - https://github.com/mozman/svgwrite/archive/refs/tags/v1.4.1.tar.gz : 91d633be72f3e064377068df796121a9b8797ec961f4948283a2efe1ae11299c
 homepage   : https://github.com/mozman/svgwrite
 license    : MIT
 component  : programming.python
