@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : binwalk
-version    : 2.2.0
-release    : 2
+version    : 2.3.1
+release    : 3
 source     :
-    - https://github.com/ReFirmLabs/binwalk/archive/v2.2.0.tar.gz : f5495f0e4c5575023d593f7c087c367675df6aeb7f4d9a2966e49763924daa27
+    - https://github.com/ReFirmLabs/binwalk/archive/v2.3.1.tar.gz : 7ec9d8fcb8686f4060d37e1096669e3ed8ce1194c91ad80199622448bcc01b19
 license    : MIT
 component  : security
 summary    : Firmware Analysis Tool
