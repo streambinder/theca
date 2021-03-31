@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : awesomewm
 version    : 4.3
-release    : 4
+release    : 5
 source     :
-        - https://github.com/awesomeWM/awesome/archive/v4.3.tar.gz : b8a509464fb964acfc0cfaa4c689beaceb0f720de3983053d54d440158c281dd
+    - https://github.com/awesomeWM/awesome/archive/v4.3.tar.gz : b8a509464fb964acfc0cfaa4c689beaceb0f720de3983053d54d440158c281dd
 license    : GPL-2.0
 component  : desktop.awesomewm
 summary    : Awesome window manager
@@ -29,20 +29,7 @@ builddeps  :
     - imagemagick
     - lua-lgi
 setup      : |
-    if [ -d build ]; then rm -rf build; fi
-    mkdir -p build
-    cd build
-    %cmake \
-        -DCMAKE_BUILD_TYPE:STRING="Release" \
-        -DCMAKE_INSTALL_PREFIX:PATH="/usr" \
-        -DXDG_CONFIG_DIR:PATH="/etc/xdg" \
-        -DAWESOME_DATA_PATH:PATH="/usr/share/awesome" \
-        -DAWESOME_DOC_PATH:PATH="/usr/share/doc/awesome" \
-        -DAWESOME_MAN_PATH:PATH="/usr/share/man" \
-        -DSYSCONFDIR:PATH="/etc" \
-        -DAWESOME_XSESSION_PATH:PATH="/usr/share/xsessions" \
-        -DCMAKE_INSTALL_RPATH:PATH="/usr/lib" \
-        ../
+    %apply_patches
 build      : |
     %make
 install    : |
