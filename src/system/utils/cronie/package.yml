@@ -1,9 +1,9 @@
 maintainer : algent-al
 name       : cronie
-version    : 1.5.6
-release    : 3
+version    : 1.5.7
+release    : 4
 source     :
-    - https://github.com/cronie-crond/cronie/releases/download/cronie-1.5.6/cronie-1.5.6.tar.gz : f7ad9da2869c2dc8d9a54addfab969a9753eea8fd65e6d27dd935276eb66829d
+    - https://github.com/cronie-crond/cronie/releases/download/cronie-1.5.7/cronie-1.5.7.tar.gz : 538bcfaf2e986e5ae1edf6d1472a77ea8271d6a9005aee2497a9ed6e13320eb3
 homepage   : https://github.com/cronie-crond/cronie
 license    :
     - BSD-2-Clause
