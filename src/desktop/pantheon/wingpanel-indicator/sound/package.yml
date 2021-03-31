@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : wingpanel-indicator-sound
 version    : 2.1.8
-release    : 7
+release    : 8
 source     :
     - https://github.com/elementary/wingpanel-indicator-sound/archive/2.1.8.tar.gz : da651df1f47790b77fa3e1aa98911f12ed41041a36f48f6674e2573f602b91b2
 license    : GPL-3.0
@@ -15,10 +15,11 @@ builddeps  :
     - pkgconfig(libcanberra)
     - pkgconfig(libnotify)
     - pkgconfig(libpulse)
+    - pkgconfig(wingpanel)
     - glib2-devel
     - vala
-    - wingpanel-devel
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
