@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : wingpanel-indicator-notifications
 version    : 2.1.4
-release    : 4
+release    : 5
 source     :
     - https://github.com/elementary/wingpanel-indicator-notifications/archive/2.1.4.tar.gz : 54f0cccf18d3eef563d09699b340836bc2d2717f29ef347f9d14d797285655ce
 license    : LGPL-2.1
@@ -14,10 +14,11 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libwnck-3.0)
+    - pkgconfig(wingpanel)
     - glib2-devel
     - vala
-    - wingpanel-devel
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
