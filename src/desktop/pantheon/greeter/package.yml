@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-greeter
 version    : 5.0.4
-release    : 14
+release    : 15
 source     :
-    - https://github.com/elementary/greeter/archive/5.0.4.tar.gz : 67332e6eea2ec51cb9f9d49b96570abf943c2a7e88374b161dbb4c2ed6ccf8d4
+    - https://github.com/elementary/greeter/archive/409b7f9084df3dc936754782d8ebe02b0e7e56da.tar.gz : b78608b5703b3ae8ec85b739356f052d16246dcce9e712d17b2636bd9a9e7570
 license    : GPL-3.0
 component  : desktop.pantheon
 conflicts  :
@@ -20,10 +20,11 @@ builddeps  :
     - pkgconfig(gnome-settings-daemon)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(libhandy-1)
     - pkgconfig(liblightdm-gobject-1)
-    - pkgconfig(libmutter-6)
-    - pkgconfig(libvala-0.48)
-    - pkgconfig(wingpanel-2.0)
+    - pkgconfig(libmutter-7)
+    - pkgconfig(libvala-0.52)
+    - pkgconfig(wingpanel)
     - pkgconfig(x11)
     - desktop-file-utils
     - vala
