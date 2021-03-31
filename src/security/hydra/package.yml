@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : hydra
-version    : 9.1
-release    : 3
+version    : 9.2
+release    : 4
 source     :
-    - https://github.com/vanhauser-thc/thc-hydra/archive/v9.1.tar.gz : ce08a5148c0ae5ff4b0a4af2f7f15c5946bc939a57eae1bbb6dda19f34410273
+    - https://github.com/vanhauser-thc/thc-hydra/archive/v9.2.tar.gz : 1a28f064763f9144f8ec574416a56ef51c0ab1ae2276e35a89ceed4f594ec5d2
 license    : AGPL-3.0
 component  : security
 summary    : A very fast network logon cracker which support many different services
