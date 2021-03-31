@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : fondo
-version    : 1.5.1
-release    : 13
+version    : 1.5.2
+release    : 14
 source     :
-    - https://github.com/calo001/fondo/archive/1.5.1.tar.gz : c083a89094bfc3eae1f74b1778700ae15239564c1c1ee6a4c5b44368e31e5794
+    - https://github.com/calo001/fondo/archive/1.5.2.tar.gz : 016d67f2c4d4936426ab7a8cd4d7624e32ef9e9a9143e076a2f60257c1a67c27
 license    : AGPL-3.0
 component  : multimedia.graphics
 summary    : Wallpaper app for Gnome
