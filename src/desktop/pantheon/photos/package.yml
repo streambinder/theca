@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : pantheon-photos
 version    : 2.7.0
-release    : 3
+release    : 4
 source     :
-    - https://github.com/elementary/photos/archive/2.7.0.tar.gz : 9f6ad409d053e3239b9ec7fc59429afe9ce89e40878697a73c2c3f215556a074
+    - https://github.com/elementary/photos/archive/40c36e388baa39b36a163f45387ea5fcecf70790.tar.gz : 8ede86f39c6bf116db567cb1d495162e4b53b2e97e8c70dc83b83c4ca6d330f0
 license    : LGPL-2.1
 component  : desktop.pantheon
 summary    : Pantheon photos app
@@ -21,6 +21,7 @@ builddeps  :
     - pkgconfig(libaccounts-glib)
     - pkgconfig(libexif)
     - pkgconfig(libgphoto2)
+    - pkgconfig(libhandy-1)
     - pkgconfig(libraw)
     - pkgconfig(libsignon-glib)
     - pkgconfig(libsoup-2.4)
