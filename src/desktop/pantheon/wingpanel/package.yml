@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel
 version    : 2.3.2
-release    : 11
+release    : 12
 source     :
-    - https://github.com/elementary/wingpanel/archive/2.3.2.tar.gz : 939b586df19eaaeb08941997f2855b8f07841181212df8cca7105a24c06a7ac4
+    - https://github.com/elementary/wingpanel/archive/0f1c73a54e95ca6e4bd3e36ada13f65d7580c9e1.tar.gz : b6d5c1a972bb78c3a45faf79705d47823a8758b62998e78ff30ddd5a1ea50ba7
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Stylish top panel that holds indicators and spawns the application launcher
@@ -15,16 +15,26 @@ builddeps  :
     - pkgconfig(gstreamer-plugins-base-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
-    - pkgconfig(libmutter-6)
+    - pkgconfig(libmutter-7)
     - pkgconfig(libsoup-2.4)
-    - pkgconfig(libvala-0.48)
+    - pkgconfig(libvala-0.52)
     - pkgconfig(sqlite3)
     - pkgconfig(taglib)
     - gala-devel
     - vala
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
 install    : |
     %meson_install
+    cd $installdir/usr/include
+    ln -s wingpanel{-3.0,}
+    cd $installdir/usr/lib64
+    ln -s libwingpanel{-3.0,}.so
+    cd $installdir/usr/lib64/pkgconfig
+    ln -s wingpanel{-3.0,}.pc
+    cd $installdir/usr/share/vala/vapi
+    ln -s wingpanel{-3.0,}.deps
+    ln -s wingpanel{-3.0,}.vapi
