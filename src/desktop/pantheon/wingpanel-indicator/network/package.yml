@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : wingpanel-indicator-network
 version    : 2.2.4
-release    : 5
+release    : 6
 source     :
     - https://github.com/elementary/wingpanel-indicator-network/archive/2.2.4.tar.gz : 3068101063fff99a58eefe33afe3e3abf8e330c102c981213a4478068843850b
 license    : LGPL-2.1
@@ -15,10 +15,11 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libnma)
+    - pkgconfig(wingpanel)
     - glib2-devel
     - vala
-    - wingpanel-devel
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
