@@ -1,0 +1,22 @@
+From ead6971c708eed8b844bd9acd7eed2ab8a97e803 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Daniel=20For=C3=A9?= <daniel@elementary.io>
+Date: Mon, 6 Jul 2020 10:29:59 -0700
+Subject: [PATCH] UserManager: Fix build
+
+---
+ src/Services/UserManager.vala | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Services/UserManager.vala b/src/Services/UserManager.vala
+index c699d2a..609e0f8 100644
+--- a/src/Services/UserManager.vala
++++ b/src/Services/UserManager.vala
+@@ -216,7 +216,7 @@ public class Session.Services.UserManager : Object {
+ 
+     public void update_all () {
+         foreach (var userbox in user_boxes) {
+-            userbox.update_state ();
++            ((Session.Widgets.Userbox) userbox).update_state ();
+         }
+     }
+ 

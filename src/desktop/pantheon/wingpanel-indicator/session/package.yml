@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : wingpanel-indicator-session
 version    : 2.2.8
-release    : 6
+release    : 7
 source     :
     - https://github.com/elementary/wingpanel-indicator-session/archive/2.2.8.tar.gz : 84c90075225b59fffa314ceaeb0002af7c8da4cc4dc22a89b7e0500c6608e469
 license    : GPL-2.0
@@ -13,10 +13,11 @@ builddeps  :
     - pkgconfig(accountsservice)
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(wingpanel)
     - glib2-devel
     - vala
-    - wingpanel-devel
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
