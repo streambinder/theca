@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : minify
-version    : 2.9.11
-release    : 17
+version    : 2.9.15
+release    : 18
 source     :
-    - https://github.com/tdewolff/minify/releases/download/v2.9.11/minify_linux_amd64.tar.gz : 95b731b04e900a63df8560570b6ccd3c4593a57c90de20aabc4c12bc9342fd82
+    - https://github.com/tdewolff/minify/releases/download/v2.9.15/minify_linux_amd64.tar.gz : 4d9158005aa6738e47e8d9b494332f53ba8b46b9618406c43101efab0e374d4e
 license    : MIT
 component  : programming.tools
 summary    : Go minifiers for web formats
