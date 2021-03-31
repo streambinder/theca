@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : gala
 version    : 3.3.2
-release    : 8
+release    : 9
 source     :
-    - https://github.com/elementary/gala/archive/3.3.2.tar.gz : 3fb20a81fdfd81522fffa306ecf780a898ea6ed6dc3538735e561b4335c68192
+    - https://github.com/elementary/gala/archive/c74298b49c3d3be2ff3df5d7f6990d8d7fea52f6.tar.gz : cc7ae8a36b460addde9b2e3f70ee64f8733b1ba2afc5cdef16727bf07f2ecb09
 license    : GPL-3.0
 component  : desktop.pantheon
 summary    : Pantheon window and compositing manager
@@ -20,7 +20,7 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libbamf3)
-    - pkgconfig(libmutter-6)
+    - pkgconfig(libmutter-7)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libxml-2.0)
     - pkgconfig(plank)
