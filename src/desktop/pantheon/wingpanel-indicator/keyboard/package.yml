@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : wingpanel-indicator-keyboard
 version    : 2.3.0
-release    : 5
+release    : 6
 source     :
     - https://github.com/elementary/wingpanel-indicator-keyboard/archive/2.3.0.tar.gz : e0ba1b2c74b0aadebd061d2193e8c7256d7a19d0dce14d12b1639895e214df78
 license    : GPL-3.0
@@ -13,11 +13,12 @@ builddeps  :
     - pkgconfig(gobject-introspection-1.0)
     - pkgconfig(granite)
     - pkgconfig(libxml-2.0)
+    - pkgconfig(wingpanel)
     - glib2-devel
     - vala
-    - wingpanel-devel
     - xkeyboard-config-devel
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build

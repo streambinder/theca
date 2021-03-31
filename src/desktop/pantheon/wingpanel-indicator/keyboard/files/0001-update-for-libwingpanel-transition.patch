@@ -1,0 +1,50 @@
+From 21397c9ecc20e7901b946810f807c507e0f2ec19 Mon Sep 17 00:00:00 2001
+From: Rico Tzschichholz <ricotz@ubuntu.com>
+Date: Wed, 17 Feb 2021 11:40:27 +0100
+Subject: [PATCH] Update for libwingpanel transition (#98)
+
+---
+ .github/workflows/main.yml | 2 +-
+ README.md                  | 2 +-
+ meson.build                | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/.github/workflows/main.yml b/.github/workflows/main.yml
+index 0c48239..fcc2b07 100644
+--- a/.github/workflows/main.yml
++++ b/.github/workflows/main.yml
+@@ -15,7 +15,7 @@ jobs:
+     - name: Install Dependencies
+       run: |
+         apt update
+-        apt install -y gobject-introspection libglib2.0-dev libgranite-dev libwingpanel-2.0-dev libxml2-dev meson valac
++        apt install -y gobject-introspection libglib2.0-dev libgranite-dev libwingpanel-dev libxml2-dev meson valac
+     - name: Build
+       env:
+         DESTDIR: out
+diff --git a/README.md b/README.md
+index 939a4bc..0db5ef3 100644
+--- a/README.md
++++ b/README.md
+@@ -10,7 +10,7 @@ You'll need the following dependencies:
+ * gobject-introspection
+ * libglib2.0-dev
+ * libgranite-dev
+-* libwingpanel-2.0-dev
++* libwingpanel-dev
+ * libxml2-dev
+ * meson
+ * valac
+diff --git a/meson.build b/meson.build
+index 2155111..c6fa4ab 100644
+--- a/meson.build
++++ b/meson.build
+@@ -30,7 +30,7 @@ config_file = configure_file (
+     configuration: conf_data
+ )
+ 
+-wingpanel_dep = dependency('wingpanel-2.0')
++wingpanel_dep = dependency('wingpanel')
+ wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', define_variable: ['libdir', libdir])
+ 
+ shared_module(
