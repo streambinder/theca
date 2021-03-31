@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : pantheon-music
 version    : 5.0.5
-release    : 2
+release    : 3
 source     :
     - https://github.com/elementary/music/archive/5.0.5.tar.gz : ed7cba3b07189273890b321b21cda198f18b102e4466eb7207c0b5f27b31dfc9
 license    : GPL-3.0
@@ -30,6 +30,7 @@ builddeps  :
     - glib2-devel
     - vala
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
