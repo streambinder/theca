@@ -29,7 +29,6 @@
 - pantheon-agent-polkit
 - pantheon-calculator
 - pantheon-calendar
-- pantheon-camera
 - pantheon-capnet-assist
 - pantheon-code
 - pantheon-default-settings
@@ -74,6 +73,7 @@
 - gsignond-plugin-lastfm
 - gsignond-plugin-oauth
 - gsignond-plugin-sasl
+- pantheon-camera
 - pantheon-tweaks
 - python-cairocffi
 - python-tinycss2
@@ -116,5 +116,4 @@
 - wingpanel-indicator-power
 - wingpanel-indicator-session
 - wingpanel-indicator-sound
-# group separator
 # group separator
