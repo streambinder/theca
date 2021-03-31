@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : wingpanel-indicator-nightlight
 version    : 2.0.4
-release    : 4
+release    : 5
 source     :
     - https://github.com/elementary/wingpanel-indicator-nightlight/archive/2.0.4.tar.gz : f10d8e212fc46cc5cafc4d3fab8bcedd1a259fb0a686ae9ae9e145d049d93cf9
 license    : GPL-2.0
@@ -12,10 +12,11 @@ description: |
 builddeps  :
     - pkgconfig(granite)
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(wingpanel)
     - glib2-devel
     - vala
-    - wingpanel-devel
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
