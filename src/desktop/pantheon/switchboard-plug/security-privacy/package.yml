@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : switchboard-plug-security-privacy
 version    : 2.2.4
-release    : 5
+release    : 6
 source     :
     - https://github.com/elementary/switchboard-plug-security-privacy/archive/2.2.4.tar.gz : 617c51416f1662e66d395f27d82a372196d4ccd7402e67ab158ff578ad731b9b
 license    : GPL-3.0
@@ -21,6 +21,7 @@ builddeps  :
     - ufw
     - vala
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build

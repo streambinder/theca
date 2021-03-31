@@ -1,0 +1,22 @@
+From c8e422e630bbee0badcf4df26364c9e83e06bad0 Mon Sep 17 00:00:00 2001
+From: Rico Tzschichholz <ricotz@ubuntu.com>
+Date: Wed, 22 Jul 2020 11:53:15 +0200
+Subject: [PATCH] Don't use invalid vala syntax (#116)
+
+---
+ src/Views/LocationPanel.vala | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Views/LocationPanel.vala b/src/Views/LocationPanel.vala
+index 2b6e328..bfdd5d8 100644
+--- a/src/Views/LocationPanel.vala
++++ b/src/Views/LocationPanel.vala
+@@ -147,7 +147,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
+     }
+ 
+     private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
+-        Variant[2] tuple_vals = new Variant[2];
++        Variant[] tuple_vals = new Variant[2];
+         tuple_vals[0] = new Variant.boolean (authorized);
+         tuple_vals[1] = new Variant.uint32 (accuracy_level);
+         remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
