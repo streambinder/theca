@@ -20,7 +20,7 @@ test:
 
 .PHONY: update
 update:
-	@sudo solbuild update
+	@sudo solbuild update -p theca-x86_64
 
 .PHONY: components
 components: init

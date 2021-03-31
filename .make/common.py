@@ -136,7 +136,7 @@ def sol_build(eopkg):
 
 
 def sol_index(path):
-    subprocess.Popen(['sudo', 'solbuild', 'index', path], cwd=path).communicate()
+    subprocess.Popen(['sudo', 'solbuild', 'index', path, '-p', 'theca-x86_64'], cwd=path).communicate()
 
 
 def package_yml(name):
