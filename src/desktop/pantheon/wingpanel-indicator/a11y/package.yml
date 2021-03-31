@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : wingpanel-indicator-a11y
 version    : 1
-release    : 2
+release    : 3
 source     :
-    - https://github.com/elementary/wingpanel-indicator-a11y/archive/6507008552dca302c1cac85dfdeb05ba64361ba6.tar.gz : 422d642278d4948c3e9f23ac2220c08eedc872173cbddc62d03e862f888be88d
+    - https://github.com/elementary/wingpanel-indicator-a11y/archive/d6db7d93d1efb4f6ffeddf60b85d4c088eba4d4d.tar.gz : b8c37255e286117446cd7bb8c325dc895e9b3d23cb974a5a47fca474cb92749a
 license    : GPL-2.0
 component  : desktop.pantheon
 summary    : Wingpanel universal access indicator
@@ -11,10 +11,9 @@ description: |
     Wingpanel inicator for universal access settings and informations.
 builddeps  :
     - pkgconfig(granite)
+    - pkgconfig(wingpanel)
     - vala
-    - wingpanel-devel
 setup      : |
-    %apply_patches
     %meson_configure
 build      : |
     %meson_build
