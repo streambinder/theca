@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : pantheon-code
 version    : 3.4.1
-release    : 6
+release    : 7
 source     :
     - https://github.com/elementary/code/archive/3.4.1.tar.gz : d84b38193b72cd93995aae604358c83c5b6976d8472ce985027b947cfed990bf
 license    : GPL-3.0
@@ -22,6 +22,7 @@ builddeps  :
     - pkgconfig(webkit2gtk-4.0)
     - vala
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build

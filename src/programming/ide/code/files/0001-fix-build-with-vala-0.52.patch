@@ -1,0 +1,11 @@
+--- a/plugins/outline/Vala/ValaSymbolOutline.vala
++++ b/plugins/outline/Vala/ValaSymbolOutline.vala
+@@ -61,7 +61,7 @@
+ 
+     public void parse_symbols () {
+         var context = new Vala.CodeContext ();
+-        context.profile = Vala.Profile.GOBJECT;
++        context.set_target_profile (Vala.Profile.GOBJECT, false);
+         context.add_source_filename (doc.file.get_path ());
+         context.report = new Report ();
+         if (cancellable != null)
