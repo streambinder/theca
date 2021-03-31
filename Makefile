@@ -32,7 +32,7 @@ strip:
 
 .PHONY: index
 index:
-	@(cd $(BUILD_DIR) && sudo solbuild index $(BUILD_DIR) > /dev/null 2>&1)
+	@(sudo solbuild index $(BUILD_DIR) -p theca-x86_64 > /dev/null 2>&1)
 
 .PHONY: release
 release: packages strip index components
