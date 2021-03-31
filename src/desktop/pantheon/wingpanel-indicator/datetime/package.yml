@@ -15,9 +15,10 @@ builddeps  :
     - pkgconfig(granite)
     - pkgconfig(libecal-2.0)
     - pkgconfig(libical)
+    - pkgconfig(wingpanel)
     - vala
-    - wingpanel-devel
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
