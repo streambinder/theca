@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : switchboard-plug-onlineaccounts
 version    : 2.0.1
-release    : 4
+release    : 5
 source     :
     - https://github.com/elementary/switchboard-plug-onlineaccounts/archive/05b41fa33ca2bd09eedb27a9b94c4cf6e9a3e5b6.tar.gz : 45a29c2f582ca14fc79a77c2f2a17486ccc7780722fbd8241d942c44bc2f0e2f
 license    : GPL-2.0
@@ -22,6 +22,7 @@ builddeps  :
     - glib2-devel
     - vala
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build

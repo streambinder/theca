@@ -1,0 +1,27 @@
+From b1853b7427102b8dd94774e1e2cc455f50902263 Mon Sep 17 00:00:00 2001
+From: Rico Tzschichholz <ricotz@ubuntu.com>
+Date: Wed, 22 Jul 2020 13:39:44 +0200
+Subject: [PATCH] Don't use errno as variable name which is a global field
+ provided by errno.h (#138)
+
+---
+ src/Authentification/Server.vala | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/Authentification/Server.vala b/src/Authentification/Server.vala
+index 9994db4..08e84fe 100644
+--- a/src/Authentification/Server.vala
++++ b/src/Authentification/Server.vala
+@@ -73,9 +73,9 @@ public class OnlineAccounts.Server : GLib.Object {
+         socket_file_path = base_path + "ui-XXXXXX";
+         socket_file_id = GLib.FileUtils.mkstemp (socket_file_path);
+         debug ("Socket File path : %s", socket_file_path);
+-        var errno = GLib.DirUtils.create_with_parents (base_path, 0700);
+-        if (errno == -1) {
+-            warning ("Could not create '%s', error: %s", base_path, GLib.strerror (errno));
++        var err_no = GLib.DirUtils.create_with_parents (base_path, 0700);
++        if (err_no == -1) {
++            warning ("Could not create '%s', error: %s", base_path, GLib.strerror (err_no));
+         }
+ 
+         GLib.FileUtils.unlink (socket_file_path);
