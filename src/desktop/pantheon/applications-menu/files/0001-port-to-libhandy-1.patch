@@ -1,0 +1,75 @@
+--- a/meson.build
++++ b/meson.build
+@@ -45,7 +45,7 @@ gio_unix_dep = dependency('gio-unix-2.0')
+ json_glib_dep = dependency('json-glib-1.0')
+ switchboard_dep = dependency('switchboard-2.0')
+ libgnome_menu_dep = dependency('libgnome-menu-3.0')
+-libhandy_dep = dependency('libhandy-0.0')
++libhandy_dep = dependency('libhandy-1', version: '>= 0.83.0')
+ wingpanel_dep = dependency('wingpanel-2.0', version: '>=2.1.0')
+ posix_dep = meson.get_compiler('vala').find_library('posix')
+ 
+diff --git a/src/Views/GridView.vala b/src/Views/GridView.vala
+index f8876f34..612edda5 100644
+--- a/src/Views/GridView.vala
++++ b/src/Views/GridView.vala
+@@ -28,7 +28,7 @@ public class Slingshot.Widgets.Grid : Gtk.Grid {
+     private Gtk.Grid current_grid;
+     private Gtk.Widget? focused_widget;
+     private Gee.HashMap<int, Gtk.Grid> grids;
+-    private Hdy.Paginator paginator;
++    private Hdy.Carousel paginator;
+     private Page page;
+ 
+     private int focused_column;
+@@ -41,7 +41,7 @@ public class Slingshot.Widgets.Grid : Gtk.Grid {
+         page.columns = 5;
+         page.number = 1;
+ 
+-        paginator = new Hdy.Paginator ();
++        paginator = new Hdy.Carousel ();
+         paginator.expand = true;
+ 
+         var page_switcher = new Widgets.Switcher ();
+diff --git a/src/Widgets/PageChecker.vala b/src/Widgets/PageChecker.vala
+index ae496cfa..82d09d9a 100644
+--- a/src/Widgets/PageChecker.vala
++++ b/src/Widgets/PageChecker.vala
+@@ -22,13 +22,13 @@
+ public class Slingshot.Widgets.PageChecker : Gtk.Button {
+     public const double MIN_OPACITY = 0.4;
+ 
+-    public unowned Hdy.Paginator paginator { get; construct; }
++    public unowned Hdy.Carousel paginator { get; construct; }
+     public unowned Gtk.Widget page { get; construct; }
+ 
+     private static Gtk.CssProvider provider;
+     private int page_number;
+ 
+-    public PageChecker (Hdy.Paginator paginator, Gtk.Widget page) {
++    public PageChecker (Hdy.Carousel paginator, Gtk.Widget page) {
+         Object (
+             paginator: paginator,
+             page: page
+diff --git a/src/Widgets/Switcher.vala b/src/Widgets/Switcher.vala
+index 909134cd..ce4edfcd 100644
+--- a/src/Widgets/Switcher.vala
++++ b/src/Widgets/Switcher.vala
+@@ -26,7 +26,7 @@ public class Slingshot.Widgets.Switcher : Gtk.Grid {
+         }
+     }
+ 
+-    private Hdy.Paginator paginator;
++    private Hdy.Carousel paginator;
+ 
+     construct {
+         halign = Gtk.Align.CENTER;
+@@ -36,7 +36,7 @@ public class Slingshot.Widgets.Switcher : Gtk.Grid {
+         show_all ();
+     }
+ 
+-    public void set_paginator (Hdy.Paginator paginator) {
++    public void set_paginator (Hdy.Carousel paginator) {
+         if (this.paginator != null) {
+             get_children ().foreach ((child) => {
+                 child.destroy ();
