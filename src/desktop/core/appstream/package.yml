@@ -1,9 +1,9 @@
 maintainer : streambinder
 name       : appstream
-version    : 0.13.1
-release    : 7
+version    : 0.14.3
+release    : 8
 source     :
-    - https://www.freedesktop.org/software/appstream/releases/AppStream-0.13.1.tar.xz : ba7de61223aaa76d8c47d8857bf185c28d4c2a099f3ab02c8837091e7e8f8626
+    - https://www.freedesktop.org/software/appstream/releases/AppStream-0.14.3.tar.xz : 16bf426a8f2693a45c84f437a301e560a2fb77179917c175f5ccb0bd9883e5c6
 license    : GPL-2.0
 component  : desktop.core
 summary    : Infrastructure for distro-agnostic software-centers and universal software component metadata
@@ -19,6 +19,7 @@ description: |
     All parts of AppStream are distribution-agnostic, and therefore it is easily possible to build software management tools with it that work on any distribution implementing the AppStream specification.
 builddeps  :
     - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(libcurl)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libxml-2.0)
     - pkgconfig(yaml-0.1)
