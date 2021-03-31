@@ -1,0 +1,22 @@
+From 5eced5ddda6f229d7265ea0a713f6c1cd181a526 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?J=C3=BCrgen=20Buchm=C3=BCller?= <pullmoll@t-online.de>
+Date: Wed, 17 Feb 2021 18:57:52 +0100
+Subject: [PATCH] CUPSNotifier.vala: explicit cast for callback (#141)
+
+---
+ src/CUPSNotifier.vala | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/CUPSNotifier.vala b/src/CUPSNotifier.vala
+index 4413c2b..5eb61c8 100644
+--- a/src/CUPSNotifier.vala
++++ b/src/CUPSNotifier.vala
+@@ -63,7 +63,7 @@ public class Cups.Notifier : Object {
+         Bus.get_proxy.begin<NotifierDBus> (BusType.SYSTEM, "org.cups.cupsd.Notifier", "/org/cups/cupsd/Notifier", GLib.DBusProxyFlags.NONE, null, (obj, res) => {
+             try {
+                 dbus_notifier = Bus.get_proxy.end (res);
+-                ((GLib.DBusProxy) dbus_notifier).g_connection.signal_subscribe (null, "org.cups.cupsd.Notifier", null, "/org/cups/cupsd/Notifier", null, GLib.DBusSignalFlags.NONE, subscription_callback);
++                ((GLib.DBusProxy) dbus_notifier).g_connection.signal_subscribe (null, "org.cups.cupsd.Notifier", null, "/org/cups/cupsd/Notifier", null, GLib.DBusSignalFlags.NONE, (GLib.DBusSignalCallback)subscription_callback);
+             } catch (IOError e) {
+                 critical (e.message);
+             }

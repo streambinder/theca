@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : switchboard-plug-printers
 version    : 2.1.9
-release    : 5
+release    : 6
 source     :
     - https://github.com/elementary/switchboard-plug-printers/archive/2.1.9.tar.gz : 9ef80bd8c3f304da44127c855849ecb58f0ebf5cc74855604be5e616b8ec2fc1
 license    : GPL-3.0
@@ -16,6 +16,7 @@ builddeps  :
     - cups-devel
     - vala
 setup      : |
+    %apply_patches
     %meson_configure
 build      : |
     %meson_build
