@@ -1,14 +1,18 @@
 maintainer : streambinder
 name       : pantheon-wallpapers
 version    : 5.5.0
-release    : 4
+release    : 5
 source     :
     - https://github.com/elementary/wallpapers/archive/5.5.0.tar.gz : 0a05b1bf732c98408f0e6c344ad31993bb861289cf0272d491dd005ae1f09b5e
-license    : GPL-1.0
+license    :
+    - CC0-1.0
+    - GPL-3.0-or-later
 component  : desktop.pantheon
 summary    : Pantheon wallpapers
 description: |
     Collection of wallpapers for elementary OS.
+rundeps    :
+    - solus-artwork
 setup      : |
     %meson_configure
 build      : |
