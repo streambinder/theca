@@ -33,5 +33,5 @@ install    : |
         install -Dm00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
     done;
     %ninja_install
-#install    : |
-#    %ninja_check
+check      : |
+   %ninja_check
