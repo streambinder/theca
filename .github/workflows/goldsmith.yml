@@ -36,7 +36,6 @@ jobs:
 
   stage:
     needs: [analyze]
-    if: success() && github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
