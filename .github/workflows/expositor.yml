@@ -3,7 +3,7 @@ name: expositor
 on: workflow_dispatch
 
 jobs:
-  analyze:
+  rollout:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

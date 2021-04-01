@@ -90,11 +90,19 @@ jobs:
           Email=theca@davidepucci.it
           ' | sudo tee -a ~/.solus
 
-      - name: Release
+      - name: Build
         run: |
-          make fetch release sync
+          make fetch release
         env:
           J: 5
+          VARIANT: unstable
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_THECA }}
+
+      - name: Release
+        if: github.event_name == 'push'
+        run: |
+          make sync
+        env:
           VARIANT: unstable
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_THECA }}
 
