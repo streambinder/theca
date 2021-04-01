@@ -72,14 +72,14 @@ jobs:
           sudo mkdir /etc/solbuild
           sudo echo 'image = "main-x86_64"
           remove_repos = ["Solus"]
-          add_repos = ["Local", "Ashtray", "Solus"]
+          add_repos = ["Local", "Theca", "Solus"]
 
           [repo.Local]
           uri = "'$GITHUB_WORKSPACE'/build"
           local = true
           autoindex = true
 
-          [repo.Ashtray]
+          [repo.Theca]
           uri = "https://unstable.solus.davidepucci.it/eopkg-index.xml.xz"
 
           [repo.Solus]
