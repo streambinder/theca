@@ -20,6 +20,7 @@ for eopkg in series():
         sys.exit(1)
 
     if 'SWEEP' in os.environ:
+        print('Cleaning up solbuild cache')
         sol_sweep()
 
 sol_index(os.environ['BUILD_DIR'])
