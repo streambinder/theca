@@ -1,11 +1,13 @@
 maintainer : streambinder
 name       : pantheon-dock
 version    : 0.0.1
-release    : 1
+release    : 2
 source     :
     - https://github.com/elementary/dock/archive/9150dd81bc3741d76eefee54993d7fc89d8d0d03.tar.gz : 7c13e30799930f0e65b5385083ab352fa2ed1d51ac8b03c4f37d3bc7623fa2fb
 license    : GPL-3.0
 component  : desktop.pantheon
+conflicts  :
+    - plank
 summary    : Pantheon dock
 description: |
     Plank is meant to be the simplest dock on the planet.
