@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : gala
 version    : 3.3.2
-release    : 9
+release    : 10
 source     :
     - https://github.com/elementary/gala/archive/c74298b49c3d3be2ff3df5d7f6990d8d7fea52f6.tar.gz : cc7ae8a36b460addde9b2e3f70ee64f8733b1ba2afc5cdef16727bf07f2ecb09
 license    : GPL-3.0
@@ -23,12 +23,12 @@ builddeps  :
     - pkgconfig(libmutter-7)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libxml-2.0)
-    - pkgconfig(plank)
     - pkgconfig(sqlite3)
     - pkgconfig(taglib)
     - gettext-devel
     - glib2-devel
     - gsettings-desktop-schemas-devel
+    - pantheon-dock-devel
     - vala
 setup      : |
     %meson_configure
