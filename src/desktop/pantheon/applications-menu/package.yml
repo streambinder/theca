@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : pantheon-applications-menu
 version    : 2.7.1
-release    : 14
+release    : 15
 source     :
     - https://github.com/elementary/applications-menu/archive/2.7.1.tar.gz : 6f62d2474776415517017c3b7f297634c1ca5a5e8ed6c002a639c88f317a00bf
 license    : GPL-3.0
@@ -22,14 +22,13 @@ builddeps  :
     - pkgconfig(libsoup-2.4)
     - pkgconfig(libvala-0.52)
     - pkgconfig(libwnck-3.0)
-    - pkgconfig(plank)
     - pkgconfig(sqlite3)
     - pkgconfig(switchboard-2.0)
     - pkgconfig(taglib)
     - pkgconfig(wingpanel)
     - pkgconfig(zeitgeist-2.0)
     - gala-devel
-    - plank
+    - pantheon-dock-devel
     - vala
 setup      : |
     %apply_patches
