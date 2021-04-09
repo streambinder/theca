@@ -1,9 +1,10 @@
 maintainer : algent-al
 name       : conky-manager2
-version    : 2.7
-release    : 1
+version    : 2.72
+release    : 2
 source     :
-    - git|https://github.com/zcot/conky-manager2 : d0d6cb279746049df30de3af4d61e571086a885e
+    - git|https://github.com/zcot/conky-manager2 : cb428f0b7193b30ce97ad8b375d8de7a36d939af
+homepage   : https://github.com/zcot/conky-manager2
 license    : GPL-3.0-or-later
 component  : system.utils
 summary    : Conky Manager 2 - a newer conky config manager
