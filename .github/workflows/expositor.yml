@@ -5,38 +5,23 @@ on: workflow_dispatch
 jobs:
   rollout:
     runs-on: ubuntu-latest
+    container:
+      image: silkeh/solus:solbuild
+      options: --privileged -v /dev:/dev
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set Python environment
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7
-          architecture: x64
-
-      - name: Setup Go environment
-        uses: actions/setup-go@v2-beta
-
       - name: Install system dependencies
         run: |
-          sudo apt update
-          sudo apt install -y parallel jq libcurl4-openssl-dev libgit2-28 libgit2-dev
+          sudo eopkg ur
+          sudo eopkg install -y parallel jq wget
 
-      - name: Install Python dependencies
+      - name: Configure Solbuild
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install pyyaml
-          echo "PYTHONPATH=/opt/hostedtoolcache/Python/3.7.6/x64/lib/python3.7/site-packages" >> $GITHUB_ENV
-          sudo ln -sf $(which python) /usr/bin/python3
-
-      - name: Download and configure Solbuild
-        run: |
-          git clone https://github.com/getsolus/solbuild.git
-          cd solbuild
-          sudo make build install
           sudo solbuild init -u
-          sudo mkdir /etc/solbuild
+          sudo mkdir -p /etc/solbuild
           sudo echo 'image = "main-x86_64"
           remove_repos = ["Solus"]
           add_repos = ["Local", "Theca", "Solus"]
@@ -62,5 +47,6 @@ jobs:
           make fetch release sync
         env:
           J: 5
+          TMPFS: true
           VARIANT: stable
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_THECA }}
