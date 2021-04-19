@@ -13,6 +13,9 @@ jobs:
       options: --privileged -v /dev:/dev
 
     steps:
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
