@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : pantheon-default-settings
 version    : 5.1.2
-release    : 11
+release    : 12
 source     :
     - https://github.com/elementary/default-settings/archive/5.1.2.tar.gz : 7e488ed4c3599af574e4337b0ed0da68246ac5e65b0b022d72ed569415feebfa
 license    : GPL-1.0
@@ -14,7 +14,7 @@ rundeps:
     - font-roboto-mono-ttf
     - gnome-session
     - light-locker
-    - pantheon-files
+    - pantheon-fm
     - pantheon-terminal
 install    : |
     install -Dm 644 overrides/default-settings.gschema.override $installdir/usr/share/glib-2.0/schemas/25_pantheon-default-settings.gschema.override

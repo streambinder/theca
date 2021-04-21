@@ -1,7 +1,7 @@
 maintainer : streambinder
-name       : pantheon-files
+name       : pantheon-fm
 version    : 4.5.0
-release    : 17
+release    : 18
 source     :
     - https://github.com/elementary/files/archive/4.5.0.tar.gz : 987f87df2a74c97cb866b34a20ea395ae1f67d03c9517185494860653fbc065c
 license    : GPL-3.0-or-later
@@ -9,6 +9,8 @@ component  : desktop.pantheon
 summary    : The simple, powerful, and sexy file manager from elementary
 description: |
     The simple, powerful, and sexy file manager from elementary
+replaces   :
+    - pantheon-files
 builddeps  :
     - pkgconfig(cloudproviders)
     - pkgconfig(dbus-glib-1)
@@ -33,5 +35,5 @@ install    : |
         install -Dm00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
     done;
     %ninja_install
-check      : |
-   %ninja_check
+#check      : |
+#   %ninja_check
