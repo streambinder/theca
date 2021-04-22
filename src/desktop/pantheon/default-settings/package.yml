@@ -1,7 +1,7 @@
 maintainer : streambinder
 name       : pantheon-default-settings
 version    : 5.1.2
-release    : 12
+release    : 13
 source     :
     - https://github.com/elementary/default-settings/archive/5.1.2.tar.gz : 7e488ed4c3599af574e4337b0ed0da68246ac5e65b0b022d72ed569415feebfa
 license    : GPL-1.0
@@ -15,7 +15,7 @@ rundeps:
     - gnome-session
     - light-locker
     - pantheon-fm
-    - pantheon-terminal
+    - pantheon-term
 install    : |
     install -Dm 644 overrides/default-settings.gschema.override $installdir/usr/share/glib-2.0/schemas/25_pantheon-default-settings.gschema.override
     install -Dm 644 settings.ini -t $installdir/etc/gtk-3.0/
