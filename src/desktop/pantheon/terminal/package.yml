@@ -1,7 +1,7 @@
 maintainer : streambinder
-name       : pantheon-terminal
+name       : pantheon-term
 version    : 5.5.2
-release    : 22
+release    : 23
 source     :
     - https://github.com/elementary/terminal/archive/5.5.2.tar.gz : 589ad0225e3a45700d95c8ead1b646f22a22c7688f647876a5329b3b4bd923cd
 license    : GPL-3.0-only
